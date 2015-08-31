@@ -1,0 +1,45 @@
+option max_CPU = 1
+Loading model pfau-small.h5
+Loading model done
+model nV = 76800, nF = 229840, maxK = 12
+Converting model
+Recognized models: 153040Potts terms, 0T-Linear terms,
+ 0T-Quadratic terms, 0Diff terms, 0 Full terms
+Max data value: 2.8713
+Min data delta: 6.17948e-006
+Selecting data toolerance: 0.001
+Stream graph layers: 559 time: 0.00822418s. 
+core size:28Mb, writable: 14Mb.
+Options:
+all_to_one: 0
+fast_msg: 1
+it_batch: 10
+local_min_tol: 0
+max_CPU: 1
+max_it: 1000
+n_sensetivity: 1
+po_it_batch: 5
+po_max_it: 50
+reduce_immovable: 1
+rel_conv_tol: 0.01
+rel_gap_tol: 0.1
+sensetivity: 0
+use_cut: 1
+use_pixel_cut: 1
+weak_po: 0
+it10 LB=24200.2285 E=24345.7690 dPhi=0.05 mrg=-1.472 dt=0.147s. 5.6 GB/s.
+it20 LB=24222.3618 E=24284.5418 dPhi=0.01 mrg=-1.472 dt=0.147s. 5.6 GB/s.
+it30 LB=24228.1417 E=24264.3444 dPhi=0.009 mrg=-1.472 dt=0.151s. 5.5 GB/s.
+it40 LB=24230.4398 E=24262.0016 dPhi=0.007 mrg=-1.472 dt=0.127s. 6.5 GB/s.
+it50 LB=24231.5946 E=24249.3305 dPhi=0.004 mrg=-1.472 dt=0.120s. 6.8 GB/s.
+it60 LB=24232.3055 E=24244.7760 dPhi=0.004 mrg=-1.472 dt=0.142s. 5.8 GB/s.
+it70 LB=24232.7147 E=24240.3299 dPhi=0.003 mrg=-1.472 dt=0.138s. 6.0 GB/s.
+it80 LB=24232.9567 E=24238.2540 dPhi=0.003 mrg=-1.472 dt=0.140s. 5.9 GB/s.
+it90 LB=24233.1304 E=24238.2540 dPhi=0.003 mrg=-1.472 dt=0.147s. 5.6 GB/s.
+it100 LB=24233.2500 E=24238.2540 dPhi=0.002 mrg=-1.472 dt=0.119s. 6.9 GB/s.
+it110 LB=24233.3470 E=24238.2540 dPhi=0.002 mrg=-1.472 dt=0.148s. 5.6 GB/s.
+it120 LB=24233.4205 E=24238.2540 dPhi=0.002 mrg=-1.472 dt=0.150s. 5.5 GB/s.
+it130 LB=24233.4662 E=24238.2540 dPhi=0.002 mrg=-1.472 dt=0.152s. 5.4 GB/s.
+it140 LB=24233.4985 E=24238.2540 dPhi=0.001 mrg=-1.472 dt=0.138s. 6.0 GB/s.
+it150 LB=24233.5219 E=24238.2540 dPhi=0.001 mrg=-1.472 dt=0.115s. 7.1 GB/s.
+it160 LB=24233.5399 E=24238.2540 dPhi=0.001 mrg=-1.472 dt=0.133s. 6.2 GB/s.

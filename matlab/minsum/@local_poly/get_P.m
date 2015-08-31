@@ -1,0 +1,37 @@
+function [P] = get_P(L,p)
+%
+%		[P] = get_P(L,p) returns the linear extension for pixel-wise map p
+%
+
+K = L.K;
+
+nV = get(L.G,'n');
+nE = get(L.G,'m');
+E = L.G.E;
+%n = nE*(2*K)+nV+nE;
+m = nE*K^2+nV*K;
+
+mu_s = get_mu1_index(L);  %index for univariate mus
+mu_st = get_mu2_index(L); %index for pairwise mus
+
+P = sparse([],[],[],m,m,2*m);
+%l=1; % we will build P'
+for s=1:nV
+	for i1=1:K
+		i = p(i1,s);
+		P(mu_s(i,s),mu_s(i1,s)) = 1;
+	end
+end
+for st=1:nE
+	s = E(1,st);
+	t = E(2,st);
+	for i1=1:K
+		i = p(i1,s);
+		for j1=1:K
+			j = p(j1,t);
+			P(mu_st(i,j,st),mu_st(i1,j1,st)) = 1;
+		end
+	end
+end
+
+end
