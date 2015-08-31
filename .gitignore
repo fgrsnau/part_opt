@@ -29,3 +29,7 @@ bin/part_opt/log/out1.txt
 
 *.dll
 Release
+
+projects/part_opt/cmake_install.cmake
+
+projects/part_opt/CMakeCache.txt
