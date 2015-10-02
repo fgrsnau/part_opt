@@ -246,7 +246,7 @@ namespace dynamic{
 
 		void pop_back(){
 			if(empty())throw debug_exception("pop_back from empty dynamic_array1");
-			destroy(end());
+			destroy(&back());
 			--_end;
 		};
 
