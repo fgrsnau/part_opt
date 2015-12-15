@@ -28,9 +28,9 @@ int main(int argc, char *argv[]){
 		std::getline(o, o_name, '=');
 		std::getline(o, o_val, '=');
 		debug::stream << "option " << o_name << " = " << o_val << "\n";
-		if (strcmp(o_name.c_str(), "edges")){
+		if (strcmp(o_name.c_str(), "edges")==0){
 			edges = o_val;
-		} else if (strcmp(o_name.c_str(), "edge_pairs")){
+		} else if (strcmp(o_name.c_str(), "edge_pairs")==0){
 			edge_pairs = o_val;
 		} else{
 			ops[o_name] = atof(o_val.c_str());
