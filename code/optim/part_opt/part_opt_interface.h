@@ -11,6 +11,7 @@ template<typename type>
 class part_opt_interface{
 public:
 	typedef float compute_type;
+	//typedef double compute_type;
 	energy_auto<compute_type> * energy;
 	alg_po_trws * alg;
 	options * ops;

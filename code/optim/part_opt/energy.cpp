@@ -1400,25 +1400,40 @@ void energy_auto<type>::set_f1(int v, const dynamic::num_array<double, 1> & _f1)
 	int K = _f1.size();
 	int Ka = v_align<type, d_vectorizer>(K); // size_align(K);
 	this->f1[v].resize(Ka);
+	type maxabsf = 0;
 	for (int i = 0; i < Ka; ++i){
 		if (i < K){
 			this->f1[v][i] = type(_f1[i]);
+			type v = abs(type(_f1[i]));
+			if (v < 100){//INF(type)){
+				maxabsf = std::max(maxabsf, v);
+			}
 		} else{ // aligning
 			this->f1[v][i] = INF(type);
 		};
 	};
-	maxf = std::max(maxf, _f1.maxabs().first);
+	maxf = std::max(maxf, double(maxabsf));
 	delta = std::min(delta, _f1.second_min().first - _f1.min().first);
 };
 
 template<typename type>
 void energy_auto<type>::set_f2(int e, const dynamic::num_array<double, 2> & _f2){
 	// statistics
-	maxf = std::max(maxf, _f2.maxabs().first);
-	delta = std::min(delta, _f2.second_min().first - _f2.min().first);
-	//recognize and remember _f2
 	int K1 = _f2.size()[0];
 	int K2 = _f2.size()[1];
+	for (int i = 0; i < K1; ++i){
+		for (int j = 0; j < K2; ++j){
+			type v = abs(type(_f2(i,j)));
+			if (v < 100){//INF(type)){
+				maxf = std::max(maxf, double(v));
+			}
+		};
+	};
+	//maxf = std::max(maxf, _f2.maxabs().first);
+	delta = std::min(delta, _f2.second_min().first - _f2.min().first);
+	//recognize and remember _f2
+	//int K1 = _f2.size()[0];
+	//int K2 = _f2.size()[1];
 	// try Potts
 	try{
 		F2[e] = new term2v_potts<type, d_vectorizer>(_f2);
@@ -1496,6 +1511,7 @@ void energy_auto<type>::set_f2(int e, const dynamic::num_array<double, 2> & _f2)
 
 template<typename type>
 void energy_auto<type>::init(){
+	//maxf = 1;
 	double d = std::numeric_limits<type>::digits10;
 	// take digits-3 down from maxf
 	double delta1 = std::max(delta, maxf / pow(10, d - 3));
@@ -1507,7 +1523,7 @@ template<typename type>
 void energy_auto<type>::report(){
 	debug::stream << "Recognized models: " << npotts << "Potts terms, " << ntlinear << "T-Linear terms,\n " 
 		<< ntquadratic << "T-Quadratic terms, " << ndiff << "Diff terms, " << nfull << " Full terms\n";
-	debug::stream << "Max data value: " << maxf << "\n";
+	debug::stream << "X Max data value: " << maxf << "\n";
 	debug::stream << "Min data delta: " << delta << "\n";
 	debug::stream << "Selecting data toolerance: " << 1.0 / mult << "\n";
 };

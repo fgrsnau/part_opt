@@ -28,8 +28,8 @@ typedef sse_float_4 d_vectorizer;
 //typedef float vectorizer;
 
 //typedef double VALUE_TYPE;
-//typedef double type;
-//typedef double vectorizer;
+//typedef double d_type;
+//typedef double d_vectorizer;
 
 
 //int size_align(int size);

@@ -23,7 +23,9 @@ energy_auto<type> * opengm_read(std::string modelFilename, std::string dataset){
 		<
 		opengm::PottsFunction<ValueType>,
 		opengm::PottsNFunction<ValueType>,
-		opengm::ExplicitFunction<ValueType>,
+		//opengm::ExplicitFunction<ValueType>,
+		opengm::ExplicitFunction<float>,
+		opengm::ExplicitFunction<double>,
 		opengm::TruncatedSquaredDifferenceFunction<ValueType>,
 		opengm::TruncatedAbsoluteDifferenceFunction<ValueType>
 		> ::type FunctionTypeList;

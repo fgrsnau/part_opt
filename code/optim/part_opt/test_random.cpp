@@ -148,6 +148,7 @@ int main(int argc, char *argv[]){
 	options ops;
 	// options are set like this:
 	ops["max_CPU"] = 2;
+	//ops["max_it"] = 10;
 	//parese input options
 	for (int i = 1; i < argc; ++i){
 		std::stringstream o(std::string(argv[i]).c_str());

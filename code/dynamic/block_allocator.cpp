@@ -71,6 +71,9 @@ namespace dynamic{
 	__forceinline stack_allocator::~stack_allocator(){
 		//! all objects must have been destroyed
 		assert(empty());
+		if (!empty()){
+			throw debug_exception("buffer is in use");
+		};
 	};
 	__forceinline bool stack_allocator::is_top_block(int * P)const{
 		return (P - overhead == beg());

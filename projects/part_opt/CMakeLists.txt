@@ -409,6 +409,14 @@ ${SRC}/optim/part_opt/test_random.cpp
 )
 
 my_add_executable(test_random ${CPP})
+
+##-----------------------------------------------------------------------------
+
+SET(CPP
+${SRC}/optim/qbranching/qbranching.cpp
+${SRC}/optim/qbranching/test.cpp
+)
+my_add_executable(qbranching ${CPP})
                                  
 #______________opengm______________________
 if(WITH_OPENGM)

@@ -78,22 +78,60 @@ void mexFunction_protect(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prh
 			ops = mx_struct(prhs[6]);
 		};
 		//
-		int K = f1.size()[0];
+		int maxK = f1.size()[0];
 		int nV = f1.size()[1];
 		int nE = E.size()[1];
 		//
 		f->set_nV(nV);
 		f->set_E(E);
-		f->K << K;
-		f->maxK = K;
+		if (X.length() > 0){
+			// count alive labels
+			for (int u = 0; u < nV; ++u){
+				int K = X.subdim<1>(u).sum();
+				f->K[u] = K;
+			};
+		} else{
+			f->K << maxK;
+			X.resize(mint2(maxK, nV));
+			X << 1;
+		};
+		//f->K << K;
+		f->maxK = maxK;
+		num_array<double, 1> _f1(maxK);
 		for (int s = 0; s < nV; ++s){
 			//f->f1[s].resize(K);
 			//f->f1[s] << f1.subdim<1>(s);
-			f->set_f1(s,f1.subdim<1>(s));
+			_f1.resize(f->K[s]);
+			int l = 0;
+			for (int i = 0; i < maxK; ++i){
+				if (X(i, s)){
+					_f1[l] = f1(i, s);
+					++l;
+				};
+			};
+			f->set_f1(s,_f1);
 		};
+		num_array<double, 2> _f2(mint2(maxK,maxK));
 		for (int e = 0; e < nE; ++e){
-			dynamic::num_array<double, 2> df2; df2 = f2.subdim<2>(e);
-			f->set_f2(e, df2);
+			int u = E(0, e);
+			int v = E(1, e);
+			int Ku = f->K[u];
+			int Kv = f->K[v];
+			_f2.resize(mint2(Ku, Kv));
+			int i1 = 0;
+			for (int i = 0; i < maxK; ++i){
+				if (!X(i, u))continue;
+				int j1 = 0;
+				for (int j = 0; j < maxK; ++j){
+					if (!X(j, v))continue;
+					_f2(i1, j1) = f2(i, j, e);
+					++j1;
+				};
+				++i1;
+			};
+			//dynamic::num_array<double, 2> df2; df2 = f2.subdim<2>(e);
+			//dynamic::num_array<double, 2> df2; df2 = f2.subdim<2>(e);
+			f->set_f2(e, _f2);
 		};
 		f->init();
 		f->report();

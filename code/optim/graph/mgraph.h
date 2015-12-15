@@ -49,6 +49,17 @@ namespace datastruct{
 		//! find edge s->t in the list of outcoming edges from s
 		int out_edge(int s,int t);
 	public:
+		//! find v in the incloming list for u (edge v->u local index)
+		int find_in(int u, int v){
+			for (int j = 0; j< in[u].size(); ++j){
+				int e = in[u][j];
+				if (E[e][0] == v){
+					return j;
+				};
+			};
+			return -1;
+		};
+	public:
 		//! Compute approximate minimul graph coloring
 		int greedy_coloring(dynamic::fixed_array1<int> & coloring);
 	public:
