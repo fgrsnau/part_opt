@@ -1,4 +1,5 @@
 #include <string>
+#include <cstring>
 #include <iostream>
 #include <sstream>
 #include "optim/qbranching/qbranching.h"
