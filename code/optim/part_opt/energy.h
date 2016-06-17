@@ -22,9 +22,18 @@ using namespace exttype;
 using namespace dynamic;
 
 // aligns size measured in types to integer # of vectorizers
-template<typename type, typename vectorizer> int v_align(int size);
-template<class vtype> int v_align(int size);
-template<class vtype> mint2 v_align(mint2 size);
+template<typename type, typename vectorizer> int v_align(int size){
+	int V = sizeof(vectorizer) / sizeof(type);
+	return ((size + V - 1) / V) * V; // aligned to multiple of V
+};
+
+template<class vtype> int v_align(int size){
+	return v_align<typename vtype::type, typename vtype::vectorizer>(size);
+};
+
+template<class vtype> mint2 v_align(mint2 size){
+	return mint2(v_align<vtype>(size[0]), v_align<vtype>(size[1]));
+};
 
 
 // itroduce energy with virtual pairwise functions, currently a virtual function returns full pw term
@@ -92,6 +101,9 @@ public: // optimized interface:
 };
 
 template <template<class> class target, typename vtype> class term2v_CRTP_base : public term2v<vtype>{
+public:
+	typedef typename vtype::type type;
+	typedef typename vtype::vectorizer vectorizer;
 public:
 	typedef target<vtype> tsrc;
 	tsrc & self(){ return dynamic_cast<tsrc &>(*this); };
@@ -172,8 +184,8 @@ public: // optimized interface:
 template<typename vtype>
 class term2v_matrix : public term2v_CRTP_base<term2v_matrix, vtype>, public num_array<typename vtype::type, 2, array_allocator<typename vtype::type, 16> > {//public exttype::ivector<fixed_matrix<type>, dynamic::fixed_array2<type> >{
 public:
-	//typedef typename vtype::type type;
-	//typedef typename vtype::vectorizer vectorizer;
+	typedef typename vtype::type type;
+	typedef typename vtype::vectorizer vectorizer;
 private:
 	typedef num_array<type, 2, array_allocator<type, 16> > parent;
 	typedef typename term2v<vtype>::tvect tvect;
@@ -239,6 +251,9 @@ public:
 
 template<class vtype>
 class term2v_diff : public term2v_CRTP_base<term2v_diff, vtype>{
+public:
+	typedef typename vtype::type type;
+	typedef typename vtype::vectorizer vectorizer;
 private:
 	typedef typename term2v<vtype>::tvect tvect;
 	typedef term2v_diff<vtype> tthis;
@@ -257,6 +272,7 @@ public: // implementing interfaces
 		return diags(i - j + size[1] - 1);
 	};
 public:
+	term2v_diff(){};
 	//! construct from a different vectorizer
 	template<class vtype2>
 	term2v_diff(const term2v_diff<vtype2> & X, aallocator * al);
@@ -285,19 +301,23 @@ public:
 //_______________________term2v_potts_______________________________
 template<class vtype>
 class term2v_potts : public term2v_CRTP_base<term2v_potts, vtype>{
+public:
+	typedef typename vtype::type type;
+	typedef typename vtype::vectorizer vectorizer;
+private:
 	typedef typename term2v<vtype>::tvect tvect;
 	typedef term2v_potts<vtype> tthis;
 public:
 	type gamma;
 	mint2 size; // aligned size
 public:
+	term2v_potts(){};
 	template<typename type2> term2v_potts(const dynamic::num_array<type2, 2> & _f2);
 	term2v_potts(mint2 sz, type gamma){
 		if (gamma < 0)throw debug_exception("Will break down with negative gamma");
 		this->gamma = gamma;
 		this->size = sz;
 	};
-	term2v_potts(){};
 	template<class vtype2>
 	term2v_potts(const term2v_potts<vtype2> & a, aallocator * al = 0);
 	//virtual tthis * copy(aallocator * al)const override;
@@ -342,6 +362,10 @@ public:
 //_______________________term2v_tlinear_______________________________
 template<class vtype>
 class term2v_tlinear : public term2v_CRTP_base<term2v_tlinear, vtype>{
+public:
+	typedef typename vtype::type type;
+	typedef typename vtype::vectorizer vectorizer;
+	private:
 	// pairwise function min(gamma*|i-j|,th);
 	typedef typename term2v<vtype>::tvect tvect;
 	typedef term2v_tlinear<vtype> tthis;
@@ -350,6 +374,7 @@ public:
 	type th;
 	mint2 size; // aligned size
 public:
+	term2v_tlinear(){};
 	term2v_tlinear(mint2 sz, type gamma, type th){
 		if (gamma < 0)throw debug_exception("Will break down with negative gamma - non-convex");
 		this->gamma = gamma;
@@ -409,6 +434,10 @@ public:
 //_______________________term2v_tquadratic_______________________________
 template<class vtype>
 class term2v_tquadratic : public term2v_CRTP_base<term2v_tquadratic, vtype>{
+public:
+	typedef typename vtype::type type;
+	typedef typename vtype::vectorizer vectorizer;
+private:
 	// pairwise function min(gamma*|i-j|,th);
 	typedef typename term2v<vtype>::tvect tvect;
 	typedef term2v_tquadratic<vtype> tthis;
@@ -422,6 +451,7 @@ public:
 	type th;
 	mint2 size; // aligned size
 public:
+	term2v_tquadratic(){};
 	//! Try construct from a matrix and throw if not truncated quadratic
 	template<typename type2> term2v_tquadratic(const num_array<type2,2> & matrix, mint2 sza);
 	term2v_tquadratic(mint2 sz, type gamma, type th){
@@ -474,6 +504,9 @@ public:
 //_______________________term2v_matrix_po_____________________________
 template<class vtype>
 class term2v_matrix_po : public term2v_matrix<vtype>{
+public:
+	typedef typename vtype::type type;
+	typedef typename vtype::vectorizer vectorizer;
 private:
 	typedef term2v_matrix<vtype> parent;
 public:
@@ -527,6 +560,10 @@ public: //additional data
 	term2v_matrix_po<vtype> ref;
 #endif
 public:
+	virtual term2_base * construct_copy(aallocator * al, std::type_index id) const override{
+		throw debug_exception("this is not supposed to be called");
+	};
+	/*
 	const tthis & self()const{ return *this; };
 	virtual term2_base * construct_copy(aallocator * al, std::type_index id) const override{
 		if (id == std::type_index(typeid(float_v1))){
@@ -540,6 +577,8 @@ public:
 		};
 		throw debug_exception("not a recognizable vectorizer");
 	};
+	*/
+	term2v_po_reduced(){};
 	// copy constructor from base term2
 	template<class vtype2>
 	term2v_po_reduced(const base<vtype2> & Src, aallocator * al) :_src(Src, al){
@@ -576,13 +615,16 @@ private:
 	virtual void get_col(int j, tvect & r)const override;
 	virtual void get_col_e(const int vK1, int j0, vectorizer * message)const override;
 	virtual int count(int i)const override{ return src().tbase::count(i); };
-private: // instantiate some stuff
-	void test(){
+public: // instantiate some stuff
+	/*
+	bool test(){
 		base<float_v1> x1(_src, 0);
 		base<float_v4> x2(_src, 0);
 		base<double_v1> x3(_src, 0);
 		base<double_v4> x4(_src, 0);
+		return (x1.count(0) == x2.count(0)) && (x3.count(0) == x4.count(0));
 	};
+	*/
 };
 
 //_______________________energy______________________________
@@ -643,6 +685,8 @@ public:
 template<typename type>
 class energy_auto : public energy<type>{
 public:
+	using typename energy<type>::vtype;
+public:
 	typedef typename energy<type>::t_f1 t_f1;
 	typedef typename energy<type>::t_f2 t_f2;
 public:
@@ -678,5 +722,6 @@ public:
 	void report();
 };
 
+bool energy_instances_test();
 
 #endif

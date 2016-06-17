@@ -150,8 +150,8 @@ void test_rand(int rand_inst, int ptype, options & ops, int & nit, double & elim
 	// Print statistics of the model
 	f.report();
 	// Create solver
-	solve<default_vectorizer<type>::vtype>(f, rand_inst, ptype, ops);
-	solve<scalalr_vectorizer<type>::vtype>(f, rand_inst, ptype, ops);
+	solve<typename default_vectorizer<type>::vtype>(f, rand_inst, ptype, ops);
+	solve<typename scalalr_vectorizer<type>::vtype>(f, rand_inst, ptype, ops);
 };
 
 int main(int argc, char *argv[]){

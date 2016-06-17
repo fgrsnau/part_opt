@@ -454,7 +454,7 @@ void alg_po_trws<vtype>::mark_WTA(){
 
 template<class vtype>
 typename alg_po_trws<vtype>::t_f2 * alg_po_trws<vtype>::construct_f2(int e, aallocator * al){
-	typedef typename scalalr_vectorizer<vtype::type>::vtype stype;
+	typedef typename scalalr_vectorizer<typename vtype::type>::vtype stype;
 	if (f2_replaced == 0){ // this is not PO phase yet
 		return parent::construct_f2(e, al);
 	} else{ // this is PO phase, replace pairwise terms with po_reduced

@@ -32,9 +32,29 @@ template<class vtype = float_v4>
 class alg_po_trws : public trws_machine<vtype>{
 public:
 	typedef trws_machine<vtype> parent;
-	//typedef tenergy::t_f2 t_f2;
-	typedef trws_machine<vtype>::t_f2 t_f2;
+	typedef typename trws_machine<vtype>::t_f2 t_f2;
 	typedef energy<typename vtype::type> tenergy;
+	typedef typename parent::node_info node_info;
+	typedef typename parent::edge_info edge_info;
+	typedef typename parent::tvect tvect;
+	typedef typename parent::type type;
+	using parent::nV;
+	using parent::nE;
+	using parent::maxK;
+	using parent::nodes;
+	using parent::edges;
+	using parent::best_E;
+	using parent::best_x;
+	using parent::total_it;
+	using parent::cost;
+	using parent::destroy_core;
+	using parent::init_core;
+	using parent::init_iteration;
+	using parent::exit_reason;
+	using parent::check_get_col;
+	using parent::run_converge;
+	using parent::zero_gap;
+	using parent::target_energy;
 public:
 	tenergy * E0; // initial input energy
 	//energy F; // manipulated energy

@@ -3,7 +3,7 @@
 
 struct float_v4;
 template<typename type> class energy_auto;
-template<class vtype = float_v4> class alg_po_trws;
+template<class vtype> class alg_po_trws;
 
 #include <string>
 #include "dynamic/options.h"

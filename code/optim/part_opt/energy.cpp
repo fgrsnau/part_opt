@@ -8,6 +8,7 @@ using namespace exttype;
 using namespace dynamic;
 using namespace custom_new;
 
+/*
 template<typename type, typename vectorizer>
 int v_align(int size){
 	int V = sizeof(vectorizer) / sizeof(type);
@@ -23,6 +24,7 @@ template<class vtype>
 mint2 v_align(mint2 size){
 	return mint2(v_align<vtype>(size[0]), v_align<vtype>(size[1]));
 };
+*/
 
 /*
 //______________________term2_vcore__________________________________
@@ -1516,49 +1518,48 @@ void energy_auto<type>::cleanup(){
 	};
 };
 
-//template class term2v_po_reduced < float, float > ;
-//template class term2v_po_reduced < float, sse_float_4 > ;
-//template term2v_potts<double_v1>::term2v_potts(const num_array<double, 2> &);
-//template int v_align<float, float>(int size);
-//template int v_align<double, double>(int size);
-//template int v_align<float, sse_float_4>(int size);
-
-template class term2v_potts <double_v4>;
-
 #define instantiate_term2v_po(name)\
 template class term2v_po_reduced <float_v1, name>;\
 template class term2v_po_reduced <float_v4, name >;\
 template class term2v_po_reduced <double_v1, name>;\
-template class term2v_po_reduced <double_v4, name>;
+template class term2v_po_reduced <double_v4, name>;\
+template name<float_v1>::name(const name<float_v1> &, aallocator *);\
+template name<float_v4>::name(const name<float_v1> &, aallocator *);\
+template name<float_v1>::name(const name<float_v4> &, aallocator *);\
+template name<float_v4>::name(const name<float_v4> &, aallocator *);\
+template name<double_v1>::name(const name<float_v1> &, aallocator *);\
+template name<double_v4>::name(const name<float_v1> &, aallocator *);\
+template name<double_v1>::name(const name<float_v4> &, aallocator *);\
+template name<double_v4>::name(const name<float_v4> &, aallocator *);\
+template name<float_v1>::name(const name<double_v1> &, aallocator *);\
+template name<float_v4>::name(const name<double_v1> &, aallocator *);\
+template name<float_v1>::name(const name<double_v4> &, aallocator *);\
+template name<float_v4>::name(const name<double_v4> &, aallocator *);\
+template name<double_v1>::name(const name<double_v1> &, aallocator *);\
+template name<double_v4>::name(const name<double_v1> &, aallocator *);\
+template name<double_v1>::name(const name<double_v4> &, aallocator *);\
+template name<double_v4>::name(const name<double_v4> &, aallocator *);\
 
-//#define instantiate_term2v_po(name) template class term2v_po_reduced <float,float, name>;
+/*
+#define test_term2v_po(name)\
+	{\
+		name<float_v1>(name<float_v4>(),0);\
+		term2v_po_reduced <float_v1, name> x1; \
+		r = r && x1.test(); \
+		term2v_po_reduced <float_v4, name> x2; \
+		r = r && x2.test(); \
+		term2v_po_reduced <double_v1, name> x3; \
+		r = r && x3.test(); \
+		term2v_po_reduced <double_v4, name> x4; \
+		r = r && x4.test(); \
+};
+*/
 
 instantiate_term2v_po(term2v_potts)
 instantiate_term2v_po(term2v_tlinear)
 instantiate_term2v_po(term2v_tquadratic)
 instantiate_term2v_po(term2v_diff)
 instantiate_term2v_po(term2v_matrix)
-
-
-template class term2v_po_reduced <float_v1, term2v_potts>;
-
-/*
-template class term2v_po_reduced <term2v_tlinear<float, float> >;
-template class term2v_po_reduced <term2v_tlinear<double, double> >;
-template class term2v_po_reduced <term2v_tlinear<float, sse_float_4> >;
-
-template class term2v_po_reduced <term2v_tquadratic<float, float> >;
-template class term2v_po_reduced <term2v_tquadratic<double, double> >;
-template class term2v_po_reduced <term2v_tquadratic<float, sse_float_4> >;
-
-template class term2v_po_reduced <term2v_diff<float, float> >;
-template class term2v_po_reduced <term2v_diff<double, double> >;
-template class term2v_po_reduced <term2v_diff<float, sse_float_4> >;
-
-template class term2v_po_reduced <term2v_matrix<float, float> >;
-template class term2v_po_reduced <term2v_matrix<double, double> >;
-template class term2v_po_reduced <term2v_matrix<float, sse_float_4> > ;
-*/
 
 template class term2v_matrix_po <float_v1>;
 template class term2v_matrix_po <float_v4>;
@@ -1570,25 +1571,28 @@ template class term2v_matrix <float_v4>;
 template class term2v_matrix <double_v1>;
 template class term2v_matrix <double_v4>;
 
-//template class term2v_potts < double >;
-
-//template class energy_auto <double, double>;
-//template class energy < float >;
 template class energy_auto < float >;
 template class energy_auto < double >;
 
-//template class energy < double >;
-//template class energy_auto < double >;
+//template mint2 v_align<float_v1>(mint2 size);
+//template mint2 v_align<float_v4>(mint2 size);
+//template mint2 v_align<double_v1>(mint2 size);
+//template mint2 v_align<double_v4>(mint2 size);
 
-//template class energy_auto <float>;
-/*
-void bla(){
-	energy_auto < type > E;
-	intf z(0);
-	E.cost(z);
+bool energy_instances_test(){
+	bool r = false;
+	/*
+	test_term2v_po(term2v_potts);
+	test_term2v_po(term2v_tlinear);
+	test_term2v_po(term2v_tquadratic);
+	test_term2v_po(term2v_diff);
+	test_term2v_po(term2v_matrix);
+	{
+		aallocator * al = 0;
+		term2v_diff<float_v4> y;
+		term2v_diff<float_v1> x(y, al);
+	};
+	*/
+	return r;
 };
-*/
 
-void test(){
-	term2v_po_reduced<float_v1, term2v_potts> a(term2v_potts<float_v1>(), 0);
-};
