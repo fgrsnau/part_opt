@@ -45,3 +45,7 @@ projects/part_opt/CMakeCache.txt
 *.exp
 
 *.opensdf
+
+build*
+
+/build*
