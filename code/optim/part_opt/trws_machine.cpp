@@ -19,8 +19,8 @@
 #define PREFETCH0(p) _mm_prefetch((char*)(p), _MM_HINT_T0);
 #define CL1 64
 
-template<class type, class vectorizer>
-template<bool dir_fw, bool measure> void trws_machine<type, vectorizer>::line_update(const node_info_core * v, const node_info_core * v_end, line_compute_struct<type> & temp){
+template<class vtype>
+template<bool dir_fw, bool measure> void trws_machine<vtype>::line_update(const node_info_core * v, const node_info_core * v_end, line_compute_struct<type> & temp){
 	const int V = sizeof(vectorizer) / sizeof(type);
 	int maxKa = v_align<type, vectorizer>(maxK);
 	vectorizer * const t1 = (vectorizer*)_alloca(sizeof(type)*maxKa);
@@ -257,8 +257,8 @@ template<bool dir_fw, bool measure> void trws_machine<type, vectorizer>::line_up
 	};
 };
 
-template<class type, class vectorizer>
-template<bool dir_fw, bool measure> void trws_machine<type, vectorizer>::run_dir(){
+template<class vtype>
+template<bool dir_fw, bool measure> void trws_machine<vtype>::run_dir(){
 	if (measure){
 		LB = 0;
 		dPhi = 0;
@@ -326,22 +326,22 @@ template<bool dir_fw, bool measure> void trws_machine<type, vectorizer>::run_dir
 	};
 };
 
-template<class type, class vectorizer>
-template<bool measure> void trws_machine<type, vectorizer>::run_forward_backward(){
+template<class vtype>
+template<bool measure> void trws_machine<vtype>::run_forward_backward(){
 	run_dir<true, false>();
 	run_dir<false, measure>(); // only backward pass measures
 	int z = 0;
 };
 
-template<class type, class vectorizer>
-void trws_machine<type, vectorizer>::set_y(const intf & y){
+template<class vtype>
+void trws_machine<vtype>::set_y(const intf & y){
 	for (int v = 0; v < nV; ++v){
 		nodes[v].core->y = y[v];
 	};
 };
 
-template<class type, class vectorizer>
-void trws_machine<type, vectorizer>::init_iteration(){//! do a backward pass to restore partial sums in bw, assume given messages from a backward pass
+template<class vtype>
+void trws_machine<vtype>::init_iteration(){//! do a backward pass to restore partial sums in bw, assume given messages from a backward pass
 	for (int l = SG.nn.size() - 1; l >= 0; --l){//dummy backward pass
 		int nl = SG.nn[l];
 		for (int i = 0; i < nl; ++i){
@@ -356,8 +356,8 @@ void trws_machine<type, vectorizer>::init_iteration(){//! do a backward pass to 
 	};
 };
 
-template<class type, class vectorizer>
-void trws_machine<type, vectorizer>::renormalize_to_y(){//! normalization such that message is zero at y
+template<class vtype>
+void trws_machine<vtype>::renormalize_to_y(){//! normalization such that message is zero at y
 	for (int l = SG.nn.size() - 1; l >= 0; --l){//backward pass
 		int nl = SG.nn[l];
 		for (int i = 0; i < nl; ++i){
@@ -373,8 +373,8 @@ void trws_machine<type, vectorizer>::renormalize_to_y(){//! normalization such t
 };
 
 
-template<class type, class vectorizer>
-void trws_machine<type, vectorizer>::run(int niter){
+template<class vtype>
+void trws_machine<vtype>::run(int niter){
 	//data_total = 0;
 	// run niter-1 without measure
 	for (int it = 0; it < niter - 1; ++it){
@@ -389,8 +389,8 @@ void trws_machine<type, vectorizer>::run(int niter){
 	total_it += niter;
 };
 
-template<class type, class vectorizer>
-void trws_machine<type, vectorizer>::run_converge(double target_E){
+template<class vtype>
+void trws_machine<vtype>::run_converge(double target_E){
 	int maxit = ops->max_it;
 	exit_reason = error;
 	best_E = INF(type);
@@ -471,13 +471,13 @@ void trws_machine<type, vectorizer>::run_converge(double target_E){
 	hist.resize(mint2(4, it)); // in case when finished earlier
 };
 
-template<class type, class vectorizer>
-void trws_machine<type, vectorizer>::destroy_core(){
+template<class vtype>
+void trws_machine<vtype>::destroy_core(){
 	aligned_block.destroy();
 };
 
-template<class type, class vectorizer>
-void trws_machine<type, vectorizer>::init(energy<type> * E){
+template<class vtype>
+void trws_machine<vtype>::init(energy<type> * E){
 	debug::PerformanceCounter c1;
 	this->E = E;
 	ops->conv_tol = E->tolerance*ops->rel_conv_tol;
@@ -496,14 +496,17 @@ void trws_machine<type, vectorizer>::init(energy<type> * E){
 	init_core();
 };
 
-template<class type, class vectorizer>
-term2v<type, vectorizer> * trws_machine<type, vectorizer>::construct_f2(int e, aallocator * al){
+template<class vtype>
+typename trws_machine<vtype>::t_f2 * trws_machine<vtype>::construct_f2(int e, aallocator * al){
 	// default to construct from E0
-	return dynamic_cast<t_f2 *>(E->f2(e).copy(al));
+	//return dynamic_cast<t_f2 *>(E->f2(e).copy(al));
+	// here we do not know true type of E->f2(e)
+	// need to create a copy of E->f2(e) with a new vectorizer -- template virtual function
+	return dynamic_cast<t_f2 *>( E->f2(e).construct_copy(al, typeid(vtype)) );
 };
 
-template<class type, class vectorizer>
-void trws_machine<type, vectorizer>::init_core(){
+template<class vtype>
+void trws_machine<vtype>::init_core(){
 	total_write = 0;
 	// calculate size and placement, then allocate
 	for (full_iterator ii(this); ii.valid(); ++ii){
@@ -705,8 +708,8 @@ void trws_machine<type, vectorizer>::init_core(){
 	};
 };
 
-template<class type, class vectorizer>
-void trws_machine<type, vectorizer>::set_f2(edge_info & ee, t_f2 * f2){
+template<class vtype>
+void trws_machine<vtype>::set_f2(edge_info & ee, t_f2 * f2){
 	ee.core->f2 = f2;
 	//ee.core->f2_data = f2->data_ptr();
 	node_info * tail = ee.tail;
@@ -725,8 +728,8 @@ void trws_machine<type, vectorizer>::set_f2(edge_info & ee, t_f2 * f2){
 	};
 };
 
-template<class type, class vectorizer>
-double trws_machine<type, vectorizer>::cost(const intf & x)const{
+template<class vtype>
+double trws_machine<vtype>::cost(const intf & x)const{
 	double r = 0;
 	for (int s = 0; s < nV; ++s){
 		const node_info & v = nodes[s];
@@ -747,8 +750,8 @@ double trws_machine<type, vectorizer>::cost(const intf & x)const{
 	return r;
 };
 
-template<class type, class vectorizer>
-void trws_machine<type, vectorizer>::set_M(const num_array<double, 2> & M){
+template<class vtype>
+void trws_machine<vtype>::set_M(const num_array<double, 2> & M){
 	if (M.size()[1] < nE){
 		debug::stream << "initial M is empty\n";
 		for (int e = 0; e < nE; ++e){
@@ -762,8 +765,8 @@ void trws_machine<type, vectorizer>::set_M(const num_array<double, 2> & M){
 	init_iteration(); // restore bw sums
 };
 
-template<class type, class vectorizer>
-void trws_machine<type, vectorizer>::get_M(num_array<double, 2> & M){
+template<class vtype>
+void trws_machine<vtype>::get_M(num_array<double, 2> & M){
 	//M.resize(mint2(K, nE));
 	for (int e = 0; e < nE; ++e){
 		M.subdim<1>(e) << edges[e].msg;
@@ -775,8 +778,8 @@ void trws_machine<type, vectorizer>::get_M(num_array<double, 2> & M){
 	};
 };
 
-template<class type, class vectorizer>
-void trws_machine<type, vectorizer>::get_message(int e, bool forward, std::vector<type> & x){
+template<class vtype>
+void trws_machine<vtype>::get_message(int e, bool forward, std::vector<type> & x){
 	if (!forward){
 		edge_info & ee = edges[e];
 		node_info * S = ee.tail;
@@ -807,11 +810,11 @@ void trws_machine<type, vectorizer>::get_message(int e, bool forward, std::vecto
 };
 
 /*
-template<class type, class vectorizer> void trws_machine<type, vectorizer>::f_msgs::init(){
+template<class vtype> void trws_machine<vtype>::f_msgs::init(){
 	msg_valid = false;
 };
 
-template<class type, class vectorizer> void trws_machine<type, vectorizer>::f_msgs::update(){
+template<class vtype> void trws_machine<vtype>::f_msgs::update(){
 	m.resize(p->nE);
 	// forward pass without averaging
 	for (full_iterator ii(this); ii.valid(); ++ii){
@@ -824,13 +827,13 @@ template<class type, class vectorizer> void trws_machine<type, vectorizer>::f_ms
 	};
 };
 
-template<class type, class vectorizer> void trws_machine<type, vectorizer>::f_msgs::invalidate(){
+template<class vtype> void trws_machine<vtype>::f_msgs::invalidate(){
 	msg_valid = false;
 };
 */
 
-template<class type, class vectorizer>
-type trws_machine<type, vectorizer>::vertex_coeff(node_info & v, type multiplier){
+template<class vtype>
+typename vtype::type trws_machine<vtype>::vertex_coeff(node_info & v, type multiplier){
 	type coeff;
 	int n_in = v.in.size();
 	int n_out = v.out.size();
@@ -845,22 +848,22 @@ type trws_machine<type, vectorizer>::vertex_coeff(node_info & v, type multiplier
 	return coeff;
 };
 
-template<class type, class vectorizer>
-trws_machine<type, vectorizer>::trws_machine(){
+template<class vtype>
+trws_machine<vtype>::trws_machine(){
 	//info_core = 0;
 	ops = &_ops;
 //	debug_LB = false;
 };
 
-template<class type, class vectorizer>
-trws_machine<type, vectorizer>::~trws_machine(){
+template<class vtype>
+trws_machine<vtype>::~trws_machine(){
 	//if (info_core){
 	//	mfree(info_core);
 	//};
 };
 
-template<class type, class vectorizer>
-void trws_machine<type, vectorizer>::check_get_col(){
+template<class vtype>
+void trws_machine<vtype>::check_get_col(){
 #ifdef _DEBUG
 	const int V = sizeof(vectorizer) / sizeof(type);
 	int maxKa = v_align<type, vectorizer>(maxK);
@@ -896,8 +899,8 @@ void trws_machine<type, vectorizer>::check_get_col(){
 	};
 #endif
 };
-template<typename type, typename vectorizer>
-int trws_machine<type, vectorizer>::get_num_chunks()const{
+template<class vtype>
+int trws_machine<vtype>::get_num_chunks()const{
 	int NT = 1;
 #if defined(USE_OPENMP) // || defined(_OPENMP)	
 	NT = ops->max_CPU;
@@ -905,19 +908,19 @@ int trws_machine<type, vectorizer>::get_num_chunks()const{
 	return NT;
 };
 
-template<typename type, typename vectorizer>
-bool trws_machine<type, vectorizer>::chunk_iterator::valid()const{
+template<class vtype>
+bool trws_machine<vtype>::chunk_iterator::valid()const{
 	return th_id < p->get_num_chunks();
 };
 
-template<typename type, typename vectorizer>
-bool trws_machine<type, vectorizer>::slice_iterator::valid()const{
+template<class vtype>
+bool trws_machine<vtype>::slice_iterator::valid()const{
 	if (!ci.valid())return false;
 	return(l < ci.p->SG.nn.size());
 };
 
-template<typename type, typename vectorizer>
-int trws_machine<type, vectorizer>::slice_iterator::line_begin()const{
+template<class vtype>
+int trws_machine<vtype>::slice_iterator::line_begin()const{
 	if (!valid())return -1;
 	if (th_id() == 0){
 		return 0;
@@ -935,8 +938,8 @@ int trws_machine<type, vectorizer>::slice_iterator::line_begin()const{
 	return block*th_id();
 };
 
-template<typename type, typename vectorizer>
-int trws_machine<type, vectorizer>::slice_iterator::line_end()const{
+template<class vtype>
+int trws_machine<vtype>::slice_iterator::line_end()const{
 	if (!valid())return -1;
 	/*
 	int n = ci.p->SG.nn[l]; // number of nodes in line
@@ -956,8 +959,8 @@ int trws_machine<type, vectorizer>::slice_iterator::line_end()const{
 	return end;
 };
 
-template<typename type, typename vectorizer>
-typename trws_machine<type, vectorizer>::node_info * trws_machine<type, vectorizer>::slice_iterator::first()const{
+template<class vtype>
+typename trws_machine<vtype>::node_info * trws_machine<vtype>::slice_iterator::first()const{
 	line_iterator li(*this);
 	if (!li.valid()){
 		return 0;
@@ -965,8 +968,8 @@ typename trws_machine<type, vectorizer>::node_info * trws_machine<type, vectoriz
 	return &ci.p->nodes[li.s()];
 };
 
-template<typename type, typename vectorizer>
-typename trws_machine<type, vectorizer>::node_info * trws_machine<type, vectorizer>::slice_iterator::last()const{
+template<class vtype>
+typename trws_machine<vtype>::node_info * trws_machine<vtype>::slice_iterator::last()const{
 	int i = line_end() - 1;
 	if (i < line_begin()){
 		return 0;
@@ -975,18 +978,19 @@ typename trws_machine<type, vectorizer>::node_info * trws_machine<type, vectoriz
 	return &ci.p->nodes[s];
 };
 
-template<typename type, typename vectorizer>
-bool trws_machine<type, vectorizer>::line_iterator::valid()const{
+template<class vtype>
+bool trws_machine<vtype>::line_iterator::valid()const{
 	if (!si.valid())return false;
 	return i < si.line_end();
 };
 
-template<typename type, typename vectorizer>
-int trws_machine<type, vectorizer>::line_iterator::s()const{
+template<class vtype>
+int trws_machine<vtype>::line_iterator::s()const{
 	return p->SG.levels[p->SG.level_start[l()] + i];
 };
 
 //_____________instances______________________
-template class trws_machine < float, float >;
-template class trws_machine < double, double >;
-template class trws_machine < float, sse_float_4 >;
+template class trws_machine <float_v1>;
+template class trws_machine <float_v4>;
+template class trws_machine <double_v1>;
+template class trws_machine <double_v4>;

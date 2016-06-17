@@ -45,10 +45,15 @@ public:
 	double * val; // pointer to where it is located in map, should be safe under insertionn, etc
 public:
 	//! quick read access
+	operator type()const;
+	/*
 	operator type()const{
 		//return type((*ops)[name]);
 		return (type)(*val);
 	};
+	*/
+	
+	//operator type() const;
 	toption(std::string name, type dvalue, options * ops){
 		this->name = name;
 		this->ops = ops;
@@ -66,6 +71,12 @@ public:
 		(*this) = type(o2);
 	};
 };
+
+template<class type> toption<type>::operator type()const{
+	return (type)(*val);
+};
+
+template<> toption<bool>::operator bool()const;
 
 #define NEWOPTION(type,name,dvalue) toption<type> name = toption<type>(#name,dvalue, this);
 

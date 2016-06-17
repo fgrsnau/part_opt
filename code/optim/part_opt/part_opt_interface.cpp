@@ -8,7 +8,7 @@ void energy_read_K(int v, int K);
 
 template<typename type>
 part_opt_interface<type>::part_opt_interface(){
-	energy = new energy_auto<compute_type>();
+	energy = new energy_auto<type>();
 	alg = 0;
 };
 
@@ -83,7 +83,7 @@ void part_opt_interface<type>::energy_init1(){
 	energy->init();
 	energy->report();
 	clear_alg();
-	alg = new alg_po_trws();
+	alg = new alg_po_trws<vtype>();
 	ops = & alg->ops;
 };
 
@@ -118,4 +118,4 @@ bool part_opt_interface<type>::is_alive(int v, int k){
 
 template class part_opt_interface < float >;
 template class part_opt_interface < double >;
-template class part_opt_interface < int >;
+//template class part_opt_interface < int >;

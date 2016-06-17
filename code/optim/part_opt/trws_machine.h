@@ -21,10 +21,12 @@ using namespace dynamic;
 /*! trws_machine -- Tree Reweighted Message Passing with some low level optimization
 type - compute type: float or double, vectorizer = type x N, hardware vector arithmetic operations 
 */
-template<class type, class vectorizer> class trws_machine : public msg_alg{
+template<class vtype = float_v4> class trws_machine : public msg_alg{
 public:
+	typedef typename vtype::type type;
+	typedef typename vtype::vectorizer vectorizer;
 	typedef exttype::fixed_vect<type> tvect;
-	typedef term2v<type, vectorizer> t_f2;
+	typedef term2v<vtype> t_f2;
 protected:
 	struct node_info;
 	struct edge_info;
@@ -67,7 +69,7 @@ protected:
 		int y;
 		//int offset_next; // unused
 	private:
-		friend class trws_machine;
+		friend class trws_machine<vtype>;
 		vectorizer * __r1;
 		vectorizer * _f1(){ return data + vK; };
 		const vectorizer * _f1()const{ return data + vK; };
@@ -251,13 +253,13 @@ private:
 	private:
 		dynamic::fixed_array1<tvect> m;
 		bool msg_valid;
-		trws_machine<type, vectorizer> * p;
+		trws_machine<vtype> * p;
 		void update();
 	//protected:
 		//friend class trws_machine;
 		void init();
 	public:
-		f_msgs(trws_machine<type, vectorizer> * _p) :p(_p){ init(); };
+		f_msgs(trws_machine<vtype> * _p) :p(_p){ init(); };
 		void invalidate();
 		type * get_message(int e);
 	};
@@ -266,8 +268,8 @@ private:
 	int get_num_chunks()const;
 	struct chunk_iterator{
 		int th_id;
-		trws_machine<type, vectorizer> * p;
-		chunk_iterator(trws_machine<type, vectorizer> * _p):p(_p){
+		trws_machine<vtype> * p;
+		chunk_iterator(trws_machine<vtype> * _p):p(_p){
 			restart();
 		};
 		chunk_iterator(const chunk_iterator & I) :p(I.p),th_id(I.th_id){
@@ -316,7 +318,7 @@ private:
 
 	struct line_iterator{
 	private:
-		trws_machine<type, vectorizer> * p;
+		trws_machine<vtype> * p;
 		int i; // index within layer
 	public:
 		const slice_iterator & si;
@@ -353,7 +355,7 @@ private:
 	};
 
 	struct full_iterator{
-		trws_machine<type, vectorizer> * p;
+		trws_machine<vtype> * p;
 	public:
 		chunk_iterator ci;
 		slice_iterator si;
@@ -361,7 +363,7 @@ private:
 		int s()const{
 			return li.s();
 		};
-		full_iterator(trws_machine<type, vectorizer> * _p) :p(_p), ci(_p), si(ci), li(si){
+		full_iterator(trws_machine<vtype> * _p) :p(_p), ci(_p), si(ci), li(si){
 		};
 		full_iterator(const full_iterator & I) :p(I.p), ci(I.ci), si(I.si, ci), li(I.li, si){
 		};

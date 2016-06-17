@@ -8,32 +8,25 @@ using namespace exttype;
 using namespace dynamic;
 using namespace custom_new;
 
-
-/*
-int size_align(int size){
-return ((size + 3) / 4) * 4; // aligned to multiple of 4
-};
-
-void check_align(int size){
-if (size % 4 != 0){
-throw debug_exception("bad");
-};
-};
-
-mint2 size_align(const mint2 & size){
-return ((size + 3) / 4) * 4; // aligned to multiple of 4
-};
-*/
-
 template<typename type, typename vectorizer>
 int v_align(int size){
 	int V = sizeof(vectorizer) / sizeof(type);
 	return ((size + V - 1) / V) * V; // aligned to multiple of V
 };
 
+template<class vtype>
+int v_align(int size){
+	return v_align<typename vtype::type, typename vtype::vectorizer>(size);
+};
+
+template<class vtype>
+mint2 v_align(mint2 size){
+	return mint2(v_align<vtype>(size[0]), v_align<vtype>(size[1]));
+};
+
 /*
 //______________________term2_vcore__________________________________
-template<typename type, typename vectorizer>
+template<class vtype>
 void term2_vcore<type,vectorizer>::min_sum_e(const int vK1, vectorizer * source, vectorizer * message)const{
 	int V = sizeof(vectorizer) / sizeof(type);
 	int K1 = vK1*V;
@@ -42,8 +35,8 @@ void term2_vcore<type,vectorizer>::min_sum_e(const int vK1, vectorizer * source,
 	src->min_sum(a, r);
 };
 
-template<typename type, typename vectorizer>
-void term2_vcore<type, vectorizer>::min_sum_et(const int vK1, vectorizer * source, vectorizer * message)const{
+template<class vtype>
+void term2_vcore<vtype>::min_sum_et(const int vK1, vectorizer * source, vectorizer * message)const{
 	int V = sizeof(vectorizer) / sizeof(type);
 	int K1 = vK1*V;
 	tvect a; a.set_ref(source, K1);
@@ -54,35 +47,39 @@ void term2_vcore<type, vectorizer>::min_sum_et(const int vK1, vectorizer * sourc
 
 
 //_______________________term2v_matrix________________________________
-template<typename type, typename vectorizer>
-term2v_matrix<type, vectorizer>::term2v_matrix(const term2v_matrix & X, aallocator * al){
-	// put matrix on allocator
-	type * data = al->allocate_a<type>(X.length());
+template<class vtype>
+void term2v_matrix<vtype>::construct(const mint2 & sz, aallocator * al){
+	int K1a = v_align<vtype>(sz[0]);
+	int K2a = v_align<vtype>(sz[1]);
+	type * data = al->allocate_a<type>(K1a*K2a);
 	assert(this->is_empty());
-	this->set_ref(data,X.size());
+	this->set_ref(data, mint2(K1a, K2a));
+};
+
+
+template<class vtype>
+template<class vtype2>
+term2v_matrix<vtype>::term2v_matrix(const term2v_matrix<vtype2> & X, aallocator * al){
+	construct(v_align<vtype>(X.size()), al);
 	// copy data
-	if (data){
+	if (begin()){
 		(*this) << X;
 	};
 };
 
-template<typename type, typename vectorizer>
-term2v_matrix<type, vectorizer>::term2v_matrix(const mint2 & sz, aallocator * al){
-	int K1a = v_align<type, vectorizer>(sz[0]);
-	int K2a = v_align<type, vectorizer>(sz[1]);
-	type * data = al->allocate_a<type>(K1a*K2a);
-	assert(this->is_empty());
-	this->set_ref(data, mint2(K1a, K2a));
-	if (data){
+template<class vtype>
+term2v_matrix<vtype>::term2v_matrix(const mint2 & sz, aallocator * al){
+	construct(sz, al);
+	if (begin()){
 		(*this) << 0;
 	};
 };
 
-template<typename type, typename vectorizer>
+template<class vtype>
 template<typename type2> 
-term2v_matrix<type, vectorizer>::term2v_matrix(const num_array<type2, 2> & m){
+term2v_matrix<vtype>::term2v_matrix(const num_array<type2, 2> & m){
 	const int V = sizeof(vectorizer) / sizeof(type);
-	mint2 sz = mint2(v_align<type, vectorizer>(m.size()[0]), v_align<type, vectorizer>(m.size()[1]));
+	mint2 sz = v_align<vtype>(m.size());
 	this->resize(sz);
 	int K1 = m.size()[0];
 	int K2 = m.size()[1];
@@ -97,8 +94,8 @@ term2v_matrix<type, vectorizer>::term2v_matrix(const num_array<type2, 2> & m){
 };
 
 
-template<typename type, typename vectorizer>
-void term2v_matrix<type, vectorizer>::min_sum(tvect& Src, tvect & Dest)const{
+template<class vtype>
+void term2v_matrix<vtype>::min_sum(tvect& Src, tvect & Dest)const{
 	const type * pdata = this->begin();
 	int stride = this->stride(0, 1);
 	for (int j = 0; j < Dest.size(); ++j){
@@ -115,8 +112,8 @@ void term2v_matrix<type, vectorizer>::min_sum(tvect& Src, tvect & Dest)const{
 	return;
 };
 
-template<typename type, typename vectorizer>
-void term2v_matrix<type, vectorizer>::min_sum_t(tvect& Src, tvect & Dest)const{
+template<class vtype>
+void term2v_matrix<vtype>::min_sum_t(tvect& Src, tvect & Dest)const{
 	const type * pdata = this->begin();
 	for (int i = 0; i < Dest.size(); ++i){
 		Dest[i] = Src[0] + pdata[i];
@@ -133,9 +130,9 @@ void term2v_matrix<type, vectorizer>::min_sum_t(tvect& Src, tvect & Dest)const{
 	};
 };
 
-template<typename type, typename vectorizer>
-void term2v_matrix<type, vectorizer>::min_sum_e(const int vK1, vectorizer * source, vectorizer * message)const{
-	//return term2v<type, vectorizer>::min_sum_e(vK1, source, message);
+template<class vtype>
+void term2v_matrix<vtype>::min_sum_e(const int vK1, vectorizer * source, vectorizer * message)const{
+	//return term2v<vtype>::min_sum_e(vK1, source, message);
 	//
 	const int K2 = this->size()[1];
 	const vectorizer * pdata = (const vectorizer*)this->begin();
@@ -177,9 +174,9 @@ void term2v_matrix<type, vectorizer>::min_sum_e(const int vK1, vectorizer * sour
 	*/
 };
 
-template<typename type, typename vectorizer>
-void term2v_matrix<type, vectorizer>::min_sum_et(const int vK1, vectorizer * source, vectorizer * message)const{
-	//return term2v<type, vectorizer>::min_sum_et(vK1, source, message);
+template<class vtype>
+void term2v_matrix<vtype>::min_sum_et(const int vK1, vectorizer * source, vectorizer * message)const{
+	//return term2v<vtype>::min_sum_et(vK1, source, message);
 	//
 	
 	const int K1 = this->size()[1];
@@ -239,14 +236,12 @@ void term2v_matrix<type, vectorizer>::min_sum_et(const int vK1, vectorizer * sou
 
 
 //_______________________term2v_diff________________________________
-template<typename type, typename vectorizer>
-template<typename type2> term2v_diff<type, vectorizer>::term2v_diff(const num_array<type2, 2> & m){
-	const int V = sizeof(vectorizer) / sizeof(type);
-	size = mint2(v_align<type, vectorizer>(m.size()[0]), v_align<type, vectorizer>(m.size()[1]));
-	//if (m.size()[0] != m.size[1])throw quiet_exception("not square");
+
+template<class vtype>
+template<typename type2> term2v_diff<vtype>::term2v_diff(const num_array<type2, 2> & m){
+	size = v_align<vtype>(m.size());
 	int K1 = m.size()[0];
 	int K2 = m.size()[1];
-	//if (K1 != K2)throw quiet_exception("diff: not square"); // only accept square matrices here
 	if (K1 < 2 || K2 < 2) throw quiet_exception("diff: too small"); // too small to bother
 	int aK1 = this->size[0];
 	int aK2 = this->size[1];
@@ -276,8 +271,29 @@ template<typename type2> term2v_diff<type, vectorizer>::term2v_diff(const num_ar
 	};
 };
 
-template<typename type, typename vectorizer>
-void term2v_diff<type, vectorizer>::min_sum(tvect& Src, tvect & Dest)const{
+template<class vtype>
+template<class vtype2>
+term2v_diff<vtype>::term2v_diff(const term2v_diff<vtype2> & X, aallocator * al){
+	size = v_align<vtype>(X.size);
+	int d_size = size[0] + size[1] - 1;
+	//
+	type * v1 = al->allocate_a<type>(d_size);
+	type * v2 = al->allocate_a<type>(d_size);
+	if (v1){
+		assert(diags.empty());
+		diags.set_ref(v1, d_size);
+		diags << X.diags;
+	};
+	if (v2){
+		assert(rdiags.empty());
+		rdiags.set_ref(v2, d_size);
+		rdiags << X.rdiags;
+	};
+};
+
+
+template<class vtype>
+void term2v_diff<vtype>::min_sum(tvect& Src, tvect & Dest)const{
 	for (int j = 0; j < this->size[1]; ++j){
 		type m = INF(type);
 		for (int i = 0; i < this->size[0]; ++i){
@@ -287,8 +303,8 @@ void term2v_diff<type, vectorizer>::min_sum(tvect& Src, tvect & Dest)const{
 	};
 };
 
-template<typename type, typename vectorizer>
-void term2v_diff<type, vectorizer>::min_sum_t(tvect& Src, tvect & Dest)const{
+template<class vtype>
+void term2v_diff<vtype>::min_sum_t(tvect& Src, tvect & Dest)const{
 	for (int j = 0; j < this->size[0]; ++j){
 		type m = INF(type);
 		for (int i = 0; i < this->size[1]; ++i){
@@ -298,9 +314,9 @@ void term2v_diff<type, vectorizer>::min_sum_t(tvect& Src, tvect & Dest)const{
 	};
 };
 
-template<typename type, typename vectorizer>
-void term2v_diff<type, vectorizer>::min_sum_e(const int vK1, vectorizer * source, vectorizer * message)const{
-	//return term2v<type, vectorizer>::min_sum_e(vK1, source, message);
+template<class vtype>
+void term2v_diff<vtype>::min_sum_e(const int vK1, vectorizer * source, vectorizer * message)const{
+	//return term2v<vtype>::min_sum_e(vK1, source, message);
 	//
 	//int K1 = size()[0];
 	//const int V = sizeof(vectorizer) / sizeof(type);
@@ -331,9 +347,9 @@ void term2v_diff<type, vectorizer>::min_sum_e(const int vK1, vectorizer * source
 	};
 };
 
-template<typename type, typename vectorizer>
-void term2v_diff<type, vectorizer>::min_sum_et(const int vK1, vectorizer * source, vectorizer * message)const{
-	//return term2v<type, vectorizer>::min_sum_et(vK1, source, message);
+template<class vtype>
+void term2v_diff<vtype>::min_sum_et(const int vK1, vectorizer * source, vectorizer * message)const{
+	//return term2v<vtype>::min_sum_et(vK1, source, message);
 	const int V = sizeof(vectorizer) / sizeof(type);
 	//typedef type unaligned[V];
 	//struct unaligned{
@@ -361,8 +377,8 @@ void term2v_diff<type, vectorizer>::min_sum_et(const int vK1, vectorizer * sourc
 	};
 };
 
-template<typename type, typename vectorizer>
-void term2v_diff<type, vectorizer>::get_col_e(const int vK1, int j0, vectorizer * message)const{
+template<class vtype>
+void term2v_diff<vtype>::get_col_e(const int vK1, int j0, vectorizer * message)const{
 	typedef unaligned<type, vectorizer> tu;
 	const tu * up = (const tu*)&diags(0 - j0 + size[1] - 1);
 	//tu * um = (tu*)message;
@@ -372,122 +388,29 @@ void term2v_diff<type, vectorizer>::get_col_e(const int vK1, int j0, vectorizer 
 	};
 };
 
-
-//_______________________term2v_matrix_po______________________________
-
-/*
-template<typename type, typename vectorizer>
-void term2v_matrix_po<type, vectorizer>::init(term2v<type,vectorizer> * m, int K1, int K2){
-	int K1a = v_align<type, vectorizer>(K1);
-	int K2a = v_align<type, vectorizer>(K2);
-	source = m;
-	this->resize(mint2(K1a, K2a));
-	(*this) << 0;
-};
-*/
-
-template<typename type, typename vectorizer>
-void term2v_matrix_po<type, vectorizer>::reduce(po_mask & U_s, int y_s, po_mask & U_t, int y_t){
-	int K1 = parent::size()[0];
-	int K2 = parent::size()[1];
-	// reduce energy
-	assert(U_s[y_s]);
-	assert(U_t[y_t]);
-	for (int k1 = 0; k1 < K1; ++k1){
-		type U_min1 = std::numeric_limits<type>::max();
-		if (!U_s[k1]){
-			for (int k2 = 0; k2 < K2; ++k2){
-				if (U_t[k2]){
-					U_min1 = std::min(U_min1, (*this)(k1, k2));
-				};
-			};
-			for (int k2 = 0; k2 < K2; ++k2){
-				if (U_t[k2])(*this)(k1, k2) = U_min1;
-			};
-		};
-	};
-	for (int k2 = 0; k2 < K2; ++k2){
-		type U_min2 = std::numeric_limits<type>::max();
-		if (!U_t[k2]){
-			for (int k1 = 0; k1 < K1; ++k1){
-				if (U_s[k1]){
-					U_min2 = std::min(U_min2, (*this)(k1, k2));
-				};
-			};
-			for (int k1 = 0; k1 < K1; ++k1){
-				if (U_s[k1]){
-					(*this)(k1, k2) = U_min2;
-				};
-			};
-		};
-	};
-	for (int k1 = 0; k1 < K1; ++k1){
-		if (U_s[k1])continue;
-		for (int k2 = 0; k2 < K2; ++k2){
-			if (U_t[k2])continue;
-			type d = (*this)(k1, k2);
-			type b = (*this)(y_s, k2);
-			type c = (*this)(k1, y_t);
-			type a = (*this)(y_s, y_t);
-			assert(std::abs(a) < 1e-4);
-			//type delta = b + c - d - a;
-			//if (delta < 0){
-			//	(*this)(k1, k2) = b + c - a;
-			//};
-			(*this)(k1, k2) = std::min(b + c, d);
-			assert((*this)(k1, k2) > -1e10);
-		};
-	};
-};
-
-template<typename type, typename vectorizer>
-void term2v_matrix_po<type, vectorizer>::rebuild(po_mask & U_s, int y_s, po_mask & U_t, int y_t){
-	int K1 = parent::size()[0];
-	int K2 = parent::size()[1];
-	//(*this) << INF(type);
-	//int K1 = source->count(0);
-	//int K1 = source->count(1);
-	for (int k1 = 0; k1 < K1; ++k1){
-		for (int k2 = 0; k2 < K2; ++k2){
-			if (U_s[k1]){
-				if (U_t[k2]){ // [1,1] - both immovable
-					(*this)(k1, k2) = 0;
-				} else{ // [1 0]
-					(*this)(k1, k2) = (*source)(k1, k2) - (*source)(k1, y_t);
-				};
-			} else{
-				if (U_t[k2]){ // [0,1]
-					(*this)(k1, k2) = (*source)(k1, k2) - (*source)(y_s, k2);
-				} else{ // [0 0]
-					(*this)(k1, k2) = (*source)(k1, k2) - (*source)(y_s, y_t);
-				};
-			};
-			assert((*this)(k1, k2) > -1e10);
-			assert((*this)(k1, k2) == INF(type) || (*this)(k1, k2) < 1e20);
-		};
-	};
-};
-
 //___________________________term2v_potts__________________________________________
 
-template<typename type, typename vectorizer>
-term2v_potts<type, vectorizer>::term2v_potts(const term2v_potts & a, aallocator * al){
-	this->gamma = a.gamma;
-	this->size = a.size;
+template<class vtype>
+template<class vtype2>
+term2v_potts<vtype>::term2v_potts(const term2v_potts<vtype2> & a, aallocator * al){
+	this->gamma = (type)a.gamma;
+	this->size = v_align<vtype>(a.size);
 	// nothing to allocate additionally
 };
 
-template<typename type, typename vectorizer>
-term2v_potts<type, vectorizer> * term2v_potts<type, vectorizer>::copy(aallocator * al)const{
+/*
+template<class vtype>
+term2v_potts<type, vectorizer> * term2v_potts<vtype>::copy(aallocator * al)const{
 	return al->allocate<tthis>(*this); // copy-initialized from *this
 };
+*/
 
-template<typename type, typename vectorizer>
+template<class vtype>
 template<typename type2>
-term2v_potts<type, vectorizer>::term2v_potts(const dynamic::num_array<type2, 2> & _f2){
+term2v_potts<vtype>::term2v_potts(const dynamic::num_array<type2, 2> & _f2){
 	int K1 = _f2.size()[0];
 	int K2 = _f2.size()[1];
-	this->size = mint2(v_align<type, vectorizer>(_f2.size()[0]), v_align<type, vectorizer>(_f2.size()[1]));
+	this->size = mint2(v_align<vtype>(_f2.size()[0]), v_align<vtype>(_f2.size()[1]));
 	if (K1 != K2)throw quiet_exception("potts: not square"); // only accept square matrices here
 	if (K1 < 2 || K2 < 2) throw quiet_exception("potts: too small"); // too small to bother
 	this->gamma = (type)_f2(1, 0); // try this or it is not Potts
@@ -503,8 +426,8 @@ term2v_potts<type, vectorizer>::term2v_potts(const dynamic::num_array<type2, 2> 
 	// passed
 };
 
-template<typename type, typename vectorizer>
-void term2v_potts<type, vectorizer>::min_sum(tvect & a, tvect & r)const{
+template<class vtype>
+void term2v_potts<vtype>::min_sum(tvect & a, tvect & r)const{
 	//assert(a.count() == r.count());
 	type m = a.min().first + gamma;
 	for (int i = 0; i < r.count(); ++i){
@@ -512,8 +435,8 @@ void term2v_potts<type, vectorizer>::min_sum(tvect & a, tvect & r)const{
 	};
 };
 
-template<typename type, typename vectorizer>
-__forceinline void term2v_potts<type, vectorizer>::min_sum_e(const int vK1, vectorizer * source, vectorizer * const message)const{
+template<class vtype>
+__forceinline void term2v_potts<vtype>::min_sum_e(const int vK1, vectorizer * source, vectorizer * const message)const{
 	//_mm_prefetch((char *)message, _MM_HINT_T0);
 	vectorizer m(INF(type));
 	const vectorizer * ps = source;
@@ -560,13 +483,13 @@ __forceinline void term2v_potts<type, vectorizer>::min_sum_e(const int vK1, vect
 
 
 //___________________________term2v_tlinear__________________________________________
-template<typename type, typename vectorizer>
+template<class vtype>
 template<typename type2>
-term2v_tlinear<type, vectorizer>::term2v_tlinear(const dynamic::num_array<type2, 2> & m){
+term2v_tlinear<vtype>::term2v_tlinear(const dynamic::num_array<type2, 2> & m){
 	// energy in the form  min(|i-j|*gamma,th)
 	int K1 = m.size()[0];
 	int K2 = m.size()[1];
-	this->size = mint2(v_align<type, vectorizer>(m.size()[0]), v_align<type, vectorizer>(m.size()[1]));
+	this->size = mint2(v_align<vtype>(m.size()[0]), v_align<vtype>(m.size()[1]));
 	if (K1 != K2)throw quiet_exception("tlinear: not square"); // only accept square matrices here
 	if (K1 < 2 || K2 < 2) throw quiet_exception("tlinear: too small"); // too small to bother
 	//
@@ -582,8 +505,8 @@ term2v_tlinear<type, vectorizer>::term2v_tlinear(const dynamic::num_array<type2,
 };
 
 
-template<typename type, typename vectorizer>
-__forceinline void term2v_tlinear<type, vectorizer>::min_sum(tvect & a, tvect & r)const{
+template<class vtype>
+__forceinline void term2v_tlinear<vtype>::min_sum(tvect & a, tvect & r)const{
 	// forward pass: find min and min-conv with max(0,(i-j)*gamma)
 	int K = a.size();
 	type roof = a[0]+gamma;
@@ -614,8 +537,8 @@ __forceinline void term2v_tlinear<type, vectorizer>::min_sum(tvect & a, tvect & 
 		roof += gamma;
 	};
 };
-template<typename type, typename vectorizer>
-__forceinline void term2v_tlinear<type, vectorizer>::min_sum_e(const int vK1, vectorizer * source, vectorizer * message)const{
+template<class vtype>
+__forceinline void term2v_tlinear<vtype>::min_sum_e(const int vK1, vectorizer * source, vectorizer * message)const{
 	const int V = sizeof(vectorizer) / sizeof(type);
 	/*
 	{
@@ -705,9 +628,9 @@ __forceinline void term2v_tlinear<type, vectorizer>::min_sum_e(const int vK1, ve
 };
 
 //___________________________term2v_tquadratic__________________________________________
-template<typename type, typename vectorizer>
+template<class vtype>
 template<typename type2>
-term2v_tquadratic<type, vectorizer>::term2v_tquadratic(const num_array<type2, 2> & m, mint2 sza){
+term2v_tquadratic<vtype>::term2v_tquadratic(const num_array<type2, 2> & m, mint2 sza){
 	if (m.size()[0] != m.size()[1]) throw quiet_exception("not square");
 	int K = m.size()[0];
 	// if m is truncated quadratic, read threshold from m[0,K-1]
@@ -723,8 +646,8 @@ term2v_tquadratic<type, vectorizer>::term2v_tquadratic(const num_array<type2, 2>
 	};
 };
 
-template<typename type, typename vectorizer>
-__forceinline void term2v_tquadratic<type, vectorizer>::min_sum(tvect & a, tvect & res)const{
+template<class vtype>
+__forceinline void term2v_tquadratic<vtype>::min_sum(tvect & a, tvect & res)const{
 	// forward pass: find min and min-conv with max(0,(i-j)*gamma)^2
 	int K = a.size();
 	// need a temp stack for roofs: [i - when entered, a = a[i], x - when becomes a roof]
@@ -835,8 +758,8 @@ __forceinline void term2v_tquadratic<type, vectorizer>::min_sum(tvect & a, tvect
 #endif
 };
 
-template<typename type, typename vectorizer>
-__forceinline void term2v_tquadratic<type, vectorizer>::min_sum_e(const int vK1, vectorizer * source, vectorizer * message)const{
+template<class vtype>
+__forceinline void term2v_tquadratic<vtype>::min_sum_e(const int vK1, vectorizer * source, vectorizer * message)const{
 	const int V = sizeof(vectorizer) / sizeof(type);
 	{
 	int K1 = vK1*V;
@@ -848,22 +771,118 @@ __forceinline void term2v_tquadratic<type, vectorizer>::min_sum_e(const int vK1,
 };
 
 
+
+//_______________________term2v_matrix_po______________________________
+
+/*
+template<class vtype>
+void term2v_matrix_po<vtype>::init(term2v<type,vectorizer> * m, int K1, int K2){
+int K1a = v_align<vtype>(K1);
+int K2a = v_align<vtype>(K2);
+source = m;
+this->resize(mint2(K1a, K2a));
+(*this) << 0;
+};
+*/
+
+template<class vtype>
+void term2v_matrix_po<vtype>::reduce(po_mask & U_s, int y_s, po_mask & U_t, int y_t){
+	int K1 = parent::size()[0];
+	int K2 = parent::size()[1];
+	// reduce energy
+	assert(U_s[y_s]);
+	assert(U_t[y_t]);
+	for (int k1 = 0; k1 < K1; ++k1){
+		type U_min1 = std::numeric_limits<type>::max();
+		if (!U_s[k1]){
+			for (int k2 = 0; k2 < K2; ++k2){
+				if (U_t[k2]){
+					U_min1 = std::min(U_min1, (*this)(k1, k2));
+				};
+			};
+			for (int k2 = 0; k2 < K2; ++k2){
+				if (U_t[k2])(*this)(k1, k2) = U_min1;
+			};
+		};
+	};
+	for (int k2 = 0; k2 < K2; ++k2){
+		type U_min2 = std::numeric_limits<type>::max();
+		if (!U_t[k2]){
+			for (int k1 = 0; k1 < K1; ++k1){
+				if (U_s[k1]){
+					U_min2 = std::min(U_min2, (*this)(k1, k2));
+				};
+			};
+			for (int k1 = 0; k1 < K1; ++k1){
+				if (U_s[k1]){
+					(*this)(k1, k2) = U_min2;
+				};
+			};
+		};
+	};
+	for (int k1 = 0; k1 < K1; ++k1){
+		if (U_s[k1])continue;
+		for (int k2 = 0; k2 < K2; ++k2){
+			if (U_t[k2])continue;
+			type d = (*this)(k1, k2);
+			type b = (*this)(y_s, k2);
+			type c = (*this)(k1, y_t);
+			type a = (*this)(y_s, y_t);
+			assert(std::abs(a) < 1e-4);
+			//type delta = b + c - d - a;
+			//if (delta < 0){
+			//	(*this)(k1, k2) = b + c - a;
+			//};
+			(*this)(k1, k2) = std::min(b + c, d);
+			assert((*this)(k1, k2) > -1e10);
+		};
+	};
+};
+
+template<class vtype>
+void term2v_matrix_po<vtype>::rebuild(po_mask & U_s, int y_s, po_mask & U_t, int y_t){
+	int K1 = parent::size()[0];
+	int K2 = parent::size()[1];
+	//(*this) << INF(type);
+	//int K1 = source->count(0);
+	//int K1 = source->count(1);
+	for (int k1 = 0; k1 < K1; ++k1){
+		for (int k2 = 0; k2 < K2; ++k2){
+			if (U_s[k1]){
+				if (U_t[k2]){ // [1,1] - both immovable
+					(*this)(k1, k2) = 0;
+				} else{ // [1 0]
+					(*this)(k1, k2) = (*source)(k1, k2) - (*source)(k1, y_t);
+				};
+			} else{
+				if (U_t[k2]){ // [0,1]
+					(*this)(k1, k2) = (*source)(k1, k2) - (*source)(y_s, k2);
+				} else{ // [0 0]
+					(*this)(k1, k2) = (*source)(k1, k2) - (*source)(y_s, y_t);
+				};
+			};
+			assert((*this)(k1, k2) > -1e10);
+			assert((*this)(k1, k2) == INF(type) || (*this)(k1, k2) < 1e20);
+		};
+	};
+};
+
 //_______________________term2_po_rduced_____________________
 /*
 template<class base>
-term2v_po_reduced<base> * term2v_po_reduced_constructor<base>::copy(aallocator * al)const{
-	return al->allocate<term2v_po_reduced<base> >(src); // copy-allocated from source term
+term2v_po_reduced<type, vectorizer, base> * term2v_po_reduced_constructor<base>::copy(aallocator * al)const{
+	return al->allocate<term2v_po_reduced<type, vectorizer, base> >(src); // copy-allocated from source term
 };
 
-//template<typename type, typename vectorizer>
+//template<class vtype>
 template<class base>
-term2v_po_reduced<base>::term2v_po_reduced(base & Src) :src(Src), vK1(0), vK2(0){
+term2v_po_reduced<vtype, base>::term2v_po_reduced(base & Src) :src(Src), vK1(0), vK2(0){
 #ifdef _DEBUG
 	ref.init(&src, src.count(0), src.count(1));
 #endif
 	int V = sizeof(vectorizer) / sizeof(type);
-	int K1a = v_align<type, vectorizer>(src.count(0));
-	int K2a = v_align<type, vectorizer>(src.count(1));
+	int K1a = v_align<vtype>(src.count(0));
+	int K2a = v_align<vtype>(src.count(1));
 	vK1 = K1a / V;
 	vK2 = K2a / V;
 	block.resize(K1a + K2a);
@@ -877,22 +896,25 @@ term2v_po_reduced<base>::term2v_po_reduced(base & Src) :src(Src), vK1(0), vK2(0)
 };
 */
 
-template<class base>
+/*
+template<class vtype, template <typename> class base>
+template<class vtype2>
 #ifdef _DEBUG
-term2v_po_reduced<base>::term2v_po_reduced(const base & Src, aallocator * al) :_src(Src, al), ref(Src, al){
+term2v_po_reduced<vtype, base>::term2v_po_reduced(const base<type, type> & Src, aallocator * al) :_src(Src, al), ref(Src, al){
 #else
-term2v_po_reduced<base>::term2v_po_reduced(const base & Src, aallocator * al) :_src(Src, al){
+term2v_po_reduced<vtype, base>::term2v_po_reduced(const base<vtype2> & Src, aallocator * al) :_src(Src, al){
 #endif
 	// leave uninitialized
 	init(al);
 };
-template<class base>
-void term2v_po_reduced<base>::init(aallocator * al){
+*/
+template<class vtype, template <typename> class base>
+void term2v_po_reduced<vtype, base>::init(aallocator * al){
 	U_s = 0;
 	U_t = 0;
 	int V = sizeof(vectorizer) / sizeof(type);
-	int K1a = v_align<type, vectorizer>(count(0));
-	int K2a = v_align<type, vectorizer>(count(1));
+	int K1a = v_align<vtype>(count(0));
+	int K2a = v_align<vtype>(count(1));
 	vK1 = K1a / V;
 	vK2 = K2a / V;
 	//block.resize(K1a + K2a);
@@ -912,32 +934,35 @@ void term2v_po_reduced<base>::init(aallocator * al){
 	};
 };
 
-template<class base>
+/*
+template<class vtype, template <typename> class base>
+template<class vtype2>
 #ifdef _DEBUG
-term2v_po_reduced<base>::term2v_po_reduced(const term2v_po_reduced<base> & X, aallocator * al) :_src(X._src, al),ref(X.src(),al){
+term2v_po_reduced<vtype, base>::term2v_po_reduced(const term2v_po_reduced<type, type, base> & X, aallocator * al) :_src(X._src, al),ref(X.src(),al){
 #else
-term2v_po_reduced<base>::term2v_po_reduced(const term2v_po_reduced<base> & X, aallocator * al) :_src(X._src, al){
+term2v_po_reduced<vtype, base>::term2v_po_reduced(const term2v_po_reduced<vtype2, base> & X, aallocator * al) :_src(X._src, al){
 #endif
 // :parent(X.src(), al){ // go on the allocator with parent class
 	//ref.init(&src(), src().count(0), src().count(1));
 	init(al);
 };
+*/
 
 #define Delta_st (dir_fw? _delta_st: _delta_ts)
 #define Delta_ts (dir_fw? _delta_ts: _delta_st)
 #define dir_vK2 (dir_fw? vK2: vK1)
 
-//template<typename type, typename vectorizer>
-//template<typename type, typename vectorizer, template<typename, typename> class base >
-template<class base>
+//template<class vtype>
+//template<class vtype, template<typename, typename> class base >
+template<class vtype, template <typename> class base>
 template<bool dir_fw>
-void term2v_po_reduced<base>::t_min_sum_e(const int vK1, vectorizer * source, vectorizer * message)const{
+void term2v_po_reduced<vtype, base>::t_min_sum_e(const int vK1, vectorizer * source, vectorizer * message)const{
 	//int K2 = r.size();
 	/*
 	if (dir_fw){
-	src.base::min_sum_e(vK1, source, message);
+	src.tbase::min_sum_e(vK1, source, message);
 	} else{
-	src.base::min_sum_et(vK1, source, message);
+	src.tbase::min_sum_et(vK1, source, message);
 	};
 	return;
 	*/
@@ -946,9 +971,9 @@ void term2v_po_reduced<base>::t_min_sum_e(const int vK1, vectorizer * source, ve
 	_mm_prefetch((char *)_delta_st, _MM_HINT_T0);
 	// message passing for original term
 	if (dir_fw){
-		src().base::min_sum_e(vK1, source, message);
+		src().tbase::min_sum_e(vK1, source, message);
 	} else{
-		src().base::min_sum_et(vK1, source, message);
+		src().tbase::min_sum_et(vK1, source, message);
 	};
 	// correcting min
 	//_mm_prefetch((char *)Delta_ts, _MM_HINT_T0);
@@ -990,9 +1015,9 @@ void term2v_po_reduced<base>::t_min_sum_e(const int vK1, vectorizer * source, ve
 #undef Delta_ts
 #undef dir_vK2
 
-//template<typename type, typename vectorizer>
-template<class base>
-void term2v_po_reduced<base>::min_sum_e(const int vK1, vectorizer * source, vectorizer * message)const{
+//template<class vtype>
+template<class vtype, template <typename> class base>
+void term2v_po_reduced<vtype, base>::min_sum_e(const int vK1, vectorizer * source, vectorizer * message)const{
 	t_min_sum_e<true>(vK1, source, message);
 #ifdef _DEBUG // check
 	tvect a; a.set_ref(source, count(0));
@@ -1005,9 +1030,9 @@ void term2v_po_reduced<base>::min_sum_e(const int vK1, vectorizer * source, vect
 #endif
 };
 
-//template<typename type, typename vectorizer>
-template<class base>
-void term2v_po_reduced<base>::min_sum_et(const int vK1, vectorizer * source, vectorizer * message)const{
+//template<class vtype>
+template<class vtype, template <typename> class base>
+void term2v_po_reduced<vtype, base>::min_sum_et(const int vK1, vectorizer * source, vectorizer * message)const{
 	t_min_sum_e<false>(vK1, source, message);
 #ifdef _DEBUG // check
 	int K = delta_ts.size();
@@ -1022,15 +1047,15 @@ void term2v_po_reduced<base>::min_sum_et(const int vK1, vectorizer * source, vec
 };
 
 
-//template<typename type, typename vectorizer>
-template<class base>
-void term2v_po_reduced<base>::reduce(po_mask & U_s, int y_s, po_mask & U_t, int y_t){
+//template<class vtype>
+template<class vtype, template <typename> class base>
+void term2v_po_reduced<vtype, base>::reduce(po_mask & U_s, int y_s, po_mask & U_t, int y_t){
 	//nothing to do
 };
 
-//template<typename type, typename vectorizer>
-template<class base>
-void term2v_po_reduced<base>::rebuild(po_mask & U_s, int y_s, po_mask & U_t, int y_t){
+//template<class vtype>
+template<class vtype, template <typename> class base>
+void term2v_po_reduced<vtype, base>::rebuild(po_mask & U_s, int y_s, po_mask & U_t, int y_t){
 #ifdef _DEBUG
 	ref.rebuild(U_s,y_s,U_t,y_t);
 	ref.reduce(U_s, y_s, U_t, y_t);
@@ -1044,12 +1069,12 @@ void term2v_po_reduced<base>::rebuild(po_mask & U_s, int y_s, po_mask & U_t, int
 	this->U_t = &U_t;
 	int K1 = src().count(0);
 	int K2 = src().count(1);
-	c = src().base::operator()(y_s, y_t);
+	c = src().tbase::operator()(y_s, y_t);
 	//
 	tvect a;
 	a.reserve(std::max(K1, K2));
 	a.resize(K1);
-	src().base::get_col(y_t, a);
+	src().tbase::get_col(y_t, a);
 	for (int i = 0; i < K1; ++i){
 		if (U_s[i]){
 			a[i] = -a[i];
@@ -1057,7 +1082,7 @@ void term2v_po_reduced<base>::rebuild(po_mask & U_s, int y_s, po_mask & U_t, int
 			a[i] = INF(type);
 		};
 	};
-	src().base::min_sum(a, delta_ts);
+	src().tbase::min_sum(a, delta_ts);
 	for (int j = 0; j < K2; ++j){
 		if (U_t[j]){
 			delta_ts[j] = 0;
@@ -1065,7 +1090,7 @@ void term2v_po_reduced<base>::rebuild(po_mask & U_s, int y_s, po_mask & U_t, int
 	};
 	//
 	a.resize(K2);
-	src().base::get_row(y_s, a);
+	src().tbase::get_row(y_s, a);
 	for (int j = 0; j < K2; ++j){
 		if (U_t[j]){
 			a[j] = -a[j];
@@ -1073,7 +1098,7 @@ void term2v_po_reduced<base>::rebuild(po_mask & U_s, int y_s, po_mask & U_t, int
 			a[j] = INF(type);
 		};
 	};
-	src().base::min_sum_t(a, delta_st);
+	src().tbase::min_sum_t(a, delta_st);
 	for (int i = 0; i < K1; ++i){
 		if (U_s[i]){
 			delta_st[i] = 0;
@@ -1110,9 +1135,9 @@ void term2v_po_reduced<base>::rebuild(po_mask & U_s, int y_s, po_mask & U_t, int
 #endif
 };
 
-//template<typename type, typename vectorizer>
-template<class base>
-typename base::type term2v_po_reduced<base>::operator()(int i, int j)const{
+//template<class vtype>
+template<class vtype, template <typename> class base>
+typename vtype::type term2v_po_reduced<vtype, base>::operator()(int i, int j)const{
 	type r = operator()(i, j, (*U_s)[i], (*U_t)[j]);
 	//throw debug_exception("this must not be called");
 #ifdef _DEBUG
@@ -1122,14 +1147,14 @@ typename base::type term2v_po_reduced<base>::operator()(int i, int j)const{
 	return r;
 };
 
-template<class base>
-void term2v_po_reduced<base>::get_row(int i0, tvect & r)const{
+template<class vtype, template <typename> class base>
+void term2v_po_reduced<vtype, base>::get_row(int i0, tvect & r)const{
 #ifdef _DEBUG
 	assert(!(*U_s)[i0] || i0== y_s);
 #endif
 	//performance problem, use src->get_row
 	// should resolve with preprocessing then
-	src().base::get_row(i0, r);
+	src().tbase::get_row(i0, r);
 		// correcting min for the source being just a mask for index i0
 	type m1 = delta_st[i0];
 		// correction for reduced term
@@ -1143,12 +1168,12 @@ void term2v_po_reduced<base>::get_row(int i0, tvect & r)const{
 #endif
 };
 
-template<class base>
-void term2v_po_reduced<base>::get_col(int j0, tvect & r)const{
+template<class vtype, template <typename> class base>
+void term2v_po_reduced<vtype, base>::get_col(int j0, tvect & r)const{
 #ifdef _DEBUG
 	assert(!(*U_t)[j0] || j0==y_t );
 #endif
-	src().base::get_col(j0, r);
+	src().tbase::get_col(j0, r);
 	// correcting min for the source being just a mask for index i0
 	type m1 = delta_ts[j0];
 	// correction for reduced term
@@ -1165,7 +1190,7 @@ void term2v_po_reduced<base>::get_col(int j0, tvect & r)const{
 		if (!(*U_s)[i] || i == y_s){
 			if (std::abs(v1 - v2) > 1e-4){ // only these are the guaranteed entries
 				assert(false);
-				src().base::get_col(j0, r);
+				src().tbase::get_col(j0, r);
 				// correcting min for the source being just a mask for index i0
 				type m1 = delta_ts[j0];
 				// correction for reduced term
@@ -1178,12 +1203,12 @@ void term2v_po_reduced<base>::get_col(int j0, tvect & r)const{
 #endif
 };
 
-template<class base>
-void term2v_po_reduced<base>::get_col_e(const int vK1, int j0, vectorizer * message)const{
+template<class vtype, template <typename> class base>
+void term2v_po_reduced<vtype, base>::get_col_e(const int vK1, int j0, vectorizer * message)const{
 #ifdef _DEBUG
 	assert(!(*U_t)[j0] || j0 == y_t);
 #endif
-	src().base::get_col_e(vK1,j0,message);
+	src().tbase::get_col_e(vK1,j0,message);
 	// correcting min for the source being just a mask for index i0
 	vectorizer m1(delta_ts[j0]);
 	vectorizer vc(c);
@@ -1199,9 +1224,9 @@ void term2v_po_reduced<base>::get_col_e(const int vK1, int j0, vectorizer * mess
 };
 
 
-//template<typename type, typename vectorizer>
-template<class base>
-typename base::type term2v_po_reduced<base>::operator()(int i, int j, bool i_inU, bool j_inU)const{
+//template<class vtype>
+template<class vtype, template <typename> class base>
+typename vtype::type term2v_po_reduced<vtype, base>::operator()(int i, int j, bool i_inU, bool j_inU)const{
 	if (i_inU){
 		if (j_inU){
 			return 0;
@@ -1212,15 +1237,15 @@ typename base::type term2v_po_reduced<base>::operator()(int i, int j, bool i_inU
 		if (j_inU){
 			return delta_st[i];
 		} else{
-			type a = src().base::operator()(i, j) - c;
+			type a = src().tbase::operator()(i, j) - c;
 			return std::min(a, delta_st[i] + delta_ts[j]);
 		};
 	};
 };
 
-//template<typename type, typename vectorizer>
-template<class base>
-void term2v_po_reduced<base>::min_sum(tvect & a, tvect & r, po_mask * U_s, po_mask * U_t, const tvect & delta_st, const tvect & delta_ts)const{
+//template<class vtype>
+template<class vtype, template <typename> class base>
+void term2v_po_reduced<vtype, base>::min_sum(tvect & a, tvect & r, po_mask * U_s, po_mask * U_t, const tvect & delta_st, const tvect & delta_ts)const{
 	//assume a(i) = inf for i\notin Y_s \cup {y_s}
 	//assume delta_st[y_s] = 0
 	//assume delta_ts[y_t] = 0
@@ -1239,7 +1264,7 @@ void term2v_po_reduced<base>::min_sum(tvect & a, tvect & r, po_mask * U_s, po_ma
 	};
 	// message passing for original f
 	//a[y_s] = FINF;
-	src().base::min_sum(a, r); // <- todo: what about transposed?
+	src().tbase::min_sum(a, r); // <- todo: what about transposed?
 	// correction for reduced term
 	for( int j = 0; j < K2; ++j){
 		r[j] = std::min(r[j] - c, delta_ts[j] + m1);
@@ -1256,9 +1281,9 @@ void term2v_po_reduced<base>::min_sum(tvect & a, tvect & r, po_mask * U_s, po_ma
 	*/
 };
 
-//template<typename type, typename vectorizer>
-template<class base>
-void term2v_po_reduced<base>::check(tvect & a, tvect & r, tvect & r1, po_mask * U_s, po_mask * U_t, const tvect & delta_st, const tvect & detla_ts, int y_s, int y_t)const{
+//template<class vtype>
+template<class vtype, template <typename> class base>
+void term2v_po_reduced<vtype, base>::check(tvect & a, tvect & r, tvect & r1, po_mask * U_s, po_mask * U_t, const tvect & delta_st, const tvect & detla_ts, int y_s, int y_t)const{
 #ifdef _DEBUG
 	for (int j = 0; j < r.size(); ++j){
 		if (!(*U_t)[j] || j == y_t){
@@ -1295,9 +1320,9 @@ void term2v_po_reduced<base>::check(tvect & a, tvect & r, tvect & r1, po_mask * 
 };
 
 
-//template<typename type, typename vectorizer>
-template<class base>
-void inline term2v_po_reduced<base>::min_sum(tvect & a, tvect & r)const{
+//template<class vtype>
+template<class vtype, template <typename> class base>
+void inline term2v_po_reduced<vtype, base>::min_sum(tvect & a, tvect & r)const{
 #ifdef _DEBUG
 	// reference solution
 	tvect r1; 
@@ -1310,9 +1335,9 @@ void inline term2v_po_reduced<base>::min_sum(tvect & a, tvect & r)const{
 #endif
 };
 
-//template<typename type, typename vectorizer>
-template<class base>
-void inline term2v_po_reduced<base>::min_sum_t(tvect & a, tvect & r)const{
+//template<class vtype>
+template<class vtype, template <typename> class base>
+void inline term2v_po_reduced<vtype, base>::min_sum_t(tvect & a, tvect & r)const{
 #ifdef _DEBUG
 	// reference solution
 	tvect r1; r1.resize(r.size());
@@ -1398,7 +1423,7 @@ bool energy_auto<type>::test_tlinear(const dynamic::num_array<double, 2> & _f2){
 template<typename type>
 void energy_auto<type>::set_f1(int v, const dynamic::num_array<double, 1> & _f1){
 	int K = _f1.size();
-	int Ka = v_align<type, d_vectorizer>(K); // size_align(K);
+	int Ka = v_align<type, type>(K); // size_align(K);
 	this->f1[v].resize(Ka);
 	type maxabsf = 0;
 	for (int i = 0; i < Ka; ++i){
@@ -1436,7 +1461,7 @@ void energy_auto<type>::set_f2(int e, const dynamic::num_array<double, 2> & _f2)
 	//int K2 = _f2.size()[1];
 	// try Potts
 	try{
-		F2[e] = new term2v_potts<type, d_vectorizer>(_f2);
+		F2[e] = new term2v_potts<vtype>(_f2);
 		// worked;
 		++npotts;
 		return;
@@ -1445,67 +1470,23 @@ void energy_auto<type>::set_f2(int e, const dynamic::num_array<double, 2> & _f2)
 	};
 	// try T-Linear
 	try{
-		F2[e] = new term2v_tlinear<type, d_vectorizer>(_f2);
+		F2[e] = new term2v_tlinear<vtype>(_f2);
 		// worked;
 		++ntlinear;
 		return;
 	} catch (...){
 		// did not work; go no
 	};
-
-	/*
-	
-	if (test_potts(_f2)){ // construct potts term
-		F2[e] = new term2v_potts<type, vectorizer>(sza, type(_f2(1, 0) - _f2(0, 0)));
-		++npotts;
-		return;
-	};
-	if (test_tlinear(_f2)){ // construct t_linear terms
-		type th = type(_f2(K1 - 1, 0)); // this must be the threshold or the threshold has no effect
-		type gamma = type(_f2(1, 0)); // this must be the slope
-		F2[e] = new term2v_tlinear<type, vectorizer>(sza, gamma,th);
-		++ntlinear;
-		return;
-	};
-	*/
 	// try diff
 	try{
-		F2[e] = new term2v_diff<type, d_vectorizer>(_f2);
+		F2[e] = new term2v_diff<vtype>(_f2);
 		// worked;
 		++ndiff;
 		return;
 	} catch (...){
 		// did not work; go no
 	};
-	/*
-	// try truncated quadratic
-	try{
-		F2[e] = new term2v_tquadratic<type, vectorizer>(_f2, sza);
-		// worked;
-		++ntquadratic;
-		return;
-	} catch (...){
-		// did not work; go no
-	};
-	*/
-	//default to full matrix
-	/*
-	mint2 sza(v_align<type, d_vectorizer>(K1), v_align<type, d_vectorizer>(K2));
-	term2v_matrix<type, d_vectorizer> * pf2 = new term2v_matrix<type, d_vectorizer>();
-	F2[e] = pf2;
-	pf2->resize(sza);
-	//(*pf2) << INF(type);
-	for (int k2 = 0; k2 < sza[1]; ++k2){
-		for (int k1 = 0; k1 < sza[0]; ++k1){
-			if (k1 < K1 && k2 < K2){
-				(*pf2)(k1, k2) = type(_f2(k1, k2));
-			} else{
-				(*pf2)(k1, k2) = 0;
-			};
-		};
-	};
-	*/
-	F2[e] = new term2v_matrix<type, d_vectorizer>(_f2);
+	F2[e] = new term2v_matrix<vtype>(_f2);
 	++nfull;
 };
 
@@ -1537,17 +1518,31 @@ void energy_auto<type>::cleanup(){
 
 //template class term2v_po_reduced < float, float > ;
 //template class term2v_po_reduced < float, sse_float_4 > ;
+//template term2v_potts<double_v1>::term2v_potts(const num_array<double, 2> &);
+//template int v_align<float, float>(int size);
+//template int v_align<double, double>(int size);
+//template int v_align<float, sse_float_4>(int size);
 
-template term2v_potts<double, double>::term2v_potts(const num_array<double, 2> &);
+template class term2v_potts <double_v4>;
 
-template int v_align<float, float>(int size);
-template int v_align<double, double>(int size);
-template int v_align<float, sse_float_4>(int size);
+#define instantiate_term2v_po(name)\
+template class term2v_po_reduced <float_v1, name>;\
+template class term2v_po_reduced <float_v4, name >;\
+template class term2v_po_reduced <double_v1, name>;\
+template class term2v_po_reduced <double_v4, name>;
 
-template class term2v_po_reduced <term2v_potts<float, float> >;
-template class term2v_po_reduced <term2v_potts<double, double> >;
-template class term2v_po_reduced <term2v_potts<float, sse_float_4> >;
+//#define instantiate_term2v_po(name) template class term2v_po_reduced <float,float, name>;
 
+instantiate_term2v_po(term2v_potts)
+instantiate_term2v_po(term2v_tlinear)
+instantiate_term2v_po(term2v_tquadratic)
+instantiate_term2v_po(term2v_diff)
+instantiate_term2v_po(term2v_matrix)
+
+
+template class term2v_po_reduced <float_v1, term2v_potts>;
+
+/*
 template class term2v_po_reduced <term2v_tlinear<float, float> >;
 template class term2v_po_reduced <term2v_tlinear<double, double> >;
 template class term2v_po_reduced <term2v_tlinear<float, sse_float_4> >;
@@ -1563,21 +1558,26 @@ template class term2v_po_reduced <term2v_diff<float, sse_float_4> >;
 template class term2v_po_reduced <term2v_matrix<float, float> >;
 template class term2v_po_reduced <term2v_matrix<double, double> >;
 template class term2v_po_reduced <term2v_matrix<float, sse_float_4> > ;
+*/
 
-template class term2v_matrix_po < float, float > ;
-template class term2v_matrix_po < double, double >;
-template class term2v_matrix_po < float, sse_float_4 > ;
+template class term2v_matrix_po <float_v1>;
+template class term2v_matrix_po <float_v4>;
+template class term2v_matrix_po <double_v1>;
+template class term2v_matrix_po <double_v4>;
 
-template class term2v_matrix < float, float >;
-template class term2v_matrix < double, double >;
-template class term2v_matrix < float, sse_float_4 >;
+template class term2v_matrix <float_v1>;
+template class term2v_matrix <float_v4>;
+template class term2v_matrix <double_v1>;
+template class term2v_matrix <double_v4>;
 
-
-template class term2v_potts < double >;
+//template class term2v_potts < double >;
 
 //template class energy_auto <double, double>;
-template class energy < d_type >;
-template class energy_auto < d_type >;
+//template class energy < float >;
+template class energy_auto < float >;
+template class energy_auto < double >;
+
+//template class energy < double >;
 //template class energy_auto < double >;
 
 //template class energy_auto <float>;
@@ -1588,3 +1588,7 @@ void bla(){
 	E.cost(z);
 };
 */
+
+void test(){
+	term2v_po_reduced<float_v1, term2v_potts> a(term2v_potts<float_v1>(), 0);
+};

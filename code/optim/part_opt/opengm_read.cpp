@@ -189,5 +189,7 @@ energy_auto<type> * opengm_read(std::string modelFilename, std::string dataset){
 //}
 //
 
-template energy_auto<d_type>* opengm_read(std::string, std::string); // , energy_auto<type> &);
+template energy_auto<float>* opengm_read(std::string, std::string);
+template energy_auto<double>* opengm_read(std::string, std::string);
+// , energy_auto<type> &);
 ////template void opengm_read(std::string, std::string, energy_auto<double> &)

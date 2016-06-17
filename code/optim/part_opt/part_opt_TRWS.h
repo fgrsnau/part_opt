@@ -22,16 +22,19 @@ using namespace dynamic;
 //typedef sse_float_4 vectorizer;
 //typedef d_type type;
 //typedef d_vectorizer vectorizer;
-typedef trws_machine<d_type, d_vectorizer> alg_trws;
-typedef energy<d_type> tenergy;
+//typedef float_v4 vtype;
+//typedef trws_machine<vtype> alg_trws;
+//typedef energy<float> tenergy;
 //
 //_________________________alg_po_trws_________________________________
 //! class for maximum persistency with message passing solver
-class alg_po_trws : public alg_trws{
+template<class vtype = float_v4>
+class alg_po_trws : public trws_machine<vtype>{
 public:
-	typedef alg_trws parent;
+	typedef trws_machine<vtype> parent;
 	//typedef tenergy::t_f2 t_f2;
-	typedef alg_trws::t_f2 t_f2;
+	typedef trws_machine<vtype>::t_f2 t_f2;
+	typedef energy<typename vtype::type> tenergy;
 public:
 	tenergy * E0; // initial input energy
 	//energy F; // manipulated energy
@@ -63,7 +66,7 @@ private:
 	virtual t_f2 * construct_f2(int e, aallocator * al)override;
 protected:
 	void finish();
-	void cut(intf & x);
+	//void cut(intf & x);
 	bool cut_tr(char * caller);
 	bool flat_cuts();
 	bool apply_cut(intf & x, char * caller);
@@ -71,7 +74,7 @@ protected:
 	void rebuild_energy();
 	void reduce_immovable();
 	void rebuild_incremental(node_info & v, int k);
-	void expansion_move();
+	//void expansion_move();
 	double dee_delta(node_info & v, int k);
 	double icm_delta(node_info & v, int k);
 	void icm();

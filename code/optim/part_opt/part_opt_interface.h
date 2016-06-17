@@ -1,19 +1,20 @@
 #ifndef part_opt_interface_h
 #define part_opt_interface_h
 
+struct float_v4;
 template<typename type> class energy_auto;
-class alg_po_trws;
+template<class vtype = float_v4> class alg_po_trws;
 
 #include <string>
 #include "dynamic/options.h"
+#include "vectorizers.h"
 
 template<typename type>
 class part_opt_interface{
 public:
-	typedef float compute_type;
-	//typedef double compute_type;
-	energy_auto<compute_type> * energy;
-	alg_po_trws * alg;
+	typedef typename default_vectorizer<type>::vtype vtype;
+	energy_auto<type> * energy;
+	alg_po_trws<vtype> * alg;
 	options * ops;
 public:
 	std::string instance_name;

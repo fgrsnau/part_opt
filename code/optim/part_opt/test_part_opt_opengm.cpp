@@ -49,7 +49,7 @@ int main(int argc, char *argv[]){
 	//file = "Z:/work/dev/matlab/part_opt/datasets/protein-folding/pdb1iqc.h5";
 	//typedef d_type ValueType;
 	//typedef int ValueType;
-	typedef double ValueType;
+	typedef float ValueType;
 	typedef opengm::meta::TypeListGenerator
 		<
 		opengm::PottsFunction<ValueType>,

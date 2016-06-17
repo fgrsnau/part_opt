@@ -42,15 +42,27 @@ void mexFunction_protect(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prh
 		layer 4: time when pruned
 	*/
 
-	energy_auto<d_type> * f = 0;
+	mx_struct ops;
+
+	if (nrhs <= 4){ // this is Input 2, read model from file
+		if (nrhs >= 4){
+			ops = mx_struct(prhs[3]);
+		};
+	} else{ // this is Input 1, model from matlab
+		if (nrhs >= 7){
+			ops = mx_struct(prhs[6]);
+		};
+	};
+	typedef float_v4 vtype;
+
+	energy_auto<vtype::type> * f = 0;
 	mx_array<double, 2> M;
 	mx_array<int, 1> y;
-	mx_struct ops;
-	alg_po_trws * alg = new alg_po_trws();
+	alg_po_trws<vtype> * alg = new alg_po_trws<vtype>();
 	//
 	if (nrhs <= 4){ // this is Input 2, read model from file
 		mx_string fname(prhs[0]);
-		f = opengm_read<d_type>(fname, "gm"); // , f);
+		f = opengm_read<vtype::type>(fname, "gm"); // , f);
 		if (nrhs >= 2){
 			M = mx_array<double, 2>(prhs[1]);
 		};
@@ -63,7 +75,7 @@ void mexFunction_protect(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prh
 		//
 		//alg->ops.local_min_tol = 0; // -1e-1*f->tolerance;
 	} else{ // this is Input 1, model from matlab
-		f = new energy_auto<d_type>();
+		f = new energy_auto<vtype::type>();
 		mx_array<int, 2> E(prhs[0]);
 		mx_array<double, 2> f1(prhs[1]);
 		mx_array<double, 3> f2(prhs[2]);

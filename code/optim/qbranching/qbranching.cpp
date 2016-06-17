@@ -217,7 +217,7 @@ dynamic::num_array<int, 2> qbranching(dynamic::num_array<int, 2> & ee, dynamic::
 	G2.edge_index();
 	//
 	//Construct energy over graph G2
-	energy_auto<d_type> E;
+	energy_auto<float> E;
 	E.set_G(G2);
 	// number of labels = in_degree
 	E.K = K; E.maxK = maxK;
@@ -238,7 +238,7 @@ dynamic::num_array<int, 2> qbranching(dynamic::num_array<int, 2> & ee, dynamic::
 	// Print statistics of the model
 	E.report();
 	// Create solver
-	alg_po_trws alg;
+	alg_po_trws<float_v4> alg;
 	// Set solver options
 	alg.ops << ops;
 	// Set energy

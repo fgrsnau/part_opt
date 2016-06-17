@@ -10,8 +10,8 @@
 
 using namespace custom_new;
 
-typedef d_type type;
-typedef d_vectorizer vectorizer;
+//typedef d_type type;
+//typedef d_vectorizer vectorizer;
 
 //#include "qpbo-v1.3/QPBO.h"
 #ifdef WITH_MAXFLOW
@@ -34,21 +34,24 @@ void err_function(char * s){
 
 //_________________________alg_po_trws_________________________________
 
-intf alg_po_trws::y0(0);
+template<class vtype>
+intf alg_po_trws<vtype>::y0(0);
 
 // construction
-
-alg_po_trws::alg_po_trws(){
+template<class vtype>
+alg_po_trws<vtype>::alg_po_trws(){
 	f2_replaced = false;
 	parent::ops = &ops;
 	burn = 0;
 };
 
-alg_po_trws::~alg_po_trws(){ 
+template<class vtype>
+alg_po_trws<vtype>::~alg_po_trws(){ 
 	cleanup(); 
 };
 
-void alg_po_trws::init1(){
+template<class vtype>
+void alg_po_trws<vtype>::init1(){
 	//total_it = 0;
 	po_it = 0;
 	nimmovable = 0;
@@ -60,25 +63,28 @@ void alg_po_trws::init1(){
 	y1.resize(nV);
 };
 
-void alg_po_trws::set_y(intf & y){
+template<class vtype>
+void alg_po_trws<vtype>::set_y(intf & y){
 	this->y = y;
 	parent::set_y(y);
 	apply_cut(y, "init");
 };
 
-void alg_po_trws::set_P(num_array<int, 2> & P){ // export improving mapping
+template<class vtype>
+void alg_po_trws<vtype>::set_P(num_array<int, 2> & P){ // export improving mapping
 	this->P.set_ref(P);
 };
 
-void alg_po_trws::unmark(){
+template<class vtype>
+void alg_po_trws<vtype>::unmark(){
 	for (int v = 0; v < nV; ++v){
 		UU[v].reset();
 	};
 	nimmovable = 0;
 };
 
-
-void alg_po_trws::queue_neib(node_info & v){
+template<class vtype>
+void alg_po_trws<vtype>::queue_neib(node_info & v){
 	// all neighbors are candidates for node cust
 	for (int i = 0; i < v.in.size(); ++i){
 		node_info & w = *v.in[i]->tail;
@@ -96,7 +102,8 @@ void alg_po_trws::queue_neib(node_info & v){
 	};
 };
 
-int alg_po_trws::mark_immovable(node_info & v, int k, prunner who){
+template<class vtype>
+int alg_po_trws<vtype>::mark_immovable(node_info & v, int k, prunner who){
 	int s = &v - nodes.begin();
 	int nimmovable0 = nimmovable;
 	if (ops.all_to_one){
@@ -111,7 +118,8 @@ int alg_po_trws::mark_immovable(node_info & v, int k, prunner who){
 	return nimmovable - nimmovable0;
 };
 
-void alg_po_trws::rebuild_incremental(node_info & v, int k){
+template<class vtype>
+void alg_po_trws<vtype>::rebuild_incremental(node_info & v, int k){
 	po_rebuild.resume();
 	int s = &v - nodes.begin();
 	// rebuild energy unary anew
@@ -156,7 +164,8 @@ void alg_po_trws::rebuild_incremental(node_info & v, int k){
 	po_rebuild.pause();
 };
 
-void alg_po_trws::mark_immovable_label(node_info & v, int k, prunner who){
+template<class vtype>
+void alg_po_trws<vtype>::mark_immovable_label(node_info & v, int k, prunner who){
 	int s = &v - nodes.begin();
 	assert(UU[s][k] == 0);
 	if (!UU[s][k]){
@@ -189,7 +198,8 @@ void alg_po_trws::mark_immovable_label(node_info & v, int k, prunner who){
 	};
 };
 
-void alg_po_trws::reduce_immovable(){
+template<class vtype>
+void alg_po_trws<vtype>::reduce_immovable(){
 	for (int e = 0; e < nE; ++e){
 		edge_info & ee = edges[e];
 		int s = ee.tail - nodes.begin();
@@ -200,7 +210,8 @@ void alg_po_trws::reduce_immovable(){
 	};//end reduce energy
 };
 
-void alg_po_trws::rebuild_energy(){
+template<class vtype>
+void alg_po_trws<vtype>::rebuild_energy(){
 	po_rebuild.resume();
 
 	//rebuild energy pairwise anew
@@ -247,7 +258,8 @@ void alg_po_trws::rebuild_energy(){
 	best_E = 0;
 };
 
-void alg_po_trws::finish(){
+template<class vtype>
+void alg_po_trws<vtype>::finish(){
 	po_total.stop();
 	int elim = 0;
 	for (int s = 0; s < nV; ++s){
@@ -280,7 +292,8 @@ void alg_po_trws::finish(){
 	debug::stream << "PO Times:\n Total: " << po_total.time() << "\n Msgs: " << po_msgs.time() << "\n Cuts: " << po_cuts.time() << "\n Node cuts: " << po_node_cuts.time() << "\n Rebuild: " << po_rebuild.time() << "\n";
 };
 
-bool alg_po_trws::flat_cuts(){
+template<class vtype>
+bool alg_po_trws<vtype>::flat_cuts(){
 	intf bbest_x = best_x;
 	bool any_cut_succeded = false;
 	for (int i = 0; i < maxK; ++i){
@@ -304,7 +317,8 @@ bool alg_po_trws::flat_cuts(){
 	return any_cut_succeded;
 };
 
-bool alg_po_trws::cut_tr(char * caller){// make a cut between y and best_x
+template<class vtype>
+bool alg_po_trws<vtype>::cut_tr(char * caller){// make a cut between y and best_x
 	// we want to improve best_x by swithching a part of it to y
 	// labeling best_x corresponds to the source (label 1)
 	// labeling y corresponds to the sink (label 0)
@@ -383,7 +397,8 @@ bool alg_po_trws::cut_tr(char * caller){// make a cut between y and best_x
 	return apply_cut(x, caller);
 };
 
-bool alg_po_trws::apply_cut(intf & x, char * caller){
+template<class vtype>
+bool alg_po_trws<vtype>::apply_cut(intf & x, char * caller){
 	int total_mark1 = 0;
 	for (int s = 0; s < nV; ++s){
 		node_info & v = nodes[s];
@@ -401,7 +416,8 @@ bool alg_po_trws::apply_cut(intf & x, char * caller){
 	return total_mark1 > 0;
 };
 
-bool alg_po_trws::remove_condition(int s){
+template<class vtype>
+bool alg_po_trws<vtype>::remove_condition(int s){
 	double m = marg(s).first;
 	if (ops.weak_po){
 		return m < ops.local_min_tol;
@@ -410,14 +426,16 @@ bool alg_po_trws::remove_condition(int s){
 	};
 };
 
-bool alg_po_trws::stop_condition(){
+template<class vtype>
+bool alg_po_trws<vtype>::stop_condition(){
 	for (int s = 0; s < nV; ++s){
 		if (remove_condition(s)) return false; // there is something to remove -- do not stop
 	};
 	return true; //when nothing to remove
 };
 
-void alg_po_trws::mark_WTA(){
+template<class vtype>
+void alg_po_trws<vtype>::mark_WTA(){
 	// mark all immovable
 	int total_mark1 = 0;
 	for (int s = 0; s < nV; ++s){
@@ -434,37 +452,40 @@ void alg_po_trws::mark_WTA(){
 	};
 };
 
-alg_po_trws::t_f2 * alg_po_trws::construct_f2(int e, aallocator * al){
+template<class vtype>
+typename alg_po_trws<vtype>::t_f2 * alg_po_trws<vtype>::construct_f2(int e, aallocator * al){
+	typedef typename scalalr_vectorizer<vtype::type>::vtype stype;
 	if (f2_replaced == 0){ // this is not PO phase yet
 		return parent::construct_f2(e, al);
 	} else{ // this is PO phase, replace pairwise terms with po_reduced
 		t_f2 * f2 = 0;
 		edge_info & ee = edges[e];
-		if (1 && (!ops.fast_msg || (dynamic_cast<term2v_matrix<type, vectorizer>*>(&E0->f2(e))))){ // term is already full matrix or fast_msg disabled
+		if (1 && (!ops.fast_msg || (dynamic_cast<term2v_matrix<stype>*>(&E0->f2(e))))){ // term is already full matrix or fast_msg disabled
 			// use full matrix for po
-			return al->allocate<term2v_matrix_po<type, vectorizer> >(E0->f2(e));
+			return al->allocate<term2v_matrix_po<vtype> >(E0->f2(e));
 		};
 		// fast_msg enabled and term is not a full matrix
-		if (dynamic_cast<term2v_potts<type, vectorizer>*>(&E0->f2(e))){
-			return al->allocate<term2v_po_reduced<term2v_potts<type, vectorizer> > >(dynamic_cast<term2v_potts<type, vectorizer> & >(E0->f2(e)));
+		if (dynamic_cast<term2v_potts<stype>*>(&E0->f2(e))){
+			return al->allocate<term2v_po_reduced<vtype, term2v_potts> >(dynamic_cast<term2v_potts<stype> & >(E0->f2(e)));
 		};
-		if (dynamic_cast<term2v_tlinear<type, vectorizer>*>(&E0->f2(e))){
-			return al->allocate<term2v_po_reduced<term2v_tlinear<type, vectorizer> > >(*dynamic_cast<term2v_tlinear<type, vectorizer>*>(&E0->f2(e)));
+		if (dynamic_cast<term2v_tlinear<stype>*>(&E0->f2(e))){
+			return al->allocate<term2v_po_reduced<vtype, term2v_tlinear> >(*dynamic_cast<term2v_tlinear<stype>*>(&E0->f2(e)));
 		};
-		if (dynamic_cast<term2v_diff<type, vectorizer>*>(&E0->f2(e))){
-			return al->allocate<term2v_po_reduced<term2v_diff<type, vectorizer> > >(*dynamic_cast<term2v_diff<type, vectorizer>*>(&E0->f2(e)));
+		if (dynamic_cast<term2v_diff<stype>*>(&E0->f2(e))){
+			return al->allocate<term2v_po_reduced<vtype, term2v_diff> >(*dynamic_cast<term2v_diff<stype>*>(&E0->f2(e)));
 		};
-		if (dynamic_cast<term2v_tquadratic<type, vectorizer>*>(&E0->f2(e))){
-			return al->allocate< term2v_po_reduced<term2v_tquadratic<type, vectorizer> > >(*dynamic_cast<term2v_tquadratic<type, vectorizer>*>(&E0->f2(e)));
+		if (dynamic_cast<term2v_tquadratic<stype>*>(&E0->f2(e))){
+			return al->allocate< term2v_po_reduced<vtype, term2v_tquadratic> >(*dynamic_cast<term2v_tquadratic<stype>*>(&E0->f2(e)));
 		};
-		if (dynamic_cast<term2v_matrix<type, vectorizer>*>(&E0->f2(e))){
-			return al->allocate<term2v_po_reduced<term2v_matrix<type, vectorizer> > >(*dynamic_cast<term2v_matrix<type, vectorizer>*>(&E0->f2(e)));
+		if (dynamic_cast<term2v_matrix<stype>*>(&E0->f2(e))){
+			return al->allocate<term2v_po_reduced<vtype, term2v_matrix> >(*dynamic_cast<term2v_matrix<stype>*>(&E0->f2(e)));
 		};
 		throw debug_exception("Problem: cannot find the true type of the pairwise term");
 	};
 };
 
-void alg_po_trws::init_aux(){
+template<class vtype>
+void alg_po_trws<vtype>::init_aux(){
 	// need to recreate the core with substituted pairwise terms
 	// first save messages
 	dynamic::fixed_array1<tvect> M(nE);//backward messages
@@ -487,24 +508,29 @@ void alg_po_trws::init_aux(){
 	};
 	init_iteration(); // restore bw sums
 };
-void alg_po_trws::cleanup(){
+
+template<class vtype>
+void alg_po_trws<vtype>::cleanup(){
 };
 
-void alg_po_trws::set_E(tenergy * E){
+template<class vtype>
+void alg_po_trws<vtype>::set_E(tenergy * E){
 	this->E0 = E;
 	nV = E->G.nV();
 	nE = E->G.nE();
 	maxK = E->maxK;
 };
 
-void alg_po_trws::init(){
+template<class vtype>
+void alg_po_trws<vtype>::init(){
 	parent::init(E0);
 	maxelim = E0->K.sum() - nV;
 	init1();
 	ops.print();
 };
 
-bool alg_po_trws::check_zero_gap(){
+template<class vtype>
+bool alg_po_trws<vtype>::check_zero_gap(){
 	if (exit_reason == zero_gap){ // TRW-S found optimal solution, nothing to do
 		debug::stream << "TRW-S found optimal solution\n";
 	};
@@ -526,7 +552,8 @@ bool alg_po_trws::check_zero_gap(){
 	return false;
 };
 
-std::pair<double,int> alg_po_trws::marg(int s){
+template<class vtype>
+std::pair<double,int> alg_po_trws<vtype>::marg(int s){
 	std::pair<double, int> r;
 	r.second = - 1;
 	double m = INF(double);
@@ -543,7 +570,8 @@ std::pair<double,int> alg_po_trws::marg(int s){
 	return r;
 };
 
-void alg_po_trws::prove_optimality(intf & y0){
+template<class vtype>
+void alg_po_trws<vtype>::prove_optimality(intf & y0){
 	// bla
 	//int maxit = ops.po_max_it;
 	//debug::stream << "PO Options:\n";
@@ -651,7 +679,8 @@ void alg_po_trws::prove_optimality(intf & y0){
 	}; // end sensetivity loop
 };
 
-void alg_po_trws::report_po_iter(int total_mark1, int total_mark2, std::string caller){
+template<class vtype>
+void alg_po_trws<vtype>::report_po_iter(int total_mark1, int total_mark2, std::string caller){
 	debug::stream << "Marking immovable (" << caller << ") " << total_mark1 << "+" << total_mark2;
 	if (dee_mark_strong){
 		debug::stream << " (" << dee_mark_strong << " non-unique)";
@@ -659,7 +688,8 @@ void alg_po_trws::report_po_iter(int total_mark1, int total_mark2, std::string c
 	debug::stream << " labels (" << double(maxelim + nV - nimmovable) / double(maxelim) * 100.0 << "% remains)\n";
 };
 
-double alg_po_trws::dee_delta(node_info & v, int k1){
+template<class vtype>
+double alg_po_trws<vtype>::dee_delta(node_info & v, int k1){
 	int s = &v - nodes.begin();
 	int y_s = y[s];
 	double Delta = E0->f1[s][k1] - E0->f1[s][y_s] - ops.sensetivity;
@@ -702,7 +732,8 @@ double alg_po_trws::dee_delta(node_info & v, int k1){
 	return Delta;
 };
 
-double alg_po_trws::icm_delta(node_info & v, int k1){
+template<class vtype>
+double alg_po_trws<vtype>::icm_delta(node_info & v, int k1){
 	int s = &v - nodes.begin();
 	int y_s = y[s];
 	double Delta = E0->f1[s][k1] - E0->f1[s][y_s];
@@ -725,7 +756,8 @@ double alg_po_trws::icm_delta(node_info & v, int k1){
 	return Delta;
 };
 
-void alg_po_trws::icm(){
+template<class vtype>
+void alg_po_trws<vtype>::icm(){
 	for (int s = 0; s < nV; ++s){
 		node_info & w = nodes[s];
 		if (!w.active){
@@ -759,19 +791,23 @@ void alg_po_trws::icm(){
 	debug::stream << "ICM improved E: " << txt::String::Format("%f", best_E) << "\n";
 };
 
-bool alg_po_trws::is_alive(int s, int k){
+template<class vtype>
+bool alg_po_trws<vtype>::is_alive(int s, int k){
 	return UU[s][k];
 };
 
-int alg_po_trws::test_label(int s){
+template<class vtype>
+int alg_po_trws<vtype>::test_label(int s){
 	return y[s];
 };
 
-double alg_po_trws::elim_labels_percent(){
+template<class vtype>
+double alg_po_trws<vtype>::elim_labels_percent(){
 	return double(maxelim + nV - nimmovable) / double(maxelim) * 100;
 };
 
-int alg_po_trws::mark_dee(){
+template<class vtype>
+int alg_po_trws<vtype>::mark_dee(){
 	// mark more immovable DEE style
 	dee_mark_strong = 0; // count marks
 	if (!ops.use_pixel_cut){
@@ -871,3 +907,8 @@ po_node_cuts.pause();
 return total_mark2;
 */
 };
+
+template class alg_po_trws <float_v1>;
+template class alg_po_trws <float_v4>;
+template class alg_po_trws <double_v1>;
+template class alg_po_trws <double_v4>;

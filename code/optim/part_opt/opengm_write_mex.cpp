@@ -130,7 +130,7 @@ void mexFunction_protect(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prh
 		GmType::FunctionIdentifier fid;
 		// try potts
 		try{
-			term2v_potts<double> g(f2.subdim<2>(e));
+			term2v_potts<double_v1> g(f2.subdim<2>(e));
 			opengm::PottsFunction<double> f(gm.numberOfLabels(s), gm.numberOfLabels(t), 0, g.gamma);
 			fid = gm.addFunction(f);
 			++np;

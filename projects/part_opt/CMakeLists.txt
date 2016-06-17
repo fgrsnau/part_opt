@@ -7,7 +7,7 @@ project (part_opt)
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules)
 
 set (VERSION_MAJOR 1)
-set (VERSION_MINOR 2)
+set (VERSION_MINOR 3)
 
 SET (SRC ../../code)
 SET (MY_LIB_PATH ${CMAKE_SOURCE_DIR}/../../lib/)
@@ -335,6 +335,7 @@ endfunction()
 SET(CPP)
 list(APPEND CPP 
   ${SRC}/dynamic/block_allocator.cpp
+  ${SRC}/dynamic/options.cpp
   ${SRC}/data/dataset.cpp
   ${SRC}/exttype/pvect.cpp
   ${SRC}/geom/vectn.cpp
@@ -484,6 +485,14 @@ list(APPEND CPP
 ${SRC}/optim/part_opt/opengm_read_mex.cpp
 )
 add_mex(opengm_read_mex ${CPP})
+
+#____________________opengm_read_mex____________________
+SET(CPP)
+list(APPEND CPP 
+${SRC}/optim/part_opt/opengm_read_diff_mex.cpp
+)
+add_mex(opengm_read_diff_mex ${CPP})
+
 
 #____________________opengm_write_mex____________________
 SET(CPP)
