@@ -65,7 +65,8 @@ term2v_matrix<vtype>::term2v_matrix(const term2v_matrix<vtype2> & X, aallocator 
 	construct(v_align<vtype>(X.size()), al);
 	// copy data
 	if (begin()){
-		(*this) << X;
+		(*this) << 0; // reset all, including padded to 0
+		(*this) << X; // copy non-padded elements
 	};
 };
 
@@ -282,14 +283,27 @@ term2v_diff<vtype>::term2v_diff(const term2v_diff<vtype2> & X, aallocator * al){
 	type * v1 = al->allocate_a<type>(d_size);
 	type * v2 = al->allocate_a<type>(d_size);
 	if (v1){
+		assert(v2);
 		assert(diags.empty());
-		diags.set_ref(v1, d_size);
-		diags << X.diags;
-	};
-	if (v2){
 		assert(rdiags.empty());
+		diags.set_ref(v1, d_size);
 		rdiags.set_ref(v2, d_size);
-		rdiags << X.rdiags;
+		diags << 0;
+		rdiags << 0;
+		for (int i = 0; i < X.size[0]; ++i){
+			int j = 0;
+			type a = X.diags[i - j + X.size[1] - 1];
+			diags[i - j + size[1] - 1] = a;
+			rdiags[j - i + size[0] - 1] = a;
+		};
+		for (int j = 0; j < X.size[1]; ++j){
+			int i = 0;
+			type a = X.diags[i - j + X.size[1] - 1];
+			diags[i - j + size[1] - 1] = a;
+			rdiags[j - i + size[0] - 1] = a;
+		};
+		//diags << X.diags;
+		//rdiags << X.rdiags;
 	};
 };
 
@@ -843,11 +857,11 @@ void term2v_matrix_po<vtype>::reduce(po_mask & U_s, int y_s, po_mask & U_t, int 
 
 template<class vtype>
 void term2v_matrix_po<vtype>::rebuild(po_mask & U_s, int y_s, po_mask & U_t, int y_t){
-	int K1 = parent::size()[0];
-	int K2 = parent::size()[1];
+	//int K1 = parent::size()[0];
+	//int K2 = parent::size()[1];
 	//(*this) << INF(type);
-	//int K1 = source->count(0);
-	//int K1 = source->count(1);
+	int K1 = source->count(0);
+	int K2 = source->count(1);
 	for (int k1 = 0; k1 < K1; ++k1){
 		for (int k2 = 0; k2 < K2; ++k2){
 			if (U_s[k1]){
@@ -912,6 +926,9 @@ term2v_po_reduced<vtype, base>::term2v_po_reduced(const base<vtype2> & Src, aall
 */
 template<class vtype, template <typename> class base>
 void term2v_po_reduced<vtype, base>::init(aallocator * al){
+//#ifdef _DEBUG
+//	ref.init(src(), src().count(0), src().count(1));
+//#endif
 	U_s = 0;
 	U_t = 0;
 	int V = sizeof(vectorizer) / sizeof(type);
@@ -1107,22 +1124,28 @@ void term2v_po_reduced<vtype, base>::rebuild(po_mask & U_s, int y_s, po_mask & U
 		};
 	};
 #ifdef _DEBUG
-	for (int j = 0; j < K2; ++j){
-		if (!U_t[j]){
-			assert(delta_ts[j] >1e30 || delta_ts[j] == ref.operator()(y_s, j));
-		};
-	};
-	for (int i = 0; i < K1; ++i){
-		if (!U_s[i]){
-			assert(delta_st[i] >1e30 || delta_st[i] == ref.operator()(i, y_t));
-		};
-	};
-	for (int i = 0; i < K1; ++i){
+	{
+		/*
+		K1 = ref.count(0);
+		K2 = ref.count(1);
 		for (int j = 0; j < K2; ++j){
-			type v1 = ref.operator()(i, j);
-			type v2 = operator()(i, j);
-			assert( std::abs(v1-v2) < 1e-4 );
+			if (!U_t[j]){
+				assert(delta_ts[j] == ref.operator()(y_s, j));
+			};
 		};
+		for (int i = 0; i < K1; ++i){
+			if (!U_s[i]){
+				assert(delta_st[i] == ref.operator()(i, y_t));
+			};
+		};
+		for (int i = 0; i < K1; ++i){
+			for (int j = 0; j < K2; ++j){
+				type v1 = ref.operator()(i, j);
+				type v2 = operator()(i, j);
+				assert(std::abs(v1 - v2) < 1e-4);
+			};
+		};
+		*/
 	};
 	//for (int i = 0; i < K1; ++i){
 	//	for (int j = 0; j < K2; ++j){

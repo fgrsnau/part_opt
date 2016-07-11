@@ -7,7 +7,7 @@ project (part_opt)
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules)
 
 set (VERSION_MAJOR 1)
-set (VERSION_MINOR 3)
+set (VERSION_MINOR 4)
 
 SET (SRC ../../code)
 SET (MY_LIB_PATH ${CMAKE_SOURCE_DIR}/../../lib/)

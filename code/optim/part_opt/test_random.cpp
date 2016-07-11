@@ -12,7 +12,7 @@
 //typedef double_v1 test_v;
 //typedef float_v4 test_v;
 
-template<class vtype> void solve(energy_auto<typename vtype::type> & f, int rand_inst, int ptype, options & ops){
+template<class vtype> double solve(energy_auto<typename vtype::type> & f, int rand_inst, int ptype, options & ops){
 	//debug::stream << "COMPUTE :" << typeid(vtype).name() << "\n";
 	//return;
 	int nV = f.nV();
@@ -31,6 +31,7 @@ template<class vtype> void solve(energy_auto<typename vtype::type> & f, int rand
 	//debug::stream << "TRW-S time:" << c1.time() << "\n";
 	// This gives a test labeling y and a starting reparametrization
 	debug::stream << "COMPUTE :" << typeid(vtype).name() << " TYPE:" << ptype << " TEST INSTANCE " << rand_inst << " TRW-S time:" << c1.time() << "s\n";
+	double LB = alg.LB;
 	//return;
 	// Print labeling
 	debug::stream << "Labeling best_x: \n";
@@ -61,10 +62,11 @@ template<class vtype> void solve(energy_auto<typename vtype::type> & f, int rand
 	// Total TRWS iterations
 	int nit = alg.total_it;
 	debug::stream << "COMPUTE :" << typeid(vtype).name() << " TYPE:" << ptype << " TEST INSTANCE " << rand_inst << " nit: " << nit << " elim:" << elim << "% / " << time << "s" "\n";
+	return LB;
 };
 
 template<typename type>
-void test_rand(int rand_inst, int ptype, options & ops, int & nit, double & elim, double & time){
+double test_rand(int rand_inst, int ptype, options & ops, int & nit, double & elim, double & time){
 	using exttype::mint2;
 	using exttype::mint3;
 	using exttype::mint4;
@@ -72,7 +74,7 @@ void test_rand(int rand_inst, int ptype, options & ops, int & nit, double & elim
 	datastruct::mgraph G;
 	int M = 100;
 	int N = 100;
-	int K = 16;
+	int K = 13;
 #ifdef _DEBUG
 	M = 20;
 	N = 20;
@@ -150,8 +152,12 @@ void test_rand(int rand_inst, int ptype, options & ops, int & nit, double & elim
 	// Print statistics of the model
 	f.report();
 	// Create solver
-	solve<typename default_vectorizer<type>::vtype>(f, rand_inst, ptype, ops);
-	solve<typename scalalr_vectorizer<type>::vtype>(f, rand_inst, ptype, ops);
+	double LB1 = solve<typename default_vectorizer<type>::vtype>(f, rand_inst, ptype, ops);
+	double LB2 = solve<typename scalalr_vectorizer<type>::vtype>(f, rand_inst, ptype, ops);
+	if (std::abs(LB2 - LB1) > 1e-6*std::max(std::abs(LB1), std::abs(LB2))){
+		throw debug_exception("Lower bounds do not match");
+	};
+	return LB1;
 };
 
 int main(int argc, char *argv[]){
@@ -163,6 +169,7 @@ int main(int argc, char *argv[]){
 	options ops;
 	// options are set like this:
 	ops["max_CPU"] = 2;
+	//ops["max_po_it"] = 0;
 	//ops["max_it"] = 10;
 	//parese input options
 	for (int i = 1; i < argc; ++i){
@@ -177,12 +184,15 @@ int main(int argc, char *argv[]){
 	ops["po_maxit"] = 0;
 	//random testsL
 	for (int inst = 1; inst <= 1; ++inst){
-		//for (int ptype = 1; ptype < 2; ++ptype){
+			//{int ptype = 3;
 		for (int ptype = 0; ptype < 4; ++ptype){
 			int nit1; double elim1; double time1;
-			test_rand<float>(inst, ptype, ops, nit1, elim1, time1);
-			test_rand<double>(inst, ptype, ops, nit1, elim1, time1);
-			debug::stream << "press a key\n";
+			double LB1 = test_rand<float>(inst, ptype, ops, nit1, elim1, time1);
+			double LB2 = test_rand<double>(inst, ptype, ops, nit1, elim1, time1);
+			if (std::abs(LB2 - LB1) > 1e-6*std::max( std::abs(LB1), std::abs(LB2) )){
+				throw debug_exception("Lower bounds do not match");
+			};
+			//debug::stream << "press a key\n";
 			//std::cin.get();
 		};
 	};

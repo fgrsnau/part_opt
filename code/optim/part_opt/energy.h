@@ -18,6 +18,7 @@
 #define INF(type) std::numeric_limits<type>::infinity()
 typedef std::bitset<512> po_mask;
 
+
 using namespace exttype;
 using namespace dynamic;
 
@@ -579,6 +580,7 @@ public:
 	};
 	*/
 	term2v_po_reduced(){};
+#ifndef _DEBUG
 	// copy constructor from base term2
 	template<class vtype2>
 	term2v_po_reduced(const base<vtype2> & Src, aallocator * al) :_src(Src, al){
@@ -589,6 +591,18 @@ public:
 	term2v_po_reduced(const term2v_po_reduced<vtype2, base> & X, aallocator * al) :_src(X._src, al){
 		init(al);
 	};
+#else
+	// copy constructor from base term2
+	template<class vtype2>
+	term2v_po_reduced(const base<vtype2> & Src, aallocator * al) :_src(Src, al), ref(Src,al){
+		init(al);
+	};
+	// copy constructor from self
+	template<class vtype2>
+	term2v_po_reduced(const term2v_po_reduced<vtype2, base> & X, aallocator * al) :_src(X._src, al), ref(Src, al){
+		init(al);
+	};
+#endif
 	void init(aallocator * al);
 	/*
 	virtual tthis * copy(aallocator * al)const override{

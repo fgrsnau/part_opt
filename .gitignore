@@ -49,3 +49,5 @@ projects/part_opt/CMakeCache.txt
 build*
 
 /build*
+
+*.user

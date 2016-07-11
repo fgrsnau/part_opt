@@ -280,6 +280,23 @@ namespace dynamic{
 			CC = x.size();
 		};
 
+		//! inherit operators <<
+		using parent::operator <<;
+		/*
+		num_array<type, dims> & operator << (const type & c){
+			parent::operator << (c);
+			return *this;
+		};
+		*/
+		//! in-range copy / convert
+		template <class type2, class Al2> num_array & operator << (const num_array<type2, dims, Al2> & y){
+			intn<dims> sz = intn<dims>::min(size(),y.size());
+			for (titer ii(sz); ii.allowed(); ++ii){
+				(*this)[ii] = type(y[ii]);
+			};
+			return *this;
+		};
+
 		//default destructor
 	public:
 		// inherited from buffer:

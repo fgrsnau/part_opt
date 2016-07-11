@@ -1,0 +1,3563 @@
+Recognized models: 0Potts terms, 0T-Linear terms,
+ 0T-Quadratic terms, 0Diff terms, 19800 Full terms
+X Max data value: 78.1172
+Min data delta: 0.0078125
+Selecting data toolerance: 0.01
+Stream graph layers: 199 time: 0.000977188s. 
+core size:24Mb, writable: 1Mb.
+Options:
+all_to_one: 0
+fast_msg: 1
+it_batch: 10
+local_min_tol: 0
+max_CPU: 2
+max_it: 1000
+n_sensetivity: 1
+po_it_batch: 5
+po_max_it: 50
+po_maxit: 0
+rebuild_incremental: 1
+reduce_immovable: 1
+rel_conv_tol: 0.01
+rel_gap_tol: 0.1
+sensetivity: 0
+use_cut: 1
+use_pixel_cut: 1
+weak_po: 0
+it10 LB=244551.0920 E=274311.7969 dPhi=1 mrg=-46.44 dt=0.064s. 7.9 GB/s.
+it20 LB=245152.0347 E=274311.7969 dPhi=7 mrg=-46.29 dt=0.060s. 8.4 GB/s.
+it30 LB=245322.2129 E=274311.7969 dPhi=3 mrg=-46.34 dt=0.063s. 8.0 GB/s.
+it40 LB=245397.0832 E=274311.7969 dPhi=2 mrg=-46.37 dt=0.058s. 8.7 GB/s.
+it50 LB=245435.3670 E=274311.7969 dPhi=1 mrg=-46.38 dt=0.060s. 8.4 GB/s.
+it60 LB=245457.4397 E=274311.7969 dPhi=1 mrg=-46.39 dt=0.061s. 8.3 GB/s.
+it70 LB=245470.9914 E=274311.7969 dPhi=0.9 mrg=-46.39 dt=0.057s. 8.8 GB/s.
+it80 LB=245479.7996 E=274311.7969 dPhi=0.8 mrg=-46.39 dt=0.058s. 8.7 GB/s.
+it90 LB=245485.7917 E=274311.7969 dPhi=0.7 mrg=-46.39 dt=0.058s. 8.8 GB/s.
+it100 LB=245490.0399 E=274311.7969 dPhi=0.5 mrg=-46.39 dt=0.056s. 9.0 GB/s.
+it110 LB=245493.1605 E=274311.7969 dPhi=0.5 mrg=-46.39 dt=0.056s. 9.0 GB/s.
+it120 LB=245495.5750 E=274311.7969 dPhi=0.5 mrg=-46.39 dt=0.057s. 8.9 GB/s.
+it130 LB=245497.4717 E=274311.7969 dPhi=0.4 mrg=-46.39 dt=0.057s. 8.8 GB/s.
+it140 LB=245498.9793 E=274170.4609 dPhi=0.4 mrg=-46.39 dt=0.058s. 8.8 GB/s.
+it150 LB=245500.1935 E=274170.4609 dPhi=0.3 mrg=-46.39 dt=0.058s. 8.7 GB/s.
+it160 LB=245501.1490 E=274170.4609 dPhi=0.3 mrg=-46.39 dt=0.073s. 6.9 GB/s.
+it170 LB=245501.9061 E=274170.4609 dPhi=0.2 mrg=-46.39 dt=0.074s. 6.8 GB/s.
+it180 LB=245502.5243 E=274170.4609 dPhi=0.2 mrg=-46.39 dt=0.067s. 7.5 GB/s.
+it190 LB=245503.0330 E=274170.4609 dPhi=0.2 mrg=-46.39 dt=0.060s. 8.4 GB/s.
+it200 LB=245503.4508 E=274170.4609 dPhi=0.2 mrg=-46.39 dt=0.062s. 8.2 GB/s.
+it210 LB=245503.7978 E=274170.4609 dPhi=0.2 mrg=-46.39 dt=0.063s. 8.0 GB/s.
+it220 LB=245504.0898 E=274170.4609 dPhi=0.2 mrg=-46.39 dt=0.060s. 8.4 GB/s.
+it230 LB=245504.3368 E=274170.4609 dPhi=0.2 mrg=-46.39 dt=0.060s. 8.4 GB/s.
+it240 LB=245504.5462 E=274170.4609 dPhi=0.1 mrg=-46.39 dt=0.059s. 8.6 GB/s.
+it250 LB=245504.7272 E=274170.4609 dPhi=0.1 mrg=-46.39 dt=0.058s. 8.7 GB/s.
+it260 LB=245504.8851 E=274170.4609 dPhi=0.1 mrg=-46.39 dt=0.058s. 8.7 GB/s.
+it270 LB=245505.0244 E=274170.4609 dPhi=0.1 mrg=-46.39 dt=0.059s. 8.6 GB/s.
+it280 LB=245505.1478 E=274170.4609 dPhi=0.09 mrg=-46.39 dt=0.057s. 8.9 GB/s.
+it290 LB=245505.2549 E=274170.4609 dPhi=0.05 mrg=-46.39 dt=0.056s. 9.0 GB/s.
+it300 LB=245505.3448 E=274170.4609 dPhi=0.05 mrg=-46.39 dt=0.055s. 9.2 GB/s.
+it310 LB=245505.4203 E=274170.4609 dPhi=0.05 mrg=-46.39 dt=0.058s. 8.7 GB/s.
+it320 LB=245505.4838 E=274170.4609 dPhi=0.05 mrg=-46.39 dt=0.058s. 8.7 GB/s.
+it330 LB=245505.5380 E=274170.4609 dPhi=0.05 mrg=-46.39 dt=0.057s. 8.9 GB/s.
+it340 LB=245505.5835 E=274170.4609 dPhi=0.05 mrg=-46.39 dt=0.057s. 8.9 GB/s.
+it350 LB=245505.6226 E=274170.4609 dPhi=0.05 mrg=-46.39 dt=0.056s. 9.1 GB/s.
+it360 LB=245505.6570 E=274170.4609 dPhi=0.05 mrg=-46.39 dt=0.058s. 8.6 GB/s.
+it370 LB=245505.6873 E=274170.4609 dPhi=0.04 mrg=-46.39 dt=0.057s. 8.9 GB/s.
+it380 LB=245505.7142 E=274170.4609 dPhi=0.05 mrg=-46.39 dt=0.057s. 8.8 GB/s.
+it390 LB=245505.7380 E=274170.4609 dPhi=0.05 mrg=-46.39 dt=0.060s. 8.5 GB/s.
+it400 LB=245505.7594 E=274170.4609 dPhi=0.05 mrg=-46.39 dt=0.057s. 8.9 GB/s.
+it410 LB=245505.7787 E=274170.4609 dPhi=0.05 mrg=-46.39 dt=0.058s. 8.7 GB/s.
+it420 LB=245505.7960 E=274170.4609 dPhi=0.04 mrg=-46.39 dt=0.058s. 8.7 GB/s.
+it430 LB=245505.8121 E=274170.4609 dPhi=0.04 mrg=-46.39 dt=0.058s. 8.7 GB/s.
+it440 LB=245505.8265 E=274170.4609 dPhi=0.04 mrg=-46.39 dt=0.063s. 8.0 GB/s.
+it450 LB=245505.8397 E=274170.4609 dPhi=0.04 mrg=-46.39 dt=0.056s. 9.1 GB/s.
+it460 LB=245505.8519 E=274170.4609 dPhi=0.04 mrg=-46.39 dt=0.055s. 9.1 GB/s.
+it470 LB=245505.8634 E=274170.4609 dPhi=0.04 mrg=-46.39 dt=0.056s. 9.0 GB/s.
+it480 LB=245505.8744 E=274170.4609 dPhi=0.04 mrg=-46.39 dt=0.056s. 9.1 GB/s.
+it490 LB=245505.8848 E=274170.4609 dPhi=0.03 mrg=-46.39 dt=0.056s. 9.0 GB/s.
+it500 LB=245505.8946 E=274170.4609 dPhi=0.03 mrg=-46.39 dt=0.058s. 8.6 GB/s.
+it510 LB=245505.9038 E=274170.4609 dPhi=0.03 mrg=-46.39 dt=0.060s. 8.5 GB/s.
+it520 LB=245505.9127 E=274170.4609 dPhi=0.03 mrg=-46.39 dt=0.064s. 7.9 GB/s.
+it530 LB=245505.9211 E=274170.4609 dPhi=0.02 mrg=-46.39 dt=0.058s. 8.7 GB/s.
+it540 LB=245505.9292 E=274170.4609 dPhi=0.02 mrg=-46.39 dt=0.061s. 8.3 GB/s.
+it550 LB=245505.9366 E=274170.4609 dPhi=0.02 mrg=-46.39 dt=0.060s. 8.4 GB/s.
+it560 LB=245505.9439 E=274170.4609 dPhi=0.02 mrg=-46.39 dt=0.062s. 8.1 GB/s.
+it570 LB=245505.9510 E=274170.4609 dPhi=0.02 mrg=-46.39 dt=0.062s. 8.2 GB/s.
+it580 LB=245505.9577 E=274170.4609 dPhi=0.02 mrg=-46.39 dt=0.061s. 8.2 GB/s.
+it590 LB=245505.9643 E=274170.4609 dPhi=0.02 mrg=-46.39 dt=0.063s. 8.0 GB/s.
+it600 LB=245505.9707 E=274170.4609 dPhi=0.01 mrg=-46.39 dt=0.063s. 8.1 GB/s.
+it610 LB=245505.9771 E=274170.4609 dPhi=0.01 mrg=-46.39 dt=0.057s. 8.8 GB/s.
+it620 LB=245505.9832 E=274170.4609 dPhi=0.01 mrg=-46.39 dt=0.058s. 8.7 GB/s.
+it630 LB=245505.9894 E=274170.4609 dPhi=0.01 mrg=-46.39 dt=0.059s. 8.6 GB/s.
+it640 LB=245505.9951 E=274170.4609 dPhi=0.01 mrg=-46.39 dt=0.056s. 9.1 GB/s.
+it650 LB=245506.0011 E=274170.4609 dPhi=0.01 mrg=-46.39 dt=0.058s. 8.7 GB/s.
+it660 LB=245506.0067 E=274170.4609 dPhi=0.01 mrg=-46.39 dt=0.056s. 9.1 GB/s.
+it670 LB=245506.0124 E=274170.4609 dPhi=0.01 mrg=-46.39 dt=0.056s. 9.1 GB/s.
+it680 LB=245506.0182 E=274170.4609 dPhi=0.01 mrg=-46.39 dt=0.055s. 9.2 GB/s.
+it690 LB=245506.0235 E=274170.4609 dPhi=0.01 mrg=-46.39 dt=0.056s. 9.0 GB/s.
+it700 LB=245506.0288 E=274170.4609 dPhi=0.01 mrg=-46.39 dt=0.057s. 8.8 GB/s.
+it710 LB=245506.0343 E=274170.4609 dPhi=0.01 mrg=-46.39 dt=0.056s. 9.0 GB/s.
+it720 LB=245506.0395 E=274170.4609 dPhi=0.01 mrg=-46.39 dt=0.056s. 9.0 GB/s.
+it730 LB=245506.0446 E=274170.4609 dPhi=0.009 mrg=-46.39 dt=0.058s. 8.7 GB/s.
+it740 LB=245506.0497 E=274170.4609 dPhi=0.009 mrg=-46.39 dt=0.062s. 8.1 GB/s.
+it750 LB=245506.0548 E=274170.4609 dPhi=0.009 mrg=-46.39 dt=0.074s. 6.8 GB/s.
+it760 LB=245506.0599 E=274170.4609 dPhi=0.008 mrg=-46.39 dt=0.074s. 6.8 GB/s.
+it770 LB=245506.0648 E=274170.4609 dPhi=0.008 mrg=-46.39 dt=0.074s. 6.8 GB/s.
+it780 LB=245506.0697 E=274170.4609 dPhi=0.008 mrg=-46.39 dt=0.071s. 7.2 GB/s.
+it790 LB=245506.0746 E=274170.4609 dPhi=0.008 mrg=-46.39 dt=0.071s. 7.1 GB/s.
+it800 LB=245506.0793 E=274170.4609 dPhi=0.007 mrg=-46.39 dt=0.073s. 6.9 GB/s.
+it810 LB=245506.0839 E=274170.4609 dPhi=0.007 mrg=-46.39 dt=0.076s. 6.6 GB/s.
+it820 LB=245506.0884 E=274170.4609 dPhi=0.007 mrg=-46.39 dt=0.085s. 6.0 GB/s.
+it830 LB=245506.0931 E=274170.4609 dPhi=0.007 mrg=-46.39 dt=0.092s. 5.5 GB/s.
+it840 LB=245506.0978 E=274170.4609 dPhi=0.006 mrg=-46.39 dt=0.078s. 6.5 GB/s.
+it850 LB=245506.1019 E=274170.4609 dPhi=0.006 mrg=-46.39 dt=0.085s. 6.0 GB/s.
+it860 LB=245506.1064 E=274170.4609 dPhi=0.006 mrg=-46.39 dt=0.078s. 6.5 GB/s.
+it870 LB=245506.1108 E=274170.4609 dPhi=0.006 mrg=-46.39 dt=0.075s. 6.8 GB/s.
+it880 LB=245506.1150 E=274170.4609 dPhi=0.006 mrg=-46.39 dt=0.080s. 6.3 GB/s.
+it890 LB=245506.1192 E=274170.4609 dPhi=0.005 mrg=-46.39 dt=0.074s. 6.8 GB/s.
+it900 LB=245506.1235 E=274170.4609 dPhi=0.005 mrg=-46.39 dt=0.072s. 7.0 GB/s.
+it910 LB=245506.1276 E=274170.4609 dPhi=0.005 mrg=-46.39 dt=0.076s. 6.6 GB/s.
+it920 LB=245506.1316 E=274170.4609 dPhi=0.005 mrg=-46.39 dt=0.079s. 6.4 GB/s.
+it930 LB=245506.1359 E=274170.4609 dPhi=0.005 mrg=-46.39 dt=0.079s. 6.4 GB/s.
+it940 LB=245506.1400 E=274170.4609 dPhi=0.005 mrg=-46.39 dt=0.076s. 6.6 GB/s.
+it950 LB=245506.1440 E=274170.4609 dPhi=0.004 mrg=-46.39 dt=0.075s. 6.7 GB/s.
+it960 LB=245506.1481 E=274170.4609 dPhi=0.004 mrg=-46.39 dt=0.073s. 6.9 GB/s.
+it970 LB=245506.1518 E=274170.4609 dPhi=0.004 mrg=-46.39 dt=0.077s. 6.6 GB/s.
+it980 LB=245506.1558 E=274170.4609 dPhi=0.004 mrg=-46.39 dt=0.074s. 6.8 GB/s.
+it990 LB=245506.1597 E=274170.4609 dPhi=0.004 mrg=-46.39 dt=0.077s. 6.5 GB/s.
+it1000 LB=245506.1635 E=274170.4609 dPhi=0.004 mrg=-46.39 dt=0.075s. 6.7 GB/s.
+Reached maximum number of iterations (1000).
+LB= 245506.1635 E= 274170.4609
+COMPUTE :struct float_v4 TYPE:0 TEST INSTANCE 1 TRW-S time:8.88609s
+Labeling best_x: 
+0, 10, 8, 4, 2, 4, 1, 4, 2, 11, ...
+Map is not yet strictly improving
+ICM improved E: 268039.257813
+core size:24Mb, writable: 1Mb.
+Marking immovable (init) 10000+0 labels (100% remains)
+PO_sensetivity:0
+PO_it:1
+it1005 LB=-31061.3960 E=-14221.0703 dPhi=1 mrg=-22.13 dt=0.043s. 5.9 GB/s.
+Reached energy below 0
+LB= -31061.3960 E= -14221.0703
+Improved E:-17977.4141
+Marking immovable (cut) 6034+113688 (11 non-unique) labels (0.231667% remains)
+PO_it:2
+it1010 LB=0.0000 E=0.0000 dPhi=1 mrg=   0 dt=0.034s. 7.5 GB/s.
+Reached duality gap < -1.19209e-006
+LB=   0.0000 E=   0.0000
+Improved E:  0.0000
+Marking immovable (cut) 0+0 labels (0.231667% remains)
+TRW-S found optimal solution
+Map is strictly improving
+Finished. Total iterations: 1010 Persistency proven: 0.231667%
+PO Times:
+ Total: 4.80044
+ Msgs: 0.152901
+ Cuts: 0.0378562
+ Node cuts: 3.81425
+ Rebuild: 4.04237
+Alive Labels mask: 
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+Labeling y: 
+(0)(10)(8)(4)(2)(4)(1)(4)(2)(11)...
+COMPUTE :struct float_v4 TYPE:0 TEST INSTANCE 1 nit: 1010 elim:0% / 13.7816s
+Stream graph layers: 199 time: 0.00111543s. 
+core size:17Mb, writable: 1Mb.
+Options:
+all_to_one: 0
+fast_msg: 1
+it_batch: 10
+local_min_tol: 0
+max_CPU: 2
+max_it: 1000
+n_sensetivity: 1
+po_it_batch: 5
+po_max_it: 50
+po_maxit: 0
+rebuild_incremental: 1
+reduce_immovable: 1
+rel_conv_tol: 0.01
+rel_gap_tol: 0.1
+sensetivity: 0
+use_cut: 1
+use_pixel_cut: 1
+weak_po: 0
+it10 LB=244551.0920 E=274311.7969 dPhi=1e+002 mrg=-46.44 dt=0.131s. 2.8 GB/s.
+it20 LB=245152.0348 E=274311.7969 dPhi=7 mrg=-46.29 dt=0.130s. 2.9 GB/s.
+it30 LB=245322.2130 E=274311.7969 dPhi=3 mrg=-46.34 dt=0.127s. 2.9 GB/s.
+it40 LB=245397.0832 E=274311.7969 dPhi=2 mrg=-46.37 dt=0.129s. 2.9 GB/s.
+it50 LB=245435.3671 E=274311.7969 dPhi=1 mrg=-46.38 dt=0.145s. 2.6 GB/s.
+it60 LB=245457.4398 E=274311.7969 dPhi=1 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+it70 LB=245470.9915 E=274311.7969 dPhi=0.9 mrg=-46.39 dt=0.132s. 2.8 GB/s.
+it80 LB=245479.7997 E=274311.7969 dPhi=0.8 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+it90 LB=245485.7917 E=274311.7969 dPhi=0.7 mrg=-46.39 dt=0.128s. 2.9 GB/s.
+it100 LB=245490.0399 E=274311.7969 dPhi=0.5 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+it110 LB=245493.1605 E=274311.7969 dPhi=0.5 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+it120 LB=245495.5751 E=274311.7969 dPhi=0.5 mrg=-46.39 dt=0.128s. 2.9 GB/s.
+it130 LB=245497.4719 E=274311.7969 dPhi=0.4 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+it140 LB=245498.9794 E=274306.4297 dPhi=0.4 mrg=-46.39 dt=0.137s. 2.7 GB/s.
+it150 LB=245500.1933 E=274306.4297 dPhi=0.3 mrg=-46.39 dt=0.128s. 2.9 GB/s.
+it160 LB=245501.1492 E=274306.4297 dPhi=0.3 mrg=-46.39 dt=0.128s. 2.9 GB/s.
+it170 LB=245501.9061 E=274306.4297 dPhi=0.2 mrg=-46.39 dt=0.128s. 2.9 GB/s.
+it180 LB=245502.5242 E=274306.4297 dPhi=0.2 mrg=-46.39 dt=0.130s. 2.9 GB/s.
+it190 LB=245503.0328 E=274306.4297 dPhi=0.2 mrg=-46.39 dt=0.128s. 2.9 GB/s.
+it200 LB=245503.4508 E=274306.4297 dPhi=0.2 mrg=-46.39 dt=0.132s. 2.8 GB/s.
+it210 LB=245503.7976 E=274306.4297 dPhi=0.2 mrg=-46.39 dt=0.130s. 2.9 GB/s.
+it220 LB=245504.0896 E=274306.4297 dPhi=0.2 mrg=-46.39 dt=0.132s. 2.8 GB/s.
+it230 LB=245504.3368 E=274306.4297 dPhi=0.2 mrg=-46.39 dt=0.138s. 2.7 GB/s.
+it240 LB=245504.5461 E=274306.4297 dPhi=0.1 mrg=-46.39 dt=0.133s. 2.8 GB/s.
+it250 LB=245504.7270 E=274306.4297 dPhi=0.1 mrg=-46.39 dt=0.136s. 2.7 GB/s.
+it260 LB=245504.8848 E=274306.4297 dPhi=0.1 mrg=-46.39 dt=0.133s. 2.8 GB/s.
+it270 LB=245505.0241 E=274306.4297 dPhi=0.1 mrg=-46.39 dt=0.128s. 2.9 GB/s.
+it280 LB=245505.1473 E=274306.4297 dPhi=0.09 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+it290 LB=245505.2545 E=274306.4297 dPhi=0.05 mrg=-46.39 dt=0.128s. 2.9 GB/s.
+it300 LB=245505.3443 E=274306.4297 dPhi=0.05 mrg=-46.39 dt=0.127s. 2.9 GB/s.
+it310 LB=245505.4195 E=274306.4297 dPhi=0.05 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+it320 LB=245505.4833 E=274306.4297 dPhi=0.05 mrg=-46.39 dt=0.130s. 2.9 GB/s.
+it330 LB=245505.5372 E=274306.4297 dPhi=0.05 mrg=-46.39 dt=0.137s. 2.7 GB/s.
+it340 LB=245505.5828 E=274306.4297 dPhi=0.05 mrg=-46.39 dt=0.133s. 2.8 GB/s.
+it350 LB=245505.6217 E=274306.4297 dPhi=0.05 mrg=-46.39 dt=0.127s. 2.9 GB/s.
+it360 LB=245505.6563 E=274306.4297 dPhi=0.05 mrg=-46.39 dt=0.126s. 3.0 GB/s.
+it370 LB=245505.6865 E=274306.4297 dPhi=0.04 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+it380 LB=245505.7133 E=274306.4297 dPhi=0.05 mrg=-46.39 dt=0.128s. 2.9 GB/s.
+it390 LB=245505.7370 E=274306.4297 dPhi=0.05 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+it400 LB=245505.7584 E=274306.4297 dPhi=0.05 mrg=-46.39 dt=0.130s. 2.9 GB/s.
+it410 LB=245505.7775 E=274306.4297 dPhi=0.05 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+it420 LB=245505.7948 E=274306.4297 dPhi=0.04 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+it430 LB=245505.8106 E=274306.4297 dPhi=0.04 mrg=-46.39 dt=0.128s. 2.9 GB/s.
+it440 LB=245505.8251 E=274306.4297 dPhi=0.04 mrg=-46.39 dt=0.135s. 2.8 GB/s.
+it450 LB=245505.8380 E=274306.4297 dPhi=0.04 mrg=-46.39 dt=0.132s. 2.8 GB/s.
+it460 LB=245505.8502 E=274306.4297 dPhi=0.04 mrg=-46.39 dt=0.134s. 2.8 GB/s.
+it470 LB=245505.8618 E=274306.4297 dPhi=0.04 mrg=-46.39 dt=0.139s. 2.7 GB/s.
+it480 LB=245505.8728 E=274306.4297 dPhi=0.04 mrg=-46.39 dt=0.140s. 2.7 GB/s.
+it490 LB=245505.8829 E=274306.4297 dPhi=0.03 mrg=-46.39 dt=0.139s. 2.7 GB/s.
+it500 LB=245505.8925 E=274306.4297 dPhi=0.03 mrg=-46.39 dt=0.135s. 2.8 GB/s.
+it510 LB=245505.9019 E=274306.4297 dPhi=0.03 mrg=-46.39 dt=0.133s. 2.8 GB/s.
+it520 LB=245505.9106 E=274306.4297 dPhi=0.03 mrg=-46.39 dt=0.136s. 2.7 GB/s.
+it530 LB=245505.9187 E=274306.4297 dPhi=0.02 mrg=-46.39 dt=0.132s. 2.8 GB/s.
+it540 LB=245505.9266 E=274306.4297 dPhi=0.02 mrg=-46.39 dt=0.127s. 2.9 GB/s.
+it550 LB=245505.9340 E=274306.4297 dPhi=0.02 mrg=-46.39 dt=0.126s. 2.9 GB/s.
+it560 LB=245505.9413 E=274306.4297 dPhi=0.02 mrg=-46.39 dt=0.126s. 2.9 GB/s.
+it570 LB=245505.9482 E=274306.4297 dPhi=0.02 mrg=-46.39 dt=0.127s. 2.9 GB/s.
+it580 LB=245505.9549 E=274306.4297 dPhi=0.02 mrg=-46.39 dt=0.130s. 2.9 GB/s.
+it590 LB=245505.9615 E=274306.4297 dPhi=0.02 mrg=-46.39 dt=0.130s. 2.9 GB/s.
+it600 LB=245505.9679 E=274306.4297 dPhi=0.01 mrg=-46.39 dt=0.132s. 2.8 GB/s.
+it610 LB=245505.9742 E=274306.4297 dPhi=0.01 mrg=-46.39 dt=0.137s. 2.7 GB/s.
+it620 LB=245505.9804 E=274306.4297 dPhi=0.01 mrg=-46.39 dt=0.141s. 2.6 GB/s.
+it630 LB=245505.9865 E=274306.4297 dPhi=0.01 mrg=-46.39 dt=0.133s. 2.8 GB/s.
+it640 LB=245505.9922 E=274306.4297 dPhi=0.01 mrg=-46.39 dt=0.134s. 2.8 GB/s.
+it650 LB=245505.9980 E=274306.4297 dPhi=0.01 mrg=-46.39 dt=0.137s. 2.7 GB/s.
+it660 LB=245506.0038 E=274306.4297 dPhi=0.01 mrg=-46.39 dt=0.139s. 2.7 GB/s.
+it670 LB=245506.0093 E=274306.4297 dPhi=0.01 mrg=-46.39 dt=0.135s. 2.8 GB/s.
+it680 LB=245506.0149 E=274306.4297 dPhi=0.01 mrg=-46.39 dt=0.139s. 2.7 GB/s.
+it690 LB=245506.0202 E=274306.4297 dPhi=0.01 mrg=-46.39 dt=0.143s. 2.6 GB/s.
+it700 LB=245506.0255 E=274306.4297 dPhi=0.01 mrg=-46.39 dt=0.153s. 2.4 GB/s.
+it710 LB=245506.0308 E=274306.4297 dPhi=0.01 mrg=-46.39 dt=0.133s. 2.8 GB/s.
+it720 LB=245506.0359 E=274306.4297 dPhi=0.01 mrg=-46.39 dt=0.131s. 2.8 GB/s.
+it730 LB=245506.0410 E=274306.4297 dPhi=0.009 mrg=-46.39 dt=0.128s. 2.9 GB/s.
+it740 LB=245506.0459 E=274306.4297 dPhi=0.009 mrg=-46.39 dt=0.132s. 2.8 GB/s.
+it750 LB=245506.0509 E=274306.4297 dPhi=0.009 mrg=-46.39 dt=0.138s. 2.7 GB/s.
+it760 LB=245506.0558 E=274306.4297 dPhi=0.008 mrg=-46.39 dt=0.135s. 2.7 GB/s.
+it770 LB=245506.0606 E=274306.4297 dPhi=0.008 mrg=-46.39 dt=0.138s. 2.7 GB/s.
+it780 LB=245506.0654 E=274306.4297 dPhi=0.008 mrg=-46.39 dt=0.131s. 2.8 GB/s.
+it790 LB=245506.0701 E=274306.4297 dPhi=0.008 mrg=-46.39 dt=0.130s. 2.9 GB/s.
+it800 LB=245506.0747 E=274306.4297 dPhi=0.007 mrg=-46.39 dt=0.131s. 2.8 GB/s.
+it810 LB=245506.0793 E=274306.4297 dPhi=0.007 mrg=-46.39 dt=0.131s. 2.8 GB/s.
+it820 LB=245506.0838 E=274306.4297 dPhi=0.007 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+it830 LB=245506.0883 E=274306.4297 dPhi=0.007 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+it840 LB=245506.0926 E=274306.4297 dPhi=0.006 mrg=-46.39 dt=0.130s. 2.9 GB/s.
+it850 LB=245506.0971 E=274306.4297 dPhi=0.006 mrg=-46.39 dt=0.130s. 2.9 GB/s.
+it860 LB=245506.1013 E=274306.4297 dPhi=0.006 mrg=-46.39 dt=0.128s. 2.9 GB/s.
+it870 LB=245506.1057 E=274306.4297 dPhi=0.006 mrg=-46.39 dt=0.127s. 2.9 GB/s.
+it880 LB=245506.1100 E=274306.4297 dPhi=0.006 mrg=-46.39 dt=0.128s. 2.9 GB/s.
+it890 LB=245506.1138 E=274306.4297 dPhi=0.005 mrg=-46.39 dt=0.128s. 2.9 GB/s.
+it900 LB=245506.1182 E=274306.4297 dPhi=0.005 mrg=-46.39 dt=0.136s. 2.7 GB/s.
+it910 LB=245506.1221 E=274306.4297 dPhi=0.005 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+it920 LB=245506.1261 E=274306.4297 dPhi=0.005 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+it930 LB=245506.1301 E=274306.4297 dPhi=0.005 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+it940 LB=245506.1341 E=274306.4297 dPhi=0.005 mrg=-46.39 dt=0.132s. 2.8 GB/s.
+it950 LB=245506.1380 E=274306.4297 dPhi=0.004 mrg=-46.39 dt=0.131s. 2.8 GB/s.
+it960 LB=245506.1420 E=274306.4297 dPhi=0.004 mrg=-46.39 dt=0.131s. 2.8 GB/s.
+it970 LB=245506.1456 E=274306.4297 dPhi=0.004 mrg=-46.39 dt=0.128s. 2.9 GB/s.
+it980 LB=245506.1494 E=274306.4297 dPhi=0.004 mrg=-46.39 dt=0.131s. 2.8 GB/s.
+it990 LB=245506.1533 E=274306.4297 dPhi=0.004 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+it1000 LB=245506.1569 E=274306.4297 dPhi=0.004 mrg=-46.39 dt=0.129s. 2.9 GB/s.
+Reached maximum number of iterations (1000).
+LB= 245506.1569 E= 274306.4297
+COMPUTE :struct float_v1 TYPE:0 TEST INSTANCE 1 TRW-S time:15.7606s
+Labeling best_x: 
+0, 10, 8, 4, 2, 4, 1, 4, 2, 11, ...
+Map is not yet strictly improving
+ICM improved E: 268050.226563
+core size:17Mb, writable: 1Mb.
+Marking immovable (init) 10000+0 labels (100% remains)
+PO_sensetivity:0
+PO_it:1
+it1005 LB=-31122.7896 E=-14064.0625 dPhi=1e+002 mrg=-22.72 dt=0.066s. 2.8 GB/s.
+Reached energy below 0
+LB= -31122.7896 E= -14064.0625
+Improved E:-17920.9609
+Marking immovable (cut) 6077+113644 (10 non-unique) labels (0.2325% remains)
+PO_it:2
+it1010 LB=-0.0000 E=0.0000 dPhi=1 mrg=   0 dt=0.045s. 4.1 GB/s.
+Reached duality gap < 4.76837e-007
+LB=  -0.0000 E=   0.0000
+Improved E:  0.0000
+Marking immovable (cut) 0+0 labels (0.2325% remains)
+TRW-S found optimal solution
+Map is strictly improving
+Finished. Total iterations: 1010 Persistency proven: 0.2325%
+PO Times:
+ Total: 3.6314
+ Msgs: 0.186939
+ Cuts: 0.0348529
+ Node cuts: 2.7924
+ Rebuild: 2.89111
+Alive Labels mask: 
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+Labeling y: 
+(0)(10)(8)(4)(2)(4)(1)(4)(2)(11)...
+COMPUTE :struct float_v1 TYPE:0 TEST INSTANCE 1 nit: 1010 elim:0% / 19.4879s
+Recognized models: 0Potts terms, 0T-Linear terms,
+ 0T-Quadratic terms, 0Diff terms, 19800 Full terms
+X Max data value: 78.1172
+Min data delta: 0.0078125
+Selecting data toolerance: 0.001
+Stream graph layers: 199 time: 0.000603428s. 
+core size:32Mb, writable: 2Mb.
+Options:
+all_to_one: 0
+fast_msg: 1
+it_batch: 10
+local_min_tol: 0
+max_CPU: 2
+max_it: 1000
+n_sensetivity: 1
+po_it_batch: 5
+po_max_it: 50
+po_maxit: 0
+rebuild_incremental: 1
+reduce_immovable: 1
+rel_conv_tol: 0.01
+rel_gap_tol: 0.1
+sensetivity: 0
+use_cut: 1
+use_pixel_cut: 1
+weak_po: 0
+it10 LB=244551.0921 E=274311.7969 dPhi=1e+002 mrg=-46.44 dt=0.170s. 4.1 GB/s.
+it20 LB=245152.0349 E=274311.7969 dPhi=7 mrg=-46.29 dt=0.156s. 4.5 GB/s.
+it30 LB=245322.2131 E=274311.7969 dPhi=3 mrg=-46.34 dt=0.163s. 4.3 GB/s.
+it40 LB=245397.0832 E=274311.7969 dPhi=2 mrg=-46.37 dt=0.157s. 4.4 GB/s.
+it50 LB=245435.3671 E=274311.7969 dPhi=1 mrg=-46.38 dt=0.153s. 4.5 GB/s.
+it60 LB=245457.4398 E=274311.7969 dPhi=1 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it70 LB=245470.9915 E=274311.7969 dPhi=0.9 mrg=-46.39 dt=0.155s. 4.5 GB/s.
+it80 LB=245479.7997 E=274311.7969 dPhi=0.8 mrg=-46.39 dt=0.169s. 4.1 GB/s.
+it90 LB=245485.7918 E=274311.7969 dPhi=0.7 mrg=-46.39 dt=0.175s. 4.0 GB/s.
+it100 LB=245490.0401 E=274311.7969 dPhi=0.5 mrg=-46.39 dt=0.161s. 4.3 GB/s.
+it110 LB=245493.1605 E=274311.7969 dPhi=0.5 mrg=-46.39 dt=0.163s. 4.3 GB/s.
+it120 LB=245495.5751 E=274311.7969 dPhi=0.5 mrg=-46.39 dt=0.153s. 4.5 GB/s.
+it130 LB=245497.4720 E=274311.7969 dPhi=0.4 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it140 LB=245498.9793 E=274311.7969 dPhi=0.4 mrg=-46.39 dt=0.158s. 4.4 GB/s.
+it150 LB=245500.1932 E=274149.5938 dPhi=0.3 mrg=-46.39 dt=0.158s. 4.4 GB/s.
+it160 LB=245501.1488 E=274149.5938 dPhi=0.3 mrg=-46.39 dt=0.157s. 4.4 GB/s.
+it170 LB=245501.9058 E=274149.5938 dPhi=0.2 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it180 LB=245502.5236 E=274149.5938 dPhi=0.2 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it190 LB=245503.0319 E=274149.5938 dPhi=0.2 mrg=-46.39 dt=0.157s. 4.4 GB/s.
+it200 LB=245503.4495 E=274149.5938 dPhi=0.2 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it210 LB=245503.7960 E=274149.5938 dPhi=0.2 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it220 LB=245504.0873 E=274149.5938 dPhi=0.2 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it230 LB=245504.3338 E=274149.5938 dPhi=0.2 mrg=-46.39 dt=0.153s. 4.6 GB/s.
+it240 LB=245504.5425 E=274149.5938 dPhi=0.1 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it250 LB=245504.7226 E=274149.5938 dPhi=0.1 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it260 LB=245504.8796 E=274149.5938 dPhi=0.1 mrg=-46.39 dt=0.153s. 4.6 GB/s.
+it270 LB=245505.0179 E=274149.5938 dPhi=0.1 mrg=-46.39 dt=0.162s. 4.3 GB/s.
+it280 LB=245505.1403 E=274149.5938 dPhi=0.09 mrg=-46.39 dt=0.162s. 4.3 GB/s.
+it290 LB=245505.2461 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.159s. 4.4 GB/s.
+it300 LB=245505.3349 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.167s. 4.2 GB/s.
+it310 LB=245505.4090 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.157s. 4.4 GB/s.
+it320 LB=245505.4714 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.156s. 4.5 GB/s.
+it330 LB=245505.5240 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it340 LB=245505.5679 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it350 LB=245505.6058 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it360 LB=245505.6386 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.155s. 4.5 GB/s.
+it370 LB=245505.6672 E=274149.5938 dPhi=0.04 mrg=-46.39 dt=0.153s. 4.5 GB/s.
+it380 LB=245505.6923 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.153s. 4.6 GB/s.
+it390 LB=245505.7144 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it400 LB=245505.7340 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.160s. 4.3 GB/s.
+it410 LB=245505.7514 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.158s. 4.4 GB/s.
+it420 LB=245505.7670 E=274149.5938 dPhi=0.04 mrg=-46.39 dt=0.165s. 4.2 GB/s.
+it430 LB=245505.7809 E=274149.5938 dPhi=0.04 mrg=-46.39 dt=0.162s. 4.3 GB/s.
+it440 LB=245505.7934 E=274149.5938 dPhi=0.04 mrg=-46.39 dt=0.153s. 4.6 GB/s.
+it450 LB=245505.8045 E=274149.5938 dPhi=0.04 mrg=-46.39 dt=0.158s. 4.4 GB/s.
+it460 LB=245505.8148 E=274149.5938 dPhi=0.04 mrg=-46.39 dt=0.153s. 4.6 GB/s.
+it470 LB=245505.8243 E=274149.5938 dPhi=0.04 mrg=-46.39 dt=0.159s. 4.4 GB/s.
+it480 LB=245505.8332 E=274149.5938 dPhi=0.04 mrg=-46.39 dt=0.157s. 4.4 GB/s.
+it490 LB=245505.8414 E=274149.5938 dPhi=0.03 mrg=-46.39 dt=0.153s. 4.5 GB/s.
+it500 LB=245505.8491 E=274149.5938 dPhi=0.03 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it510 LB=245505.8562 E=274149.5938 dPhi=0.03 mrg=-46.39 dt=0.173s. 4.0 GB/s.
+it520 LB=245505.8628 E=274149.5938 dPhi=0.03 mrg=-46.39 dt=0.157s. 4.4 GB/s.
+it530 LB=245505.8689 E=274149.5938 dPhi=0.02 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it540 LB=245505.8746 E=274149.5938 dPhi=0.02 mrg=-46.39 dt=0.156s. 4.5 GB/s.
+it550 LB=245505.8799 E=274149.5938 dPhi=0.02 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it560 LB=245505.8849 E=274149.5938 dPhi=0.02 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it570 LB=245505.8896 E=274149.5938 dPhi=0.02 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it580 LB=245505.8941 E=274149.5938 dPhi=0.02 mrg=-46.39 dt=0.156s. 4.4 GB/s.
+it590 LB=245505.8984 E=274149.5938 dPhi=0.02 mrg=-46.39 dt=0.155s. 4.5 GB/s.
+it600 LB=245505.9026 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.153s. 4.5 GB/s.
+it610 LB=245505.9065 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it620 LB=245505.9103 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.153s. 4.6 GB/s.
+it630 LB=245505.9140 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it640 LB=245505.9176 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.156s. 4.5 GB/s.
+it650 LB=245505.9210 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.155s. 4.5 GB/s.
+it660 LB=245505.9243 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it670 LB=245505.9276 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it680 LB=245505.9307 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it690 LB=245505.9337 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it700 LB=245505.9367 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it710 LB=245505.9396 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.153s. 4.5 GB/s.
+it720 LB=245505.9424 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it730 LB=245505.9451 E=274149.5938 dPhi=0.009 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it740 LB=245505.9478 E=274149.5938 dPhi=0.009 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it750 LB=245505.9504 E=274149.5938 dPhi=0.009 mrg=-46.39 dt=0.156s. 4.5 GB/s.
+it760 LB=245505.9529 E=274149.5938 dPhi=0.008 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it770 LB=245505.9554 E=274149.5938 dPhi=0.008 mrg=-46.39 dt=0.164s. 4.2 GB/s.
+it780 LB=245505.9578 E=274149.5938 dPhi=0.008 mrg=-46.39 dt=0.164s. 4.2 GB/s.
+it790 LB=245505.9601 E=274149.5938 dPhi=0.008 mrg=-46.39 dt=0.167s. 4.2 GB/s.
+it800 LB=245505.9624 E=274149.5938 dPhi=0.007 mrg=-46.39 dt=0.169s. 4.1 GB/s.
+it810 LB=245505.9646 E=274149.5938 dPhi=0.007 mrg=-46.39 dt=0.164s. 4.2 GB/s.
+it820 LB=245505.9667 E=274149.5938 dPhi=0.007 mrg=-46.39 dt=0.159s. 4.4 GB/s.
+it830 LB=245505.9688 E=274149.5938 dPhi=0.007 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it840 LB=245505.9709 E=274149.5938 dPhi=0.006 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it850 LB=245505.9728 E=274149.5938 dPhi=0.006 mrg=-46.39 dt=0.155s. 4.5 GB/s.
+it860 LB=245505.9747 E=274149.5938 dPhi=0.006 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it870 LB=245505.9766 E=274149.5938 dPhi=0.006 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it880 LB=245505.9784 E=274149.5938 dPhi=0.006 mrg=-46.39 dt=0.153s. 4.6 GB/s.
+it890 LB=245505.9802 E=274149.5938 dPhi=0.005 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it900 LB=245505.9819 E=274149.5938 dPhi=0.005 mrg=-46.39 dt=0.153s. 4.5 GB/s.
+it910 LB=245505.9835 E=274149.5938 dPhi=0.005 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it920 LB=245505.9851 E=274149.5938 dPhi=0.005 mrg=-46.39 dt=0.153s. 4.5 GB/s.
+it930 LB=245505.9867 E=274149.5938 dPhi=0.005 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it940 LB=245505.9882 E=274149.5938 dPhi=0.005 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it950 LB=245505.9897 E=274149.5938 dPhi=0.004 mrg=-46.39 dt=0.153s. 4.5 GB/s.
+it960 LB=245505.9911 E=274149.5938 dPhi=0.004 mrg=-46.39 dt=0.162s. 4.3 GB/s.
+it970 LB=245505.9926 E=274149.5938 dPhi=0.004 mrg=-46.39 dt=0.168s. 4.1 GB/s.
+it980 LB=245505.9939 E=274149.5938 dPhi=0.004 mrg=-46.39 dt=0.183s. 3.8 GB/s.
+it990 LB=245505.9952 E=274149.5938 dPhi=0.004 mrg=-46.39 dt=0.160s. 4.3 GB/s.
+it1000 LB=245505.9965 E=274149.5938 dPhi=0.004 mrg=-46.39 dt=0.167s. 4.2 GB/s.
+Reached maximum number of iterations (1000).
+LB= 245505.9965 E= 274149.5938
+COMPUTE :struct double_v1 TYPE:0 TEST INSTANCE 1 TRW-S time:18.2803s
+Labeling best_x: 
+0, 10, 8, 4, 2, 4, 1, 4, 2, 11, ...
+Map is not yet strictly improving
+ICM improved E: 267980.679688
+core size:32Mb, writable: 2Mb.
+Marking immovable (init) 10000+0 labels (100% remains)
+PO_sensetivity:0
+PO_it:1
+it1005 LB=-31008.7816 E=-14016.7969 dPhi=1e+002 mrg=-22.72 dt=0.080s. 4.3 GB/s.
+Reached energy below 0
+LB= -31008.7816 E= -14016.7969
+Improved E:-17872.6484
+Marking immovable (cut) 5983+113740 (11 non-unique) labels (0.230833% remains)
+PO_it:2
+it1010 LB=0.0000 E=0.0000 dPhi=1 mrg=   0 dt=0.050s. 6.9 GB/s.
+Reached duality gap < -1.06581e-014
+LB=   0.0000 E=   0.0000
+Improved E:  0.0000
+Marking immovable (cut) 0+0 labels (0.230833% remains)
+TRW-S found optimal solution
+Map is strictly improving
+Finished. Total iterations: 1010 Persistency proven: 0.230833%
+PO Times:
+ Total: 3.74986
+ Msgs: 0.211844
+ Cuts: 0.0382804
+ Node cuts: 2.82918
+ Rebuild: 2.9387
+Alive Labels mask: 
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+Labeling y: 
+(0)(10)(8)(4)(2)(4)(1)(4)(2)(11)...
+COMPUTE :struct double_v1 TYPE:0 TEST INSTANCE 1 nit: 1010 elim:0% / 22.1362s
+Stream graph layers: 199 time: 0.000612205s. 
+core size:32Mb, writable: 2Mb.
+Options:
+all_to_one: 0
+fast_msg: 1
+it_batch: 10
+local_min_tol: 0
+max_CPU: 2
+max_it: 1000
+n_sensetivity: 1
+po_it_batch: 5
+po_max_it: 50
+po_maxit: 0
+rebuild_incremental: 1
+reduce_immovable: 1
+rel_conv_tol: 0.01
+rel_gap_tol: 0.1
+sensetivity: 0
+use_cut: 1
+use_pixel_cut: 1
+weak_po: 0
+it10 LB=244551.0921 E=274311.7969 dPhi=1e+002 mrg=-46.44 dt=0.151s. 4.6 GB/s.
+it20 LB=245152.0349 E=274311.7969 dPhi=7 mrg=-46.29 dt=0.151s. 4.6 GB/s.
+it30 LB=245322.2131 E=274311.7969 dPhi=3 mrg=-46.34 dt=0.150s. 4.6 GB/s.
+it40 LB=245397.0832 E=274311.7969 dPhi=2 mrg=-46.37 dt=0.150s. 4.6 GB/s.
+it50 LB=245435.3671 E=274311.7969 dPhi=1 mrg=-46.38 dt=0.154s. 4.5 GB/s.
+it60 LB=245457.4398 E=274311.7969 dPhi=1 mrg=-46.39 dt=0.156s. 4.5 GB/s.
+it70 LB=245470.9915 E=274311.7969 dPhi=0.9 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it80 LB=245479.7997 E=274311.7969 dPhi=0.8 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it90 LB=245485.7918 E=274311.7969 dPhi=0.7 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it100 LB=245490.0401 E=274311.7969 dPhi=0.5 mrg=-46.39 dt=0.155s. 4.5 GB/s.
+it110 LB=245493.1605 E=274311.7969 dPhi=0.5 mrg=-46.39 dt=0.164s. 4.2 GB/s.
+it120 LB=245495.5751 E=274311.7969 dPhi=0.5 mrg=-46.39 dt=0.157s. 4.4 GB/s.
+it130 LB=245497.4720 E=274311.7969 dPhi=0.4 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it140 LB=245498.9793 E=274311.7969 dPhi=0.4 mrg=-46.39 dt=0.148s. 4.7 GB/s.
+it150 LB=245500.1932 E=274149.5938 dPhi=0.3 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it160 LB=245501.1488 E=274149.5938 dPhi=0.3 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it170 LB=245501.9058 E=274149.5938 dPhi=0.2 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it180 LB=245502.5236 E=274149.5938 dPhi=0.2 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it190 LB=245503.0319 E=274149.5938 dPhi=0.2 mrg=-46.39 dt=0.149s. 4.7 GB/s.
+it200 LB=245503.4495 E=274149.5938 dPhi=0.2 mrg=-46.39 dt=0.149s. 4.7 GB/s.
+it210 LB=245503.7960 E=274149.5938 dPhi=0.2 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it220 LB=245504.0873 E=274149.5938 dPhi=0.2 mrg=-46.39 dt=0.162s. 4.3 GB/s.
+it230 LB=245504.3338 E=274149.5938 dPhi=0.2 mrg=-46.39 dt=0.186s. 3.7 GB/s.
+it240 LB=245504.5425 E=274149.5938 dPhi=0.1 mrg=-46.39 dt=0.160s. 4.4 GB/s.
+it250 LB=245504.7226 E=274149.5938 dPhi=0.1 mrg=-46.39 dt=0.159s. 4.4 GB/s.
+it260 LB=245504.8796 E=274149.5938 dPhi=0.1 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it270 LB=245505.0179 E=274149.5938 dPhi=0.1 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it280 LB=245505.1403 E=274149.5938 dPhi=0.09 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it290 LB=245505.2461 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it300 LB=245505.3349 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.160s. 4.4 GB/s.
+it310 LB=245505.4090 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.164s. 4.3 GB/s.
+it320 LB=245505.4714 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.163s. 4.3 GB/s.
+it330 LB=245505.5240 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.165s. 4.2 GB/s.
+it340 LB=245505.5679 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.160s. 4.3 GB/s.
+it350 LB=245505.6058 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it360 LB=245505.6386 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.153s. 4.5 GB/s.
+it370 LB=245505.6672 E=274149.5938 dPhi=0.04 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it380 LB=245505.6923 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it390 LB=245505.7144 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.158s. 4.4 GB/s.
+it400 LB=245505.7340 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it410 LB=245505.7514 E=274149.5938 dPhi=0.05 mrg=-46.39 dt=0.163s. 4.3 GB/s.
+it420 LB=245505.7670 E=274149.5938 dPhi=0.04 mrg=-46.39 dt=0.162s. 4.3 GB/s.
+it430 LB=245505.7809 E=274149.5938 dPhi=0.04 mrg=-46.39 dt=0.165s. 4.2 GB/s.
+it440 LB=245505.7934 E=274149.5938 dPhi=0.04 mrg=-46.39 dt=0.164s. 4.3 GB/s.
+it450 LB=245505.8045 E=274149.5938 dPhi=0.04 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it460 LB=245505.8148 E=274149.5938 dPhi=0.04 mrg=-46.39 dt=0.153s. 4.6 GB/s.
+it470 LB=245505.8243 E=274149.5938 dPhi=0.04 mrg=-46.39 dt=0.155s. 4.5 GB/s.
+it480 LB=245505.8332 E=274149.5938 dPhi=0.04 mrg=-46.39 dt=0.156s. 4.5 GB/s.
+it490 LB=245505.8414 E=274149.5938 dPhi=0.03 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it500 LB=245505.8491 E=274149.5938 dPhi=0.03 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it510 LB=245505.8562 E=274149.5938 dPhi=0.03 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it520 LB=245505.8628 E=274149.5938 dPhi=0.03 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it530 LB=245505.8689 E=274149.5938 dPhi=0.02 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it540 LB=245505.8746 E=274149.5938 dPhi=0.02 mrg=-46.39 dt=0.149s. 4.7 GB/s.
+it550 LB=245505.8799 E=274149.5938 dPhi=0.02 mrg=-46.39 dt=0.155s. 4.5 GB/s.
+it560 LB=245505.8849 E=274149.5938 dPhi=0.02 mrg=-46.39 dt=0.157s. 4.4 GB/s.
+it570 LB=245505.8896 E=274149.5938 dPhi=0.02 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it580 LB=245505.8941 E=274149.5938 dPhi=0.02 mrg=-46.39 dt=0.157s. 4.4 GB/s.
+it590 LB=245505.8984 E=274149.5938 dPhi=0.02 mrg=-46.39 dt=0.162s. 4.3 GB/s.
+it600 LB=245505.9026 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.164s. 4.2 GB/s.
+it610 LB=245505.9065 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.159s. 4.4 GB/s.
+it620 LB=245505.9103 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it630 LB=245505.9140 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.160s. 4.3 GB/s.
+it640 LB=245505.9176 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.159s. 4.4 GB/s.
+it650 LB=245505.9210 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.167s. 4.2 GB/s.
+it660 LB=245505.9243 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.166s. 4.2 GB/s.
+it670 LB=245505.9276 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it680 LB=245505.9307 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it690 LB=245505.9337 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it700 LB=245505.9367 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it710 LB=245505.9396 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it720 LB=245505.9424 E=274149.5938 dPhi=0.01 mrg=-46.39 dt=0.156s. 4.5 GB/s.
+it730 LB=245505.9451 E=274149.5938 dPhi=0.009 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it740 LB=245505.9478 E=274149.5938 dPhi=0.009 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it750 LB=245505.9504 E=274149.5938 dPhi=0.009 mrg=-46.39 dt=0.149s. 4.7 GB/s.
+it760 LB=245505.9529 E=274149.5938 dPhi=0.008 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it770 LB=245505.9554 E=274149.5938 dPhi=0.008 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it780 LB=245505.9578 E=274149.5938 dPhi=0.008 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it790 LB=245505.9601 E=274149.5938 dPhi=0.008 mrg=-46.39 dt=0.153s. 4.5 GB/s.
+it800 LB=245505.9624 E=274149.5938 dPhi=0.007 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it810 LB=245505.9646 E=274149.5938 dPhi=0.007 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it820 LB=245505.9667 E=274149.5938 dPhi=0.007 mrg=-46.39 dt=0.154s. 4.5 GB/s.
+it830 LB=245505.9688 E=274149.5938 dPhi=0.007 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it840 LB=245505.9709 E=274149.5938 dPhi=0.006 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it850 LB=245505.9728 E=274149.5938 dPhi=0.006 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it860 LB=245505.9747 E=274149.5938 dPhi=0.006 mrg=-46.39 dt=0.148s. 4.7 GB/s.
+it870 LB=245505.9766 E=274149.5938 dPhi=0.006 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it880 LB=245505.9784 E=274149.5938 dPhi=0.006 mrg=-46.39 dt=0.148s. 4.7 GB/s.
+it890 LB=245505.9802 E=274149.5938 dPhi=0.005 mrg=-46.39 dt=0.158s. 4.4 GB/s.
+it900 LB=245505.9819 E=274149.5938 dPhi=0.005 mrg=-46.39 dt=0.151s. 4.6 GB/s.
+it910 LB=245505.9835 E=274149.5938 dPhi=0.005 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it920 LB=245505.9851 E=274149.5938 dPhi=0.005 mrg=-46.39 dt=0.149s. 4.7 GB/s.
+it930 LB=245505.9867 E=274149.5938 dPhi=0.005 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it940 LB=245505.9882 E=274149.5938 dPhi=0.005 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it950 LB=245505.9897 E=274149.5938 dPhi=0.004 mrg=-46.39 dt=0.152s. 4.6 GB/s.
+it960 LB=245505.9911 E=274149.5938 dPhi=0.004 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it970 LB=245505.9926 E=274149.5938 dPhi=0.004 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it980 LB=245505.9939 E=274149.5938 dPhi=0.004 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it990 LB=245505.9952 E=274149.5938 dPhi=0.004 mrg=-46.39 dt=0.150s. 4.6 GB/s.
+it1000 LB=245505.9965 E=274149.5938 dPhi=0.004 mrg=-46.39 dt=0.153s. 4.6 GB/s.
+Reached maximum number of iterations (1000).
+LB= 245505.9965 E= 274149.5938
+COMPUTE :struct double_v1 TYPE:0 TEST INSTANCE 1 TRW-S time:17.9621s
+Labeling best_x: 
+0, 10, 8, 4, 2, 4, 1, 4, 2, 11, ...
+Map is not yet strictly improving
+ICM improved E: 267980.679688
+core size:32Mb, writable: 2Mb.
+Marking immovable (init) 10000+0 labels (100% remains)
+PO_sensetivity:0
+PO_it:1
+it1005 LB=-31008.7816 E=-14016.7969 dPhi=1e+002 mrg=-22.72 dt=0.078s. 4.5 GB/s.
+Reached energy below 0
+LB= -31008.7816 E= -14016.7969
+Improved E:-17872.6484
+Marking immovable (cut) 5983+113740 (11 non-unique) labels (0.230833% remains)
+PO_it:2
+it1010 LB=0.0000 E=0.0000 dPhi=1 mrg=   0 dt=0.050s. 6.9 GB/s.
+Reached duality gap < -1.06581e-014
+LB=   0.0000 E=   0.0000
+Improved E:  0.0000
+Marking immovable (cut) 0+0 labels (0.230833% remains)
+TRW-S found optimal solution
+Map is strictly improving
+Finished. Total iterations: 1010 Persistency proven: 0.230833%
+PO Times:
+ Total: 3.72575
+ Msgs: 0.206473
+ Cuts: 0.0395761
+ Node cuts: 2.82312
+ Rebuild: 2.93943
+Alive Labels mask: 
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+Labeling y: 
+(0)(10)(8)(4)(2)(4)(1)(4)(2)(11)...
+COMPUTE :struct double_v1 TYPE:0 TEST INSTANCE 1 nit: 1010 elim:0% / 21.7862s
+Recognized models: 19800Potts terms, 0T-Linear terms,
+ 0T-Quadratic terms, 0Diff terms, 0 Full terms
+X Max data value: 78.1172
+Min data delta: 0.0078125
+Selecting data toolerance: 0.01
+Stream graph layers: 199 time: 0.00138569s. 
+core size:4Mb, writable: 1Mb.
+Options:
+all_to_one: 0
+fast_msg: 1
+it_batch: 10
+local_min_tol: 0
+max_CPU: 2
+max_it: 1000
+n_sensetivity: 1
+po_it_batch: 5
+po_max_it: 50
+po_maxit: 0
+rebuild_incremental: 1
+reduce_immovable: 1
+rel_conv_tol: 0.01
+rel_gap_tol: 0.1
+sensetivity: 0
+use_cut: 1
+use_pixel_cut: 1
+weak_po: 0
+it10 LB=274580.6592 E=278945.8828 dPhi=1 mrg=-56.1 dt=0.015s. 8.2 GB/s.
+it20 LB=275088.7639 E=276880.0391 dPhi=9 mrg=-55.56 dt=0.011s. 11.1 GB/s.
+it30 LB=275201.7676 E=276405.7656 dPhi=4 mrg=-55.29 dt=0.010s. 11.6 GB/s.
+it40 LB=275249.4786 E=276324.1250 dPhi=3 mrg=-55.26 dt=0.010s. 12.1 GB/s.
+it50 LB=275274.0297 E=276231.3906 dPhi=2 mrg=-55.26 dt=0.013s. 9.6 GB/s.
+it60 LB=275286.6067 E=276230.8438 dPhi=1 mrg=-55.25 dt=0.012s. 9.9 GB/s.
+it70 LB=275294.1803 E=276230.8438 dPhi=0.9 mrg=-55.24 dt=0.013s. 9.7 GB/s.
+it80 LB=275299.8430 E=276230.8438 dPhi=0.9 mrg=-55.22 dt=0.014s. 9.0 GB/s.
+it90 LB=275304.1688 E=276111.0703 dPhi=0.7 mrg=-55.21 dt=0.010s. 12.2 GB/s.
+it100 LB=275307.4442 E=276111.0703 dPhi=0.6 mrg=-55.2 dt=0.010s. 12.1 GB/s.
+it110 LB=275309.9625 E=276084.6016 dPhi=0.5 mrg=-55.19 dt=0.010s. 11.6 GB/s.
+it120 LB=275311.9886 E=276084.6016 dPhi=0.5 mrg=-55.19 dt=0.013s. 9.4 GB/s.
+it130 LB=275313.6954 E=275984.6875 dPhi=0.4 mrg=-55.18 dt=0.015s. 8.2 GB/s.
+it140 LB=275315.0806 E=275984.6875 dPhi=0.3 mrg=-55.19 dt=0.010s. 12.7 GB/s.
+it150 LB=275316.2815 E=275984.6875 dPhi=0.3 mrg=-55.19 dt=0.010s. 12.2 GB/s.
+it160 LB=275317.3095 E=275980.3750 dPhi=0.4 mrg=-55.19 dt=0.011s. 11.5 GB/s.
+it170 LB=275318.0731 E=275980.3750 dPhi=0.2 mrg=-55.19 dt=0.013s. 9.7 GB/s.
+it180 LB=275318.6070 E=275980.3750 dPhi=0.2 mrg=-55.19 dt=0.013s. 9.7 GB/s.
+it190 LB=275319.0273 E=275905.2109 dPhi=0.1 mrg=-55.19 dt=0.013s. 9.4 GB/s.
+it200 LB=275319.3851 E=275905.2109 dPhi=0.1 mrg=-55.19 dt=0.010s. 12.7 GB/s.
+it210 LB=275319.6959 E=275905.2109 dPhi=0.1 mrg=-55.19 dt=0.010s. 12.2 GB/s.
+it220 LB=275319.9685 E=275905.2109 dPhi=0.1 mrg=-55.19 dt=0.012s. 9.9 GB/s.
+it230 LB=275320.2092 E=275905.2109 dPhi=0.1 mrg=-55.19 dt=0.012s. 10.2 GB/s.
+it240 LB=275320.4223 E=275905.2109 dPhi=0.1 mrg=-55.19 dt=0.013s. 9.1 GB/s.
+it250 LB=275320.6115 E=275905.2109 dPhi=0.1 mrg=-55.19 dt=0.013s. 9.1 GB/s.
+it260 LB=275320.7815 E=275905.2109 dPhi=0.1 mrg=-55.19 dt=0.010s. 12.4 GB/s.
+it270 LB=275320.9343 E=275905.2109 dPhi=0.08 mrg=-55.19 dt=0.011s. 11.5 GB/s.
+it280 LB=275321.0682 E=275905.2109 dPhi=0.06 mrg=-55.19 dt=0.012s. 10.1 GB/s.
+it290 LB=275321.1820 E=275905.2109 dPhi=0.06 mrg=-55.19 dt=0.013s. 9.2 GB/s.
+it300 LB=275321.2649 E=275905.2109 dPhi=0.07 mrg=-55.19 dt=0.013s. 9.2 GB/s.
+it310 LB=275321.3330 E=275905.2109 dPhi=0.06 mrg=-55.19 dt=0.010s. 11.9 GB/s.
+it320 LB=275321.3915 E=275905.2109 dPhi=0.05 mrg=-55.19 dt=0.010s. 12.0 GB/s.
+it330 LB=275321.4427 E=275905.2109 dPhi=0.05 mrg=-55.19 dt=0.013s. 9.3 GB/s.
+it340 LB=275321.4890 E=275905.2109 dPhi=0.06 mrg=-55.19 dt=0.013s. 9.3 GB/s.
+it350 LB=275321.5312 E=275905.2109 dPhi=0.06 mrg=-55.19 dt=0.011s. 11.1 GB/s.
+it360 LB=275321.5702 E=275905.2109 dPhi=0.06 mrg=-55.19 dt=0.010s. 12.2 GB/s.
+it370 LB=275321.6065 E=275905.2109 dPhi=0.05 mrg=-55.19 dt=0.011s. 10.6 GB/s.
+it380 LB=275321.6411 E=275905.2109 dPhi=0.05 mrg=-55.19 dt=0.012s. 9.8 GB/s.
+it390 LB=275321.6738 E=275905.2109 dPhi=0.05 mrg=-55.19 dt=0.014s. 8.7 GB/s.
+it400 LB=275321.7047 E=275905.2109 dPhi=0.03 mrg=-55.19 dt=0.013s. 9.4 GB/s.
+it410 LB=275321.7340 E=275905.2109 dPhi=0.03 mrg=-55.18 dt=0.010s. 12.5 GB/s.
+it420 LB=275321.7615 E=275905.2109 dPhi=0.02 mrg=-55.18 dt=0.012s. 10.1 GB/s.
+it430 LB=275321.7876 E=275905.2109 dPhi=0.02 mrg=-55.18 dt=0.014s. 8.8 GB/s.
+it440 LB=275321.8119 E=275905.2109 dPhi=0.02 mrg=-55.18 dt=0.012s. 10.6 GB/s.
+it450 LB=275321.8343 E=275905.2109 dPhi=0.02 mrg=-55.18 dt=0.012s. 10.3 GB/s.
+it460 LB=275321.8552 E=275905.2109 dPhi=0.01 mrg=-55.18 dt=0.013s. 9.1 GB/s.
+it470 LB=275321.8744 E=275905.2109 dPhi=0.01 mrg=-55.18 dt=0.013s. 9.1 GB/s.
+it480 LB=275321.8917 E=275905.2109 dPhi=0.01 mrg=-55.18 dt=0.013s. 9.4 GB/s.
+it490 LB=275321.9077 E=275905.2109 dPhi=0.01 mrg=-55.18 dt=0.011s. 11.3 GB/s.
+it500 LB=275321.9224 E=275905.2109 dPhi=0.01 mrg=-55.18 dt=0.010s. 11.7 GB/s.
+it510 LB=275321.9359 E=275905.2109 dPhi=0.009 mrg=-55.18 dt=0.011s. 10.7 GB/s.
+it520 LB=275321.9477 E=275905.2109 dPhi=0.009 mrg=-55.18 dt=0.013s. 9.3 GB/s.
+it530 LB=275321.9588 E=275905.2109 dPhi=0.008 mrg=-55.18 dt=0.013s. 9.1 GB/s.
+it540 LB=275321.9688 E=275905.2109 dPhi=0.007 mrg=-55.18 dt=0.011s. 11.5 GB/s.
+it550 LB=275321.9778 E=275905.2109 dPhi=0.007 mrg=-55.18 dt=0.010s. 12.3 GB/s.
+it560 LB=275321.9862 E=275905.2109 dPhi=0.006 mrg=-55.18 dt=0.013s. 9.4 GB/s.
+it570 LB=275321.9937 E=275905.2109 dPhi=0.005 mrg=-55.18 dt=0.013s. 9.1 GB/s.
+it580 LB=275322.0008 E=275905.2109 dPhi=0.005 mrg=-55.18 dt=0.011s. 10.7 GB/s.
+it590 LB=275322.0068 E=275905.2109 dPhi=0.004 mrg=-55.18 dt=0.010s. 12.2 GB/s.
+it600 LB=275322.0124 E=275905.2109 dPhi=0.004 mrg=-55.18 dt=0.011s. 10.7 GB/s.
+it610 LB=275322.0175 E=275905.2109 dPhi=0.004 mrg=-55.18 dt=0.013s. 9.4 GB/s.
+it620 LB=275322.0221 E=275905.2109 dPhi=0.003 mrg=-55.18 dt=0.015s. 8.3 GB/s.
+it630 LB=275322.0262 E=275905.2109 dPhi=0.003 mrg=-55.18 dt=0.014s. 8.5 GB/s.
+it640 LB=275322.0300 E=275905.2109 dPhi=0.003 mrg=-55.18 dt=0.012s. 10.0 GB/s.
+it650 LB=275322.0336 E=275905.2109 dPhi=0.003 mrg=-55.18 dt=0.014s. 8.6 GB/s.
+it660 LB=275322.0367 E=275905.2109 dPhi=0.002 mrg=-55.18 dt=0.014s. 8.5 GB/s.
+it670 LB=275322.0397 E=275905.2109 dPhi=0.002 mrg=-55.18 dt=0.015s. 8.3 GB/s.
+it680 LB=275322.0421 E=275905.2109 dPhi=0.002 mrg=-55.18 dt=0.014s. 8.5 GB/s.
+it690 LB=275322.0445 E=275905.2109 dPhi=0.002 mrg=-55.18 dt=0.010s. 12.3 GB/s.
+it700 LB=275322.0465 E=275905.2109 dPhi=0.002 mrg=-55.18 dt=0.014s. 8.7 GB/s.
+it710 LB=275322.0485 E=275905.2109 dPhi=0.001 mrg=-55.18 dt=0.011s. 11.3 GB/s.
+it720 LB=275322.0502 E=275905.2109 dPhi=0.001 mrg=-55.18 dt=0.013s. 9.3 GB/s.
+it730 LB=275322.0519 E=275905.2109 dPhi=0.001 mrg=-55.18 dt=0.011s. 10.6 GB/s.
+it740 LB=275322.0534 E=275905.2109 dPhi=0.001 mrg=-55.18 dt=0.014s. 8.9 GB/s.
+it750 LB=275322.0548 E=275905.2109 dPhi=0.001 mrg=-55.18 dt=0.010s. 11.8 GB/s.
+it760 LB=275322.0559 E=275905.2109 dPhi=0.001 mrg=-55.18 dt=0.015s. 8.2 GB/s.
+it770 LB=275322.0569 E=275905.2109 dPhi=0.001 mrg=-55.18 dt=0.013s. 9.4 GB/s.
+it780 LB=275322.0581 E=275905.2109 dPhi=0.001 mrg=-55.18 dt=0.015s. 8.0 GB/s.
+it790 LB=275322.0588 E=275905.2109 dPhi=0.0009 mrg=-55.18 dt=0.011s. 11.0 GB/s.
+it800 LB=275322.0598 E=275905.2109 dPhi=0.0009 mrg=-55.18 dt=0.011s. 11.0 GB/s.
+it810 LB=275322.0605 E=275905.2109 dPhi=0.0008 mrg=-55.18 dt=0.014s. 8.6 GB/s.
+it820 LB=275322.0613 E=275905.2109 dPhi=0.0008 mrg=-55.18 dt=0.010s. 11.7 GB/s.
+it830 LB=275322.0621 E=275905.2109 dPhi=0.0008 mrg=-55.18 dt=0.014s. 8.5 GB/s.
+it840 LB=275322.0625 E=275905.2109 dPhi=0.0007 mrg=-55.18 dt=0.009s. 13.2 GB/s.
+it850 LB=275322.0629 E=275905.2109 dPhi=0.0007 mrg=-55.18 dt=0.011s. 11.0 GB/s.
+it860 LB=275322.0637 E=275905.2109 dPhi=0.0007 mrg=-55.18 dt=0.014s. 8.9 GB/s.
+it870 LB=275322.0639 E=275905.2109 dPhi=0.0006 mrg=-55.18 dt=0.012s. 10.5 GB/s.
+it880 LB=275322.0644 E=275905.2109 dPhi=0.0006 mrg=-55.18 dt=0.013s. 9.7 GB/s.
+it890 LB=275322.0648 E=275905.2109 dPhi=0.0006 mrg=-55.18 dt=0.013s. 9.0 GB/s.
+it900 LB=275322.0652 E=275905.2109 dPhi=0.0006 mrg=-55.18 dt=0.014s. 8.7 GB/s.
+it910 LB=275322.0655 E=275905.2109 dPhi=0.0005 mrg=-55.18 dt=0.016s. 7.8 GB/s.
+it920 LB=275322.0657 E=275905.2109 dPhi=0.0005 mrg=-55.18 dt=0.015s. 8.3 GB/s.
+it930 LB=275322.0660 E=275905.2109 dPhi=0.0005 mrg=-55.18 dt=0.012s. 10.3 GB/s.
+it940 LB=275322.0663 E=275905.2109 dPhi=0.0005 mrg=-55.18 dt=0.016s. 7.5 GB/s.
+it950 LB=275322.0664 E=275905.2109 dPhi=0.0004 mrg=-55.18 dt=0.011s. 10.8 GB/s.
+it960 LB=275322.0667 E=275905.2109 dPhi=0.0004 mrg=-55.18 dt=0.017s. 7.0 GB/s.
+it970 LB=275322.0669 E=275905.2109 dPhi=0.0004 mrg=-55.18 dt=0.024s. 5.0 GB/s.
+it980 LB=275322.0670 E=275905.2109 dPhi=0.0004 mrg=-55.18 dt=0.012s. 9.8 GB/s.
+it990 LB=275322.0671 E=275905.2109 dPhi=0.0004 mrg=-55.18 dt=0.010s. 12.3 GB/s.
+it1000 LB=275322.0673 E=275905.2109 dPhi=0.0004 mrg=-55.18 dt=0.014s. 8.7 GB/s.
+Reached maximum number of iterations (1000).
+LB= 275322.0673 E= 275905.2109
+COMPUTE :struct float_v4 TYPE:1 TEST INSTANCE 1 TRW-S time:3.97446s
+Labeling best_x: 
+10, 10, 7, 7, 7, 0, 7, 7, 5, 7, ...
+Map is not yet strictly improving
+ICM improved E: 275773.820313
+core size:8Mb, writable: 1Mb.
+Marking immovable (init) 10000+0 labels (100% remains)
+PO_sensetivity:0
+PO_it:1
+it1005 LB=-795.4662 E=-295.4609 dPhi=1 mrg=-9.027 dt=0.012s. 7.7 GB/s.
+Reached energy below 0
+LB= -795.4662 E= -295.4609
+Improved E:-665.4922
+Marking immovable (cut) 610+4834 labels (95.4633% remains)
+PO_it:2
+it1010 LB=-2809.2871 E=-1501.8203 dPhi=1 mrg=-18.92 dt=0.013s. 7.3 GB/s.
+Reached energy below 0
+LB= -2809.2871 E= -1501.8203
+Improved E:-2377.4609
+Marking immovable (cut) 690+4341 (1 non-unique) labels (91.2708% remains)
+PO_it:3
+it1015 LB=-3487.3744 E=-1832.0156 dPhi=1 mrg=-18.01 dt=0.010s. 9.7 GB/s.
+Reached energy below 0
+LB= -3487.3744 E= -1832.0156
+Improved E:-2988.1563
+Marking immovable (cut) 996+7105 (2 non-unique) labels (84.52% remains)
+PO_it:4
+it1020 LB=-4345.3258 E=-2324.8750 dPhi=1 mrg=-18.44 dt=0.010s. 9.7 GB/s.
+Reached energy below 0
+LB= -4345.3258 E= -2324.8750
+Improved E:-3669.6406
+Marking immovable (cut) 1253+9658 labels (75.4275% remains)
+PO_it:5
+it1025 LB=-5625.8365 E=-3715.4375 dPhi=1 mrg=-19.13 dt=0.013s. 7.2 GB/s.
+Reached energy below 0
+LB= -5625.8365 E= -3715.4375
+Improved E:-4966.7500
+Marking immovable (cut) 1375+9327 (5 non-unique) labels (66.5092% remains)
+PO_it:6
+it1030 LB=-5675.9920 E=-3969.8281 dPhi=1 mrg=-22.44 dt=0.011s. 8.6 GB/s.
+Reached energy below 0
+LB= -5675.9920 E= -3969.8281
+Improved E:-5042.6719
+Marking immovable (cut) 1416+9332 (2 non-unique) labels (57.5525% remains)
+PO_it:7
+it1035 LB=-5067.0855 E=-3595.2500 dPhi=1 mrg=-20.92 dt=0.014s. 7.0 GB/s.
+Reached energy below 0
+LB= -5067.0855 E= -3595.2500
+Improved E:-4517.7656
+Marking immovable (cut) 1355+8377 (1 non-unique) labels (49.4425% remains)
+PO_it:8
+it1040 LB=-4648.8667 E=-3432.9688 dPhi=1 mrg=-16.15 dt=0.014s. 6.8 GB/s.
+Reached energy below 0
+LB= -4648.8667 E= -3432.9688
+Improved E:-4229.7344
+Marking immovable (cut) 1277+7988 (1 non-unique) labels (41.7217% remains)
+PO_it:9
+it1045 LB=-4042.2200 E=-3082.8672 dPhi=1 mrg=-14.72 dt=0.015s. 6.6 GB/s.
+Reached energy below 0
+LB= -4042.2200 E= -3082.8672
+Improved E:-3700.6797
+Marking immovable (cut) 1031+5858 (2 non-unique) labels (35.9808% remains)
+PO_it:10
+it1050 LB=-3692.0831 E=-3175.2891 dPhi=1 mrg=-22.99 dt=0.013s. 7.4 GB/s.
+Reached energy below 0
+LB= -3692.0831 E= -3175.2891
+Improved E:-3472.1641
+Marking immovable (cut) 1022+6283 (1 non-unique) labels (29.8933% remains)
+PO_it:11
+it1055 LB=-2457.7715 E=-1995.0000 dPhi=1 mrg=-20.75 dt=0.013s. 7.2 GB/s.
+Reached energy below 0
+LB= -2457.7715 E= -1995.0000
+Improved E:-2316.1250
+Marking immovable (cut) 654+3581 (3 non-unique) labels (26.3642% remains)
+PO_it:12
+it1060 LB=-1562.1994 E=-1187.6719 dPhi=1 mrg=-16.67 dt=0.011s. 9.0 GB/s.
+Reached energy below 0
+LB= -1562.1994 E= -1187.6719
+Improved E:-1370.3281
+Marking immovable (cut) 373+2313 (2 non-unique) labels (24.1258% remains)
+PO_it:13
+it1065 LB=-771.9201 E=-595.0703 dPhi=1 mrg=-10.87 dt=0.013s. 7.7 GB/s.
+Reached energy below 0
+LB= -771.9201 E= -595.0703
+Improved E:-717.4063
+Marking immovable (cut) 244+978 labels (23.1075% remains)
+PO_it:14
+it1070 LB=-718.6181 E=-523.8203 dPhi=1 mrg=-8.795 dt=0.013s. 7.4 GB/s.
+Reached energy below 0
+LB= -718.6181 E= -523.8203
+Improved E:-668.0859
+Marking immovable (cut) 235+1344 (1 non-unique) labels (21.7917% remains)
+PO_it:15
+it1075 LB=-694.9202 E=-563.6250 dPhi=1 mrg=-16.31 dt=0.014s. 6.7 GB/s.
+Reached energy below 0
+LB= -694.9202 E= -563.6250
+Improved E:-656.1016
+Marking immovable (cut) 144+648 labels (21.1317% remains)
+PO_it:16
+it1080 LB=-309.0345 E=-202.0078 dPhi=1 mrg=-8.798 dt=0.013s. 7.5 GB/s.
+Reached energy below 0
+LB= -309.0345 E= -202.0078
+Improved E:-303.1406
+Marking immovable (cut) 73+134 labels (20.9592% remains)
+PO_it:17
+it1085 LB=-70.4342 E=-25.4609 dPhi=1 mrg=-3.806 dt=0.013s. 7.6 GB/s.
+Reached energy below 0
+LB= -70.4342 E= -25.4609
+Improved E:-65.6875
+Marking immovable (cut) 32+46 labels (20.8942% remains)
+PO_it:18
+it1090 LB=-49.4471 E=-5.0547 dPhi=1 mrg=-10.61 dt=0.010s. 9.9 GB/s.
+Reached energy below 0
+LB= -49.4471 E=  -5.0547
+Improved E:-45.2813
+Marking immovable (cut) 11+5 labels (20.8808% remains)
+PO_it:19
+it1095 LB=-3.7503 E=40.2266 dPhi=1 mrg=-0.2746 dt=0.012s. 7.9 GB/s.
+it1100 LB=-3.4468 E=40.2266 dPhi=0.4 mrg=-0.2736 dt=0.013s. 7.6 GB/s.
+it1105 LB=-3.2387 E=40.2266 dPhi=0.2 mrg=-0.2727 dt=0.012s. 7.8 GB/s.
+it1110 LB=-3.1163 E=40.2266 dPhi=0.1 mrg=-0.2721 dt=0.013s. 7.7 GB/s.
+it1115 LB=-3.0222 E=40.2266 dPhi=0.09 mrg=-0.2717 dt=0.013s. 7.6 GB/s.
+it1120 LB=-2.9473 E=40.2266 dPhi=0.08 mrg=-0.2715 dt=0.011s. 9.0 GB/s.
+it1125 LB=-2.8871 E=40.2266 dPhi=0.07 mrg=-0.2713 dt=0.013s. 7.2 GB/s.
+it1130 LB=-2.8376 E=40.2266 dPhi=0.06 mrg=-0.2712 dt=0.013s. 7.6 GB/s.
+it1135 LB=-2.7972 E=40.2266 dPhi=0.06 mrg=-0.2712 dt=0.011s. 8.9 GB/s.
+it1140 LB=-2.7640 E=40.2266 dPhi=0.05 mrg=-0.2711 dt=0.010s. 9.7 GB/s.
+Reached maximum number of iterations (50).
+LB=  -2.7640 E=  40.2266
+Map is not yet strictly improving
+Marking immovable (WTA) 70+718 labels (20.2242% remains)
+PO_it:20
+it1145 LB=-268.7443 E=-250.0547 dPhi=1 mrg=-10.36 dt=0.011s. 9.0 GB/s.
+Reached energy below 0
+LB= -268.7443 E= -250.0547
+Improved E:-263.9844
+Marking immovable (cut) 111+892 labels (19.3883% remains)
+PO_it:21
+it1150 LB=-322.6939 E=-218.0156 dPhi=1 mrg=-16.72 dt=0.013s. 7.6 GB/s.
+Reached energy below 0
+LB= -322.6939 E= -218.0156
+Improved E:-284.4844
+Marking immovable (cut) 145+1291 labels (18.1917% remains)
+PO_it:22
+it1155 LB=-347.5165 E=-318.1797 dPhi=1 mrg=-8.512 dt=0.014s. 6.7 GB/s.
+Reached energy below 0
+LB= -347.5165 E= -318.1797
+Improved E:-337.8359
+Marking immovable (cut) 96+765 labels (17.4742% remains)
+PO_it:23
+it1160 LB=-370.7900 E=-366.7109 dPhi=1 mrg=-15.42 dt=0.012s. 8.2 GB/s.
+Reached energy below 0
+LB= -370.7900 E= -366.7109
+Improved E:-366.7109
+Marking immovable (cut) 81+632 labels (16.88% remains)
+PO_it:24
+it1165 LB=-251.8053 E=-248.2969 dPhi=1 mrg=-12.46 dt=0.010s. 9.4 GB/s.
+Reached energy below 0
+LB= -251.8053 E= -248.2969
+Improved E:-248.2969
+Marking immovable (cut) 73+517 (1 non-unique) labels (16.3883% remains)
+PO_it:25
+it1170 LB=-134.3771 E=-117.4375 dPhi=1 mrg=-6.496 dt=0.009s. 10.2 GB/s.
+Reached energy below 0
+LB= -134.3771 E= -117.4375
+Improved E:-117.4375
+Marking immovable (cut) 39+223 labels (16.17% remains)
+PO_it:26
+it1175 LB=-62.6141 E=-62.1250 dPhi=1 mrg=-10.15 dt=0.010s. 9.7 GB/s.
+Reached energy below 0
+LB= -62.6141 E= -62.1250
+Improved E:-62.1250
+Marking immovable (cut) 13+28 labels (16.1358% remains)
+PO_it:27
+it1180 LB=-5.2969 E=-5.2969 dPhi=1 mrg=-1.624 dt=0.013s. 7.5 GB/s.
+Reached duality gap < 1.90735e-006
+LB=  -5.2969 E=  -5.2969
+Improved E: -5.2969
+Marking immovable (cut) 4+1 labels (16.1317% remains)
+PO_it:28
+it1185 LB=-0.0000 E=0.0000 dPhi=1 mrg=   0 dt=0.012s. 8.0 GB/s.
+Reached duality gap < 9.53674e-007
+LB=  -0.0000 E=   0.0000
+Improved E:  0.0000
+Marking immovable (cut) 0+0 labels (16.1317% remains)
+TRW-S found optimal solution
+Map is strictly improving
+Finished. Total iterations: 1185 Persistency proven: 16.1317%
+PO Times:
+ Total: 4.13831
+ Msgs: 1.83046
+ Cuts: 0.502922
+ Node cuts: 0.810721
+ Rebuild: 0.389715
+Alive Labels mask: 
+ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, ...
+ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, ...
+ 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, ...
+ 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, ...
+ 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, ...
+ 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, ...
+ 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, ...
+ 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, ...
+ 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, ...
+ 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, ...
+ 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, ...
+Labeling y: 
+(10)(10)(7)(7)(7)(0)(7)(7)(5)(7)...
+COMPUTE :struct float_v4 TYPE:1 TEST INSTANCE 1 nit: 1185 elim:16% / 8.21725s
+Stream graph layers: 199 time: 0.000566491s. 
+core size:4Mb, writable: 1Mb.
+Options:
+all_to_one: 0
+fast_msg: 1
+it_batch: 10
+local_min_tol: 0
+max_CPU: 2
+max_it: 1000
+n_sensetivity: 1
+po_it_batch: 5
+po_max_it: 50
+po_maxit: 0
+rebuild_incremental: 1
+reduce_immovable: 1
+rel_conv_tol: 0.01
+rel_gap_tol: 0.1
+sensetivity: 0
+use_cut: 1
+use_pixel_cut: 1
+weak_po: 0
+it10 LB=274580.6592 E=278945.8828 dPhi=1e+002 mrg=-56.1 dt=0.038s. 2.9 GB/s.
+it20 LB=275088.7639 E=276880.0391 dPhi=9 mrg=-55.56 dt=0.039s. 2.9 GB/s.
+it30 LB=275201.7676 E=276405.7656 dPhi=4 mrg=-55.29 dt=0.039s. 2.9 GB/s.
+it40 LB=275249.4786 E=276324.1250 dPhi=3 mrg=-55.26 dt=0.036s. 3.1 GB/s.
+it50 LB=275274.0297 E=276231.3906 dPhi=2 mrg=-55.26 dt=0.036s. 3.1 GB/s.
+it60 LB=275286.6067 E=276230.8438 dPhi=1 mrg=-55.25 dt=0.037s. 3.0 GB/s.
+it70 LB=275294.1803 E=276230.8438 dPhi=0.9 mrg=-55.24 dt=0.034s. 3.3 GB/s.
+it80 LB=275299.8430 E=276230.8438 dPhi=0.9 mrg=-55.22 dt=0.036s. 3.1 GB/s.
+it90 LB=275304.1688 E=276111.0703 dPhi=0.7 mrg=-55.21 dt=0.036s. 3.1 GB/s.
+it100 LB=275307.4442 E=276111.0703 dPhi=0.6 mrg=-55.2 dt=0.035s. 3.2 GB/s.
+it110 LB=275309.9625 E=276084.6016 dPhi=0.5 mrg=-55.19 dt=0.035s. 3.2 GB/s.
+it120 LB=275311.9886 E=276084.6016 dPhi=0.5 mrg=-55.19 dt=0.033s. 3.4 GB/s.
+it130 LB=275313.6954 E=275984.6875 dPhi=0.4 mrg=-55.18 dt=0.035s. 3.2 GB/s.
+it140 LB=275315.0806 E=275984.6875 dPhi=0.3 mrg=-55.19 dt=0.035s. 3.2 GB/s.
+it150 LB=275316.2815 E=275984.6875 dPhi=0.3 mrg=-55.19 dt=0.034s. 3.2 GB/s.
+it160 LB=275317.3095 E=275980.3750 dPhi=0.4 mrg=-55.19 dt=0.034s. 3.3 GB/s.
+it170 LB=275318.0731 E=275980.3750 dPhi=0.2 mrg=-55.19 dt=0.036s. 3.1 GB/s.
+it180 LB=275318.6070 E=275980.3750 dPhi=0.2 mrg=-55.19 dt=0.034s. 3.3 GB/s.
+it190 LB=275319.0273 E=275905.2109 dPhi=0.1 mrg=-55.19 dt=0.035s. 3.2 GB/s.
+it200 LB=275319.3851 E=275905.2109 dPhi=0.1 mrg=-55.19 dt=0.035s. 3.2 GB/s.
+it210 LB=275319.6959 E=275905.2109 dPhi=0.1 mrg=-55.19 dt=0.035s. 3.2 GB/s.
+it220 LB=275319.9685 E=275905.2109 dPhi=0.1 mrg=-55.19 dt=0.035s. 3.2 GB/s.
+it230 LB=275320.2092 E=275905.2109 dPhi=0.1 mrg=-55.19 dt=0.035s. 3.2 GB/s.
+it240 LB=275320.4223 E=275905.2109 dPhi=0.1 mrg=-55.19 dt=0.034s. 3.3 GB/s.
+it250 LB=275320.6115 E=275905.2109 dPhi=0.1 mrg=-55.19 dt=0.034s. 3.3 GB/s.
+it260 LB=275320.7815 E=275905.2109 dPhi=0.1 mrg=-55.19 dt=0.035s. 3.2 GB/s.
+it270 LB=275320.9343 E=275905.2109 dPhi=0.08 mrg=-55.19 dt=0.035s. 3.2 GB/s.
+it280 LB=275321.0682 E=275905.2109 dPhi=0.06 mrg=-55.19 dt=0.037s. 3.1 GB/s.
+it290 LB=275321.1820 E=275905.2109 dPhi=0.06 mrg=-55.19 dt=0.035s. 3.2 GB/s.
+it300 LB=275321.2649 E=275905.2109 dPhi=0.07 mrg=-55.19 dt=0.041s. 2.7 GB/s.
+it310 LB=275321.3330 E=275905.2109 dPhi=0.06 mrg=-55.19 dt=0.036s. 3.1 GB/s.
+it320 LB=275321.3915 E=275905.2109 dPhi=0.05 mrg=-55.19 dt=0.037s. 3.0 GB/s.
+it330 LB=275321.4427 E=275905.2109 dPhi=0.05 mrg=-55.19 dt=0.036s. 3.1 GB/s.
+it340 LB=275321.4890 E=275905.2109 dPhi=0.06 mrg=-55.19 dt=0.035s. 3.2 GB/s.
+it350 LB=275321.5312 E=275905.2109 dPhi=0.06 mrg=-55.19 dt=0.034s. 3.3 GB/s.
+it360 LB=275321.5702 E=275905.2109 dPhi=0.06 mrg=-55.19 dt=0.035s. 3.2 GB/s.
+it370 LB=275321.6065 E=275905.2109 dPhi=0.05 mrg=-55.19 dt=0.043s. 2.6 GB/s.
+it380 LB=275321.6411 E=275905.2109 dPhi=0.05 mrg=-55.19 dt=0.036s. 3.1 GB/s.
+it390 LB=275321.6738 E=275905.2109 dPhi=0.05 mrg=-55.19 dt=0.035s. 3.2 GB/s.
+it400 LB=275321.7047 E=275905.2109 dPhi=0.03 mrg=-55.19 dt=0.035s. 3.2 GB/s.
+it410 LB=275321.7340 E=275905.2109 dPhi=0.03 mrg=-55.18 dt=0.034s. 3.3 GB/s.
+it420 LB=275321.7615 E=275905.2109 dPhi=0.02 mrg=-55.18 dt=0.035s. 3.2 GB/s.
+it430 LB=275321.7876 E=275905.2109 dPhi=0.02 mrg=-55.18 dt=0.036s. 3.1 GB/s.
+it440 LB=275321.8119 E=275905.2109 dPhi=0.02 mrg=-55.18 dt=0.035s. 3.2 GB/s.
+it450 LB=275321.8343 E=275905.2109 dPhi=0.02 mrg=-55.18 dt=0.036s. 3.1 GB/s.
+it460 LB=275321.8552 E=275905.2109 dPhi=0.01 mrg=-55.18 dt=0.036s. 3.1 GB/s.
+it470 LB=275321.8744 E=275905.2109 dPhi=0.01 mrg=-55.18 dt=0.046s. 2.5 GB/s.
+it480 LB=275321.8917 E=275905.2109 dPhi=0.01 mrg=-55.18 dt=0.034s. 3.2 GB/s.
+it490 LB=275321.9077 E=275905.2109 dPhi=0.01 mrg=-55.18 dt=0.035s. 3.2 GB/s.
+it500 LB=275321.9224 E=275905.2109 dPhi=0.01 mrg=-55.18 dt=0.034s. 3.3 GB/s.
+it510 LB=275321.9359 E=275905.2109 dPhi=0.009 mrg=-55.18 dt=0.036s. 3.1 GB/s.
+it520 LB=275321.9477 E=275905.2109 dPhi=0.009 mrg=-55.18 dt=0.035s. 3.2 GB/s.
+it530 LB=275321.9588 E=275905.2109 dPhi=0.008 mrg=-55.18 dt=0.034s. 3.3 GB/s.
+it540 LB=275321.9688 E=275905.2109 dPhi=0.007 mrg=-55.18 dt=0.033s. 3.4 GB/s.
+it550 LB=275321.9778 E=275905.2109 dPhi=0.007 mrg=-55.18 dt=0.034s. 3.3 GB/s.
+it560 LB=275321.9862 E=275905.2109 dPhi=0.006 mrg=-55.18 dt=0.035s. 3.2 GB/s.
+it570 LB=275321.9937 E=275905.2109 dPhi=0.005 mrg=-55.18 dt=0.034s. 3.2 GB/s.
+it580 LB=275322.0008 E=275905.2109 dPhi=0.005 mrg=-55.18 dt=0.036s. 3.1 GB/s.
+it590 LB=275322.0068 E=275905.2109 dPhi=0.004 mrg=-55.18 dt=0.035s. 3.2 GB/s.
+it600 LB=275322.0124 E=275905.2109 dPhi=0.004 mrg=-55.18 dt=0.037s. 3.0 GB/s.
+it610 LB=275322.0175 E=275905.2109 dPhi=0.004 mrg=-55.18 dt=0.035s. 3.2 GB/s.
+it620 LB=275322.0221 E=275905.2109 dPhi=0.003 mrg=-55.18 dt=0.034s. 3.3 GB/s.
+it630 LB=275322.0262 E=275905.2109 dPhi=0.003 mrg=-55.18 dt=0.038s. 3.0 GB/s.
+it640 LB=275322.0300 E=275905.2109 dPhi=0.003 mrg=-55.18 dt=0.035s. 3.2 GB/s.
+it650 LB=275322.0336 E=275905.2109 dPhi=0.003 mrg=-55.18 dt=0.035s. 3.2 GB/s.
+it660 LB=275322.0367 E=275905.2109 dPhi=0.002 mrg=-55.18 dt=0.035s. 3.2 GB/s.
+it670 LB=275322.0397 E=275905.2109 dPhi=0.002 mrg=-55.18 dt=0.034s. 3.3 GB/s.
+it680 LB=275322.0421 E=275905.2109 dPhi=0.002 mrg=-55.18 dt=0.034s. 3.2 GB/s.
+it690 LB=275322.0445 E=275905.2109 dPhi=0.002 mrg=-55.18 dt=0.036s. 3.1 GB/s.
+it700 LB=275322.0465 E=275905.2109 dPhi=0.002 mrg=-55.18 dt=0.034s. 3.3 GB/s.
+it710 LB=275322.0485 E=275905.2109 dPhi=0.001 mrg=-55.18 dt=0.036s. 3.1 GB/s.
+it720 LB=275322.0502 E=275905.2109 dPhi=0.001 mrg=-55.18 dt=0.035s. 3.2 GB/s.
+it730 LB=275322.0519 E=275905.2109 dPhi=0.001 mrg=-55.18 dt=0.034s. 3.2 GB/s.
+it740 LB=275322.0534 E=275905.2109 dPhi=0.001 mrg=-55.18 dt=0.035s. 3.2 GB/s.
+it750 LB=275322.0548 E=275905.2109 dPhi=0.001 mrg=-55.18 dt=0.033s. 3.4 GB/s.
+it760 LB=275322.0559 E=275905.2109 dPhi=0.001 mrg=-55.18 dt=0.035s. 3.2 GB/s.
+it770 LB=275322.0569 E=275905.2109 dPhi=0.001 mrg=-55.18 dt=0.034s. 3.3 GB/s.
+it780 LB=275322.0581 E=275905.2109 dPhi=0.001 mrg=-55.18 dt=0.034s. 3.2 GB/s.
+it790 LB=275322.0588 E=275905.2109 dPhi=0.0009 mrg=-55.18 dt=0.037s. 3.0 GB/s.
+it800 LB=275322.0598 E=275905.2109 dPhi=0.0009 mrg=-55.18 dt=0.037s. 3.0 GB/s.
+it810 LB=275322.0605 E=275905.2109 dPhi=0.0008 mrg=-55.18 dt=0.035s. 3.2 GB/s.
+it820 LB=275322.0613 E=275905.2109 dPhi=0.0008 mrg=-55.18 dt=0.034s. 3.3 GB/s.
+it830 LB=275322.0621 E=275905.2109 dPhi=0.0008 mrg=-55.18 dt=0.038s. 3.0 GB/s.
+it840 LB=275322.0625 E=275905.2109 dPhi=0.0007 mrg=-55.18 dt=0.034s. 3.3 GB/s.
+it850 LB=275322.0629 E=275905.2109 dPhi=0.0007 mrg=-55.18 dt=0.034s. 3.3 GB/s.
+it860 LB=275322.0637 E=275905.2109 dPhi=0.0007 mrg=-55.18 dt=0.036s. 3.1 GB/s.
+it870 LB=275322.0639 E=275905.2109 dPhi=0.0006 mrg=-55.18 dt=0.035s. 3.2 GB/s.
+it880 LB=275322.0644 E=275905.2109 dPhi=0.0006 mrg=-55.18 dt=0.035s. 3.2 GB/s.
+it890 LB=275322.0648 E=275905.2109 dPhi=0.0006 mrg=-55.18 dt=0.034s. 3.3 GB/s.
+it900 LB=275322.0652 E=275905.2109 dPhi=0.0006 mrg=-55.18 dt=0.044s. 2.5 GB/s.
+it910 LB=275322.0655 E=275905.2109 dPhi=0.0005 mrg=-55.18 dt=0.045s. 2.5 GB/s.
+it920 LB=275322.0657 E=275905.2109 dPhi=0.0005 mrg=-55.18 dt=0.044s. 2.5 GB/s.
+it930 LB=275322.0660 E=275905.2109 dPhi=0.0005 mrg=-55.18 dt=0.044s. 2.6 GB/s.
+it940 LB=275322.0663 E=275905.2109 dPhi=0.0005 mrg=-55.18 dt=0.036s. 3.1 GB/s.
+it950 LB=275322.0664 E=275905.2109 dPhi=0.0004 mrg=-55.18 dt=0.037s. 3.0 GB/s.
+it960 LB=275322.0667 E=275905.2109 dPhi=0.0004 mrg=-55.18 dt=0.041s. 2.8 GB/s.
+it970 LB=275322.0669 E=275905.2109 dPhi=0.0004 mrg=-55.18 dt=0.036s. 3.1 GB/s.
+it980 LB=275322.0670 E=275905.2109 dPhi=0.0004 mrg=-55.18 dt=0.038s. 3.0 GB/s.
+it990 LB=275322.0671 E=275905.2109 dPhi=0.0004 mrg=-55.18 dt=0.037s. 3.0 GB/s.
+it1000 LB=275322.0673 E=275905.2109 dPhi=0.0004 mrg=-55.18 dt=0.038s. 3.0 GB/s.
+Reached maximum number of iterations (1000).
+LB= 275322.0673 E= 275905.2109
+COMPUTE :struct float_v1 TYPE:1 TEST INSTANCE 1 TRW-S time:6.20298s
+Labeling best_x: 
+10, 10, 7, 7, 7, 0, 7, 7, 5, 7, ...
+Map is not yet strictly improving
+ICM improved E: 275773.820313
+core size:7Mb, writable: 1Mb.
+Marking immovable (init) 10000+0 labels (100% remains)
+PO_sensetivity:0
+PO_it:1
+it1005 LB=-795.4662 E=-295.4609 dPhi=1e+002 mrg=-9.027 dt=0.026s. 3.5 GB/s.
+Reached energy below 0
+LB= -795.4662 E= -295.4609
+Improved E:-665.4922
+Marking immovable (cut) 610+4834 labels (95.4633% remains)
+PO_it:2
+it1010 LB=-2809.2871 E=-1501.8203 dPhi=1 mrg=-18.92 dt=0.029s. 3.2 GB/s.
+Reached energy below 0
+LB= -2809.2871 E= -1501.8203
+Improved E:-2377.4609
+Marking immovable (cut) 690+4341 (1 non-unique) labels (91.2708% remains)
+PO_it:3
+it1015 LB=-3487.3744 E=-1832.0156 dPhi=1 mrg=-18.01 dt=0.030s. 3.0 GB/s.
+Reached energy below 0
+LB= -3487.3744 E= -1832.0156
+Improved E:-2988.1563
+Marking immovable (cut) 996+7105 (2 non-unique) labels (84.52% remains)
+PO_it:4
+it1020 LB=-4345.3258 E=-2324.8750 dPhi=1 mrg=-18.44 dt=0.028s. 3.3 GB/s.
+Reached energy below 0
+LB= -4345.3258 E= -2324.8750
+Improved E:-3669.6406
+Marking immovable (cut) 1253+9658 labels (75.4275% remains)
+PO_it:5
+it1025 LB=-5625.8365 E=-3715.4375 dPhi=1 mrg=-19.13 dt=0.029s. 3.2 GB/s.
+Reached energy below 0
+LB= -5625.8365 E= -3715.4375
+Improved E:-4966.7500
+Marking immovable (cut) 1375+9327 (5 non-unique) labels (66.5092% remains)
+PO_it:6
+it1030 LB=-5675.9920 E=-3969.8281 dPhi=1 mrg=-22.44 dt=0.038s. 2.4 GB/s.
+Reached energy below 0
+LB= -5675.9920 E= -3969.8281
+Improved E:-5042.6719
+Marking immovable (cut) 1416+9332 (2 non-unique) labels (57.5525% remains)
+PO_it:7
+it1035 LB=-5067.0855 E=-3595.2500 dPhi=1 mrg=-20.92 dt=0.029s. 3.1 GB/s.
+Reached energy below 0
+LB= -5067.0855 E= -3595.2500
+Improved E:-4517.7656
+Marking immovable (cut) 1355+8377 (1 non-unique) labels (49.4425% remains)
+PO_it:8
+it1040 LB=-4648.8667 E=-3432.9688 dPhi=1 mrg=-16.15 dt=0.029s. 3.2 GB/s.
+Reached energy below 0
+LB= -4648.8667 E= -3432.9688
+Improved E:-4229.7344
+Marking immovable (cut) 1277+7988 (1 non-unique) labels (41.7217% remains)
+PO_it:9
+it1045 LB=-4042.2200 E=-3082.8672 dPhi=1 mrg=-14.72 dt=0.028s. 3.3 GB/s.
+Reached energy below 0
+LB= -4042.2200 E= -3082.8672
+Improved E:-3700.6797
+Marking immovable (cut) 1031+5858 (2 non-unique) labels (35.9808% remains)
+PO_it:10
+it1050 LB=-3692.0831 E=-3175.2891 dPhi=1 mrg=-22.99 dt=0.028s. 3.3 GB/s.
+Reached energy below 0
+LB= -3692.0831 E= -3175.2891
+Improved E:-3472.1641
+Marking immovable (cut) 1022+6283 (1 non-unique) labels (29.8933% remains)
+PO_it:11
+it1055 LB=-2457.7715 E=-1995.0000 dPhi=1 mrg=-20.75 dt=0.027s. 3.3 GB/s.
+Reached energy below 0
+LB= -2457.7715 E= -1995.0000
+Improved E:-2316.1250
+Marking immovable (cut) 654+3581 (3 non-unique) labels (26.3642% remains)
+PO_it:12
+it1060 LB=-1562.1994 E=-1187.6719 dPhi=1 mrg=-16.67 dt=0.025s. 3.7 GB/s.
+Reached energy below 0
+LB= -1562.1994 E= -1187.6719
+Improved E:-1370.3281
+Marking immovable (cut) 373+2313 (2 non-unique) labels (24.1258% remains)
+PO_it:13
+it1065 LB=-771.9201 E=-595.0703 dPhi=1 mrg=-10.87 dt=0.027s. 3.4 GB/s.
+Reached energy below 0
+LB= -771.9201 E= -595.0703
+Improved E:-717.4063
+Marking immovable (cut) 244+978 labels (23.1075% remains)
+PO_it:14
+it1070 LB=-718.6181 E=-523.8203 dPhi=1 mrg=-8.795 dt=0.026s. 3.5 GB/s.
+Reached energy below 0
+LB= -718.6181 E= -523.8203
+Improved E:-668.0859
+Marking immovable (cut) 235+1344 (1 non-unique) labels (21.7917% remains)
+PO_it:15
+it1075 LB=-694.9202 E=-563.6250 dPhi=1 mrg=-16.31 dt=0.027s. 3.4 GB/s.
+Reached energy below 0
+LB= -694.9202 E= -563.6250
+Improved E:-656.1016
+Marking immovable (cut) 144+648 labels (21.1317% remains)
+PO_it:16
+it1080 LB=-309.0345 E=-202.0078 dPhi=1 mrg=-8.798 dt=0.025s. 3.6 GB/s.
+Reached energy below 0
+LB= -309.0345 E= -202.0078
+Improved E:-303.1406
+Marking immovable (cut) 73+134 labels (20.9592% remains)
+PO_it:17
+it1085 LB=-70.4342 E=-25.4609 dPhi=1 mrg=-3.806 dt=0.026s. 3.5 GB/s.
+Reached energy below 0
+LB= -70.4342 E= -25.4609
+Improved E:-65.6875
+Marking immovable (cut) 32+46 labels (20.8942% remains)
+PO_it:18
+it1090 LB=-49.4471 E=-5.0547 dPhi=1 mrg=-10.61 dt=0.025s. 3.6 GB/s.
+Reached energy below 0
+LB= -49.4471 E=  -5.0547
+Improved E:-45.2813
+Marking immovable (cut) 11+5 labels (20.8808% remains)
+PO_it:19
+it1095 LB=-3.7503 E=40.2266 dPhi=3 mrg=-0.2746 dt=0.024s. 3.8 GB/s.
+it1100 LB=-3.4468 E=40.2266 dPhi=0.4 mrg=-0.2736 dt=0.024s. 3.8 GB/s.
+it1105 LB=-3.2387 E=40.2266 dPhi=0.2 mrg=-0.2727 dt=0.027s. 3.4 GB/s.
+it1110 LB=-3.1163 E=40.2266 dPhi=0.1 mrg=-0.2721 dt=0.025s. 3.6 GB/s.
+it1115 LB=-3.0222 E=40.2266 dPhi=0.09 mrg=-0.2717 dt=0.025s. 3.6 GB/s.
+it1120 LB=-2.9473 E=40.2266 dPhi=0.08 mrg=-0.2715 dt=0.024s. 3.8 GB/s.
+it1125 LB=-2.8871 E=40.2266 dPhi=0.07 mrg=-0.2713 dt=0.024s. 3.8 GB/s.
+it1130 LB=-2.8376 E=40.2266 dPhi=0.06 mrg=-0.2712 dt=0.027s. 3.4 GB/s.
+it1135 LB=-2.7972 E=40.2266 dPhi=0.06 mrg=-0.2712 dt=0.026s. 3.5 GB/s.
+it1140 LB=-2.7640 E=40.2266 dPhi=0.05 mrg=-0.2711 dt=0.027s. 3.3 GB/s.
+Reached maximum number of iterations (50).
+LB=  -2.7640 E=  40.2266
+Map is not yet strictly improving
+Marking immovable (WTA) 70+718 labels (20.2242% remains)
+PO_it:20
+it1145 LB=-268.7443 E=-250.0547 dPhi=1 mrg=-10.36 dt=0.026s. 3.6 GB/s.
+Reached energy below 0
+LB= -268.7443 E= -250.0547
+Improved E:-263.9844
+Marking immovable (cut) 111+892 labels (19.3883% remains)
+PO_it:21
+it1150 LB=-322.6939 E=-218.0156 dPhi=1 mrg=-16.72 dt=0.026s. 3.5 GB/s.
+Reached energy below 0
+LB= -322.6939 E= -218.0156
+Improved E:-284.4844
+Marking immovable (cut) 145+1291 labels (18.1917% remains)
+PO_it:22
+it1155 LB=-347.5165 E=-318.1797 dPhi=1 mrg=-8.512 dt=0.026s. 3.5 GB/s.
+Reached energy below 0
+LB= -347.5165 E= -318.1797
+Improved E:-337.8359
+Marking immovable (cut) 96+765 labels (17.4742% remains)
+PO_it:23
+it1160 LB=-370.7900 E=-366.7109 dPhi=1 mrg=-15.42 dt=0.025s. 3.7 GB/s.
+Reached energy below 0
+LB= -370.7900 E= -366.7109
+Improved E:-366.7109
+Marking immovable (cut) 81+632 labels (16.88% remains)
+PO_it:24
+it1165 LB=-251.8053 E=-248.2969 dPhi=1 mrg=-12.46 dt=0.028s. 3.3 GB/s.
+Reached energy below 0
+LB= -251.8053 E= -248.2969
+Improved E:-248.2969
+Marking immovable (cut) 73+517 (1 non-unique) labels (16.3883% remains)
+PO_it:25
+it1170 LB=-134.3771 E=-117.4375 dPhi=1 mrg=-6.496 dt=0.025s. 3.7 GB/s.
+Reached energy below 0
+LB= -134.3771 E= -117.4375
+Improved E:-117.4375
+Marking immovable (cut) 39+223 labels (16.17% remains)
+PO_it:26
+it1175 LB=-62.6141 E=-62.1250 dPhi=1 mrg=-10.15 dt=0.026s. 3.5 GB/s.
+Reached energy below 0
+LB= -62.6141 E= -62.1250
+Improved E:-62.1250
+Marking immovable (cut) 13+28 labels (16.1358% remains)
+PO_it:27
+it1180 LB=-5.2969 E=-5.2969 dPhi=1 mrg=-1.624 dt=0.027s. 3.4 GB/s.
+Reached duality gap < 1.90735e-006
+LB=  -5.2969 E=  -5.2969
+Improved E: -5.2969
+Marking immovable (cut) 4+1 labels (16.1317% remains)
+PO_it:28
+it1185 LB=-0.0000 E=0.0000 dPhi=3 mrg=   0 dt=0.026s. 3.5 GB/s.
+Reached duality gap < 9.53674e-007
+LB=  -0.0000 E=   0.0000
+Improved E:  0.0000
+Marking immovable (cut) 0+0 labels (16.1317% remains)
+TRW-S found optimal solution
+Map is strictly improving
+Finished. Total iterations: 1185 Persistency proven: 16.1317%
+PO Times:
+ Total: 4.50096
+ Msgs: 2.31598
+ Cuts: 0.488098
+ Node cuts: 0.75775
+ Rebuild: 0.334905
+Alive Labels mask: 
+ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, ...
+ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, ...
+ 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, ...
+ 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, ...
+ 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, ...
+ 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, ...
+ 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, ...
+ 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, ...
+ 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, ...
+ 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, ...
+ 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, ...
+Labeling y: 
+(10)(10)(7)(7)(7)(0)(7)(7)(5)(7)...
+COMPUTE :struct float_v1 TYPE:1 TEST INSTANCE 1 nit: 1185 elim:16% / 10.8055s
+Recognized models: 19800Potts terms, 0T-Linear terms,
+ 0T-Quadratic terms, 0Diff terms, 0 Full terms
+X Max data value: 78.1172
+Min data delta: 0.0078125
+Selecting data toolerance: 0.001
+Stream graph layers: 199 time: 0.000627565s. 
+core size:6Mb, writable: 2Mb.
+Options:
+all_to_one: 0
+fast_msg: 1
+it_batch: 10
+local_min_tol: 0
+max_CPU: 2
+max_it: 1000
+n_sensetivity: 1
+po_it_batch: 5
+po_max_it: 50
+po_maxit: 0
+rebuild_incremental: 1
+reduce_immovable: 1
+rel_conv_tol: 0.01
+rel_gap_tol: 0.1
+sensetivity: 0
+use_cut: 1
+use_pixel_cut: 1
+weak_po: 0
+it10 LB=274580.6592 E=278945.8828 dPhi=1e+002 mrg=-56.1 dt=0.034s. 5.6 GB/s.
+it20 LB=275088.7639 E=276880.0391 dPhi=9 mrg=-55.56 dt=0.033s. 5.7 GB/s.
+it30 LB=275201.7676 E=276376.2422 dPhi=4 mrg=-55.29 dt=0.034s. 5.7 GB/s.
+it40 LB=275249.4787 E=276289.2031 dPhi=3 mrg=-55.26 dt=0.033s. 5.8 GB/s.
+it50 LB=275274.0297 E=276194.5703 dPhi=2 mrg=-55.26 dt=0.032s. 5.9 GB/s.
+it60 LB=275286.6069 E=276194.5703 dPhi=1 mrg=-55.25 dt=0.033s. 5.7 GB/s.
+it70 LB=275294.1803 E=276194.5703 dPhi=0.9 mrg=-55.24 dt=0.034s. 5.6 GB/s.
+it80 LB=275299.8431 E=276194.5703 dPhi=0.9 mrg=-55.22 dt=0.035s. 5.4 GB/s.
+it90 LB=275304.1688 E=276119.5391 dPhi=0.7 mrg=-55.21 dt=0.041s. 4.7 GB/s.
+it100 LB=275307.4442 E=276101.0313 dPhi=0.6 mrg=-55.2 dt=0.035s. 5.5 GB/s.
+it110 LB=275309.9626 E=276091.8750 dPhi=0.5 mrg=-55.19 dt=0.036s. 5.2 GB/s.
+it120 LB=275311.9887 E=276077.8750 dPhi=0.5 mrg=-55.19 dt=0.035s. 5.4 GB/s.
+it130 LB=275313.6955 E=275995.8672 dPhi=0.4 mrg=-55.18 dt=0.031s. 6.2 GB/s.
+it140 LB=275315.0807 E=275995.8672 dPhi=0.3 mrg=-55.19 dt=0.036s. 5.4 GB/s.
+it150 LB=275316.2816 E=275995.8672 dPhi=0.3 mrg=-55.19 dt=0.033s. 5.7 GB/s.
+it160 LB=275317.3098 E=275995.8672 dPhi=0.4 mrg=-55.19 dt=0.034s. 5.6 GB/s.
+it170 LB=275318.0731 E=275995.8672 dPhi=0.2 mrg=-55.19 dt=0.033s. 5.7 GB/s.
+it180 LB=275318.6072 E=275995.8672 dPhi=0.2 mrg=-55.19 dt=0.039s. 4.8 GB/s.
+it190 LB=275319.0274 E=275987.5313 dPhi=0.1 mrg=-55.19 dt=0.034s. 5.6 GB/s.
+it200 LB=275319.3852 E=275987.5313 dPhi=0.1 mrg=-55.19 dt=0.034s. 5.6 GB/s.
+it210 LB=275319.6959 E=275977.9141 dPhi=0.1 mrg=-55.19 dt=0.034s. 5.7 GB/s.
+it220 LB=275319.9687 E=275977.9141 dPhi=0.1 mrg=-55.19 dt=0.033s. 5.8 GB/s.
+it230 LB=275320.2094 E=275977.9141 dPhi=0.1 mrg=-55.19 dt=0.034s. 5.7 GB/s.
+it240 LB=275320.4225 E=275977.9141 dPhi=0.1 mrg=-55.19 dt=0.035s. 5.4 GB/s.
+it250 LB=275320.6117 E=275975.7578 dPhi=0.1 mrg=-55.19 dt=0.034s. 5.6 GB/s.
+it260 LB=275320.7816 E=275975.7578 dPhi=0.1 mrg=-55.19 dt=0.033s. 5.8 GB/s.
+it270 LB=275320.9346 E=275975.7578 dPhi=0.08 mrg=-55.19 dt=0.033s. 5.8 GB/s.
+it280 LB=275321.0683 E=275975.7578 dPhi=0.06 mrg=-55.19 dt=0.033s. 5.8 GB/s.
+it290 LB=275321.1821 E=275968.2109 dPhi=0.06 mrg=-55.19 dt=0.033s. 5.7 GB/s.
+it300 LB=275321.2652 E=275965.1016 dPhi=0.07 mrg=-55.19 dt=0.032s. 6.0 GB/s.
+it310 LB=275321.3332 E=275965.1016 dPhi=0.06 mrg=-55.19 dt=0.033s. 5.9 GB/s.
+it320 LB=275321.3916 E=275965.1016 dPhi=0.05 mrg=-55.19 dt=0.033s. 5.9 GB/s.
+it330 LB=275321.4430 E=275965.1016 dPhi=0.05 mrg=-55.19 dt=0.032s. 5.9 GB/s.
+it340 LB=275321.4892 E=275962.1563 dPhi=0.06 mrg=-55.19 dt=0.034s. 5.7 GB/s.
+it350 LB=275321.5313 E=275949.3516 dPhi=0.06 mrg=-55.19 dt=0.033s. 5.8 GB/s.
+it360 LB=275321.5703 E=275949.3516 dPhi=0.06 mrg=-55.19 dt=0.035s. 5.5 GB/s.
+it370 LB=275321.6068 E=275949.3516 dPhi=0.05 mrg=-55.19 dt=0.033s. 5.8 GB/s.
+it380 LB=275321.6413 E=275949.3516 dPhi=0.05 mrg=-55.19 dt=0.033s. 5.8 GB/s.
+it390 LB=275321.6740 E=275949.3516 dPhi=0.05 mrg=-55.19 dt=0.035s. 5.5 GB/s.
+it400 LB=275321.7049 E=275949.3516 dPhi=0.03 mrg=-55.19 dt=0.033s. 5.8 GB/s.
+it410 LB=275321.7341 E=275949.3516 dPhi=0.03 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it420 LB=275321.7618 E=275949.3516 dPhi=0.02 mrg=-55.18 dt=0.035s. 5.4 GB/s.
+it430 LB=275321.7878 E=275949.3516 dPhi=0.02 mrg=-55.18 dt=0.035s. 5.4 GB/s.
+it440 LB=275321.8121 E=275949.3516 dPhi=0.02 mrg=-55.18 dt=0.035s. 5.4 GB/s.
+it450 LB=275321.8346 E=275949.3516 dPhi=0.02 mrg=-55.18 dt=0.037s. 5.2 GB/s.
+it460 LB=275321.8553 E=275949.3516 dPhi=0.01 mrg=-55.18 dt=0.037s. 5.2 GB/s.
+it470 LB=275321.8744 E=275949.3516 dPhi=0.01 mrg=-55.18 dt=0.036s. 5.3 GB/s.
+it480 LB=275321.8919 E=275949.3516 dPhi=0.01 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it490 LB=275321.9079 E=275949.3516 dPhi=0.01 mrg=-55.18 dt=0.034s. 5.7 GB/s.
+it500 LB=275321.9225 E=275946.9766 dPhi=0.01 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it510 LB=275321.9358 E=275946.9766 dPhi=0.009 mrg=-55.18 dt=0.033s. 5.9 GB/s.
+it520 LB=275321.9479 E=275946.9766 dPhi=0.009 mrg=-55.18 dt=0.033s. 5.8 GB/s.
+it530 LB=275321.9590 E=275924.3047 dPhi=0.008 mrg=-55.18 dt=0.032s. 6.0 GB/s.
+it540 LB=275321.9690 E=275924.3047 dPhi=0.007 mrg=-55.18 dt=0.034s. 5.7 GB/s.
+it550 LB=275321.9781 E=275924.3047 dPhi=0.007 mrg=-55.18 dt=0.034s. 5.7 GB/s.
+it560 LB=275321.9864 E=275924.3047 dPhi=0.006 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it570 LB=275321.9939 E=275924.3047 dPhi=0.005 mrg=-55.18 dt=0.033s. 5.8 GB/s.
+it580 LB=275322.0007 E=275924.3047 dPhi=0.005 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it590 LB=275322.0069 E=275924.3047 dPhi=0.004 mrg=-55.18 dt=0.039s. 4.9 GB/s.
+it600 LB=275322.0125 E=275924.3047 dPhi=0.004 mrg=-55.18 dt=0.033s. 5.8 GB/s.
+it610 LB=275322.0176 E=275924.3047 dPhi=0.004 mrg=-55.18 dt=0.032s. 5.9 GB/s.
+it620 LB=275322.0222 E=275924.3047 dPhi=0.003 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it630 LB=275322.0264 E=275924.3047 dPhi=0.003 mrg=-55.18 dt=0.033s. 5.8 GB/s.
+it640 LB=275322.0302 E=275924.3047 dPhi=0.003 mrg=-55.18 dt=0.032s. 5.9 GB/s.
+it650 LB=275322.0337 E=275924.3047 dPhi=0.003 mrg=-55.18 dt=0.032s. 5.9 GB/s.
+it660 LB=275322.0368 E=275924.3047 dPhi=0.002 mrg=-55.18 dt=0.033s. 5.8 GB/s.
+it670 LB=275322.0397 E=275924.3047 dPhi=0.002 mrg=-55.18 dt=0.033s. 5.8 GB/s.
+it680 LB=275322.0422 E=275924.3047 dPhi=0.002 mrg=-55.18 dt=0.033s. 5.9 GB/s.
+it690 LB=275322.0446 E=275924.3047 dPhi=0.002 mrg=-55.18 dt=0.034s. 5.5 GB/s.
+it700 LB=275322.0467 E=275924.3047 dPhi=0.002 mrg=-55.18 dt=0.034s. 5.7 GB/s.
+it710 LB=275322.0486 E=275924.3047 dPhi=0.001 mrg=-55.18 dt=0.038s. 5.0 GB/s.
+it720 LB=275322.0504 E=275924.3047 dPhi=0.001 mrg=-55.18 dt=0.043s. 4.4 GB/s.
+it730 LB=275322.0519 E=275924.3047 dPhi=0.001 mrg=-55.18 dt=0.034s. 5.5 GB/s.
+it740 LB=275322.0534 E=275924.3047 dPhi=0.001 mrg=-55.18 dt=0.033s. 5.8 GB/s.
+it750 LB=275322.0547 E=275924.3047 dPhi=0.001 mrg=-55.18 dt=0.035s. 5.4 GB/s.
+it760 LB=275322.0559 E=275924.3047 dPhi=0.001 mrg=-55.18 dt=0.032s. 6.0 GB/s.
+it770 LB=275322.0570 E=275924.3047 dPhi=0.001 mrg=-55.18 dt=0.033s. 5.8 GB/s.
+it780 LB=275322.0580 E=275924.3047 dPhi=0.001 mrg=-55.18 dt=0.036s. 5.4 GB/s.
+it790 LB=275322.0590 E=275924.3047 dPhi=0.0009 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it800 LB=275322.0598 E=275924.3047 dPhi=0.0009 mrg=-55.18 dt=0.033s. 5.8 GB/s.
+it810 LB=275322.0606 E=275924.3047 dPhi=0.0008 mrg=-55.18 dt=0.035s. 5.4 GB/s.
+it820 LB=275322.0612 E=275924.3047 dPhi=0.0008 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it830 LB=275322.0619 E=275924.3047 dPhi=0.0008 mrg=-55.18 dt=0.036s. 5.3 GB/s.
+it840 LB=275322.0625 E=275924.3047 dPhi=0.0007 mrg=-55.18 dt=0.036s. 5.4 GB/s.
+it850 LB=275322.0630 E=275924.3047 dPhi=0.0007 mrg=-55.18 dt=0.036s. 5.4 GB/s.
+it860 LB=275322.0635 E=275924.3047 dPhi=0.0007 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it870 LB=275322.0639 E=275924.3047 dPhi=0.0006 mrg=-55.18 dt=0.034s. 5.7 GB/s.
+it880 LB=275322.0643 E=275924.3047 dPhi=0.0006 mrg=-55.18 dt=0.034s. 5.7 GB/s.
+it890 LB=275322.0647 E=275924.3047 dPhi=0.0006 mrg=-55.18 dt=0.036s. 5.4 GB/s.
+it900 LB=275322.0650 E=275924.3047 dPhi=0.0006 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it910 LB=275322.0653 E=275924.3047 dPhi=0.0005 mrg=-55.18 dt=0.037s. 5.1 GB/s.
+it920 LB=275322.0656 E=275924.3047 dPhi=0.0005 mrg=-55.18 dt=0.033s. 5.7 GB/s.
+it930 LB=275322.0658 E=275924.3047 dPhi=0.0005 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it940 LB=275322.0660 E=275924.3047 dPhi=0.0005 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it950 LB=275322.0663 E=275924.3047 dPhi=0.0004 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it960 LB=275322.0664 E=275924.3047 dPhi=0.0004 mrg=-55.18 dt=0.033s. 5.7 GB/s.
+it970 LB=275322.0666 E=275924.3047 dPhi=0.0004 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it980 LB=275322.0668 E=275924.3047 dPhi=0.0004 mrg=-55.18 dt=0.033s. 5.7 GB/s.
+it990 LB=275322.0669 E=275924.3047 dPhi=0.0004 mrg=-55.18 dt=0.033s. 5.8 GB/s.
+it1000 LB=275322.0671 E=275924.3047 dPhi=0.0004 mrg=-55.18 dt=0.032s. 5.9 GB/s.
+Reached maximum number of iterations (1000).
+LB= 275322.0671 E= 275924.3047
+COMPUTE :struct double_v1 TYPE:1 TEST INSTANCE 1 TRW-S time:6.03324s
+Labeling best_x: 
+10, 10, 7, 7, 7, 0, 7, 7, 5, 7, ...
+Map is not yet strictly improving
+ICM improved E: 275813.359375
+core size:12Mb, writable: 2Mb.
+Marking immovable (init) 10000+0 labels (100% remains)
+PO_sensetivity:0
+PO_it:1
+it1005 LB=-872.9003 E=-445.8828 dPhi=1e+002 mrg=-9.93 dt=0.034s. 4.5 GB/s.
+Reached energy below 0
+LB= -872.9003 E= -445.8828
+Improved E:-765.3594
+Marking immovable (cut) 599+4709 labels (95.5767% remains)
+PO_it:2
+it1010 LB=-2561.2567 E=-1314.9609 dPhi=1 mrg=-15.7 dt=0.035s. 4.3 GB/s.
+Reached energy below 0
+LB= -2561.2567 E= -1314.9609
+Improved E:-2102.7500
+Marking immovable (cut) 662+4268 (1 non-unique) labels (91.4683% remains)
+PO_it:3
+it1015 LB=-3400.3344 E=-1858.1328 dPhi=1 mrg=-18.01 dt=0.032s. 4.6 GB/s.
+Reached energy below 0
+LB= -3400.3344 E= -1858.1328
+Improved E:-2901.2813
+Marking immovable (cut) 919+6541 (2 non-unique) labels (85.2517% remains)
+PO_it:4
+it1020 LB=-4124.8709 E=-2340.6094 dPhi=1 mrg=-21.99 dt=0.032s. 4.7 GB/s.
+Reached energy below 0
+LB= -4124.8709 E= -2340.6094
+Improved E:-3569.2344
+Marking immovable (cut) 1178+8663 labels (77.0508% remains)
+PO_it:5
+it1025 LB=-5040.2085 E=-2955.3672 dPhi=1 mrg=-19.13 dt=0.032s. 4.7 GB/s.
+Reached energy below 0
+LB= -5040.2085 E= -2955.3672
+Improved E:-4463.0469
+Marking immovable (cut) 1286+8719 (5 non-unique) labels (68.7133% remains)
+PO_it:6
+it1030 LB=-5223.3995 E=-3334.8125 dPhi=1 mrg=-16.66 dt=0.029s. 5.2 GB/s.
+Reached energy below 0
+LB= -5223.3995 E= -3334.8125
+Improved E:-4580.7109
+Marking immovable (cut) 1359+8923 (2 non-unique) labels (60.145% remains)
+PO_it:7
+it1035 LB=-5145.9536 E=-3425.4297 dPhi=1 mrg=-22.44 dt=0.033s. 4.6 GB/s.
+Reached energy below 0
+LB= -5145.9536 E= -3425.4297
+Improved E:-4572.6875
+Marking immovable (cut) 1416+9262 (2 non-unique) labels (51.2467% remains)
+PO_it:8
+it1040 LB=-4904.1215 E=-3719.3594 dPhi=1 mrg=-16.15 dt=0.030s. 5.0 GB/s.
+Reached energy below 0
+LB= -4904.1215 E= -3719.3594
+Improved E:-4487.8359
+Marking immovable (cut) 1315+8249 (1 non-unique) labels (43.2767% remains)
+PO_it:9
+it1045 LB=-4291.1453 E=-3387.1328 dPhi=1 mrg=-14.72 dt=0.029s. 5.1 GB/s.
+Reached energy below 0
+LB= -4291.1453 E= -3387.1328
+Improved E:-3922.2266
+Marking immovable (cut) 1175+7227 (3 non-unique) labels (36.275% remains)
+PO_it:10
+it1050 LB=-4029.2991 E=-3570.4844 dPhi=1 mrg=-22.99 dt=0.029s. 5.2 GB/s.
+Reached energy below 0
+LB= -4029.2991 E= -3570.4844
+Improved E:-3805.8906
+Marking immovable (cut) 1101+6511 (2 non-unique) labels (29.9317% remains)
+PO_it:11
+it1055 LB=-2798.2055 E=-2350.7422 dPhi=1 mrg=-20.75 dt=0.028s. 5.3 GB/s.
+Reached energy below 0
+LB= -2798.2055 E= -2350.7422
+Improved E:-2650.4453
+Marking immovable (cut) 705+3745 (3 non-unique) labels (26.2233% remains)
+PO_it:12
+it1060 LB=-1574.7311 E=-1227.5391 dPhi=1 mrg=-16.67 dt=0.027s. 5.6 GB/s.
+Reached energy below 0
+LB= -1574.7311 E= -1227.5391
+Improved E:-1439.6641
+Marking immovable (cut) 380+2077 (1 non-unique) labels (24.1758% remains)
+PO_it:13
+it1065 LB=-675.5827 E=-341.3672 dPhi=1 mrg=-10.87 dt=0.035s. 4.3 GB/s.
+Reached energy below 0
+LB= -675.5827 E= -341.3672
+Improved E:-590.3281
+Marking immovable (cut) 204+637 labels (23.475% remains)
+PO_it:14
+it1070 LB=-641.2162 E=-478.5234 dPhi=1 mrg=-18.02 dt=0.029s. 5.2 GB/s.
+Reached energy below 0
+LB= -641.2162 E= -478.5234
+Improved E:-603.0234
+Marking immovable (cut) 255+1677 labels (21.865% remains)
+PO_it:15
+it1075 LB=-745.3605 E=-620.1563 dPhi=1 mrg=-14.37 dt=0.028s. 5.4 GB/s.
+Reached energy below 0
+LB= -745.3605 E= -620.1563
+Improved E:-711.5547
+Marking immovable (cut) 157+776 labels (21.0875% remains)
+PO_it:16
+it1080 LB=-326.2488 E=-225.8984 dPhi=1 mrg=-8.798 dt=0.028s. 5.3 GB/s.
+Reached energy below 0
+LB= -326.2488 E= -225.8984
+Improved E:-320.9297
+Marking immovable (cut) 72+96 labels (20.9475% remains)
+PO_it:17
+it1085 LB=-58.7614 E=-20.3203 dPhi=1 mrg=-3.806 dt=0.028s. 5.4 GB/s.
+Reached energy below 0
+LB= -58.7614 E= -20.3203
+Improved E:-54.4453
+Marking immovable (cut) 29+20 labels (20.9067% remains)
+PO_it:18
+it1090 LB=-43.4560 E=-5.4609 dPhi=1 mrg=-10.61 dt=0.028s. 5.4 GB/s.
+Reached energy below 0
+LB= -43.4560 E=  -5.4609
+Improved E:-39.5859
+Marking immovable (cut) 7+5 labels (20.8967% remains)
+PO_it:19
+it1095 LB=-3.5795 E=34.1250 dPhi=2 mrg=-0.2746 dt=0.029s. 5.2 GB/s.
+it1100 LB=-3.3808 E=34.1250 dPhi=0.2 mrg=-0.2736 dt=0.026s. 5.8 GB/s.
+it1105 LB=-3.2325 E=34.1250 dPhi=0.2 mrg=-0.2727 dt=0.026s. 5.7 GB/s.
+it1110 LB=-3.1163 E=34.1250 dPhi=0.1 mrg=-0.2721 dt=0.026s. 5.8 GB/s.
+it1115 LB=-3.0222 E=34.1250 dPhi=0.09 mrg=-0.2717 dt=0.026s. 5.7 GB/s.
+it1120 LB=-2.9472 E=34.1250 dPhi=0.08 mrg=-0.2715 dt=0.027s. 5.5 GB/s.
+it1125 LB=-2.8871 E=34.1250 dPhi=0.07 mrg=-0.2713 dt=0.033s. 4.5 GB/s.
+it1130 LB=-2.8376 E=34.1250 dPhi=0.06 mrg=-0.2712 dt=0.031s. 4.8 GB/s.
+it1135 LB=-2.7971 E=34.1250 dPhi=0.06 mrg=-0.2712 dt=0.028s. 5.4 GB/s.
+it1140 LB=-2.7640 E=34.1250 dPhi=0.05 mrg=-0.2711 dt=0.028s. 5.3 GB/s.
+Reached maximum number of iterations (50).
+LB=  -2.7640 E=  34.1250
+Map is not yet strictly improving
+Marking immovable (WTA) 70+718 labels (20.24% remains)
+PO_it:20
+it1145 LB=-268.7443 E=-250.0547 dPhi=1 mrg=-10.36 dt=0.028s. 5.3 GB/s.
+Reached energy below 0
+LB= -268.7443 E= -250.0547
+Improved E:-263.9844
+Marking immovable (cut) 111+892 labels (19.4042% remains)
+PO_it:21
+it1150 LB=-322.6939 E=-218.0156 dPhi=1 mrg=-16.72 dt=0.028s. 5.4 GB/s.
+Reached energy below 0
+LB= -322.6939 E= -218.0156
+Improved E:-284.4844
+Marking immovable (cut) 145+1291 labels (18.2075% remains)
+PO_it:22
+it1155 LB=-347.5165 E=-318.1797 dPhi=1 mrg=-8.512 dt=0.027s. 5.5 GB/s.
+Reached energy below 0
+LB= -347.5165 E= -318.1797
+Improved E:-337.8359
+Marking immovable (cut) 96+765 labels (17.49% remains)
+PO_it:23
+it1160 LB=-370.7901 E=-366.7109 dPhi=1 mrg=-15.42 dt=0.026s. 5.8 GB/s.
+Reached energy below 0
+LB= -370.7901 E= -366.7109
+Improved E:-366.7109
+Marking immovable (cut) 81+632 labels (16.8958% remains)
+PO_it:24
+it1165 LB=-251.8053 E=-248.2969 dPhi=1 mrg=-12.46 dt=0.028s. 5.3 GB/s.
+Reached energy below 0
+LB= -251.8053 E= -248.2969
+Improved E:-248.2969
+Marking immovable (cut) 73+517 (1 non-unique) labels (16.4042% remains)
+PO_it:25
+it1170 LB=-134.3771 E=-117.4375 dPhi=1 mrg=-6.496 dt=0.026s. 5.8 GB/s.
+Reached energy below 0
+LB= -134.3771 E= -117.4375
+Improved E:-117.4375
+Marking immovable (cut) 39+223 labels (16.1858% remains)
+PO_it:26
+it1175 LB=-62.6142 E=-62.1250 dPhi=1 mrg=-10.15 dt=0.027s. 5.5 GB/s.
+Reached energy below 0
+LB= -62.6142 E= -62.1250
+Improved E:-62.1250
+Marking immovable (cut) 13+28 labels (16.1517% remains)
+PO_it:27
+it1180 LB=-5.2969 E=-5.2969 dPhi=1 mrg=-1.624 dt=0.027s. 5.5 GB/s.
+Reached duality gap < -1.84741e-013
+LB=  -5.2969 E=  -5.2969
+Improved E: -5.2969
+Marking immovable (cut) 4+1 labels (16.1475% remains)
+PO_it:28
+it1185 LB=0.0000 E=0.0000 dPhi=3 mrg=   0 dt=0.026s. 5.7 GB/s.
+Reached duality gap < -2.27374e-013
+LB=   0.0000 E=   0.0000
+Improved E:  0.0000
+Marking immovable (cut) 0+0 labels (16.1475% remains)
+TRW-S found optimal solution
+Map is strictly improving
+Finished. Total iterations: 1185 Persistency proven: 16.1475%
+PO Times:
+ Total: 4.61146
+ Msgs: 2.38915
+ Cuts: 0.49379
+ Node cuts: 0.768599
+ Rebuild: 0.333066
+Alive Labels mask: 
+ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, ...
+ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, ...
+ 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, ...
+ 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, ...
+ 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, ...
+ 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, ...
+ 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, ...
+ 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, ...
+ 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, ...
+ 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, ...
+ 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, ...
+Labeling y: 
+(10)(10)(7)(7)(7)(0)(7)(7)(5)(7)...
+COMPUTE :struct double_v1 TYPE:1 TEST INSTANCE 1 nit: 1185 elim:16% / 10.74s
+Stream graph layers: 199 time: 0.000615131s. 
+core size:6Mb, writable: 2Mb.
+Options:
+all_to_one: 0
+fast_msg: 1
+it_batch: 10
+local_min_tol: 0
+max_CPU: 2
+max_it: 1000
+n_sensetivity: 1
+po_it_batch: 5
+po_max_it: 50
+po_maxit: 0
+rebuild_incremental: 1
+reduce_immovable: 1
+rel_conv_tol: 0.01
+rel_gap_tol: 0.1
+sensetivity: 0
+use_cut: 1
+use_pixel_cut: 1
+weak_po: 0
+it10 LB=274580.6592 E=278945.8828 dPhi=1e+002 mrg=-56.1 dt=0.037s. 5.1 GB/s.
+it20 LB=275088.7639 E=276880.0391 dPhi=9 mrg=-55.56 dt=0.036s. 5.3 GB/s.
+it30 LB=275201.7676 E=276376.2422 dPhi=4 mrg=-55.29 dt=0.036s. 5.3 GB/s.
+it40 LB=275249.4787 E=276289.2031 dPhi=3 mrg=-55.26 dt=0.035s. 5.4 GB/s.
+it50 LB=275274.0297 E=276194.5703 dPhi=2 mrg=-55.26 dt=0.042s. 4.5 GB/s.
+it60 LB=275286.6069 E=276194.5703 dPhi=1 mrg=-55.25 dt=0.036s. 5.3 GB/s.
+it70 LB=275294.1803 E=276194.5703 dPhi=0.9 mrg=-55.24 dt=0.036s. 5.3 GB/s.
+it80 LB=275299.8431 E=276194.5703 dPhi=0.9 mrg=-55.22 dt=0.042s. 4.6 GB/s.
+it90 LB=275304.1688 E=276119.5391 dPhi=0.7 mrg=-55.21 dt=0.038s. 5.1 GB/s.
+it100 LB=275307.4442 E=276101.0313 dPhi=0.6 mrg=-55.2 dt=0.034s. 5.6 GB/s.
+it110 LB=275309.9626 E=276091.8750 dPhi=0.5 mrg=-55.19 dt=0.033s. 5.8 GB/s.
+it120 LB=275311.9887 E=276077.8750 dPhi=0.5 mrg=-55.19 dt=0.034s. 5.6 GB/s.
+it130 LB=275313.6955 E=275995.8672 dPhi=0.4 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it140 LB=275315.0807 E=275995.8672 dPhi=0.3 mrg=-55.19 dt=0.034s. 5.6 GB/s.
+it150 LB=275316.2816 E=275995.8672 dPhi=0.3 mrg=-55.19 dt=0.034s. 5.7 GB/s.
+it160 LB=275317.3098 E=275995.8672 dPhi=0.4 mrg=-55.19 dt=0.035s. 5.5 GB/s.
+it170 LB=275318.0731 E=275995.8672 dPhi=0.2 mrg=-55.19 dt=0.035s. 5.5 GB/s.
+it180 LB=275318.6072 E=275995.8672 dPhi=0.2 mrg=-55.19 dt=0.037s. 5.2 GB/s.
+it190 LB=275319.0274 E=275987.5313 dPhi=0.1 mrg=-55.19 dt=0.033s. 5.7 GB/s.
+it200 LB=275319.3852 E=275987.5313 dPhi=0.1 mrg=-55.19 dt=0.036s. 5.3 GB/s.
+it210 LB=275319.6959 E=275977.9141 dPhi=0.1 mrg=-55.19 dt=0.038s. 5.0 GB/s.
+it220 LB=275319.9687 E=275977.9141 dPhi=0.1 mrg=-55.19 dt=0.041s. 4.7 GB/s.
+it230 LB=275320.2094 E=275977.9141 dPhi=0.1 mrg=-55.19 dt=0.039s. 4.9 GB/s.
+it240 LB=275320.4225 E=275977.9141 dPhi=0.1 mrg=-55.19 dt=0.036s. 5.4 GB/s.
+it250 LB=275320.6117 E=275975.7578 dPhi=0.1 mrg=-55.19 dt=0.040s. 4.7 GB/s.
+it260 LB=275320.7816 E=275975.7578 dPhi=0.1 mrg=-55.19 dt=0.035s. 5.5 GB/s.
+it270 LB=275320.9346 E=275975.7578 dPhi=0.08 mrg=-55.19 dt=0.036s. 5.3 GB/s.
+it280 LB=275321.0683 E=275975.7578 dPhi=0.06 mrg=-55.19 dt=0.036s. 5.3 GB/s.
+it290 LB=275321.1821 E=275968.2109 dPhi=0.06 mrg=-55.19 dt=0.036s. 5.3 GB/s.
+it300 LB=275321.2652 E=275965.1016 dPhi=0.07 mrg=-55.19 dt=0.035s. 5.5 GB/s.
+it310 LB=275321.3332 E=275965.1016 dPhi=0.06 mrg=-55.19 dt=0.034s. 5.7 GB/s.
+it320 LB=275321.3916 E=275965.1016 dPhi=0.05 mrg=-55.19 dt=0.035s. 5.5 GB/s.
+it330 LB=275321.4430 E=275965.1016 dPhi=0.05 mrg=-55.19 dt=0.037s. 5.1 GB/s.
+it340 LB=275321.4892 E=275962.1563 dPhi=0.06 mrg=-55.19 dt=0.037s. 5.2 GB/s.
+it350 LB=275321.5313 E=275949.3516 dPhi=0.06 mrg=-55.19 dt=0.034s. 5.6 GB/s.
+it360 LB=275321.5703 E=275949.3516 dPhi=0.06 mrg=-55.19 dt=0.035s. 5.4 GB/s.
+it370 LB=275321.6068 E=275949.3516 dPhi=0.05 mrg=-55.19 dt=0.034s. 5.5 GB/s.
+it380 LB=275321.6413 E=275949.3516 dPhi=0.05 mrg=-55.19 dt=0.033s. 5.7 GB/s.
+it390 LB=275321.6740 E=275949.3516 dPhi=0.05 mrg=-55.19 dt=0.035s. 5.5 GB/s.
+it400 LB=275321.7049 E=275949.3516 dPhi=0.03 mrg=-55.19 dt=0.034s. 5.6 GB/s.
+it410 LB=275321.7341 E=275949.3516 dPhi=0.03 mrg=-55.18 dt=0.036s. 5.3 GB/s.
+it420 LB=275321.7618 E=275949.3516 dPhi=0.02 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it430 LB=275321.7878 E=275949.3516 dPhi=0.02 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it440 LB=275321.8121 E=275949.3516 dPhi=0.02 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it450 LB=275321.8346 E=275949.3516 dPhi=0.02 mrg=-55.18 dt=0.034s. 5.7 GB/s.
+it460 LB=275321.8553 E=275949.3516 dPhi=0.01 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it470 LB=275321.8744 E=275949.3516 dPhi=0.01 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it480 LB=275321.8919 E=275949.3516 dPhi=0.01 mrg=-55.18 dt=0.034s. 5.5 GB/s.
+it490 LB=275321.9079 E=275949.3516 dPhi=0.01 mrg=-55.18 dt=0.036s. 5.3 GB/s.
+it500 LB=275321.9225 E=275946.9766 dPhi=0.01 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it510 LB=275321.9358 E=275946.9766 dPhi=0.009 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it520 LB=275321.9479 E=275946.9766 dPhi=0.009 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it530 LB=275321.9590 E=275924.3047 dPhi=0.008 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it540 LB=275321.9690 E=275924.3047 dPhi=0.007 mrg=-55.18 dt=0.037s. 5.2 GB/s.
+it550 LB=275321.9781 E=275924.3047 dPhi=0.007 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it560 LB=275321.9864 E=275924.3047 dPhi=0.006 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it570 LB=275321.9939 E=275924.3047 dPhi=0.005 mrg=-55.18 dt=0.036s. 5.3 GB/s.
+it580 LB=275322.0007 E=275924.3047 dPhi=0.005 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it590 LB=275322.0069 E=275924.3047 dPhi=0.004 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it600 LB=275322.0125 E=275924.3047 dPhi=0.004 mrg=-55.18 dt=0.033s. 5.8 GB/s.
+it610 LB=275322.0176 E=275924.3047 dPhi=0.004 mrg=-55.18 dt=0.035s. 5.4 GB/s.
+it620 LB=275322.0222 E=275924.3047 dPhi=0.003 mrg=-55.18 dt=0.038s. 5.1 GB/s.
+it630 LB=275322.0264 E=275924.3047 dPhi=0.003 mrg=-55.18 dt=0.038s. 5.1 GB/s.
+it640 LB=275322.0302 E=275924.3047 dPhi=0.003 mrg=-55.18 dt=0.035s. 5.4 GB/s.
+it650 LB=275322.0337 E=275924.3047 dPhi=0.003 mrg=-55.18 dt=0.040s. 4.8 GB/s.
+it660 LB=275322.0368 E=275924.3047 dPhi=0.002 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it670 LB=275322.0397 E=275924.3047 dPhi=0.002 mrg=-55.18 dt=0.037s. 5.2 GB/s.
+it680 LB=275322.0422 E=275924.3047 dPhi=0.002 mrg=-55.18 dt=0.039s. 5.0 GB/s.
+it690 LB=275322.0446 E=275924.3047 dPhi=0.002 mrg=-55.18 dt=0.037s. 5.2 GB/s.
+it700 LB=275322.0467 E=275924.3047 dPhi=0.002 mrg=-55.18 dt=0.045s. 4.2 GB/s.
+it710 LB=275322.0486 E=275924.3047 dPhi=0.001 mrg=-55.18 dt=0.037s. 5.2 GB/s.
+it720 LB=275322.0504 E=275924.3047 dPhi=0.001 mrg=-55.18 dt=0.037s. 5.2 GB/s.
+it730 LB=275322.0519 E=275924.3047 dPhi=0.001 mrg=-55.18 dt=0.039s. 5.0 GB/s.
+it740 LB=275322.0534 E=275924.3047 dPhi=0.001 mrg=-55.18 dt=0.038s. 5.0 GB/s.
+it750 LB=275322.0547 E=275924.3047 dPhi=0.001 mrg=-55.18 dt=0.036s. 5.3 GB/s.
+it760 LB=275322.0559 E=275924.3047 dPhi=0.001 mrg=-55.18 dt=0.036s. 5.3 GB/s.
+it770 LB=275322.0570 E=275924.3047 dPhi=0.001 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it780 LB=275322.0580 E=275924.3047 dPhi=0.001 mrg=-55.18 dt=0.036s. 5.3 GB/s.
+it790 LB=275322.0590 E=275924.3047 dPhi=0.0009 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it800 LB=275322.0598 E=275924.3047 dPhi=0.0009 mrg=-55.18 dt=0.034s. 5.7 GB/s.
+it810 LB=275322.0606 E=275924.3047 dPhi=0.0008 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it820 LB=275322.0612 E=275924.3047 dPhi=0.0008 mrg=-55.18 dt=0.036s. 5.4 GB/s.
+it830 LB=275322.0619 E=275924.3047 dPhi=0.0008 mrg=-55.18 dt=0.033s. 5.7 GB/s.
+it840 LB=275322.0625 E=275924.3047 dPhi=0.0007 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it850 LB=275322.0630 E=275924.3047 dPhi=0.0007 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it860 LB=275322.0635 E=275924.3047 dPhi=0.0007 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it870 LB=275322.0639 E=275924.3047 dPhi=0.0006 mrg=-55.18 dt=0.033s. 5.8 GB/s.
+it880 LB=275322.0643 E=275924.3047 dPhi=0.0006 mrg=-55.18 dt=0.035s. 5.5 GB/s.
+it890 LB=275322.0647 E=275924.3047 dPhi=0.0006 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it900 LB=275322.0650 E=275924.3047 dPhi=0.0006 mrg=-55.18 dt=0.033s. 5.7 GB/s.
+it910 LB=275322.0653 E=275924.3047 dPhi=0.0005 mrg=-55.18 dt=0.036s. 5.3 GB/s.
+it920 LB=275322.0656 E=275924.3047 dPhi=0.0005 mrg=-55.18 dt=0.036s. 5.3 GB/s.
+it930 LB=275322.0658 E=275924.3047 dPhi=0.0005 mrg=-55.18 dt=0.033s. 5.8 GB/s.
+it940 LB=275322.0660 E=275924.3047 dPhi=0.0005 mrg=-55.18 dt=0.033s. 5.8 GB/s.
+it950 LB=275322.0663 E=275924.3047 dPhi=0.0004 mrg=-55.18 dt=0.030s. 6.3 GB/s.
+it960 LB=275322.0664 E=275924.3047 dPhi=0.0004 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it970 LB=275322.0666 E=275924.3047 dPhi=0.0004 mrg=-55.18 dt=0.037s. 5.2 GB/s.
+it980 LB=275322.0668 E=275924.3047 dPhi=0.0004 mrg=-55.18 dt=0.039s. 5.0 GB/s.
+it990 LB=275322.0669 E=275924.3047 dPhi=0.0004 mrg=-55.18 dt=0.034s. 5.6 GB/s.
+it1000 LB=275322.0671 E=275924.3047 dPhi=0.0004 mrg=-55.18 dt=0.034s. 5.5 GB/s.
+Reached maximum number of iterations (1000).
+LB= 275322.0671 E= 275924.3047
+COMPUTE :struct double_v1 TYPE:1 TEST INSTANCE 1 TRW-S time:6.23542s
+Labeling best_x: 
+10, 10, 7, 7, 7, 0, 7, 7, 5, 7, ...
+Map is not yet strictly improving
+ICM improved E: 275813.359375
+core size:12Mb, writable: 2Mb.
+Marking immovable (init) 10000+0 labels (100% remains)
+PO_sensetivity:0
+PO_it:1
+it1005 LB=-872.9003 E=-445.8828 dPhi=1e+002 mrg=-9.93 dt=0.029s. 5.1 GB/s.
+Reached energy below 0
+LB= -872.9003 E= -445.8828
+Improved E:-765.3594
+Marking immovable (cut) 599+4709 labels (95.5767% remains)
+PO_it:2
+it1010 LB=-2561.2567 E=-1314.9609 dPhi=1 mrg=-15.7 dt=0.030s. 5.1 GB/s.
+Reached energy below 0
+LB= -2561.2567 E= -1314.9609
+Improved E:-2102.7500
+Marking immovable (cut) 662+4268 (1 non-unique) labels (91.4683% remains)
+PO_it:3
+it1015 LB=-3400.3344 E=-1858.1328 dPhi=1 mrg=-18.01 dt=0.029s. 5.1 GB/s.
+Reached energy below 0
+LB= -3400.3344 E= -1858.1328
+Improved E:-2901.2813
+Marking immovable (cut) 919+6541 (2 non-unique) labels (85.2517% remains)
+PO_it:4
+it1020 LB=-4124.8709 E=-2340.6094 dPhi=1 mrg=-21.99 dt=0.029s. 5.1 GB/s.
+Reached energy below 0
+LB= -4124.8709 E= -2340.6094
+Improved E:-3569.2344
+Marking immovable (cut) 1178+8663 labels (77.0508% remains)
+PO_it:5
+it1025 LB=-5040.2085 E=-2955.3672 dPhi=1 mrg=-19.13 dt=0.031s. 4.8 GB/s.
+Reached energy below 0
+LB= -5040.2085 E= -2955.3672
+Improved E:-4463.0469
+Marking immovable (cut) 1286+8719 (5 non-unique) labels (68.7133% remains)
+PO_it:6
+it1030 LB=-5223.3995 E=-3334.8125 dPhi=1 mrg=-16.66 dt=0.034s. 4.5 GB/s.
+Reached energy below 0
+LB= -5223.3995 E= -3334.8125
+Improved E:-4580.7109
+Marking immovable (cut) 1359+8923 (2 non-unique) labels (60.145% remains)
+PO_it:7
+it1035 LB=-5145.9536 E=-3425.4297 dPhi=1 mrg=-22.44 dt=0.030s. 5.0 GB/s.
+Reached energy below 0
+LB= -5145.9536 E= -3425.4297
+Improved E:-4572.6875
+Marking immovable (cut) 1416+9262 (2 non-unique) labels (51.2467% remains)
+PO_it:8
+it1040 LB=-4904.1215 E=-3719.3594 dPhi=1 mrg=-16.15 dt=0.029s. 5.1 GB/s.
+Reached energy below 0
+LB= -4904.1215 E= -3719.3594
+Improved E:-4487.8359
+Marking immovable (cut) 1315+8249 (1 non-unique) labels (43.2767% remains)
+PO_it:9
+it1045 LB=-4291.1453 E=-3387.1328 dPhi=1 mrg=-14.72 dt=0.030s. 5.0 GB/s.
+Reached energy below 0
+LB= -4291.1453 E= -3387.1328
+Improved E:-3922.2266
+Marking immovable (cut) 1175+7227 (3 non-unique) labels (36.275% remains)
+PO_it:10
+it1050 LB=-4029.2991 E=-3570.4844 dPhi=1 mrg=-22.99 dt=0.029s. 5.1 GB/s.
+Reached energy below 0
+LB= -4029.2991 E= -3570.4844
+Improved E:-3805.8906
+Marking immovable (cut) 1101+6511 (2 non-unique) labels (29.9317% remains)
+PO_it:11
+it1055 LB=-2798.2055 E=-2350.7422 dPhi=1 mrg=-20.75 dt=0.030s. 5.0 GB/s.
+Reached energy below 0
+LB= -2798.2055 E= -2350.7422
+Improved E:-2650.4453
+Marking immovable (cut) 705+3745 (3 non-unique) labels (26.2233% remains)
+PO_it:12
+it1060 LB=-1574.7311 E=-1227.5391 dPhi=1 mrg=-16.67 dt=0.030s. 4.9 GB/s.
+Reached energy below 0
+LB= -1574.7311 E= -1227.5391
+Improved E:-1439.6641
+Marking immovable (cut) 380+2077 (1 non-unique) labels (24.1758% remains)
+PO_it:13
+it1065 LB=-675.5827 E=-341.3672 dPhi=1 mrg=-10.87 dt=0.032s. 4.7 GB/s.
+Reached energy below 0
+LB= -675.5827 E= -341.3672
+Improved E:-590.3281
+Marking immovable (cut) 204+637 labels (23.475% remains)
+PO_it:14
+it1070 LB=-641.2162 E=-478.5234 dPhi=1 mrg=-18.02 dt=0.031s. 4.9 GB/s.
+Reached energy below 0
+LB= -641.2162 E= -478.5234
+Improved E:-603.0234
+Marking immovable (cut) 255+1677 labels (21.865% remains)
+PO_it:15
+it1075 LB=-745.3605 E=-620.1563 dPhi=1 mrg=-14.37 dt=0.029s. 5.2 GB/s.
+Reached energy below 0
+LB= -745.3605 E= -620.1563
+Improved E:-711.5547
+Marking immovable (cut) 157+776 labels (21.0875% remains)
+PO_it:16
+it1080 LB=-326.2488 E=-225.8984 dPhi=1 mrg=-8.798 dt=0.028s. 5.4 GB/s.
+Reached energy below 0
+LB= -326.2488 E= -225.8984
+Improved E:-320.9297
+Marking immovable (cut) 72+96 labels (20.9475% remains)
+PO_it:17
+it1085 LB=-58.7614 E=-20.3203 dPhi=1 mrg=-3.806 dt=0.028s. 5.3 GB/s.
+Reached energy below 0
+LB= -58.7614 E= -20.3203
+Improved E:-54.4453
+Marking immovable (cut) 29+20 labels (20.9067% remains)
+PO_it:18
+it1090 LB=-43.4560 E=-5.4609 dPhi=1 mrg=-10.61 dt=0.029s. 5.3 GB/s.
+Reached energy below 0
+LB= -43.4560 E=  -5.4609
+Improved E:-39.5859
+Marking immovable (cut) 7+5 labels (20.8967% remains)
+PO_it:19
+it1095 LB=-3.5795 E=34.1250 dPhi=2 mrg=-0.2746 dt=0.030s. 5.0 GB/s.
+it1100 LB=-3.3808 E=34.1250 dPhi=0.2 mrg=-0.2736 dt=0.026s. 5.7 GB/s.
+it1105 LB=-3.2325 E=34.1250 dPhi=0.2 mrg=-0.2727 dt=0.026s. 5.9 GB/s.
+it1110 LB=-3.1163 E=34.1250 dPhi=0.1 mrg=-0.2721 dt=0.027s. 5.6 GB/s.
+it1115 LB=-3.0222 E=34.1250 dPhi=0.09 mrg=-0.2717 dt=0.027s. 5.5 GB/s.
+it1120 LB=-2.9472 E=34.1250 dPhi=0.08 mrg=-0.2715 dt=0.026s. 5.8 GB/s.
+it1125 LB=-2.8871 E=34.1250 dPhi=0.07 mrg=-0.2713 dt=0.028s. 5.3 GB/s.
+it1130 LB=-2.8376 E=34.1250 dPhi=0.06 mrg=-0.2712 dt=0.026s. 5.7 GB/s.
+it1135 LB=-2.7971 E=34.1250 dPhi=0.06 mrg=-0.2712 dt=0.026s. 5.8 GB/s.
+it1140 LB=-2.7640 E=34.1250 dPhi=0.05 mrg=-0.2711 dt=0.028s. 5.4 GB/s.
+Reached maximum number of iterations (50).
+LB=  -2.7640 E=  34.1250
+Map is not yet strictly improving
+Marking immovable (WTA) 70+718 labels (20.24% remains)
+PO_it:20
+it1145 LB=-268.7443 E=-250.0547 dPhi=1 mrg=-10.36 dt=0.029s. 5.2 GB/s.
+Reached energy below 0
+LB= -268.7443 E= -250.0547
+Improved E:-263.9844
+Marking immovable (cut) 111+892 labels (19.4042% remains)
+PO_it:21
+it1150 LB=-322.6939 E=-218.0156 dPhi=1 mrg=-16.72 dt=0.028s. 5.4 GB/s.
+Reached energy below 0
+LB= -322.6939 E= -218.0156
+Improved E:-284.4844
+Marking immovable (cut) 145+1291 labels (18.2075% remains)
+PO_it:22
+it1155 LB=-347.5165 E=-318.1797 dPhi=1 mrg=-8.512 dt=0.027s. 5.5 GB/s.
+Reached energy below 0
+LB= -347.5165 E= -318.1797
+Improved E:-337.8359
+Marking immovable (cut) 96+765 labels (17.49% remains)
+PO_it:23
+it1160 LB=-370.7901 E=-366.7109 dPhi=1 mrg=-15.42 dt=0.029s. 5.1 GB/s.
+Reached energy below 0
+LB= -370.7901 E= -366.7109
+Improved E:-366.7109
+Marking immovable (cut) 81+632 labels (16.8958% remains)
+PO_it:24
+it1165 LB=-251.8053 E=-248.2969 dPhi=1 mrg=-12.46 dt=0.036s. 4.1 GB/s.
+Reached energy below 0
+LB= -251.8053 E= -248.2969
+Improved E:-248.2969
+Marking immovable (cut) 73+517 (1 non-unique) labels (16.4042% remains)
+PO_it:25
+it1170 LB=-134.3771 E=-117.4375 dPhi=1 mrg=-6.496 dt=0.039s. 3.8 GB/s.
+Reached energy below 0
+LB= -134.3771 E= -117.4375
+Improved E:-117.4375
+Marking immovable (cut) 39+223 labels (16.1858% remains)
+PO_it:26
+it1175 LB=-62.6142 E=-62.1250 dPhi=1 mrg=-10.15 dt=0.028s. 5.4 GB/s.
+Reached energy below 0
+LB= -62.6142 E= -62.1250
+Improved E:-62.1250
+Marking immovable (cut) 13+28 labels (16.1517% remains)
+PO_it:27
+it1180 LB=-5.2969 E=-5.2969 dPhi=1 mrg=-1.624 dt=0.026s. 5.7 GB/s.
+Reached duality gap < -1.84741e-013
+LB=  -5.2969 E=  -5.2969
+Improved E: -5.2969
+Marking immovable (cut) 4+1 labels (16.1475% remains)
+PO_it:28
+it1185 LB=0.0000 E=0.0000 dPhi=3 mrg=   0 dt=0.027s. 5.5 GB/s.
+Reached duality gap < -2.27374e-013
+LB=   0.0000 E=   0.0000
+Improved E:  0.0000
+Marking immovable (cut) 0+0 labels (16.1475% remains)
+TRW-S found optimal solution
+Map is strictly improving
+Finished. Total iterations: 1185 Persistency proven: 16.1475%
+PO Times:
+ Total: 4.65395
+ Msgs: 2.4205
+ Cuts: 0.51012
+ Node cuts: 0.760188
+ Rebuild: 0.334666
+Alive Labels mask: 
+ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, ...
+ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, ...
+ 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, ...
+ 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, ...
+ 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, ...
+ 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, ...
+ 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, ...
+ 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, ...
+ 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, ...
+ 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, ...
+ 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, ...
+Labeling y: 
+(10)(10)(7)(7)(7)(0)(7)(7)(5)(7)...
+COMPUTE :struct double_v1 TYPE:1 TEST INSTANCE 1 nit: 1185 elim:16% / 10.9919s
+Recognized models: 0Potts terms, 19800T-Linear terms,
+ 0T-Quadratic terms, 0Diff terms, 0 Full terms
+X Max data value: 78.1172
+Min data delta: 0.0078125
+Selecting data toolerance: 0.01
+Stream graph layers: 199 time: 0.00126025s. 
+core size:4Mb, writable: 1Mb.
+Options:
+all_to_one: 0
+fast_msg: 1
+it_batch: 10
+local_min_tol: 0
+max_CPU: 2
+max_it: 1000
+n_sensetivity: 1
+po_it_batch: 5
+po_max_it: 50
+po_maxit: 0
+rebuild_incremental: 1
+reduce_immovable: 1
+rel_conv_tol: 0.01
+rel_gap_tol: 0.1
+sensetivity: 0
+use_cut: 1
+use_pixel_cut: 1
+weak_po: 0
+it10 LB=256851.3087 E=265640.3750 dPhi=1 mrg=-58.58 dt=0.016s. 7.7 GB/s.
+it20 LB=257740.8076 E=263131.9844 dPhi=1e+001 mrg=-57.7 dt=0.017s. 7.2 GB/s.
+it30 LB=258032.1648 E=263020.9609 dPhi=6 mrg=-57.24 dt=0.017s. 7.5 GB/s.
+it40 LB=258169.6397 E=261990.7422 dPhi=4 mrg=-57.12 dt=0.018s. 7.0 GB/s.
+it50 LB=258246.0812 E=261418.5469 dPhi=3 mrg=-57.02 dt=0.017s. 7.2 GB/s.
+it60 LB=258299.7678 E=261418.5469 dPhi=3 mrg=-56.96 dt=0.017s. 7.4 GB/s.
+it70 LB=258338.8090 E=261418.5469 dPhi=2 mrg=-56.93 dt=0.015s. 8.6 GB/s.
+it80 LB=258367.4234 E=261345.4375 dPhi=2 mrg=-56.91 dt=0.017s. 7.4 GB/s.
+it90 LB=258388.6531 E=261345.4375 dPhi=2 mrg=-56.9 dt=0.016s. 7.6 GB/s.
+it100 LB=258404.2238 E=261195.3828 dPhi=1 mrg=-56.87 dt=0.017s. 7.4 GB/s.
+it110 LB=258416.0180 E=260439.5703 dPhi=1 mrg=-56.85 dt=0.017s. 7.3 GB/s.
+it120 LB=258425.6452 E=260433.1563 dPhi=1 mrg=-56.84 dt=0.017s. 7.3 GB/s.
+it130 LB=258433.5527 E=260216.3125 dPhi=0.8 mrg=-56.83 dt=0.015s. 8.2 GB/s.
+it140 LB=258440.0509 E=260216.3125 dPhi=0.8 mrg=-56.82 dt=0.018s. 6.9 GB/s.
+it150 LB=258445.5955 E=260216.3125 dPhi=0.7 mrg=-56.81 dt=0.018s. 6.9 GB/s.
+it160 LB=258450.3103 E=260216.3125 dPhi=0.7 mrg=-56.81 dt=0.017s. 7.2 GB/s.
+it170 LB=258454.3290 E=260216.3125 dPhi=0.8 mrg=-56.81 dt=0.014s. 8.7 GB/s.
+it180 LB=258457.7057 E=260216.3125 dPhi=0.7 mrg=-56.81 dt=0.018s. 7.0 GB/s.
+it190 LB=258460.5735 E=260216.3125 dPhi=0.8 mrg=-56.81 dt=0.018s. 7.1 GB/s.
+it200 LB=258462.9433 E=260216.3125 dPhi=0.7 mrg=-56.81 dt=0.018s. 7.1 GB/s.
+it210 LB=258464.6811 E=260216.3125 dPhi=0.5 mrg=-56.81 dt=0.034s. 3.7 GB/s.
+it220 LB=258466.0000 E=260216.3125 dPhi=0.4 mrg=-56.82 dt=0.017s. 7.2 GB/s.
+it230 LB=258467.1536 E=260216.3125 dPhi=0.4 mrg=-56.82 dt=0.018s. 7.0 GB/s.
+it240 LB=258468.1622 E=260178.6406 dPhi=0.3 mrg=-56.82 dt=0.016s. 7.6 GB/s.
+it250 LB=258468.9664 E=260160.7891 dPhi=0.3 mrg=-56.83 dt=0.017s. 7.2 GB/s.
+it260 LB=258469.6157 E=260160.7891 dPhi=0.4 mrg=-56.83 dt=0.017s. 7.2 GB/s.
+it270 LB=258470.0871 E=260160.7891 dPhi=0.3 mrg=-56.83 dt=0.021s. 6.0 GB/s.
+it280 LB=258470.4856 E=260160.7891 dPhi=0.3 mrg=-56.83 dt=0.018s. 6.8 GB/s.
+it290 LB=258470.8444 E=260160.7891 dPhi=0.3 mrg=-56.83 dt=0.018s. 6.9 GB/s.
+it300 LB=258471.1656 E=260160.7891 dPhi=0.3 mrg=-56.83 dt=0.020s. 6.1 GB/s.
+it310 LB=258471.4286 E=260160.7891 dPhi=0.2 mrg=-56.83 dt=0.017s. 7.5 GB/s.
+it320 LB=258471.5885 E=260105.2266 dPhi=0.2 mrg=-56.83 dt=0.019s. 6.7 GB/s.
+it330 LB=258471.7339 E=260105.2266 dPhi=0.2 mrg=-56.83 dt=0.018s. 7.1 GB/s.
+it340 LB=258471.8678 E=260105.2266 dPhi=0.2 mrg=-56.83 dt=0.019s. 6.7 GB/s.
+it350 LB=258471.9923 E=260105.2266 dPhi=0.2 mrg=-56.83 dt=0.023s. 5.4 GB/s.
+it360 LB=258472.1088 E=260089.6641 dPhi=0.2 mrg=-56.83 dt=0.018s. 6.9 GB/s.
+it370 LB=258472.2185 E=260089.6641 dPhi=0.2 mrg=-56.83 dt=0.017s. 7.3 GB/s.
+it380 LB=258472.3220 E=260089.6641 dPhi=0.2 mrg=-56.83 dt=0.014s. 8.6 GB/s.
+it390 LB=258472.4193 E=260089.6641 dPhi=0.2 mrg=-56.83 dt=0.017s. 7.3 GB/s.
+it400 LB=258472.5104 E=260089.6641 dPhi=0.2 mrg=-56.83 dt=0.018s. 6.9 GB/s.
+it410 LB=258472.5955 E=260056.6484 dPhi=0.1 mrg=-56.83 dt=0.017s. 7.5 GB/s.
+it420 LB=258472.6754 E=260056.6484 dPhi=0.1 mrg=-56.83 dt=0.018s. 6.8 GB/s.
+it430 LB=258472.7505 E=260056.6484 dPhi=0.1 mrg=-56.83 dt=0.018s. 7.1 GB/s.
+it440 LB=258472.8213 E=260056.6484 dPhi=0.1 mrg=-56.83 dt=0.016s. 7.8 GB/s.
+it450 LB=258472.8881 E=260056.6484 dPhi=0.1 mrg=-56.83 dt=0.016s. 7.7 GB/s.
+it460 LB=258472.9514 E=260056.6484 dPhi=0.1 mrg=-56.83 dt=0.017s. 7.5 GB/s.
+it470 LB=258473.0114 E=260056.6484 dPhi=0.08 mrg=-56.83 dt=0.014s. 8.7 GB/s.
+it480 LB=258473.0684 E=260056.6484 dPhi=0.08 mrg=-56.83 dt=0.017s. 7.2 GB/s.
+it490 LB=258473.1223 E=260056.6484 dPhi=0.07 mrg=-56.83 dt=0.017s. 7.4 GB/s.
+it500 LB=258473.1738 E=260056.6484 dPhi=0.07 mrg=-56.83 dt=0.017s. 7.3 GB/s.
+it510 LB=258473.2227 E=260056.6484 dPhi=0.07 mrg=-56.83 dt=0.013s. 9.4 GB/s.
+it520 LB=258473.2691 E=260056.6484 dPhi=0.07 mrg=-56.83 dt=0.018s. 6.8 GB/s.
+it530 LB=258473.3135 E=260056.6484 dPhi=0.07 mrg=-56.83 dt=0.014s. 8.6 GB/s.
+it540 LB=258473.3557 E=260056.6484 dPhi=0.07 mrg=-56.83 dt=0.017s. 7.5 GB/s.
+it550 LB=258473.3962 E=260056.6484 dPhi=0.06 mrg=-56.83 dt=0.016s. 7.9 GB/s.
+it560 LB=258473.4349 E=260056.6484 dPhi=0.06 mrg=-56.83 dt=0.016s. 7.7 GB/s.
+it570 LB=258473.4719 E=260056.6484 dPhi=0.06 mrg=-56.83 dt=0.019s. 6.4 GB/s.
+it580 LB=258473.5075 E=260056.6484 dPhi=0.06 mrg=-56.83 dt=0.017s. 7.2 GB/s.
+it590 LB=258473.5414 E=260056.6484 dPhi=0.06 mrg=-56.83 dt=0.017s. 7.5 GB/s.
+it600 LB=258473.5741 E=260056.6484 dPhi=0.06 mrg=-56.83 dt=0.017s. 7.5 GB/s.
+it610 LB=258473.6054 E=260056.6484 dPhi=0.06 mrg=-56.83 dt=0.015s. 8.3 GB/s.
+it620 LB=258473.6355 E=260056.6484 dPhi=0.05 mrg=-56.83 dt=0.017s. 7.2 GB/s.
+it630 LB=258473.6647 E=260056.6484 dPhi=0.05 mrg=-56.83 dt=0.015s. 8.2 GB/s.
+it640 LB=258473.6925 E=260056.6484 dPhi=0.05 mrg=-56.83 dt=0.017s. 7.3 GB/s.
+it650 LB=258473.7005 E=260056.6484 dPhi=0.04 mrg=-56.83 dt=0.015s. 8.3 GB/s.
+it660 LB=258473.7067 E=260056.6484 dPhi=0.03 mrg=-56.83 dt=0.017s. 7.3 GB/s.
+it670 LB=258473.7126 E=260056.6484 dPhi=0.03 mrg=-56.83 dt=0.017s. 7.4 GB/s.
+it680 LB=258473.7181 E=260056.6484 dPhi=0.03 mrg=-56.83 dt=0.020s. 6.3 GB/s.
+it690 LB=258473.7230 E=260056.6484 dPhi=0.03 mrg=-56.83 dt=0.016s. 7.6 GB/s.
+it700 LB=258473.7278 E=260056.6484 dPhi=0.03 mrg=-56.83 dt=0.017s. 7.4 GB/s.
+it710 LB=258473.7319 E=260056.6484 dPhi=0.03 mrg=-56.83 dt=0.016s. 7.7 GB/s.
+it720 LB=258473.7361 E=260056.6484 dPhi=0.02 mrg=-56.83 dt=0.017s. 7.5 GB/s.
+it730 LB=258473.7398 E=260056.6484 dPhi=0.02 mrg=-56.83 dt=0.017s. 7.5 GB/s.
+it740 LB=258473.7433 E=260056.6484 dPhi=0.02 mrg=-56.83 dt=0.018s. 7.1 GB/s.
+it750 LB=258473.7465 E=260056.6484 dPhi=0.02 mrg=-56.83 dt=0.017s. 7.2 GB/s.
+it760 LB=258473.7494 E=260056.6484 dPhi=0.02 mrg=-56.83 dt=0.017s. 7.2 GB/s.
+it770 LB=258473.7522 E=260056.6484 dPhi=0.02 mrg=-56.83 dt=0.015s. 8.2 GB/s.
+it780 LB=258473.7548 E=260056.6484 dPhi=0.02 mrg=-56.83 dt=0.017s. 7.3 GB/s.
+it790 LB=258473.7573 E=260056.6484 dPhi=0.02 mrg=-56.83 dt=0.014s. 8.7 GB/s.
+it800 LB=258473.7595 E=260056.6484 dPhi=0.02 mrg=-56.83 dt=0.017s. 7.3 GB/s.
+it810 LB=258473.7615 E=260056.6484 dPhi=0.02 mrg=-56.83 dt=0.016s. 7.7 GB/s.
+it820 LB=258473.7635 E=260056.6484 dPhi=0.01 mrg=-56.83 dt=0.017s. 7.4 GB/s.
+it830 LB=258473.7653 E=260056.6484 dPhi=0.01 mrg=-56.83 dt=0.014s. 8.6 GB/s.
+it840 LB=258473.7670 E=260056.6484 dPhi=0.01 mrg=-56.83 dt=0.018s. 7.0 GB/s.
+it850 LB=258473.7687 E=260056.6484 dPhi=0.01 mrg=-56.83 dt=0.017s. 7.2 GB/s.
+it860 LB=258473.7702 E=260056.6484 dPhi=0.01 mrg=-56.83 dt=0.017s. 7.4 GB/s.
+it870 LB=258473.7715 E=260056.6484 dPhi=0.01 mrg=-56.83 dt=0.015s. 8.4 GB/s.
+it880 LB=258473.7728 E=260056.6484 dPhi=0.01 mrg=-56.83 dt=0.018s. 7.1 GB/s.
+it890 LB=258473.7738 E=260056.6484 dPhi=0.01 mrg=-56.83 dt=0.014s. 8.9 GB/s.
+it900 LB=258473.7750 E=260056.6484 dPhi=0.009 mrg=-56.83 dt=0.018s. 6.9 GB/s.
+it910 LB=258473.7760 E=260056.6484 dPhi=0.009 mrg=-56.83 dt=0.015s. 8.4 GB/s.
+it920 LB=258473.7769 E=260056.6484 dPhi=0.008 mrg=-56.83 dt=0.016s. 7.6 GB/s.
+it930 LB=258473.7778 E=260056.6484 dPhi=0.008 mrg=-56.83 dt=0.017s. 7.4 GB/s.
+it940 LB=258473.7787 E=260056.6484 dPhi=0.008 mrg=-56.83 dt=0.016s. 8.0 GB/s.
+it950 LB=258473.7794 E=260056.6484 dPhi=0.007 mrg=-56.83 dt=0.017s. 7.3 GB/s.
+it960 LB=258473.7802 E=260056.6484 dPhi=0.007 mrg=-56.83 dt=0.017s. 7.2 GB/s.
+it970 LB=258473.7809 E=260056.6484 dPhi=0.007 mrg=-56.83 dt=0.015s. 8.5 GB/s.
+it980 LB=258473.7815 E=260056.6484 dPhi=0.006 mrg=-56.83 dt=0.025s. 5.0 GB/s.
+it990 LB=258473.7822 E=260056.6484 dPhi=0.006 mrg=-56.83 dt=0.016s. 8.0 GB/s.
+it1000 LB=258473.7829 E=260056.6484 dPhi=0.006 mrg=-56.83 dt=0.017s. 7.4 GB/s.
+Reached maximum number of iterations (1000).
+LB= 258473.7829 E= 260056.6484
+COMPUTE :struct float_v4 TYPE:2 TEST INSTANCE 1 TRW-S time:4.39849s
+Labeling best_x: 
+10, 10, 10, 4, 2, 4, 4, 4, 4, 7, ...
+Map is not yet strictly improving
+ICM improved E: 259630.109375
+core size:8Mb, writable: 1Mb.
+Marking immovable (init) 10000+0 labels (100% remains)
+PO_sensetivity:0
+PO_it:1
+it1005 LB=-1885.7926 E=143.8047 dPhi=1 mrg=-17.96 dt=0.020s. 4.9 GB/s.
+it1010 LB=-1829.2534 E=143.8047 dPhi=7 mrg=-17.19 dt=0.015s. 6.6 GB/s.
+it1015 LB=-1801.1138 E=60.8281 dPhi=4 mrg=-16.65 dt=0.014s. 6.9 GB/s.
+it1020 LB=-1781.1730 E=-185.2109 dPhi=2 mrg=-16.28 dt=0.015s. 6.5 GB/s.
+Reached energy below 0
+LB= -1781.1730 E= -185.2109
+Improved E:-1349.7500
+Marking immovable (cut) 1119+11111 (4 non-unique) labels (89.8083% remains)
+PO_it:2
+it1025 LB=-6727.8422 E=-1561.3828 dPhi=1 mrg=-25.17 dt=0.013s. 7.8 GB/s.
+Reached energy below 0
+LB= -6727.8422 E= -1561.3828
+Improved E:-4799.4063
+Marking immovable (cut) 1965+20410 (6 non-unique) labels (71.1625% remains)
+PO_it:3
+it1030 LB=-8020.2135 E=-3513.8281 dPhi=1 mrg=-27.17 dt=0.017s. 5.9 GB/s.
+Reached energy below 0
+LB= -8020.2135 E= -3513.8281
+Improved E:-5917.3125
+Marking immovable (cut) 2124+22497 (4 non-unique) labels (50.645% remains)
+PO_it:4
+it1035 LB=-7132.0538 E=-4268.6484 dPhi=1 mrg=-32.59 dt=0.014s. 7.3 GB/s.
+Reached energy below 0
+LB= -7132.0538 E= -4268.6484
+Improved E:-5617.7734
+Marking immovable (cut) 1693+17399 (1 non-unique) labels (34.735% remains)
+PO_it:5
+it1040 LB=-5541.6821 E=-4045.5703 dPhi=1 mrg=-29.71 dt=0.010s. 10.0 GB/s.
+Reached energy below 0
+LB= -5541.6821 E= -4045.5703
+Improved E:-4696.2422
+Marking immovable (cut) 1337+13858 (3 non-unique) labels (22.0725% remains)
+PO_it:6
+it1045 LB=-3195.9984 E=-2284.1016 dPhi=1 mrg=-28.15 dt=0.014s. 7.2 GB/s.
+Reached energy below 0
+LB= -3195.9984 E= -2284.1016
+Improved E:-2729.8594
+Marking immovable (cut) 654+7161 labels (15.56% remains)
+PO_it:7
+it1050 LB=-1262.9921 E=-340.3672 dPhi=1 mrg=-22.52 dt=0.014s. 7.2 GB/s.
+Reached energy below 0
+LB= -1262.9921 E= -340.3672
+Improved E:-964.6406
+Marking immovable (cut) 198+2151 (1 non-unique) labels (13.6025% remains)
+PO_it:8
+it1055 LB=-632.6181 E=-37.0469 dPhi=1 mrg=-15.88 dt=0.014s. 7.2 GB/s.
+Reached energy below 0
+LB= -632.6181 E= -37.0469
+Improved E:-425.6406
+Marking immovable (cut) 202+2223 (1 non-unique) labels (11.5817% remains)
+PO_it:9
+it1060 LB=-465.6515 E=27.1953 dPhi=1 mrg=-14.96 dt=0.012s. 8.5 GB/s.
+it1065 LB=-450.8754 E=-293.0391 dPhi=5 mrg=-15.87 dt=0.013s. 7.5 GB/s.
+Reached energy below 0
+LB= -450.8754 E= -293.0391
+Improved E:-376.7813
+Marking immovable (cut) 142+1563 (1 non-unique) labels (10.1608% remains)
+PO_it:10
+it1070 LB=-440.1962 E=-250.3672 dPhi=1 mrg=-17.12 dt=0.014s. 7.1 GB/s.
+Reached energy below 0
+LB= -440.1962 E= -250.3672
+Improved E:-284.2969
+Marking immovable (cut) 117+1398 labels (8.89833% remains)
+PO_it:11
+it1075 LB=-535.4375 E=-535.4375 dPhi=1 mrg=-33.13 dt=0.015s. 6.8 GB/s.
+Reached duality gap < -6.67572e-006
+LB= -535.4375 E= -535.4375
+Improved E:-535.4375
+Marking immovable (cut) 40+420 (1 non-unique) labels (8.515% remains)
+PO_it:12
+it1080 LB=-23.1328 E=-23.1328 dPhi=1 mrg=-5.29 dt=0.011s. 9.3 GB/s.
+Reached duality gap < -8.58307e-006
+LB= -23.1328 E= -23.1328
+Improved E:-23.1328
+Marking immovable (cut) 8+65 labels (8.45417% remains)
+PO_it:13
+it1085 LB=0.0000 E=0.0000 dPhi=1 mrg=   0 dt=0.011s. 8.9 GB/s.
+Reached duality gap < -1.90735e-006
+LB=   0.0000 E=   0.0000
+Improved E:  0.0000
+Marking immovable (cut) 0+0 labels (8.45417% remains)
+TRW-S found optimal solution
+Map is strictly improving
+Finished. Total iterations: 1085 Persistency proven: 8.45417%
+PO Times:
+ Total: 2.38883
+ Msgs: 0.848186
+ Cuts: 0.240231
+ Node cuts: 0.723191
+ Rebuild: 0.435757
+Alive Labels mask: 
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, ...
+ 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, ...
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, ...
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+Labeling y: 
+(10)(10)(10)(4)(2)(4)(4)(4)(4)(7)...
+COMPUTE :struct float_v4 TYPE:2 TEST INSTANCE 1 nit: 1085 elim:8% / 6.88163s
+Stream graph layers: 199 time: 0.000608182s. 
+core size:4Mb, writable: 1Mb.
+Options:
+all_to_one: 0
+fast_msg: 1
+it_batch: 10
+local_min_tol: 0
+max_CPU: 2
+max_it: 1000
+n_sensetivity: 1
+po_it_batch: 5
+po_max_it: 50
+po_maxit: 0
+rebuild_incremental: 1
+reduce_immovable: 1
+rel_conv_tol: 0.01
+rel_gap_tol: 0.1
+sensetivity: 0
+use_cut: 1
+use_pixel_cut: 1
+weak_po: 0
+it10 LB=256851.3086 E=265640.3750 dPhi=1e+002 mrg=-58.58 dt=0.055s. 2.0 GB/s.
+it20 LB=257740.8077 E=263131.9844 dPhi=1e+001 mrg=-57.7 dt=0.057s. 2.0 GB/s.
+it30 LB=258032.1648 E=263020.9609 dPhi=6 mrg=-57.24 dt=0.058s. 1.9 GB/s.
+it40 LB=258169.6396 E=261990.7422 dPhi=4 mrg=-57.12 dt=0.064s. 1.7 GB/s.
+it50 LB=258246.0813 E=261418.5469 dPhi=3 mrg=-57.02 dt=0.057s. 2.0 GB/s.
+it60 LB=258299.7681 E=261418.5469 dPhi=3 mrg=-56.96 dt=0.057s. 2.0 GB/s.
+it70 LB=258338.8092 E=261418.5469 dPhi=2 mrg=-56.93 dt=0.057s. 2.0 GB/s.
+it80 LB=258367.4235 E=261418.5469 dPhi=2 mrg=-56.91 dt=0.056s. 2.0 GB/s.
+it90 LB=258388.6531 E=261418.5469 dPhi=2 mrg=-56.9 dt=0.055s. 2.0 GB/s.
+it100 LB=258404.2239 E=261195.3828 dPhi=1 mrg=-56.87 dt=0.056s. 2.0 GB/s.
+it110 LB=258416.0179 E=260439.5703 dPhi=1 mrg=-56.85 dt=0.057s. 2.0 GB/s.
+it120 LB=258425.6453 E=260427.7969 dPhi=1 mrg=-56.84 dt=0.057s. 1.9 GB/s.
+it130 LB=258433.5525 E=260210.9531 dPhi=0.8 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it140 LB=258440.0507 E=260210.9531 dPhi=0.8 mrg=-56.82 dt=0.057s. 2.0 GB/s.
+it150 LB=258445.5956 E=260210.9531 dPhi=0.7 mrg=-56.81 dt=0.056s. 2.0 GB/s.
+it160 LB=258450.3105 E=260210.9531 dPhi=0.7 mrg=-56.81 dt=0.058s. 1.9 GB/s.
+it170 LB=258454.3289 E=260210.9531 dPhi=0.8 mrg=-56.81 dt=0.057s. 2.0 GB/s.
+it180 LB=258457.7057 E=260210.9531 dPhi=0.7 mrg=-56.81 dt=0.057s. 2.0 GB/s.
+it190 LB=258460.5735 E=260210.9531 dPhi=0.8 mrg=-56.81 dt=0.057s. 2.0 GB/s.
+it200 LB=258462.9434 E=260210.9531 dPhi=0.7 mrg=-56.81 dt=0.060s. 1.9 GB/s.
+it210 LB=258464.6812 E=260210.9531 dPhi=0.5 mrg=-56.81 dt=0.057s. 2.0 GB/s.
+it220 LB=258466.0001 E=260210.9531 dPhi=0.4 mrg=-56.82 dt=0.057s. 2.0 GB/s.
+it230 LB=258467.1537 E=260210.9531 dPhi=0.4 mrg=-56.82 dt=0.056s. 2.0 GB/s.
+it240 LB=258468.1621 E=260207.8047 dPhi=0.3 mrg=-56.82 dt=0.055s. 2.0 GB/s.
+it250 LB=258468.9664 E=260180.8906 dPhi=0.3 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it260 LB=258469.6156 E=260125.6094 dPhi=0.4 mrg=-56.83 dt=0.060s. 1.9 GB/s.
+it270 LB=258470.0870 E=260125.6094 dPhi=0.3 mrg=-56.83 dt=0.062s. 1.8 GB/s.
+it280 LB=258470.4855 E=260125.6094 dPhi=0.3 mrg=-56.83 dt=0.064s. 1.7 GB/s.
+it290 LB=258470.8443 E=260097.8672 dPhi=0.3 mrg=-56.83 dt=0.060s. 1.9 GB/s.
+it300 LB=258471.1657 E=260097.8672 dPhi=0.3 mrg=-56.83 dt=0.061s. 1.8 GB/s.
+it310 LB=258471.4284 E=260097.8672 dPhi=0.2 mrg=-56.83 dt=0.063s. 1.8 GB/s.
+it320 LB=258471.5884 E=260097.8672 dPhi=0.2 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it330 LB=258471.7339 E=260097.8672 dPhi=0.2 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it340 LB=258471.8679 E=260097.8672 dPhi=0.2 mrg=-56.83 dt=0.060s. 1.9 GB/s.
+it350 LB=258471.9924 E=260097.8672 dPhi=0.2 mrg=-56.83 dt=0.066s. 1.7 GB/s.
+it360 LB=258472.1087 E=260097.8672 dPhi=0.2 mrg=-56.83 dt=0.063s. 1.8 GB/s.
+it370 LB=258472.2183 E=260097.8672 dPhi=0.2 mrg=-56.83 dt=0.060s. 1.9 GB/s.
+it380 LB=258472.3219 E=260097.8672 dPhi=0.2 mrg=-56.83 dt=0.063s. 1.8 GB/s.
+it390 LB=258472.4194 E=260086.1406 dPhi=0.2 mrg=-56.83 dt=0.073s. 1.5 GB/s.
+it400 LB=258472.5101 E=260086.1406 dPhi=0.2 mrg=-56.83 dt=0.065s. 1.7 GB/s.
+it410 LB=258472.5953 E=260086.1406 dPhi=0.1 mrg=-56.83 dt=0.062s. 1.8 GB/s.
+it420 LB=258472.6753 E=260086.1406 dPhi=0.1 mrg=-56.83 dt=0.062s. 1.8 GB/s.
+it430 LB=258472.7504 E=260086.1406 dPhi=0.1 mrg=-56.83 dt=0.058s. 1.9 GB/s.
+it440 LB=258472.8211 E=260086.1406 dPhi=0.1 mrg=-56.83 dt=0.059s. 1.9 GB/s.
+it450 LB=258472.8880 E=260086.1406 dPhi=0.1 mrg=-56.83 dt=0.059s. 1.9 GB/s.
+it460 LB=258472.9514 E=260086.1406 dPhi=0.1 mrg=-56.83 dt=0.058s. 1.9 GB/s.
+it470 LB=258473.0113 E=260086.1406 dPhi=0.08 mrg=-56.83 dt=0.060s. 1.9 GB/s.
+it480 LB=258473.0682 E=260086.1406 dPhi=0.08 mrg=-56.83 dt=0.056s. 2.0 GB/s.
+it490 LB=258473.1222 E=260086.1406 dPhi=0.07 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it500 LB=258473.1735 E=260086.1406 dPhi=0.07 mrg=-56.83 dt=0.058s. 1.9 GB/s.
+it510 LB=258473.2224 E=260086.1406 dPhi=0.07 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it520 LB=258473.2692 E=260086.1406 dPhi=0.07 mrg=-56.83 dt=0.056s. 2.0 GB/s.
+it530 LB=258473.3135 E=260086.1406 dPhi=0.07 mrg=-56.83 dt=0.056s. 2.0 GB/s.
+it540 LB=258473.3559 E=260086.1406 dPhi=0.07 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it550 LB=258473.3962 E=260086.1406 dPhi=0.06 mrg=-56.83 dt=0.055s. 2.0 GB/s.
+it560 LB=258473.4349 E=260086.1406 dPhi=0.06 mrg=-56.83 dt=0.056s. 2.0 GB/s.
+it570 LB=258473.4719 E=260086.1406 dPhi=0.06 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it580 LB=258473.5076 E=260086.1406 dPhi=0.06 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it590 LB=258473.5415 E=260086.1406 dPhi=0.06 mrg=-56.83 dt=0.058s. 1.9 GB/s.
+it600 LB=258473.5742 E=260023.6406 dPhi=0.06 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it610 LB=258473.6056 E=260023.6406 dPhi=0.06 mrg=-56.83 dt=0.056s. 2.0 GB/s.
+it620 LB=258473.6357 E=260023.6406 dPhi=0.05 mrg=-56.83 dt=0.058s. 1.9 GB/s.
+it630 LB=258473.6646 E=260023.6406 dPhi=0.05 mrg=-56.83 dt=0.062s. 1.8 GB/s.
+it640 LB=258473.6926 E=260023.6406 dPhi=0.05 mrg=-56.83 dt=0.059s. 1.9 GB/s.
+it650 LB=258473.7006 E=260023.6406 dPhi=0.04 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it660 LB=258473.7070 E=260023.6406 dPhi=0.03 mrg=-56.83 dt=0.058s. 1.9 GB/s.
+it670 LB=258473.7128 E=260023.6406 dPhi=0.03 mrg=-56.83 dt=0.057s. 1.9 GB/s.
+it680 LB=258473.7184 E=260023.6406 dPhi=0.03 mrg=-56.83 dt=0.062s. 1.8 GB/s.
+it690 LB=258473.7234 E=260023.6406 dPhi=0.03 mrg=-56.83 dt=0.060s. 1.9 GB/s.
+it700 LB=258473.7280 E=260023.6406 dPhi=0.03 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it710 LB=258473.7324 E=260023.6406 dPhi=0.03 mrg=-56.83 dt=0.056s. 2.0 GB/s.
+it720 LB=258473.7362 E=260023.6406 dPhi=0.02 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it730 LB=258473.7401 E=260023.6406 dPhi=0.02 mrg=-56.83 dt=0.056s. 2.0 GB/s.
+it740 LB=258473.7437 E=260023.6406 dPhi=0.02 mrg=-56.83 dt=0.055s. 2.0 GB/s.
+it750 LB=258473.7467 E=260023.6406 dPhi=0.02 mrg=-56.83 dt=0.064s. 1.7 GB/s.
+it760 LB=258473.7499 E=260023.6406 dPhi=0.02 mrg=-56.83 dt=0.056s. 2.0 GB/s.
+it770 LB=258473.7528 E=260023.6406 dPhi=0.02 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it780 LB=258473.7553 E=260023.6406 dPhi=0.02 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it790 LB=258473.7577 E=260023.6406 dPhi=0.02 mrg=-56.83 dt=0.056s. 2.0 GB/s.
+it800 LB=258473.7599 E=260023.6406 dPhi=0.02 mrg=-56.83 dt=0.056s. 2.0 GB/s.
+it810 LB=258473.7620 E=260023.6406 dPhi=0.02 mrg=-56.83 dt=0.055s. 2.0 GB/s.
+it820 LB=258473.7641 E=260023.6406 dPhi=0.01 mrg=-56.83 dt=0.055s. 2.0 GB/s.
+it830 LB=258473.7661 E=260023.6406 dPhi=0.01 mrg=-56.83 dt=0.058s. 1.9 GB/s.
+it840 LB=258473.7677 E=260023.6406 dPhi=0.01 mrg=-56.83 dt=0.058s. 1.9 GB/s.
+it850 LB=258473.7693 E=260023.6406 dPhi=0.01 mrg=-56.83 dt=0.055s. 2.0 GB/s.
+it860 LB=258473.7707 E=260023.6406 dPhi=0.01 mrg=-56.83 dt=0.058s. 1.9 GB/s.
+it870 LB=258473.7722 E=260023.6406 dPhi=0.01 mrg=-56.83 dt=0.059s. 1.9 GB/s.
+it880 LB=258473.7734 E=260023.6406 dPhi=0.01 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it890 LB=258473.7747 E=260023.6406 dPhi=0.01 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it900 LB=258473.7759 E=260023.6406 dPhi=0.009 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it910 LB=258473.7768 E=260023.6406 dPhi=0.009 mrg=-56.83 dt=0.057s. 1.9 GB/s.
+it920 LB=258473.7778 E=260023.6406 dPhi=0.008 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it930 LB=258473.7788 E=260023.6406 dPhi=0.008 mrg=-56.83 dt=0.058s. 1.9 GB/s.
+it940 LB=258473.7797 E=260023.6406 dPhi=0.008 mrg=-56.83 dt=0.056s. 2.0 GB/s.
+it950 LB=258473.7805 E=260023.6406 dPhi=0.007 mrg=-56.83 dt=0.058s. 1.9 GB/s.
+it960 LB=258473.7811 E=260023.6406 dPhi=0.007 mrg=-56.83 dt=0.057s. 2.0 GB/s.
+it970 LB=258473.7819 E=260023.6406 dPhi=0.007 mrg=-56.83 dt=0.056s. 2.0 GB/s.
+it980 LB=258473.7827 E=260023.6406 dPhi=0.006 mrg=-56.83 dt=0.056s. 2.0 GB/s.
+it990 LB=258473.7831 E=260023.6406 dPhi=0.006 mrg=-56.83 dt=0.059s. 1.9 GB/s.
+it1000 LB=258473.7838 E=260023.6406 dPhi=0.006 mrg=-56.83 dt=0.057s. 1.9 GB/s.
+Reached maximum number of iterations (1000).
+LB= 258473.7838 E= 260023.6406
+COMPUTE :struct float_v1 TYPE:2 TEST INSTANCE 1 TRW-S time:8.39885s
+Labeling best_x: 
+10, 10, 10, 4, 2, 4, 4, 4, 4, 7, ...
+Map is not yet strictly improving
+ICM improved E: 259605.867188
+core size:7Mb, writable: 1Mb.
+Marking immovable (init) 10000+0 labels (100% remains)
+PO_sensetivity:0
+PO_it:1
+it1005 LB=-1868.1910 E=113.1641 dPhi=1e+002 mrg=-17.71 dt=0.038s. 2.4 GB/s.
+it1010 LB=-1810.3047 E=-79.1406 dPhi=7 mrg=-14.96 dt=0.037s. 2.4 GB/s.
+Reached energy below 0
+LB= -1810.3047 E= -79.1406
+Improved E:-1270.9375
+Marking immovable (cut) 1311+12829 (5 non-unique) labels (88.2167% remains)
+PO_it:2
+it1015 LB=-6558.6074 E=-1983.8594 dPhi=1 mrg=-26.6 dt=0.038s. 2.4 GB/s.
+Reached energy below 0
+LB= -6558.6074 E= -1983.8594
+Improved E:-4740.9844
+Marking immovable (cut) 2176+22197 (6 non-unique) labels (67.9058% remains)
+PO_it:3
+it1020 LB=-7868.4501 E=-3805.5859 dPhi=1 mrg=-27.82 dt=0.039s. 2.3 GB/s.
+Reached energy below 0
+LB= -7868.4501 E= -3805.5859
+Improved E:-6147.1641
+Marking immovable (cut) 1862+19459 (1 non-unique) labels (50.1383% remains)
+PO_it:4
+it1025 LB=-6974.1662 E=-3866.6719 dPhi=1 mrg=-26.49 dt=0.035s. 2.6 GB/s.
+Reached energy below 0
+LB= -6974.1662 E= -3866.6719
+Improved E:-5230.3750
+Marking immovable (cut) 1845+19294 (1 non-unique) labels (32.5225% remains)
+PO_it:5
+it1030 LB=-4965.5476 E=-3751.7813 dPhi=1 mrg=-25.12 dt=0.035s. 2.6 GB/s.
+Reached energy below 0
+LB= -4965.5476 E= -3751.7813
+Improved E:-4151.3438
+Marking immovable (cut) 1448+15660 (2 non-unique) labels (18.2658% remains)
+PO_it:6
+it1035 LB=-2038.9136 E=-1374.0313 dPhi=1 mrg=-24.73 dt=0.030s. 3.0 GB/s.
+Reached energy below 0
+LB= -2038.9136 E= -1374.0313
+Improved E:-1728.8281
+Marking immovable (cut) 408+4372 labels (14.2825% remains)
+PO_it:7
+it1040 LB=-995.0278 E=-389.4063 dPhi=1 mrg=-28.07 dt=0.028s. 3.3 GB/s.
+Reached energy below 0
+LB= -995.0278 E= -389.4063
+Improved E:-847.3203
+Marking immovable (cut) 219+2413 (1 non-unique) labels (12.0892% remains)
+PO_it:8
+it1045 LB=-578.1055 E=-32.2969 dPhi=1 mrg=-31.43 dt=0.030s. 3.0 GB/s.
+Reached energy below 0
+LB= -578.1055 E= -32.2969
+Improved E:-399.0469
+Marking immovable (cut) 126+1248 (1 non-unique) labels (10.9442% remains)
+PO_it:9
+it1050 LB=-582.1863 E=-487.9453 dPhi=1 mrg=-20.62 dt=0.026s. 3.5 GB/s.
+Reached energy below 0
+LB= -582.1863 E= -487.9453
+Improved E:-487.9453
+Marking immovable (cut) 198+2135 labels (9% remains)
+PO_it:10
+it1055 LB=-393.8442 E=-335.5078 dPhi=1 mrg=-30.7 dt=0.027s. 3.4 GB/s.
+Reached energy below 0
+LB= -393.8442 E= -335.5078
+Improved E:-337.0938
+Marking immovable (cut) 44+401 (1 non-unique) labels (8.62917% remains)
+PO_it:11
+it1060 LB=-165.7656 E=-165.7656 dPhi=1 mrg=-22.04 dt=0.028s. 3.2 GB/s.
+Reached duality gap < 5.72205e-006
+LB= -165.7656 E= -165.7656
+Improved E:-165.7656
+Marking immovable (cut) 24+219 labels (8.42667% remains)
+PO_it:12
+it1065 LB=0.0000 E=0.0000 dPhi=1 mrg=   0 dt=0.030s. 3.1 GB/s.
+Reached duality gap < 0
+LB=   0.0000 E=   0.0000
+Improved E:  0.0000
+Marking immovable (cut) 0+0 labels (8.42667% remains)
+TRW-S found optimal solution
+Map is strictly improving
+Finished. Total iterations: 1065 Persistency proven: 8.42667%
+PO Times:
+ Total: 2.36549
+ Msgs: 0.923879
+ Cuts: 0.235935
+ Node cuts: 0.659763
+ Rebuild: 0.379644
+Alive Labels mask: 
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, ...
+ 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, ...
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, ...
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+Labeling y: 
+(10)(10)(10)(4)(2)(4)(4)(4)(4)(7)...
+COMPUTE :struct float_v1 TYPE:2 TEST INSTANCE 1 nit: 1065 elim:8% / 10.8673s
+Recognized models: 0Potts terms, 19800T-Linear terms,
+ 0T-Quadratic terms, 0Diff terms, 0 Full terms
+X Max data value: 78.1172
+Min data delta: 0.0078125
+Selecting data toolerance: 0.001
+Stream graph layers: 199 time: 0.00063744s. 
+core size:6Mb, writable: 2Mb.
+Options:
+all_to_one: 0
+fast_msg: 1
+it_batch: 10
+local_min_tol: 0
+max_CPU: 2
+max_it: 1000
+n_sensetivity: 1
+po_it_batch: 5
+po_max_it: 50
+po_maxit: 0
+rebuild_incremental: 1
+reduce_immovable: 1
+rel_conv_tol: 0.01
+rel_gap_tol: 0.1
+sensetivity: 0
+use_cut: 1
+use_pixel_cut: 1
+weak_po: 0
+it10 LB=256851.3088 E=265640.3750 dPhi=1e+002 mrg=-58.58 dt=0.060s. 3.2 GB/s.
+it20 LB=257740.8075 E=263131.9844 dPhi=1e+001 mrg=-57.7 dt=0.060s. 3.3 GB/s.
+it30 LB=258032.1648 E=263020.9609 dPhi=6 mrg=-57.24 dt=0.058s. 3.4 GB/s.
+it40 LB=258169.6397 E=261990.7422 dPhi=4 mrg=-57.12 dt=0.057s. 3.4 GB/s.
+it50 LB=258246.0812 E=261418.5469 dPhi=3 mrg=-57.02 dt=0.058s. 3.4 GB/s.
+it60 LB=258299.7681 E=261418.5469 dPhi=3 mrg=-56.96 dt=0.060s. 3.3 GB/s.
+it70 LB=258338.8091 E=261418.5469 dPhi=2 mrg=-56.93 dt=0.057s. 3.4 GB/s.
+it80 LB=258367.4235 E=261418.5469 dPhi=2 mrg=-56.91 dt=0.062s. 3.1 GB/s.
+it90 LB=258388.6531 E=261418.5469 dPhi=2 mrg=-56.9 dt=0.059s. 3.3 GB/s.
+it100 LB=258404.2238 E=261195.3828 dPhi=1 mrg=-56.87 dt=0.058s. 3.3 GB/s.
+it110 LB=258416.0179 E=260426.4297 dPhi=1 mrg=-56.85 dt=0.056s. 3.4 GB/s.
+it120 LB=258425.6452 E=260418.8516 dPhi=1 mrg=-56.84 dt=0.056s. 3.5 GB/s.
+it130 LB=258433.5526 E=260202.0078 dPhi=0.8 mrg=-56.83 dt=0.056s. 3.5 GB/s.
+it140 LB=258440.0508 E=260202.0078 dPhi=0.8 mrg=-56.82 dt=0.056s. 3.4 GB/s.
+it150 LB=258445.5954 E=260202.0078 dPhi=0.7 mrg=-56.81 dt=0.057s. 3.4 GB/s.
+it160 LB=258450.3104 E=260202.0078 dPhi=0.7 mrg=-56.81 dt=0.057s. 3.4 GB/s.
+it170 LB=258454.3290 E=260202.0078 dPhi=0.8 mrg=-56.81 dt=0.057s. 3.4 GB/s.
+it180 LB=258457.7057 E=260202.0078 dPhi=0.7 mrg=-56.81 dt=0.058s. 3.4 GB/s.
+it190 LB=258460.5734 E=260202.0078 dPhi=0.8 mrg=-56.81 dt=0.058s. 3.3 GB/s.
+it200 LB=258462.9434 E=260202.0078 dPhi=0.7 mrg=-56.81 dt=0.059s. 3.3 GB/s.
+it210 LB=258464.6811 E=260202.0078 dPhi=0.5 mrg=-56.81 dt=0.059s. 3.3 GB/s.
+it220 LB=258466.0001 E=260202.0078 dPhi=0.4 mrg=-56.82 dt=0.057s. 3.4 GB/s.
+it230 LB=258467.1537 E=260202.0078 dPhi=0.4 mrg=-56.82 dt=0.058s. 3.3 GB/s.
+it240 LB=258468.1622 E=260178.6406 dPhi=0.3 mrg=-56.82 dt=0.057s. 3.4 GB/s.
+it250 LB=258468.9664 E=260160.7891 dPhi=0.3 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it260 LB=258469.6156 E=260129.7891 dPhi=0.4 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it270 LB=258470.0870 E=260052.7500 dPhi=0.3 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it280 LB=258470.4856 E=260052.7500 dPhi=0.3 mrg=-56.83 dt=0.056s. 3.5 GB/s.
+it290 LB=258470.8444 E=260052.7500 dPhi=0.3 mrg=-56.83 dt=0.058s. 3.3 GB/s.
+it300 LB=258471.1656 E=260052.7500 dPhi=0.3 mrg=-56.83 dt=0.058s. 3.4 GB/s.
+it310 LB=258471.4284 E=260052.7500 dPhi=0.2 mrg=-56.83 dt=0.056s. 3.5 GB/s.
+it320 LB=258471.5884 E=260052.7500 dPhi=0.2 mrg=-56.83 dt=0.056s. 3.5 GB/s.
+it330 LB=258471.7340 E=260052.7500 dPhi=0.2 mrg=-56.83 dt=0.058s. 3.4 GB/s.
+it340 LB=258471.8680 E=260052.7500 dPhi=0.2 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it350 LB=258471.9924 E=260052.7500 dPhi=0.2 mrg=-56.83 dt=0.058s. 3.4 GB/s.
+it360 LB=258472.1089 E=260052.7500 dPhi=0.2 mrg=-56.83 dt=0.056s. 3.5 GB/s.
+it370 LB=258472.2185 E=260052.7500 dPhi=0.2 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it380 LB=258472.3220 E=260052.7500 dPhi=0.2 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it390 LB=258472.4193 E=260047.8359 dPhi=0.2 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it400 LB=258472.5103 E=260047.8359 dPhi=0.2 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it410 LB=258472.5955 E=260047.8359 dPhi=0.1 mrg=-56.83 dt=0.058s. 3.3 GB/s.
+it420 LB=258472.6754 E=260047.8359 dPhi=0.1 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it430 LB=258472.7505 E=260047.8359 dPhi=0.1 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it440 LB=258472.8213 E=260047.8359 dPhi=0.1 mrg=-56.83 dt=0.066s. 2.9 GB/s.
+it450 LB=258472.8882 E=260047.8359 dPhi=0.1 mrg=-56.83 dt=0.068s. 2.8 GB/s.
+it460 LB=258472.9514 E=259980.4297 dPhi=0.1 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it470 LB=258473.0114 E=259980.4297 dPhi=0.08 mrg=-56.83 dt=0.062s. 3.1 GB/s.
+it480 LB=258473.0683 E=259980.4297 dPhi=0.08 mrg=-56.83 dt=0.064s. 3.0 GB/s.
+it490 LB=258473.1224 E=259980.4297 dPhi=0.07 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it500 LB=258473.1737 E=259980.4297 dPhi=0.07 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it510 LB=258473.2226 E=259980.4297 dPhi=0.07 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it520 LB=258473.2692 E=259980.4297 dPhi=0.07 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it530 LB=258473.3135 E=259980.4297 dPhi=0.07 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it540 LB=258473.3558 E=259980.4297 dPhi=0.07 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it550 LB=258473.3963 E=259980.4297 dPhi=0.06 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it560 LB=258473.4349 E=259980.4297 dPhi=0.06 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it570 LB=258473.4719 E=259980.4297 dPhi=0.06 mrg=-56.83 dt=0.064s. 3.0 GB/s.
+it580 LB=258473.5074 E=259967.1094 dPhi=0.06 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it590 LB=258473.5414 E=259967.1094 dPhi=0.06 mrg=-56.83 dt=0.060s. 3.3 GB/s.
+it600 LB=258473.5740 E=259967.1094 dPhi=0.06 mrg=-56.83 dt=0.063s. 3.1 GB/s.
+it610 LB=258473.6054 E=259967.1094 dPhi=0.06 mrg=-56.83 dt=0.061s. 3.2 GB/s.
+it620 LB=258473.6355 E=259967.1094 dPhi=0.05 mrg=-56.83 dt=0.062s. 3.1 GB/s.
+it630 LB=258473.6645 E=259967.1094 dPhi=0.05 mrg=-56.83 dt=0.056s. 3.5 GB/s.
+it640 LB=258473.6924 E=259967.1094 dPhi=0.05 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it650 LB=258473.7003 E=259967.1094 dPhi=0.04 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it660 LB=258473.7066 E=259967.1094 dPhi=0.03 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it670 LB=258473.7124 E=259967.1094 dPhi=0.03 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it680 LB=258473.7177 E=259967.1094 dPhi=0.03 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it690 LB=258473.7227 E=259967.1094 dPhi=0.03 mrg=-56.83 dt=0.058s. 3.3 GB/s.
+it700 LB=258473.7273 E=259967.1094 dPhi=0.03 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it710 LB=258473.7316 E=259967.1094 dPhi=0.03 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it720 LB=258473.7356 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.061s. 3.2 GB/s.
+it730 LB=258473.7393 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.061s. 3.2 GB/s.
+it740 LB=258473.7427 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.061s. 3.2 GB/s.
+it750 LB=258473.7458 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.061s. 3.2 GB/s.
+it760 LB=258473.7488 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it770 LB=258473.7515 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it780 LB=258473.7541 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.056s. 3.5 GB/s.
+it790 LB=258473.7564 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.061s. 3.2 GB/s.
+it800 LB=258473.7586 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.068s. 2.8 GB/s.
+it810 LB=258473.7607 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it820 LB=258473.7626 E=259967.1094 dPhi=0.01 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it830 LB=258473.7643 E=259967.1094 dPhi=0.01 mrg=-56.83 dt=0.062s. 3.1 GB/s.
+it840 LB=258473.7660 E=259967.1094 dPhi=0.01 mrg=-56.83 dt=0.063s. 3.1 GB/s.
+it850 LB=258473.7675 E=259967.1094 dPhi=0.01 mrg=-56.83 dt=0.064s. 3.1 GB/s.
+it860 LB=258473.7689 E=259967.1094 dPhi=0.01 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it870 LB=258473.7702 E=259967.1094 dPhi=0.01 mrg=-56.83 dt=0.061s. 3.2 GB/s.
+it880 LB=258473.7715 E=259967.1094 dPhi=0.01 mrg=-56.83 dt=0.058s. 3.4 GB/s.
+it890 LB=258473.7726 E=259967.1094 dPhi=0.01 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it900 LB=258473.7737 E=259967.1094 dPhi=0.009 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it910 LB=258473.7747 E=259967.1094 dPhi=0.009 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it920 LB=258473.7756 E=259967.1094 dPhi=0.008 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it930 LB=258473.7765 E=259967.1094 dPhi=0.008 mrg=-56.83 dt=0.058s. 3.3 GB/s.
+it940 LB=258473.7773 E=259967.1094 dPhi=0.008 mrg=-56.83 dt=0.058s. 3.3 GB/s.
+it950 LB=258473.7780 E=259967.1094 dPhi=0.007 mrg=-56.83 dt=0.058s. 3.4 GB/s.
+it960 LB=258473.7787 E=259967.1094 dPhi=0.007 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it970 LB=258473.7793 E=259967.1094 dPhi=0.007 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it980 LB=258473.7799 E=259967.1094 dPhi=0.006 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it990 LB=258473.7805 E=259967.1094 dPhi=0.006 mrg=-56.83 dt=0.056s. 3.5 GB/s.
+it1000 LB=258473.7810 E=259967.1094 dPhi=0.006 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+Reached maximum number of iterations (1000).
+LB= 258473.7810 E= 259967.1094
+COMPUTE :struct double_v1 TYPE:2 TEST INSTANCE 1 TRW-S time:8.42809s
+Labeling best_x: 
+10, 10, 10, 4, 2, 4, 4, 4, 4, 7, ...
+Map is not yet strictly improving
+ICM improved E: 259464.976563
+core size:12Mb, writable: 2Mb.
+Marking immovable (init) 10000+0 labels (100% remains)
+PO_sensetivity:0
+PO_it:1
+it1005 LB=-1574.2922 E=442.1797 dPhi=1e+002 mrg=-11.91 dt=0.042s. 3.6 GB/s.
+it1010 LB=-1513.7855 E=219.8828 dPhi=7 mrg=-11.92 dt=0.040s. 3.8 GB/s.
+it1015 LB=-1484.3420 E=-123.5938 dPhi=4 mrg=-11.88 dt=0.040s. 3.7 GB/s.
+Reached energy below 0
+LB= -1484.3420 E= -123.5938
+Improved E:-1005.8516
+Marking immovable (cut) 1226+12344 (4 non-unique) labels (88.6917% remains)
+PO_it:2
+it1020 LB=-6830.1024 E=-2457.0078 dPhi=1 mrg=-26.78 dt=0.041s. 3.6 GB/s.
+Reached energy below 0
+LB= -6830.1024 E= -2457.0078
+Improved E:-5152.7188
+Marking immovable (cut) 1962+20306 (5 non-unique) labels (70.135% remains)
+PO_it:3
+it1025 LB=-7561.6775 E=-3158.8516 dPhi=1 mrg=-26.25 dt=0.041s. 3.6 GB/s.
+Reached energy below 0
+LB= -7561.6775 E= -3158.8516
+Improved E:-5728.4688
+Marking immovable (cut) 2133+22346 (4 non-unique) labels (49.7358% remains)
+PO_it:4
+it1030 LB=-7252.4424 E=-4460.7656 dPhi=1 mrg=-32.57 dt=0.039s. 3.9 GB/s.
+Reached energy below 0
+LB= -7252.4424 E= -4460.7656
+Improved E:-5641.9141
+Marking immovable (cut) 1738+18143 (1 non-unique) labels (33.1683% remains)
+PO_it:5
+it1035 LB=-5506.4706 E=-4319.6719 dPhi=1 mrg=-35.05 dt=0.036s. 4.2 GB/s.
+Reached energy below 0
+LB= -5506.4706 E= -4319.6719
+Improved E:-4784.5938
+Marking immovable (cut) 1465+15150 (3 non-unique) labels (19.3225% remains)
+PO_it:6
+it1040 LB=-3171.2661 E=-2191.8594 dPhi=1 mrg=-28.02 dt=0.032s. 4.6 GB/s.
+Reached energy below 0
+LB= -3171.2661 E= -2191.8594
+Improved E:-2672.6563
+Marking immovable (cut) 562+6235 labels (13.6583% remains)
+PO_it:7
+it1045 LB=-1322.8228 E=-925.8203 dPhi=1 mrg=-31.49 dt=0.031s. 4.8 GB/s.
+Reached energy below 0
+LB= -1322.8228 E= -925.8203
+Improved E:-1128.6641
+Marking immovable (cut) 228+2203 (1 non-unique) labels (11.6325% remains)
+PO_it:8
+it1050 LB=-531.1402 E=-336.8984 dPhi=1 mrg=-20.57 dt=0.031s. 4.8 GB/s.
+Reached energy below 0
+LB= -531.1402 E= -336.8984
+Improved E:-475.6016
+Marking immovable (cut) 235+2430 (1 non-unique) labels (9.41167% remains)
+PO_it:9
+it1055 LB=-571.2719 E=-465.6172 dPhi=1 mrg=-17.91 dt=0.032s. 4.6 GB/s.
+Reached energy below 0
+LB= -571.2719 E= -465.6172
+Improved E:-467.2031
+Marking immovable (cut) 84+852 labels (8.63167% remains)
+PO_it:10
+it1060 LB=-165.7656 E=-165.7656 dPhi=1 mrg=-22.02 dt=0.032s. 4.6 GB/s.
+Reached duality gap < 0
+LB= -165.7656 E= -165.7656
+Improved E:-165.7656
+Marking immovable (cut) 24+219 labels (8.42917% remains)
+PO_it:11
+it1065 LB=0.0000 E=0.0000 dPhi=1 mrg=   0 dt=0.034s. 4.4 GB/s.
+Reached duality gap < 0
+LB=   0.0000 E=   0.0000
+Improved E:  0.0000
+Marking immovable (cut) 0+0 labels (8.42917% remains)
+TRW-S found optimal solution
+Map is strictly improving
+Finished. Total iterations: 1065 Persistency proven: 8.42917%
+PO Times:
+ Total: 2.35095
+ Msgs: 0.9455
+ Cuts: 0.223352
+ Node cuts: 0.661191
+ Rebuild: 0.380441
+Alive Labels mask: 
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, ...
+ 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, ...
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, ...
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+Labeling y: 
+(10)(10)(10)(4)(2)(4)(4)(4)(4)(7)...
+COMPUTE :struct double_v1 TYPE:2 TEST INSTANCE 1 nit: 1065 elim:8% / 10.8851s
+Stream graph layers: 199 time: 0.00110884s. 
+core size:6Mb, writable: 2Mb.
+Options:
+all_to_one: 0
+fast_msg: 1
+it_batch: 10
+local_min_tol: 0
+max_CPU: 2
+max_it: 1000
+n_sensetivity: 1
+po_it_batch: 5
+po_max_it: 50
+po_maxit: 0
+rebuild_incremental: 1
+reduce_immovable: 1
+rel_conv_tol: 0.01
+rel_gap_tol: 0.1
+sensetivity: 0
+use_cut: 1
+use_pixel_cut: 1
+weak_po: 0
+it10 LB=256851.3088 E=265640.3750 dPhi=1e+002 mrg=-58.58 dt=0.058s. 3.4 GB/s.
+it20 LB=257740.8075 E=263131.9844 dPhi=1e+001 mrg=-57.7 dt=0.061s. 3.2 GB/s.
+it30 LB=258032.1648 E=263020.9609 dPhi=6 mrg=-57.24 dt=0.061s. 3.2 GB/s.
+it40 LB=258169.6397 E=261990.7422 dPhi=4 mrg=-57.12 dt=0.058s. 3.3 GB/s.
+it50 LB=258246.0812 E=261418.5469 dPhi=3 mrg=-57.02 dt=0.059s. 3.3 GB/s.
+it60 LB=258299.7681 E=261418.5469 dPhi=3 mrg=-56.96 dt=0.060s. 3.2 GB/s.
+it70 LB=258338.8091 E=261418.5469 dPhi=2 mrg=-56.93 dt=0.060s. 3.2 GB/s.
+it80 LB=258367.4235 E=261418.5469 dPhi=2 mrg=-56.91 dt=0.061s. 3.2 GB/s.
+it90 LB=258388.6531 E=261418.5469 dPhi=2 mrg=-56.9 dt=0.062s. 3.2 GB/s.
+it100 LB=258404.2238 E=261195.3828 dPhi=1 mrg=-56.87 dt=0.059s. 3.3 GB/s.
+it110 LB=258416.0179 E=260426.4297 dPhi=1 mrg=-56.85 dt=0.059s. 3.3 GB/s.
+it120 LB=258425.6452 E=260418.8516 dPhi=1 mrg=-56.84 dt=0.061s. 3.2 GB/s.
+it130 LB=258433.5526 E=260202.0078 dPhi=0.8 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it140 LB=258440.0508 E=260202.0078 dPhi=0.8 mrg=-56.82 dt=0.058s. 3.3 GB/s.
+it150 LB=258445.5954 E=260202.0078 dPhi=0.7 mrg=-56.81 dt=0.061s. 3.2 GB/s.
+it160 LB=258450.3104 E=260202.0078 dPhi=0.7 mrg=-56.81 dt=0.061s. 3.2 GB/s.
+it170 LB=258454.3290 E=260202.0078 dPhi=0.8 mrg=-56.81 dt=0.058s. 3.3 GB/s.
+it180 LB=258457.7057 E=260202.0078 dPhi=0.7 mrg=-56.81 dt=0.058s. 3.3 GB/s.
+it190 LB=258460.5734 E=260202.0078 dPhi=0.8 mrg=-56.81 dt=0.060s. 3.2 GB/s.
+it200 LB=258462.9434 E=260202.0078 dPhi=0.7 mrg=-56.81 dt=0.059s. 3.3 GB/s.
+it210 LB=258464.6811 E=260202.0078 dPhi=0.5 mrg=-56.81 dt=0.059s. 3.3 GB/s.
+it220 LB=258466.0001 E=260202.0078 dPhi=0.4 mrg=-56.82 dt=0.058s. 3.3 GB/s.
+it230 LB=258467.1537 E=260202.0078 dPhi=0.4 mrg=-56.82 dt=0.059s. 3.3 GB/s.
+it240 LB=258468.1622 E=260178.6406 dPhi=0.3 mrg=-56.82 dt=0.059s. 3.3 GB/s.
+it250 LB=258468.9664 E=260160.7891 dPhi=0.3 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it260 LB=258469.6156 E=260129.7891 dPhi=0.4 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it270 LB=258470.0870 E=260052.7500 dPhi=0.3 mrg=-56.83 dt=0.060s. 3.3 GB/s.
+it280 LB=258470.4856 E=260052.7500 dPhi=0.3 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it290 LB=258470.8444 E=260052.7500 dPhi=0.3 mrg=-56.83 dt=0.058s. 3.3 GB/s.
+it300 LB=258471.1656 E=260052.7500 dPhi=0.3 mrg=-56.83 dt=0.058s. 3.3 GB/s.
+it310 LB=258471.4284 E=260052.7500 dPhi=0.2 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it320 LB=258471.5884 E=260052.7500 dPhi=0.2 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it330 LB=258471.7340 E=260052.7500 dPhi=0.2 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it340 LB=258471.8680 E=260052.7500 dPhi=0.2 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it350 LB=258471.9924 E=260052.7500 dPhi=0.2 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it360 LB=258472.1089 E=260052.7500 dPhi=0.2 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it370 LB=258472.2185 E=260052.7500 dPhi=0.2 mrg=-56.83 dt=0.062s. 3.1 GB/s.
+it380 LB=258472.3220 E=260052.7500 dPhi=0.2 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it390 LB=258472.4193 E=260047.8359 dPhi=0.2 mrg=-56.83 dt=0.062s. 3.2 GB/s.
+it400 LB=258472.5103 E=260047.8359 dPhi=0.2 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it410 LB=258472.5955 E=260047.8359 dPhi=0.1 mrg=-56.83 dt=0.062s. 3.1 GB/s.
+it420 LB=258472.6754 E=260047.8359 dPhi=0.1 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it430 LB=258472.7505 E=260047.8359 dPhi=0.1 mrg=-56.83 dt=0.060s. 3.3 GB/s.
+it440 LB=258472.8213 E=260047.8359 dPhi=0.1 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it450 LB=258472.8882 E=260047.8359 dPhi=0.1 mrg=-56.83 dt=0.061s. 3.2 GB/s.
+it460 LB=258472.9514 E=259980.4297 dPhi=0.1 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it470 LB=258473.0114 E=259980.4297 dPhi=0.08 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it480 LB=258473.0683 E=259980.4297 dPhi=0.08 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it490 LB=258473.1224 E=259980.4297 dPhi=0.07 mrg=-56.83 dt=0.060s. 3.3 GB/s.
+it500 LB=258473.1737 E=259980.4297 dPhi=0.07 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it510 LB=258473.2226 E=259980.4297 dPhi=0.07 mrg=-56.83 dt=0.067s. 2.9 GB/s.
+it520 LB=258473.2692 E=259980.4297 dPhi=0.07 mrg=-56.83 dt=0.062s. 3.2 GB/s.
+it530 LB=258473.3135 E=259980.4297 dPhi=0.07 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it540 LB=258473.3558 E=259980.4297 dPhi=0.07 mrg=-56.83 dt=0.061s. 3.2 GB/s.
+it550 LB=258473.3963 E=259980.4297 dPhi=0.06 mrg=-56.83 dt=0.065s. 3.0 GB/s.
+it560 LB=258473.4349 E=259980.4297 dPhi=0.06 mrg=-56.83 dt=0.068s. 2.8 GB/s.
+it570 LB=258473.4719 E=259980.4297 dPhi=0.06 mrg=-56.83 dt=0.063s. 3.1 GB/s.
+it580 LB=258473.5074 E=259967.1094 dPhi=0.06 mrg=-56.83 dt=0.061s. 3.2 GB/s.
+it590 LB=258473.5414 E=259967.1094 dPhi=0.06 mrg=-56.83 dt=0.062s. 3.1 GB/s.
+it600 LB=258473.5740 E=259967.1094 dPhi=0.06 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it610 LB=258473.6054 E=259967.1094 dPhi=0.06 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it620 LB=258473.6355 E=259967.1094 dPhi=0.05 mrg=-56.83 dt=0.064s. 3.0 GB/s.
+it630 LB=258473.6645 E=259967.1094 dPhi=0.05 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it640 LB=258473.6924 E=259967.1094 dPhi=0.05 mrg=-56.83 dt=0.063s. 3.1 GB/s.
+it650 LB=258473.7003 E=259967.1094 dPhi=0.04 mrg=-56.83 dt=0.060s. 3.3 GB/s.
+it660 LB=258473.7066 E=259967.1094 dPhi=0.03 mrg=-56.83 dt=0.063s. 3.1 GB/s.
+it670 LB=258473.7124 E=259967.1094 dPhi=0.03 mrg=-56.83 dt=0.063s. 3.1 GB/s.
+it680 LB=258473.7177 E=259967.1094 dPhi=0.03 mrg=-56.83 dt=0.065s. 3.0 GB/s.
+it690 LB=258473.7227 E=259967.1094 dPhi=0.03 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it700 LB=258473.7273 E=259967.1094 dPhi=0.03 mrg=-56.83 dt=0.062s. 3.1 GB/s.
+it710 LB=258473.7316 E=259967.1094 dPhi=0.03 mrg=-56.83 dt=0.058s. 3.3 GB/s.
+it720 LB=258473.7356 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it730 LB=258473.7393 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.062s. 3.1 GB/s.
+it740 LB=258473.7427 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.061s. 3.2 GB/s.
+it750 LB=258473.7458 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it760 LB=258473.7488 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it770 LB=258473.7515 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it780 LB=258473.7541 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.058s. 3.3 GB/s.
+it790 LB=258473.7564 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.060s. 3.3 GB/s.
+it800 LB=258473.7586 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it810 LB=258473.7607 E=259967.1094 dPhi=0.02 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it820 LB=258473.7626 E=259967.1094 dPhi=0.01 mrg=-56.83 dt=0.061s. 3.2 GB/s.
+it830 LB=258473.7643 E=259967.1094 dPhi=0.01 mrg=-56.83 dt=0.058s. 3.3 GB/s.
+it840 LB=258473.7660 E=259967.1094 dPhi=0.01 mrg=-56.83 dt=0.058s. 3.4 GB/s.
+it850 LB=258473.7675 E=259967.1094 dPhi=0.01 mrg=-56.83 dt=0.061s. 3.2 GB/s.
+it860 LB=258473.7689 E=259967.1094 dPhi=0.01 mrg=-56.83 dt=0.061s. 3.2 GB/s.
+it870 LB=258473.7702 E=259967.1094 dPhi=0.01 mrg=-56.83 dt=0.058s. 3.4 GB/s.
+it880 LB=258473.7715 E=259967.1094 dPhi=0.01 mrg=-56.83 dt=0.058s. 3.4 GB/s.
+it890 LB=258473.7726 E=259967.1094 dPhi=0.01 mrg=-56.83 dt=0.058s. 3.3 GB/s.
+it900 LB=258473.7737 E=259967.1094 dPhi=0.009 mrg=-56.83 dt=0.061s. 3.2 GB/s.
+it910 LB=258473.7747 E=259967.1094 dPhi=0.009 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it920 LB=258473.7756 E=259967.1094 dPhi=0.008 mrg=-56.83 dt=0.058s. 3.3 GB/s.
+it930 LB=258473.7765 E=259967.1094 dPhi=0.008 mrg=-56.83 dt=0.061s. 3.2 GB/s.
+it940 LB=258473.7773 E=259967.1094 dPhi=0.008 mrg=-56.83 dt=0.060s. 3.2 GB/s.
+it950 LB=258473.7780 E=259967.1094 dPhi=0.007 mrg=-56.83 dt=0.060s. 3.3 GB/s.
+it960 LB=258473.7787 E=259967.1094 dPhi=0.007 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it970 LB=258473.7793 E=259967.1094 dPhi=0.007 mrg=-56.83 dt=0.061s. 3.2 GB/s.
+it980 LB=258473.7799 E=259967.1094 dPhi=0.006 mrg=-56.83 dt=0.057s. 3.4 GB/s.
+it990 LB=258473.7805 E=259967.1094 dPhi=0.006 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+it1000 LB=258473.7810 E=259967.1094 dPhi=0.006 mrg=-56.83 dt=0.059s. 3.3 GB/s.
+Reached maximum number of iterations (1000).
+LB= 258473.7810 E= 259967.1094
+COMPUTE :struct double_v1 TYPE:2 TEST INSTANCE 1 TRW-S time:8.59111s
+Labeling best_x: 
+10, 10, 10, 4, 2, 4, 4, 4, 4, 7, ...
+Map is not yet strictly improving
+ICM improved E: 259464.976563
+core size:12Mb, writable: 2Mb.
+Marking immovable (init) 10000+0 labels (100% remains)
+PO_sensetivity:0
+PO_it:1
+it1005 LB=-1574.2922 E=442.1797 dPhi=1e+002 mrg=-11.91 dt=0.042s. 3.6 GB/s.
+it1010 LB=-1513.7855 E=219.8828 dPhi=7 mrg=-11.92 dt=0.042s. 3.6 GB/s.
+it1015 LB=-1484.3420 E=-123.5938 dPhi=4 mrg=-11.88 dt=0.047s. 3.2 GB/s.
+Reached energy below 0
+LB= -1484.3420 E= -123.5938
+Improved E:-1005.8516
+Marking immovable (cut) 1226+12344 (4 non-unique) labels (88.6917% remains)
+PO_it:2
+it1020 LB=-6830.1024 E=-2457.0078 dPhi=1 mrg=-26.78 dt=0.056s. 2.7 GB/s.
+Reached energy below 0
+LB= -6830.1024 E= -2457.0078
+Improved E:-5152.7188
+Marking immovable (cut) 1962+20306 (5 non-unique) labels (70.135% remains)
+PO_it:3
+it1025 LB=-7561.6775 E=-3158.8516 dPhi=1 mrg=-26.25 dt=0.043s. 3.5 GB/s.
+Reached energy below 0
+LB= -7561.6775 E= -3158.8516
+Improved E:-5728.4688
+Marking immovable (cut) 2133+22346 (4 non-unique) labels (49.7358% remains)
+PO_it:4
+it1030 LB=-7252.4424 E=-4460.7656 dPhi=1 mrg=-32.57 dt=0.039s. 3.8 GB/s.
+Reached energy below 0
+LB= -7252.4424 E= -4460.7656
+Improved E:-5641.9141
+Marking immovable (cut) 1738+18143 (1 non-unique) labels (33.1683% remains)
+PO_it:5
+it1035 LB=-5506.4706 E=-4319.6719 dPhi=1 mrg=-35.05 dt=0.038s. 4.0 GB/s.
+Reached energy below 0
+LB= -5506.4706 E= -4319.6719
+Improved E:-4784.5938
+Marking immovable (cut) 1465+15150 (3 non-unique) labels (19.3225% remains)
+PO_it:6
+it1040 LB=-3171.2661 E=-2191.8594 dPhi=1 mrg=-28.02 dt=0.038s. 4.0 GB/s.
+Reached energy below 0
+LB= -3171.2661 E= -2191.8594
+Improved E:-2672.6563
+Marking immovable (cut) 562+6235 labels (13.6583% remains)
+PO_it:7
+it1045 LB=-1322.8228 E=-925.8203 dPhi=1 mrg=-31.49 dt=0.033s. 4.6 GB/s.
+Reached energy below 0
+LB= -1322.8228 E= -925.8203
+Improved E:-1128.6641
+Marking immovable (cut) 228+2203 (1 non-unique) labels (11.6325% remains)
+PO_it:8
+it1050 LB=-531.1402 E=-336.8984 dPhi=1 mrg=-20.57 dt=0.031s. 4.9 GB/s.
+Reached energy below 0
+LB= -531.1402 E= -336.8984
+Improved E:-475.6016
+Marking immovable (cut) 235+2430 (1 non-unique) labels (9.41167% remains)
+PO_it:9
+it1055 LB=-571.2719 E=-465.6172 dPhi=1 mrg=-17.91 dt=0.031s. 4.8 GB/s.
+Reached energy below 0
+LB= -571.2719 E= -465.6172
+Improved E:-467.2031
+Marking immovable (cut) 84+852 labels (8.63167% remains)
+PO_it:10
+it1060 LB=-165.7656 E=-165.7656 dPhi=1 mrg=-22.02 dt=0.033s. 4.6 GB/s.
+Reached duality gap < 0
+LB= -165.7656 E= -165.7656
+Improved E:-165.7656
+Marking immovable (cut) 24+219 labels (8.42917% remains)
+PO_it:11
+it1065 LB=0.0000 E=0.0000 dPhi=1 mrg=   0 dt=0.035s. 4.3 GB/s.
+Reached duality gap < 0
+LB=   0.0000 E=   0.0000
+Improved E:  0.0000
+Marking immovable (cut) 0+0 labels (8.42917% remains)
+TRW-S found optimal solution
+Map is strictly improving
+Finished. Total iterations: 1065 Persistency proven: 8.42917%
+PO Times:
+ Total: 2.44025
+ Msgs: 0.99989
+ Cuts: 0.214069
+ Node cuts: 0.685415
+ Rebuild: 0.394987
+Alive Labels mask: 
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, ...
+ 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, ...
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, ...
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, ...
+Labeling y: 
+(10)(10)(10)(4)(2)(4)(4)(4)(4)(7)...
+COMPUTE :struct double_v1 TYPE:2 TEST INSTANCE 1 nit: 1065 elim:8% / 11.1326s
+Recognized models: 0Potts terms, 0T-Linear terms,
+ 0T-Quadratic terms, 19800Diff terms, 0 Full terms
+X Max data value: 99.9063
+Min data delta: 0.0078125
+Selecting data toolerance: 0.01
+Stream graph layers: 199 time: 0.000474331s. 
+core size:9Mb, writable: 1Mb.
+Options:
+all_to_one: 0
+fast_msg: 1
+it_batch: 10
+local_min_tol: 0
+max_CPU: 2
+max_it: 1000
+n_sensetivity: 1
+po_it_batch: 5
+po_max_it: 50
+po_maxit: 0
+rebuild_incremental: 1
+reduce_immovable: 1
+rel_conv_tol: 0.01
+rel_gap_tol: 0.1
+sensetivity: 0
+use_cut: 1
+use_pixel_cut: 1
+weak_po: 0
+it10 LB=327898.2910 E=362229.0078 dPhi=1 mrg=-60.72 dt=0.038s. 6.0 GB/s.
+it20 LB=329537.7790 E=354311.2031 dPhi=2e+001 mrg=-59.56 dt=0.040s. 5.7 GB/s.
+it30 LB=330221.1116 E=351200.7500 dPhi=2e+001 mrg=-59.02 dt=0.036s. 6.2 GB/s.
+it40 LB=330562.2060 E=342353.9688 dPhi=1e+001 mrg=-58.97 dt=0.038s. 6.1 GB/s.
+it50 LB=330785.6972 E=340314.8984 dPhi=8 mrg=-59.01 dt=0.039s. 5.9 GB/s.
+it60 LB=330953.1664 E=337905.1953 dPhi=6 mrg=-58.99 dt=0.039s. 5.9 GB/s.
+it70 LB=331074.4025 E=337905.1953 dPhi=5 mrg=-59.11 dt=0.038s. 6.0 GB/s.
+it80 LB=331168.1581 E=337212.1406 dPhi=5 mrg=-59.15 dt=0.039s. 5.8 GB/s.
+it90 LB=331234.8387 E=336542.0000 dPhi=6 mrg=-59.14 dt=0.038s. 6.1 GB/s.
+it100 LB=331284.8014 E=336416.4531 dPhi=6 mrg=-59.13 dt=0.038s. 6.1 GB/s.
+it110 LB=331327.7557 E=336281.6328 dPhi=5 mrg=-59.12 dt=0.037s. 6.2 GB/s.
+it120 LB=331363.9676 E=336281.6328 dPhi=4 mrg=-59.1 dt=0.038s. 6.0 GB/s.
+it130 LB=331395.5004 E=335554.5156 dPhi=3 mrg=-59.09 dt=0.037s. 6.1 GB/s.
+it140 LB=331420.6149 E=335554.5156 dPhi=2 mrg=-59.08 dt=0.036s. 6.3 GB/s.
+it150 LB=331441.0758 E=335554.5156 dPhi=2 mrg=-59.07 dt=0.036s. 6.4 GB/s.
+it160 LB=331458.9354 E=335554.5156 dPhi=2 mrg=-59.06 dt=0.039s. 5.8 GB/s.
+it170 LB=331475.1014 E=335554.5156 dPhi=2 mrg=-59.05 dt=0.037s. 6.1 GB/s.
+it180 LB=331489.8342 E=335554.5156 dPhi=2 mrg=-59.04 dt=0.038s. 6.0 GB/s.
+it190 LB=331503.8264 E=335554.5156 dPhi=2 mrg=-59.03 dt=0.036s. 6.4 GB/s.
+it200 LB=331517.0777 E=335554.5156 dPhi=1 mrg=-59.02 dt=0.037s. 6.2 GB/s.
+it210 LB=331529.2392 E=335554.5156 dPhi=1 mrg=-59.01 dt=0.036s. 6.3 GB/s.
+it220 LB=331540.7135 E=335554.5156 dPhi=1 mrg=-59.01 dt=0.045s. 5.0 GB/s.
+it230 LB=331551.5740 E=335554.5156 dPhi=1 mrg= -59 dt=0.036s. 6.3 GB/s.
+it240 LB=331562.1778 E=335554.5156 dPhi=1 mrg=-58.99 dt=0.039s. 5.9 GB/s.
+it250 LB=331572.2672 E=335554.5156 dPhi=1 mrg=-58.98 dt=0.037s. 6.2 GB/s.
+it260 LB=331581.8912 E=335554.5156 dPhi=1 mrg=-58.97 dt=0.037s. 6.2 GB/s.
+it270 LB=331591.1155 E=335554.5156 dPhi=1 mrg=-58.97 dt=0.041s. 5.6 GB/s.
+it280 LB=331599.9394 E=335554.5156 dPhi=1 mrg=-58.96 dt=0.039s. 5.8 GB/s.
+it290 LB=331608.3813 E=335554.5156 dPhi=1 mrg=-58.95 dt=0.040s. 5.6 GB/s.
+it300 LB=331616.4819 E=335554.5156 dPhi=1 mrg=-58.95 dt=0.042s. 5.5 GB/s.
+it310 LB=331624.2236 E=335515.0391 dPhi=1 mrg=-58.95 dt=0.038s. 6.0 GB/s.
+it320 LB=331631.5728 E=335515.0391 dPhi=1 mrg=-58.94 dt=0.037s. 6.1 GB/s.
+it330 LB=331638.6343 E=335515.0391 dPhi=0.9 mrg=-58.94 dt=0.037s. 6.1 GB/s.
+it340 LB=331645.4135 E=335456.6484 dPhi=0.9 mrg=-58.94 dt=0.040s. 5.7 GB/s.
+it350 LB=331651.9242 E=335456.6484 dPhi=0.7 mrg=-58.94 dt=0.038s. 6.0 GB/s.
+it360 LB=331658.1498 E=335456.6484 dPhi=0.6 mrg=-58.94 dt=0.039s. 5.9 GB/s.
+it370 LB=331664.0549 E=335456.6484 dPhi=0.9 mrg=-58.93 dt=0.041s. 5.6 GB/s.
+it380 LB=331669.6466 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.037s. 6.2 GB/s.
+it390 LB=331674.9263 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.037s. 6.1 GB/s.
+it400 LB=331679.8884 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.038s. 5.9 GB/s.
+it410 LB=331684.5668 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.038s. 6.0 GB/s.
+it420 LB=331689.0060 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.037s. 6.1 GB/s.
+it430 LB=331693.2656 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.040s. 5.7 GB/s.
+it440 LB=331697.3360 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.036s. 6.3 GB/s.
+it450 LB=331701.2340 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.036s. 6.4 GB/s.
+it460 LB=331704.9361 E=335354.0391 dPhi=0.7 mrg=-58.93 dt=0.036s. 6.3 GB/s.
+it470 LB=331708.4484 E=335354.0391 dPhi=0.7 mrg=-58.93 dt=0.037s. 6.1 GB/s.
+it480 LB=331711.8395 E=335354.0391 dPhi=0.7 mrg=-58.93 dt=0.038s. 6.1 GB/s.
+it490 LB=331715.0475 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.048s. 4.7 GB/s.
+it500 LB=331718.0999 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.037s. 6.1 GB/s.
+it510 LB=331720.9695 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.042s. 5.4 GB/s.
+it520 LB=331723.6774 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.040s. 5.7 GB/s.
+it530 LB=331726.2587 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.045s. 5.1 GB/s.
+it540 LB=331728.7268 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.039s. 5.8 GB/s.
+it550 LB=331731.0945 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.041s. 5.5 GB/s.
+it560 LB=331733.3699 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.039s. 5.8 GB/s.
+it570 LB=331735.5585 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.040s. 5.6 GB/s.
+it580 LB=331737.6849 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.042s. 5.4 GB/s.
+it590 LB=331739.7231 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.040s. 5.7 GB/s.
+it600 LB=331741.7113 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.042s. 5.4 GB/s.
+it610 LB=331743.6541 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.039s. 5.9 GB/s.
+it620 LB=331745.5539 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.037s. 6.2 GB/s.
+it630 LB=331747.4083 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.041s. 5.5 GB/s.
+it640 LB=331749.2167 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.042s. 5.4 GB/s.
+it650 LB=331750.9822 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.040s. 5.7 GB/s.
+it660 LB=331752.7023 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.036s. 6.2 GB/s.
+it670 LB=331754.3655 E=335354.0391 dPhi=0.3 mrg=-58.93 dt=0.040s. 5.7 GB/s.
+it680 LB=331755.9478 E=335354.0391 dPhi=0.2 mrg=-58.93 dt=0.047s. 4.9 GB/s.
+it690 LB=331757.4284 E=335354.0391 dPhi=0.2 mrg=-58.93 dt=0.040s. 5.7 GB/s.
+it700 LB=331758.8043 E=335354.0391 dPhi=0.2 mrg=-58.93 dt=0.040s. 5.7 GB/s.
+it710 LB=331760.0804 E=335354.0391 dPhi=0.2 mrg=-58.93 dt=0.037s. 6.1 GB/s.
+it720 LB=331761.2256 E=335354.0391 dPhi=0.2 mrg=-58.94 dt=0.038s. 5.9 GB/s.
+it730 LB=331762.2505 E=335354.0391 dPhi=0.2 mrg=-58.94 dt=0.039s. 5.8 GB/s.
+it740 LB=331763.1344 E=335354.0391 dPhi=0.2 mrg=-58.94 dt=0.039s. 5.9 GB/s.
+it750 LB=331763.8882 E=335354.0391 dPhi=0.2 mrg=-58.94 dt=0.037s. 6.2 GB/s.
+it760 LB=331764.4948 E=334084.9453 dPhi=0.2 mrg=-58.95 dt=0.036s. 6.4 GB/s.
+it770 LB=331764.9848 E=332817.7500 dPhi=0.2 mrg=-58.96 dt=0.037s. 6.2 GB/s.
+it780 LB=331765.3934 E=332318.3281 dPhi=0.2 mrg=-58.96 dt=0.037s. 6.1 GB/s.
+it790 LB=331765.7390 E=332267.8047 dPhi=0.2 mrg=-58.97 dt=0.040s. 5.7 GB/s.
+it800 LB=331766.0514 E=332267.8047 dPhi=0.2 mrg=-58.98 dt=0.038s. 6.0 GB/s.
+it810 LB=331766.3111 E=332267.8047 dPhi=0.2 mrg=-58.98 dt=0.037s. 6.2 GB/s.
+it820 LB=331766.5059 E=332267.8047 dPhi=0.2 mrg=-58.99 dt=0.036s. 6.3 GB/s.
+it830 LB=331766.6307 E=332089.0703 dPhi=0.2 mrg=-58.99 dt=0.036s. 6.3 GB/s.
+it840 LB=331766.6639 E=331766.6641 dPhi=0.2 mrg= -59 dt=0.036s. 6.3 GB/s.
+Reached duality gap < 0.000194311
+LB= 331766.6639 E= 331766.6641
+COMPUTE :struct float_v4 TYPE:3 TEST INSTANCE 1 TRW-S time:5.43097s
+Labeling best_x: 
+10, 10, 10, 10, 10, 10, 10, 10, 10, 10, ...
+TRW-S found optimal solution
+Map is not yet strictly improving
+ICM improved E: 331766.664063
+core size:13Mb, writable: 1Mb.
+Marking immovable (init) 10000+0 labels (100% remains)
+PO_sensetivity:0
+PO_it:1
+it845 LB=-0.0001 E=0.0000 dPhi=1 mrg=   0 dt=0.024s. 6.3 GB/s.
+Reached duality gap < 0.000127316
+LB=  -0.0001 E=   0.0000
+Improved E:  0.0000
+Marking immovable (cut) 0+0 labels (100% remains)
+TRW-S found optimal solution
+Map is strictly improving
+Finished. Total iterations: 845 Persistency proven: 100%
+PO Times:
+ Total: 0.372995
+ Msgs: 0.0609495
+ Cuts: 0.0184038
+ Node cuts: 0.0500995
+ Rebuild: 0.0442324
+Alive Labels mask: 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+Labeling y: 
+(10)(10)(10)(10)(10)(10)(10)(10)(10)(10)...
+COMPUTE :struct float_v4 TYPE:3 TEST INSTANCE 1 nit: 845 elim:100% / 5.90616s
+Stream graph layers: 199 time: 0.000574171s. 
+core size:8Mb, writable: 1Mb.
+Options:
+all_to_one: 0
+fast_msg: 1
+it_batch: 10
+local_min_tol: 0
+max_CPU: 2
+max_it: 1000
+n_sensetivity: 1
+po_it_batch: 5
+po_max_it: 50
+po_maxit: 0
+rebuild_incremental: 1
+reduce_immovable: 1
+rel_conv_tol: 0.01
+rel_gap_tol: 0.1
+sensetivity: 0
+use_cut: 1
+use_pixel_cut: 1
+weak_po: 0
+it10 LB=327898.2910 E=362229.0078 dPhi=1e+002 mrg=-60.72 dt=0.106s. 1.9 GB/s.
+it20 LB=329537.7790 E=354311.2031 dPhi=2e+001 mrg=-59.56 dt=0.104s. 1.9 GB/s.
+it30 LB=330221.1116 E=351200.7500 dPhi=2e+001 mrg=-59.02 dt=0.106s. 1.9 GB/s.
+it40 LB=330562.2060 E=342353.9688 dPhi=1e+001 mrg=-58.97 dt=0.103s. 1.9 GB/s.
+it50 LB=330785.6972 E=340314.8984 dPhi=8 mrg=-59.01 dt=0.104s. 1.9 GB/s.
+it60 LB=330953.1664 E=337905.1953 dPhi=6 mrg=-58.99 dt=0.105s. 1.9 GB/s.
+it70 LB=331074.4025 E=337905.1953 dPhi=5 mrg=-59.11 dt=0.104s. 1.9 GB/s.
+it80 LB=331168.1581 E=337212.1406 dPhi=5 mrg=-59.15 dt=0.110s. 1.8 GB/s.
+it90 LB=331234.8387 E=336542.0000 dPhi=6 mrg=-59.14 dt=0.107s. 1.9 GB/s.
+it100 LB=331284.8014 E=336416.4531 dPhi=6 mrg=-59.13 dt=0.103s. 1.9 GB/s.
+it110 LB=331327.7557 E=336281.6328 dPhi=5 mrg=-59.12 dt=0.104s. 1.9 GB/s.
+it120 LB=331363.9676 E=336281.6328 dPhi=4 mrg=-59.1 dt=0.103s. 1.9 GB/s.
+it130 LB=331395.5004 E=335554.5156 dPhi=3 mrg=-59.09 dt=0.106s. 1.9 GB/s.
+it140 LB=331420.6149 E=335554.5156 dPhi=2 mrg=-59.08 dt=0.106s. 1.9 GB/s.
+it150 LB=331441.0758 E=335554.5156 dPhi=2 mrg=-59.07 dt=0.103s. 2.0 GB/s.
+it160 LB=331458.9354 E=335554.5156 dPhi=2 mrg=-59.06 dt=0.117s. 1.7 GB/s.
+it170 LB=331475.1014 E=335554.5156 dPhi=2 mrg=-59.05 dt=0.110s. 1.8 GB/s.
+it180 LB=331489.8342 E=335554.5156 dPhi=2 mrg=-59.04 dt=0.103s. 1.9 GB/s.
+it190 LB=331503.8264 E=335554.5156 dPhi=2 mrg=-59.03 dt=0.102s. 2.0 GB/s.
+it200 LB=331517.0777 E=335554.5156 dPhi=1 mrg=-59.02 dt=0.102s. 2.0 GB/s.
+it210 LB=331529.2392 E=335554.5156 dPhi=1 mrg=-59.01 dt=0.102s. 2.0 GB/s.
+it220 LB=331540.7135 E=335554.5156 dPhi=1 mrg=-59.01 dt=0.105s. 1.9 GB/s.
+it230 LB=331551.5740 E=335554.5156 dPhi=1 mrg= -59 dt=0.105s. 1.9 GB/s.
+it240 LB=331562.1778 E=335554.5156 dPhi=1 mrg=-58.99 dt=0.103s. 1.9 GB/s.
+it250 LB=331572.2672 E=335554.5156 dPhi=1 mrg=-58.98 dt=0.105s. 1.9 GB/s.
+it260 LB=331581.8912 E=335554.5156 dPhi=1 mrg=-58.97 dt=0.105s. 1.9 GB/s.
+it270 LB=331591.1155 E=335554.5156 dPhi=1 mrg=-58.97 dt=0.102s. 2.0 GB/s.
+it280 LB=331599.9394 E=335554.5156 dPhi=1 mrg=-58.96 dt=0.104s. 1.9 GB/s.
+it290 LB=331608.3813 E=335554.5156 dPhi=1 mrg=-58.95 dt=0.103s. 2.0 GB/s.
+it300 LB=331616.4819 E=335554.5156 dPhi=1 mrg=-58.95 dt=0.111s. 1.8 GB/s.
+it310 LB=331624.2236 E=335515.0391 dPhi=1 mrg=-58.95 dt=0.112s. 1.8 GB/s.
+it320 LB=331631.5728 E=335515.0391 dPhi=1 mrg=-58.94 dt=0.105s. 1.9 GB/s.
+it330 LB=331638.6343 E=335515.0391 dPhi=0.9 mrg=-58.94 dt=0.103s. 1.9 GB/s.
+it340 LB=331645.4135 E=335456.6484 dPhi=0.9 mrg=-58.94 dt=0.105s. 1.9 GB/s.
+it350 LB=331651.9242 E=335456.6484 dPhi=0.7 mrg=-58.94 dt=0.103s. 1.9 GB/s.
+it360 LB=331658.1498 E=335456.6484 dPhi=0.6 mrg=-58.94 dt=0.101s. 2.0 GB/s.
+it370 LB=331664.0549 E=335456.6484 dPhi=0.9 mrg=-58.93 dt=0.105s. 1.9 GB/s.
+it380 LB=331669.6466 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.102s. 2.0 GB/s.
+it390 LB=331674.9263 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.111s. 1.8 GB/s.
+it400 LB=331679.8884 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.103s. 1.9 GB/s.
+it410 LB=331684.5668 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.105s. 1.9 GB/s.
+it420 LB=331689.0060 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.105s. 1.9 GB/s.
+it430 LB=331693.2656 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.103s. 2.0 GB/s.
+it440 LB=331697.3360 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.103s. 1.9 GB/s.
+it450 LB=331701.2340 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.104s. 1.9 GB/s.
+it460 LB=331704.9361 E=335354.0391 dPhi=0.7 mrg=-58.93 dt=0.102s. 2.0 GB/s.
+it470 LB=331708.4484 E=335354.0391 dPhi=0.7 mrg=-58.93 dt=0.105s. 1.9 GB/s.
+it480 LB=331711.8395 E=335354.0391 dPhi=0.7 mrg=-58.93 dt=0.103s. 1.9 GB/s.
+it490 LB=331715.0475 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.104s. 1.9 GB/s.
+it500 LB=331718.0999 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.105s. 1.9 GB/s.
+it510 LB=331720.9695 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.103s. 2.0 GB/s.
+it520 LB=331723.6774 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.102s. 2.0 GB/s.
+it530 LB=331726.2587 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.104s. 1.9 GB/s.
+it540 LB=331728.7268 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.103s. 1.9 GB/s.
+it550 LB=331731.0945 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.109s. 1.8 GB/s.
+it560 LB=331733.3699 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.103s. 1.9 GB/s.
+it570 LB=331735.5585 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.105s. 1.9 GB/s.
+it580 LB=331737.6849 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.104s. 1.9 GB/s.
+it590 LB=331739.7231 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.104s. 1.9 GB/s.
+it600 LB=331741.7113 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.104s. 1.9 GB/s.
+it610 LB=331743.6541 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.106s. 1.9 GB/s.
+it620 LB=331745.5539 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.105s. 1.9 GB/s.
+it630 LB=331747.4083 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.104s. 1.9 GB/s.
+it640 LB=331749.2167 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.103s. 1.9 GB/s.
+it650 LB=331750.9822 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.103s. 1.9 GB/s.
+it660 LB=331752.7023 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.104s. 1.9 GB/s.
+it670 LB=331754.3655 E=335354.0391 dPhi=0.3 mrg=-58.93 dt=0.102s. 2.0 GB/s.
+it680 LB=331755.9478 E=335354.0391 dPhi=0.2 mrg=-58.93 dt=0.103s. 1.9 GB/s.
+it690 LB=331757.4284 E=335354.0391 dPhi=0.2 mrg=-58.93 dt=0.104s. 1.9 GB/s.
+it700 LB=331758.8043 E=335354.0391 dPhi=0.2 mrg=-58.93 dt=0.105s. 1.9 GB/s.
+it710 LB=331760.0804 E=335354.0391 dPhi=0.2 mrg=-58.93 dt=0.105s. 1.9 GB/s.
+it720 LB=331761.2256 E=335354.0391 dPhi=0.2 mrg=-58.94 dt=0.103s. 1.9 GB/s.
+it730 LB=331762.2505 E=335354.0391 dPhi=0.2 mrg=-58.94 dt=0.103s. 2.0 GB/s.
+it740 LB=331763.1344 E=335354.0391 dPhi=0.2 mrg=-58.94 dt=0.104s. 1.9 GB/s.
+it750 LB=331763.8882 E=335354.0391 dPhi=0.2 mrg=-58.94 dt=0.103s. 2.0 GB/s.
+it760 LB=331764.4948 E=334084.9453 dPhi=0.2 mrg=-58.95 dt=0.105s. 1.9 GB/s.
+it770 LB=331764.9848 E=332817.7500 dPhi=0.2 mrg=-58.96 dt=0.104s. 1.9 GB/s.
+it780 LB=331765.3934 E=332318.3281 dPhi=0.2 mrg=-58.96 dt=0.124s. 1.6 GB/s.
+it790 LB=331765.7390 E=332267.8047 dPhi=0.2 mrg=-58.97 dt=0.124s. 1.6 GB/s.
+it800 LB=331766.0514 E=332267.8047 dPhi=0.2 mrg=-58.98 dt=0.102s. 2.0 GB/s.
+it810 LB=331766.3111 E=332267.8047 dPhi=0.2 mrg=-58.98 dt=0.106s. 1.9 GB/s.
+it820 LB=331766.5059 E=332267.8047 dPhi=0.2 mrg=-58.99 dt=0.102s. 2.0 GB/s.
+it830 LB=331766.6307 E=332089.0703 dPhi=0.2 mrg=-58.99 dt=0.105s. 1.9 GB/s.
+it840 LB=331766.6639 E=331766.6641 dPhi=0.2 mrg= -59 dt=0.107s. 1.9 GB/s.
+Reached duality gap < 0.000194311
+LB= 331766.6639 E= 331766.6641
+COMPUTE :struct float_v1 TYPE:3 TEST INSTANCE 1 TRW-S time:10.8739s
+Labeling best_x: 
+10, 10, 10, 10, 10, 10, 10, 10, 10, 10, ...
+TRW-S found optimal solution
+Map is not yet strictly improving
+ICM improved E: 331766.664063
+core size:12Mb, writable: 1Mb.
+Marking immovable (init) 10000+0 labels (100% remains)
+PO_sensetivity:0
+PO_it:1
+it845 LB=-0.0001 E=0.0000 dPhi=1e+002 mrg=   0 dt=0.061s. 2.2 GB/s.
+Reached duality gap < 0.000127316
+LB=  -0.0001 E=   0.0000
+Improved E:  0.0000
+Marking immovable (cut) 0+0 labels (100% remains)
+TRW-S found optimal solution
+Map is strictly improving
+Finished. Total iterations: 845 Persistency proven: 100%
+PO Times:
+ Total: 0.388005
+ Msgs: 0.0988598
+ Cuts: 0.0176676
+ Node cuts: 0.0495466
+ Rebuild: 0.0332141
+Alive Labels mask: 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+Labeling y: 
+(10)(10)(10)(10)(10)(10)(10)(10)(10)(10)...
+COMPUTE :struct float_v1 TYPE:3 TEST INSTANCE 1 nit: 845 elim:100% / 11.3579s
+Recognized models: 0Potts terms, 0T-Linear terms,
+ 0T-Quadratic terms, 19800Diff terms, 0 Full terms
+X Max data value: 99.9063
+Min data delta: 0.0078125
+Selecting data toolerance: 0.001
+Stream graph layers: 199 time: 0.000580754s. 
+core size:15Mb, writable: 2Mb.
+Options:
+all_to_one: 0
+fast_msg: 1
+it_batch: 10
+local_min_tol: 0
+max_CPU: 2
+max_it: 1000
+n_sensetivity: 1
+po_it_batch: 5
+po_max_it: 50
+po_maxit: 0
+rebuild_incremental: 1
+reduce_immovable: 1
+rel_conv_tol: 0.01
+rel_gap_tol: 0.1
+sensetivity: 0
+use_cut: 1
+use_pixel_cut: 1
+weak_po: 0
+it10 LB=327898.2909 E=362229.0078 dPhi=1e+002 mrg=-60.72 dt=0.115s. 3.1 GB/s.
+it20 LB=329537.7791 E=354311.2031 dPhi=2e+001 mrg=-59.56 dt=0.115s. 3.1 GB/s.
+it30 LB=330221.1115 E=351200.7500 dPhi=2e+001 mrg=-59.02 dt=0.114s. 3.1 GB/s.
+it40 LB=330562.2058 E=342353.9688 dPhi=1e+001 mrg=-58.97 dt=0.113s. 3.1 GB/s.
+it50 LB=330785.6971 E=340314.8984 dPhi=8 mrg=-59.01 dt=0.113s. 3.1 GB/s.
+it60 LB=330953.1666 E=337905.1953 dPhi=6 mrg=-58.99 dt=0.120s. 2.9 GB/s.
+it70 LB=331074.4024 E=337905.1953 dPhi=5 mrg=-59.11 dt=0.117s. 3.0 GB/s.
+it80 LB=331168.1581 E=337212.1406 dPhi=5 mrg=-59.15 dt=0.114s. 3.1 GB/s.
+it90 LB=331234.8388 E=336542.0000 dPhi=6 mrg=-59.14 dt=0.112s. 3.2 GB/s.
+it100 LB=331284.8013 E=336416.4531 dPhi=6 mrg=-59.13 dt=0.113s. 3.1 GB/s.
+it110 LB=331327.7557 E=336281.6328 dPhi=5 mrg=-59.12 dt=0.113s. 3.1 GB/s.
+it120 LB=331363.9672 E=336281.6328 dPhi=4 mrg=-59.1 dt=0.112s. 3.1 GB/s.
+it130 LB=331395.5006 E=335554.5156 dPhi=3 mrg=-59.09 dt=0.112s. 3.1 GB/s.
+it140 LB=331420.6148 E=335554.5156 dPhi=2 mrg=-59.08 dt=0.114s. 3.1 GB/s.
+it150 LB=331441.0758 E=335554.5156 dPhi=2 mrg=-59.07 dt=0.113s. 3.1 GB/s.
+it160 LB=331458.9354 E=335554.5156 dPhi=2 mrg=-59.06 dt=0.112s. 3.1 GB/s.
+it170 LB=331475.1010 E=335554.5156 dPhi=2 mrg=-59.05 dt=0.115s. 3.1 GB/s.
+it180 LB=331489.8342 E=335554.5156 dPhi=2 mrg=-59.04 dt=0.112s. 3.2 GB/s.
+it190 LB=331503.8262 E=335554.5156 dPhi=2 mrg=-59.03 dt=0.114s. 3.1 GB/s.
+it200 LB=331517.0775 E=335554.5156 dPhi=1 mrg=-59.02 dt=0.113s. 3.1 GB/s.
+it210 LB=331529.2392 E=335554.5156 dPhi=1 mrg=-59.01 dt=0.116s. 3.1 GB/s.
+it220 LB=331540.7135 E=335554.5156 dPhi=1 mrg=-59.01 dt=0.123s. 2.9 GB/s.
+it230 LB=331551.5742 E=335554.5156 dPhi=1 mrg= -59 dt=0.122s. 2.9 GB/s.
+it240 LB=331562.1777 E=335554.5156 dPhi=1 mrg=-58.99 dt=0.120s. 3.0 GB/s.
+it250 LB=331572.2672 E=335554.5156 dPhi=1 mrg=-58.98 dt=0.113s. 3.1 GB/s.
+it260 LB=331581.8914 E=335554.5156 dPhi=1 mrg=-58.97 dt=0.118s. 3.0 GB/s.
+it270 LB=331591.1156 E=335554.5156 dPhi=1 mrg=-58.97 dt=0.127s. 2.8 GB/s.
+it280 LB=331599.9394 E=335554.5156 dPhi=1 mrg=-58.96 dt=0.129s. 2.7 GB/s.
+it290 LB=331608.3816 E=335554.5156 dPhi=1 mrg=-58.95 dt=0.114s. 3.1 GB/s.
+it300 LB=331616.4818 E=335554.5156 dPhi=1 mrg=-58.95 dt=0.120s. 3.0 GB/s.
+it310 LB=331624.2236 E=335515.0391 dPhi=1 mrg=-58.95 dt=0.113s. 3.1 GB/s.
+it320 LB=331631.5729 E=335515.0391 dPhi=1 mrg=-58.94 dt=0.113s. 3.1 GB/s.
+it330 LB=331638.6343 E=335515.0391 dPhi=0.9 mrg=-58.94 dt=0.113s. 3.1 GB/s.
+it340 LB=331645.4136 E=335456.6484 dPhi=0.9 mrg=-58.94 dt=0.114s. 3.1 GB/s.
+it350 LB=331651.9244 E=335456.6484 dPhi=0.7 mrg=-58.94 dt=0.117s. 3.0 GB/s.
+it360 LB=331658.1498 E=335456.6484 dPhi=0.6 mrg=-58.94 dt=0.113s. 3.1 GB/s.
+it370 LB=331664.0552 E=335456.6484 dPhi=0.9 mrg=-58.93 dt=0.112s. 3.2 GB/s.
+it380 LB=331669.6462 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.120s. 3.0 GB/s.
+it390 LB=331674.9263 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.119s. 3.0 GB/s.
+it400 LB=331679.8886 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.121s. 2.9 GB/s.
+it410 LB=331684.5670 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.116s. 3.0 GB/s.
+it420 LB=331689.0061 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.115s. 3.1 GB/s.
+it430 LB=331693.2657 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.112s. 3.2 GB/s.
+it440 LB=331697.3360 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.113s. 3.1 GB/s.
+it450 LB=331701.2338 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.118s. 3.0 GB/s.
+it460 LB=331704.9360 E=335354.0391 dPhi=0.7 mrg=-58.93 dt=0.113s. 3.1 GB/s.
+it470 LB=331708.4485 E=335354.0391 dPhi=0.7 mrg=-58.93 dt=0.112s. 3.1 GB/s.
+it480 LB=331711.8397 E=335354.0391 dPhi=0.7 mrg=-58.93 dt=0.113s. 3.1 GB/s.
+it490 LB=331715.0476 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.121s. 2.9 GB/s.
+it500 LB=331718.0999 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.116s. 3.0 GB/s.
+it510 LB=331720.9695 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.112s. 3.2 GB/s.
+it520 LB=331723.6773 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.114s. 3.1 GB/s.
+it530 LB=331726.2587 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.111s. 3.2 GB/s.
+it540 LB=331728.7267 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.112s. 3.2 GB/s.
+it550 LB=331731.0945 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.114s. 3.1 GB/s.
+it560 LB=331733.3700 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.114s. 3.1 GB/s.
+it570 LB=331735.5587 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.114s. 3.1 GB/s.
+it580 LB=331737.6846 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.112s. 3.2 GB/s.
+it590 LB=331739.7231 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.113s. 3.1 GB/s.
+it600 LB=331741.7114 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.112s. 3.2 GB/s.
+it610 LB=331743.6540 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.112s. 3.2 GB/s.
+it620 LB=331745.5539 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.114s. 3.1 GB/s.
+it630 LB=331747.4085 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.113s. 3.1 GB/s.
+it640 LB=331749.2167 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.115s. 3.1 GB/s.
+it650 LB=331750.9821 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.114s. 3.1 GB/s.
+it660 LB=331752.7025 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.119s. 3.0 GB/s.
+it670 LB=331754.3652 E=335354.0391 dPhi=0.3 mrg=-58.93 dt=0.119s. 3.0 GB/s.
+it680 LB=331755.9480 E=335354.0391 dPhi=0.2 mrg=-58.93 dt=0.121s. 2.9 GB/s.
+it690 LB=331757.4282 E=335354.0391 dPhi=0.2 mrg=-58.93 dt=0.117s. 3.0 GB/s.
+it700 LB=331758.8042 E=335354.0391 dPhi=0.2 mrg=-58.93 dt=0.117s. 3.0 GB/s.
+it710 LB=331760.0802 E=335354.0391 dPhi=0.2 mrg=-58.93 dt=0.133s. 2.7 GB/s.
+it720 LB=331761.2254 E=335354.0391 dPhi=0.2 mrg=-58.94 dt=0.125s. 2.8 GB/s.
+it730 LB=331762.2505 E=335354.0391 dPhi=0.2 mrg=-58.94 dt=0.128s. 2.8 GB/s.
+it740 LB=331763.1344 E=335354.0391 dPhi=0.2 mrg=-58.94 dt=0.125s. 2.8 GB/s.
+it750 LB=331763.8878 E=335354.0391 dPhi=0.2 mrg=-58.94 dt=0.124s. 2.8 GB/s.
+it760 LB=331764.4947 E=334084.9453 dPhi=0.2 mrg=-58.95 dt=0.130s. 2.7 GB/s.
+it770 LB=331764.9846 E=332817.7500 dPhi=0.2 mrg=-58.96 dt=0.121s. 2.9 GB/s.
+it780 LB=331765.3936 E=332318.3281 dPhi=0.2 mrg=-58.96 dt=0.112s. 3.2 GB/s.
+it790 LB=331765.7389 E=332267.8047 dPhi=0.2 mrg=-58.97 dt=0.114s. 3.1 GB/s.
+it800 LB=331766.0514 E=332267.8047 dPhi=0.2 mrg=-58.98 dt=0.115s. 3.1 GB/s.
+it810 LB=331766.3110 E=332267.8047 dPhi=0.2 mrg=-58.98 dt=0.119s. 3.0 GB/s.
+it820 LB=331766.5059 E=332267.8047 dPhi=0.2 mrg=-58.99 dt=0.123s. 2.9 GB/s.
+it830 LB=331766.6307 E=332089.0703 dPhi=0.2 mrg=-58.99 dt=0.119s. 3.0 GB/s.
+it840 LB=331766.6641 E=331766.6641 dPhi=0.2 mrg= -59 dt=0.118s. 3.0 GB/s.
+Reached duality gap < 1.16415e-010
+LB= 331766.6641 E= 331766.6641
+COMPUTE :struct double_v1 TYPE:3 TEST INSTANCE 1 TRW-S time:11.8555s
+Labeling best_x: 
+10, 10, 10, 10, 10, 10, 10, 10, 10, 10, ...
+TRW-S found optimal solution
+Map is not yet strictly improving
+ICM improved E: 331766.664063
+core size:20Mb, writable: 2Mb.
+Marking immovable (init) 10000+0 labels (100% remains)
+PO_sensetivity:0
+PO_it:1
+it845 LB=-0.0000 E=0.0000 dPhi=1e+002 mrg=   0 dt=0.070s. 3.3 GB/s.
+Reached duality gap < 5.96856e-013
+LB=  -0.0000 E=   0.0000
+Improved E:  0.0000
+Marking immovable (cut) 0+0 labels (100% remains)
+TRW-S found optimal solution
+Map is strictly improving
+Finished. Total iterations: 845 Persistency proven: 100%
+PO Times:
+ Total: 0.415719
+ Msgs: 0.109462
+ Cuts: 0.0172204
+ Node cuts: 0.0508295
+ Rebuild: 0.034169
+Alive Labels mask: 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+Labeling y: 
+(10)(10)(10)(10)(10)(10)(10)(10)(10)(10)...
+COMPUTE :struct double_v1 TYPE:3 TEST INSTANCE 1 nit: 845 elim:100% / 12.3689s
+Stream graph layers: 199 time: 0.000755931s. 
+core size:15Mb, writable: 2Mb.
+Options:
+all_to_one: 0
+fast_msg: 1
+it_batch: 10
+local_min_tol: 0
+max_CPU: 2
+max_it: 1000
+n_sensetivity: 1
+po_it_batch: 5
+po_max_it: 50
+po_maxit: 0
+rebuild_incremental: 1
+reduce_immovable: 1
+rel_conv_tol: 0.01
+rel_gap_tol: 0.1
+sensetivity: 0
+use_cut: 1
+use_pixel_cut: 1
+weak_po: 0
+it10 LB=327898.2909 E=362229.0078 dPhi=1e+002 mrg=-60.72 dt=0.123s. 2.9 GB/s.
+it20 LB=329537.7791 E=354311.2031 dPhi=2e+001 mrg=-59.56 dt=0.120s. 2.9 GB/s.
+it30 LB=330221.1115 E=351200.7500 dPhi=2e+001 mrg=-59.02 dt=0.122s. 2.9 GB/s.
+it40 LB=330562.2058 E=342353.9688 dPhi=1e+001 mrg=-58.97 dt=0.117s. 3.0 GB/s.
+it50 LB=330785.6971 E=340314.8984 dPhi=8 mrg=-59.01 dt=0.116s. 3.1 GB/s.
+it60 LB=330953.1666 E=337905.1953 dPhi=6 mrg=-58.99 dt=0.115s. 3.1 GB/s.
+it70 LB=331074.4024 E=337905.1953 dPhi=5 mrg=-59.11 dt=0.116s. 3.0 GB/s.
+it80 LB=331168.1581 E=337212.1406 dPhi=5 mrg=-59.15 dt=0.112s. 3.2 GB/s.
+it90 LB=331234.8388 E=336542.0000 dPhi=6 mrg=-59.14 dt=0.115s. 3.1 GB/s.
+it100 LB=331284.8013 E=336416.4531 dPhi=6 mrg=-59.13 dt=0.115s. 3.1 GB/s.
+it110 LB=331327.7557 E=336281.6328 dPhi=5 mrg=-59.12 dt=0.112s. 3.1 GB/s.
+it120 LB=331363.9672 E=336281.6328 dPhi=4 mrg=-59.1 dt=0.116s. 3.0 GB/s.
+it130 LB=331395.5006 E=335554.5156 dPhi=3 mrg=-59.09 dt=0.112s. 3.2 GB/s.
+it140 LB=331420.6148 E=335554.5156 dPhi=2 mrg=-59.08 dt=0.114s. 3.1 GB/s.
+it150 LB=331441.0758 E=335554.5156 dPhi=2 mrg=-59.07 dt=0.115s. 3.1 GB/s.
+it160 LB=331458.9354 E=335554.5156 dPhi=2 mrg=-59.06 dt=0.114s. 3.1 GB/s.
+it170 LB=331475.1010 E=335554.5156 dPhi=2 mrg=-59.05 dt=0.114s. 3.1 GB/s.
+it180 LB=331489.8342 E=335554.5156 dPhi=2 mrg=-59.04 dt=0.112s. 3.2 GB/s.
+it190 LB=331503.8262 E=335554.5156 dPhi=2 mrg=-59.03 dt=0.113s. 3.1 GB/s.
+it200 LB=331517.0775 E=335554.5156 dPhi=1 mrg=-59.02 dt=0.113s. 3.1 GB/s.
+it210 LB=331529.2392 E=335554.5156 dPhi=1 mrg=-59.01 dt=0.121s. 2.9 GB/s.
+it220 LB=331540.7135 E=335554.5156 dPhi=1 mrg=-59.01 dt=0.122s. 2.9 GB/s.
+it230 LB=331551.5742 E=335554.5156 dPhi=1 mrg= -59 dt=0.116s. 3.1 GB/s.
+it240 LB=331562.1777 E=335554.5156 dPhi=1 mrg=-58.99 dt=0.117s. 3.0 GB/s.
+it250 LB=331572.2672 E=335554.5156 dPhi=1 mrg=-58.98 dt=0.117s. 3.0 GB/s.
+it260 LB=331581.8914 E=335554.5156 dPhi=1 mrg=-58.97 dt=0.120s. 2.9 GB/s.
+it270 LB=331591.1156 E=335554.5156 dPhi=1 mrg=-58.97 dt=0.114s. 3.1 GB/s.
+it280 LB=331599.9394 E=335554.5156 dPhi=1 mrg=-58.96 dt=0.128s. 2.8 GB/s.
+it290 LB=331608.3816 E=335554.5156 dPhi=1 mrg=-58.95 dt=0.120s. 2.9 GB/s.
+it300 LB=331616.4818 E=335554.5156 dPhi=1 mrg=-58.95 dt=0.116s. 3.0 GB/s.
+it310 LB=331624.2236 E=335515.0391 dPhi=1 mrg=-58.95 dt=0.123s. 2.9 GB/s.
+it320 LB=331631.5729 E=335515.0391 dPhi=1 mrg=-58.94 dt=0.120s. 3.0 GB/s.
+it330 LB=331638.6343 E=335515.0391 dPhi=0.9 mrg=-58.94 dt=0.117s. 3.0 GB/s.
+it340 LB=331645.4136 E=335456.6484 dPhi=0.9 mrg=-58.94 dt=0.115s. 3.1 GB/s.
+it350 LB=331651.9244 E=335456.6484 dPhi=0.7 mrg=-58.94 dt=0.117s. 3.0 GB/s.
+it360 LB=331658.1498 E=335456.6484 dPhi=0.6 mrg=-58.94 dt=0.114s. 3.1 GB/s.
+it370 LB=331664.0552 E=335456.6484 dPhi=0.9 mrg=-58.93 dt=0.113s. 3.1 GB/s.
+it380 LB=331669.6462 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.114s. 3.1 GB/s.
+it390 LB=331674.9263 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.113s. 3.1 GB/s.
+it400 LB=331679.8886 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.113s. 3.1 GB/s.
+it410 LB=331684.5670 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.115s. 3.1 GB/s.
+it420 LB=331689.0061 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.113s. 3.1 GB/s.
+it430 LB=331693.2657 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.119s. 3.0 GB/s.
+it440 LB=331697.3360 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.113s. 3.1 GB/s.
+it450 LB=331701.2338 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.117s. 3.0 GB/s.
+it460 LB=331704.9360 E=335354.0391 dPhi=0.7 mrg=-58.93 dt=0.113s. 3.1 GB/s.
+it470 LB=331708.4485 E=335354.0391 dPhi=0.7 mrg=-58.93 dt=0.112s. 3.1 GB/s.
+it480 LB=331711.8397 E=335354.0391 dPhi=0.7 mrg=-58.93 dt=0.112s. 3.1 GB/s.
+it490 LB=331715.0476 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.112s. 3.1 GB/s.
+it500 LB=331718.0999 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.118s. 3.0 GB/s.
+it510 LB=331720.9695 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.112s. 3.2 GB/s.
+it520 LB=331723.6773 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.113s. 3.1 GB/s.
+it530 LB=331726.2587 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.113s. 3.1 GB/s.
+it540 LB=331728.7267 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.110s. 3.2 GB/s.
+it550 LB=331731.0945 E=335354.0391 dPhi=0.6 mrg=-58.93 dt=0.112s. 3.1 GB/s.
+it560 LB=331733.3700 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.113s. 3.1 GB/s.
+it570 LB=331735.5587 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.117s. 3.0 GB/s.
+it580 LB=331737.6846 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.112s. 3.2 GB/s.
+it590 LB=331739.7231 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.114s. 3.1 GB/s.
+it600 LB=331741.7114 E=335354.0391 dPhi=1 mrg=-58.93 dt=0.113s. 3.1 GB/s.
+it610 LB=331743.6540 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.114s. 3.1 GB/s.
+it620 LB=331745.5539 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.113s. 3.1 GB/s.
+it630 LB=331747.4085 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.120s. 3.0 GB/s.
+it640 LB=331749.2167 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.126s. 2.8 GB/s.
+it650 LB=331750.9821 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.115s. 3.1 GB/s.
+it660 LB=331752.7025 E=335354.0391 dPhi=0.9 mrg=-58.93 dt=0.112s. 3.2 GB/s.
+it670 LB=331754.3652 E=335354.0391 dPhi=0.3 mrg=-58.93 dt=0.112s. 3.2 GB/s.
+it680 LB=331755.9480 E=335354.0391 dPhi=0.2 mrg=-58.93 dt=0.112s. 3.2 GB/s.
+it690 LB=331757.4282 E=335354.0391 dPhi=0.2 mrg=-58.93 dt=0.112s. 3.2 GB/s.
+it700 LB=331758.8042 E=335354.0391 dPhi=0.2 mrg=-58.93 dt=0.119s. 3.0 GB/s.
+it710 LB=331760.0802 E=335354.0391 dPhi=0.2 mrg=-58.93 dt=0.121s. 2.9 GB/s.
+it720 LB=331761.2254 E=335354.0391 dPhi=0.2 mrg=-58.94 dt=0.122s. 2.9 GB/s.
+it730 LB=331762.2505 E=335354.0391 dPhi=0.2 mrg=-58.94 dt=0.115s. 3.1 GB/s.
+it740 LB=331763.1344 E=335354.0391 dPhi=0.2 mrg=-58.94 dt=0.115s. 3.1 GB/s.
+it750 LB=331763.8878 E=335354.0391 dPhi=0.2 mrg=-58.94 dt=0.114s. 3.1 GB/s.
+it760 LB=331764.4947 E=334084.9453 dPhi=0.2 mrg=-58.95 dt=0.115s. 3.1 GB/s.
+it770 LB=331764.9846 E=332817.7500 dPhi=0.2 mrg=-58.96 dt=0.112s. 3.2 GB/s.
+it780 LB=331765.3936 E=332318.3281 dPhi=0.2 mrg=-58.96 dt=0.116s. 3.0 GB/s.
+it790 LB=331765.7389 E=332267.8047 dPhi=0.2 mrg=-58.97 dt=0.115s. 3.1 GB/s.
+it800 LB=331766.0514 E=332267.8047 dPhi=0.2 mrg=-58.98 dt=0.113s. 3.1 GB/s.
+it810 LB=331766.3110 E=332267.8047 dPhi=0.2 mrg=-58.98 dt=0.114s. 3.1 GB/s.
+it820 LB=331766.5059 E=332267.8047 dPhi=0.2 mrg=-58.99 dt=0.115s. 3.1 GB/s.
+it830 LB=331766.6307 E=332089.0703 dPhi=0.2 mrg=-58.99 dt=0.113s. 3.1 GB/s.
+it840 LB=331766.6641 E=331766.6641 dPhi=0.2 mrg= -59 dt=0.114s. 3.1 GB/s.
+Reached duality gap < 1.16415e-010
+LB= 331766.6641 E= 331766.6641
+COMPUTE :struct double_v1 TYPE:3 TEST INSTANCE 1 TRW-S time:11.8075s
+Labeling best_x: 
+10, 10, 10, 10, 10, 10, 10, 10, 10, 10, ...
+TRW-S found optimal solution
+Map is not yet strictly improving
+ICM improved E: 331766.664063
+core size:20Mb, writable: 2Mb.
+Marking immovable (init) 10000+0 labels (100% remains)
+PO_sensetivity:0
+PO_it:1
+it845 LB=-0.0000 E=0.0000 dPhi=1e+002 mrg=   0 dt=0.070s. 3.3 GB/s.
+Reached duality gap < 5.96856e-013
+LB=  -0.0000 E=   0.0000
+Improved E:  0.0000
+Marking immovable (cut) 0+0 labels (100% remains)
+TRW-S found optimal solution
+Map is strictly improving
+Finished. Total iterations: 845 Persistency proven: 100%
+PO Times:
+ Total: 0.419436
+ Msgs: 0.108595
+ Cuts: 0.0167673
+ Node cuts: 0.0540138
+ Rebuild: 0.0350782
+Alive Labels mask: 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+Labeling y: 
+(10)(10)(10)(10)(10)(10)(10)(10)(10)(10)...
+COMPUTE :struct double_v1 TYPE:3 TEST INSTANCE 1 nit: 845 elim:100% / 12.3279s
